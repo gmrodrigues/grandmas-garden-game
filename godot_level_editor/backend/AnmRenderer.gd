@@ -63,6 +63,7 @@ func load_bmp(bmp_name: String, sub_image: int = -1) -> Image:
 				var image = img.get_image()
 				bmp_cache[cache_key] = image
 				return image
+	push_warning("AnmRenderer: missing sprite: " + bmp_name)
 	return null
 
 func render_frame(anm_name: String, state_id: int, state_counter: int = 0,

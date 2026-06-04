@@ -58,7 +58,7 @@ func _update_sprite(s: Sprite2D, p: PartData):
 	if anm != "":
 		var img = anm_renderer.render_frame(anm, AnmDatabase.get_default_state_id(anm), p.state_counter, p.width_1, p.height_1)
 		if img:
-			if p.appearance & 0x8000: img.flip_x()
+			if p.appearance & PartData.FLAG_FLIP: img.flip_x()
 			tex = ImageTexture.create_from_image(img)
 	if tex:
 		s.texture = tex

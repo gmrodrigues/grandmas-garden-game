@@ -98,7 +98,7 @@ func _handle_behaviors(parts: Array):
 	for part in parts:
 		match part.part_type:
 			5: # Conveyor belt
-				part.vel_x += 16 if part.appearance & 0x8000 else -16
+				part.vel_x += 16 if part.appearance & PartData.FLAG_FLIP else -16
 			6: # Gear
 				part.angular_velocity = 4
 			7, 10, 76: # Ropes/pulley
@@ -108,7 +108,7 @@ func _handle_behaviors(parts: Array):
 					var other = parts[part.belt_connected_part_1]
 					part.angular_velocity = (part.angular_velocity + other.angular_velocity) / 2
 			18: # Cannon
-				part.facing = 1 if part.appearance & 0x8000 == 0 else -1
+				part.facing = 1 if part.appearance & PartData.FLAG_FLIP == 0 else -1
 			21, 22, 25, 27, 28: # Electrical tools
 				pass
 			35, 36: # Rocket

@@ -2,6 +2,7 @@ extends RefCounted
 class_name PartData
 
 const FLAG_MOVING: int = 0x1000
+const FLAG_FLIP: int = 0x8000
 
 enum CollShape { CIRCLE, AABB }
 

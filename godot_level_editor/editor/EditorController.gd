@@ -30,6 +30,7 @@ var pan_start: Vector2 = Vector2.ZERO
 var dragging_handle: bool = false
 var handle_drag_start: Vector2 = Vector2.ZERO
 var handle_drag_part_size: Vector2 = Vector2.ZERO
+var handle_drag_idx: int = -1
 var scroll: Vector2 = Vector2.ZERO
 var zoom: float = 1.0
 var zoom_min: float = 0.25
@@ -49,6 +50,7 @@ const VIEWPORT_H: int = 377
 const CATALOG_W: int = 200
 const CATALOG_X: int = VIEWPORT_X + VIEWPORT_W
 const SNAP_GRID: int = 16
+const MIN_PART_SIZE: int = 8
 
 var canvas: Node2D
 var selection_handles_root: Node2D
@@ -153,6 +155,7 @@ func _build_toolbar(toolbar: HBoxContainer):
 		"Connect": func(): _set_mode(ToolMode.MODE_CONNECT),
 		"Preview": _toggle_preview,
 		"Info": func(): _set_mode(ToolMode.MODE_LEVEL_INFO),
+		"Conditions": _open_condition_editor,
 	}
 	for text in buttons:
 		var b = Button.new()
@@ -292,6 +295,7 @@ func _handle_mouse_click(event: InputEventMouseButton):
 	if not event.pressed:
 		dragging = false
 		dragging_handle = false
+		handle_drag_idx = -1
 		panning = false
 		return
 
@@ -301,14 +305,22 @@ func _handle_mouse_click(event: InputEventMouseButton):
 
 		match current_mode:
 			ToolMode.MODE_SELECT:
-				var idx = _hit_test(lx, ly)
-				selected_part_idx = idx
-				if idx >= 0:
+				var handle_idx = _hit_test_handle(mx, my)
+				if handle_idx >= 0:
 					_push_undo()
-					dragging = true
-					drag_start = Vector2(mx, my)
-					var p = world.parts[idx]
-					drag_part_start = Vector2(p.x, p.y)
+					dragging_handle = true
+					handle_drag_idx = handle_idx
+					handle_drag_start = Vector2(mx, my)
+					handle_drag_part_size = Vector2(world.parts[selected_part_idx].width_1, world.parts[selected_part_idx].height_1)
+				else:
+					var idx = _hit_test(lx, ly)
+					selected_part_idx = idx
+					if idx >= 0:
+						_push_undo()
+						dragging = true
+						drag_start = Vector2(mx, my)
+						var p = world.parts[idx]
+						drag_part_start = Vector2(p.x, p.y)
 			ToolMode.MODE_PLACE:
 				_push_undo()
 				_place_part(lx, ly)
@@ -352,6 +364,31 @@ func _handle_mouse_move(event: InputEventMouseMotion):
 			queue_redraw()
 		return
 
+	if dragging_handle and selected_part_idx >= 0:
+		var p = world.parts[selected_part_idx]
+		if p:
+			var dx = event.relative.x / zoom
+			var dy = event.relative.y / zoom
+			var dw = handle_drag_part_size.x
+			var dh = handle_drag_part_size.y
+			var min_s = MIN_PART_SIZE
+			if handle_drag_idx == 0 or handle_drag_idx == 6 or handle_drag_idx == 2:
+				p.x = _snap(min(p.x + dx, p.x + dw - min_s))
+				dw = max(min_s, dw - dx)
+			if handle_drag_idx == 1 or handle_drag_idx == 7 or handle_drag_idx == 3:
+				dw = max(min_s, dw + dx)
+			if handle_drag_idx == 0 or handle_drag_idx == 4 or handle_drag_idx == 1:
+				p.y = _snap(min(p.y + dy, p.y + dh - min_s))
+				dh = max(min_s, dh - dy)
+			if handle_drag_idx == 2 or handle_drag_idx == 5 or handle_drag_idx == 3:
+				dh = max(min_s, dh + dy)
+			p.width_1 = _snap(dw)
+			p.height_1 = _snap(dh)
+			p.sync_pos()
+			_update_part_node(selected_part_idx)
+			queue_redraw()
+		return
+
 	if connect_source_idx >= 0 and current_mode == ToolMode.MODE_CONNECT:
 		var p = world.parts[connect_source_idx]
 		if p:
@@ -377,6 +414,37 @@ func _to_screen_y(ly: float) -> float:
 
 func _snap(v: float) -> int:
 	return int(floor(v / SNAP_GRID)) * SNAP_GRID
+
+func _get_handle_positions(p: PartData) -> Array:
+	var sx = _to_screen_x(p.x)
+	var sy = _to_screen_y(p.y)
+	var sw = p.width_1 * zoom
+	var sh = p.height_1 * zoom
+	var hs = max(4, int(6 * zoom))
+	var half = hs / 2.0
+	return [
+		Rect2(sx - half, sy - half, hs, hs),                    # 0: top-left
+		Rect2(sx + sw - half, sy - half, hs, hs),               # 1: top-right
+		Rect2(sx - half, sy + sh - half, hs, hs),               # 2: bottom-left
+		Rect2(sx + sw - half, sy + sh - half, hs, hs),          # 3: bottom-right
+		Rect2(sx + sw / 2 - half, sy - half, hs, hs),           # 4: top-center
+		Rect2(sx + sw / 2 - half, sy + sh - half, hs, hs),      # 5: bottom-center
+		Rect2(sx - half, sy + sh / 2 - half, hs, hs),           # 6: left-center
+		Rect2(sx + sw - half, sy + sh / 2 - half, hs, hs),      # 7: right-center
+	]
+
+func _hit_test_handle(mx: float, my: float) -> int:
+	if selected_part_idx < 0 or selected_part_idx >= world.parts.size():
+		return -1
+	var p = world.parts[selected_part_idx]
+	if not p:
+		return -1
+	var handles = _get_handle_positions(p)
+	var mpos = Vector2(mx, my)
+	for i in range(handles.size()):
+		if handles[i].has_point(mpos):
+			return i
+	return -1
 
 func _hit_test(lx: float, ly: float) -> int:
 	for i in range(world.parts.size() - 1, -1, -1):
@@ -414,7 +482,7 @@ func _flip_selected():
 	var p = _get_part(selected_part_idx)
 	if p:
 		_push_undo()
-		p.appearance ^= 0x8000
+		p.appearance ^= PartData.FLAG_FLIP
 		_update_part_node(selected_part_idx)
 		queue_redraw()
 
@@ -452,7 +520,7 @@ func _update_sprite(s: Sprite2D, p: PartData):
 	if anm != "":
 		var img = anm_renderer.render_frame(anm, AnmDatabase.get_default_state_id(anm), p.state_counter, p.width_1, p.height_1)
 		if img:
-			if p.appearance & 0x8000: img.flip_x()
+			if p.appearance & PartData.FLAG_FLIP: img.flip_x()
 			tex = ImageTexture.create_from_image(img)
 	if tex:
 		s.texture = tex
@@ -621,24 +689,25 @@ func _draw_selection():
 	var sh = p.height_1 * zoom
 	draw_rect(Rect2(sx, sy, sw, sh), Color(1, 0.78, 0, 0.6), false, max(1, int(zoom)))
 
-	var hs = max(4, int(6 * zoom))
-	var half = hs / 2.0
-	var pts = [
-		Vector2(sx - half, sy - half),
-		Vector2(sx + sw - half, sy - half),
-		Vector2(sx - half, sy + sh - half),
-		Vector2(sx + sw - half, sy + sh - half),
-		Vector2(sx + sw/2 - half, sy - half),
-		Vector2(sx + sw/2 - half, sy + sh - half),
-		Vector2(sx - half, sy + sh/2 - half),
-		Vector2(sx + sw - half, sy + sh/2 - half),
-	]
-	for pt in pts:
-		draw_rect(Rect2(pt.x, pt.y, hs, hs), Color(1, 0.78, 0, 0.9), true)
+	for h in _get_handle_positions(p):
+		draw_rect(h, Color(1, 0.78, 0, 0.9), true)
 
 func _draw_connection_line():
 	if connect_preview_line.size() == 2:
 		draw_line(connect_preview_line[0], connect_preview_line[1], Color(1, 0.78, 0, 0.8), 2.0 / zoom)
+
+func _open_condition_editor():
+	_push_undo()
+	var DialogClass = load("res://editor/ConditionEditorDialog.gd")
+	var dlg = DialogClass.new()
+	add_child(dlg)
+	dlg.setup()
+	dlg.confirmed.connect(func(conds):
+		solution_conditions_store = conds
+		is_dirty = true
+		status_label.text = "Conditions updated (" + str(conds.size()) + ")"
+	)
+	dlg.popup_centered()
 
 func _toggle_preview():
 	if preview_running:
@@ -650,8 +719,14 @@ func _start_preview():
 	preview_snapshot.clear()
 	for i in range(world.parts.size()):
 		var p = world.parts[i]
-		preview_snapshot[i] = {"x": p.x, "y": p.y, "vel_x": p.vel_x, "vel_y": p.vel_y,
-			"state_counter": p.state_counter, "current_state": p.current_state}
+		preview_snapshot[i] = {
+			"x": p.x, "y": p.y,
+			"vel_x": p.vel_x, "vel_y": p.vel_y,
+			"state_counter": p.state_counter, "current_state": p.current_state,
+			"sub_counter": p.sub_counter, "_countdown": p._countdown,
+			"connected_1": p.connected_1, "connected_2": p.connected_2,
+			"facing": p.facing, "angular_velocity": p.angular_velocity,
+		}
 	world.reset()
 	preview_running = true
 	preview_solved = false
@@ -668,8 +743,10 @@ func _stop_preview():
 			var p = world.parts[i]
 			p.x = sn.x; p.y = sn.y
 			p.vel_x = sn.vel_x; p.vel_y = sn.vel_y
-			p.state_counter = sn.state_counter
-			p.current_state = sn.current_state
+			p.state_counter = sn.state_counter; p.current_state = sn.current_state
+			p.sub_counter = sn.get("sub_counter", 0); p._countdown = sn.get("_countdown", -1)
+			p.connected_1 = sn.get("connected_1", -1); p.connected_2 = sn.get("connected_2", -1)
+			p.facing = sn.get("facing", 1); p.angular_velocity = sn.get("angular_velocity", 0)
 			p.sync_pos()
 			_update_part_node(i)
 	status_label.text = "Preview stopped"
