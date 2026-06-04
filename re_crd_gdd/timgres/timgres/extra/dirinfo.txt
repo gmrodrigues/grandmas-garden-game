@@ -1,0 +1,23 @@
+This is the directory where the extra source files must be placed.
+For copyright reasons, the extra modules are not present in the CC0
+licensed Python package, but are distributed separately. Download link:
+
+https://www.vogons.org/viewtopic.php?p=899731#p899731
+
+The two modules that need to be installed in this directory:
+
+* t1pinfo.py: Contains important data related to the sprites of TIM / TEMIM
+    parts, the names of the parts, information related to TIM puzzles ...
+
+* t2pinfo.py: Contains informations about a small number of TIM 2 / 3 parts.
+
+Additional information is provided in the readme.txt file.
+
+License
+=======
+
+This information file is part of TIM level/image resource reader, version 0.2.
+Available under the Creative Commons Zero license.
+
+*IMPORTANT NOTE*: The "extra" modules (see above) are not covered by the
+license of the program.

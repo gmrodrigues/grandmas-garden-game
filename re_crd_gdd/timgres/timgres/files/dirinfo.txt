@@ -1,0 +1,46 @@
+The "files" subdirectory contains files that are required for viewing 
+"The Incredible Machine" levels/puzzles, but are not found in the archive
+files of the game in a supported format.
+
+Most importantly, the _ROPEEND.BMP for "rope end"/"knot" graphics, required
+for viewing levels in the original The Incredible Machine (TIM) game, must
+be saved into this sub-folder. Please follow the instructions below.
+
+The file cannot be distributed with the program due to copyright reasons.
+
+=== Obtaining the _ROPEEND.BMP file ===
+
+Unlike the later versions of the game, including The Even More Incredible
+Machine (TEMIM), the RESOURCE.00X resource files of the originaL TIM do
+not contain the graphics for the "knot" at the two end of ropes. It is
+probably stored in the executable file in the game. However, my attempts
+to locate this graphics in the .EXE file (based on the assumption that it was
+stored in some trivial pixel encoding format) were unsuccessful. Until more
+reverse engineering work is done, a simple workaround must be used before
+opening level files in this version.
+
+*** *** *** *** ***
+The solution is simply to use the corresponding graphics from the demo
+version of TEMIM, which can be downloaded legally from many DOS shareware
+game collection websites. I recommend the following site:
+
+https://www.classicdosgames.com/game/The_Even_More_Incredible_Machine.html
+
+(Of course, users owning a copy of the full game can use that, too.)
+
+Extract the downloaded ZIP archive to a local directory on your computer,
+and open the RESOURCE.MAP file in the level/image viewer (timgres program).
+The required file will be automatically saved as _ROPEEND.BMP in the
+"files" subdirectory.
+*** *** *** *** ***
+
+(Note: The  original name of the file extracted from TEMIM resource file as
+ _ROPEEND.BMP is  PART10.BMP)
+
+**IMPORTANT NOTE**: The _ROPEEND.BMP file in this directory (if present)
+is NOT covered by the license of the "timgres" program.
+
+=== License ===
+
+This file is part of TIM level/image resource reader, version 0.2.
+Available under the Creative Commons Zero license.
