@@ -1,0 +1,49 @@
+{
+  "version": 1001,
+  "width": 120,
+  "height": 35,
+  "section_sizes": {
+    "a": 0,
+    "b": 1,
+    "c": 1,
+    "d": 16
+  },
+  "section_a": [],
+  "section_b": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 120,
+      "height": 35,
+      "bytecode_offset": 0
+    }
+  ],
+  "section_c": [
+    {
+      "first_frame_id": 0,
+      "state_id": 1
+    }
+  ],
+  "section_d": [
+    {
+      "offset": 0,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 0,
+      "x": 0,
+      "y": 0,
+      "flags": 0
+    },
+    {
+      "offset": 12,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 14,
+      "cmd": 1,
+      "name": "END_ANM"
+    }
+  ]
+}

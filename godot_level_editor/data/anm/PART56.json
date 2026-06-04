@@ -1,0 +1,431 @@
+{
+  "version": 1001,
+  "width": 16,
+  "height": 16,
+  "section_sizes": {
+    "a": 0,
+    "b": 18,
+    "c": 3,
+    "d": 254
+  },
+  "section_a": [],
+  "section_b": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 16,
+      "bytecode_offset": 0
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 16,
+      "bytecode_offset": 7
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 16,
+      "bytecode_offset": 14
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 16,
+      "bytecode_offset": 21
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 16,
+      "bytecode_offset": 28
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 16,
+      "bytecode_offset": 35
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "width": 24,
+      "height": 9,
+      "bytecode_offset": 42
+    },
+    {
+      "x": -5,
+      "y": 0,
+      "width": 24,
+      "height": 21,
+      "bytecode_offset": 49
+    },
+    {
+      "x": 0,
+      "y": -5,
+      "width": 24,
+      "height": 26,
+      "bytecode_offset": 56
+    },
+    {
+      "x": -9,
+      "y": -3,
+      "width": 24,
+      "height": 21,
+      "bytecode_offset": 63
+    },
+    {
+      "x": 0,
+      "y": -9,
+      "width": 32,
+      "height": 25,
+      "bytecode_offset": 70
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 16,
+      "bytecode_offset": 77
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "width": 24,
+      "height": 21,
+      "bytecode_offset": 84
+    },
+    {
+      "x": -2,
+      "y": 4,
+      "width": 24,
+      "height": 21,
+      "bytecode_offset": 91
+    },
+    {
+      "x": -9,
+      "y": 0,
+      "width": 32,
+      "height": 25,
+      "bytecode_offset": 98
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 16,
+      "bytecode_offset": 105
+    },
+    {
+      "x": -5,
+      "y": -5,
+      "width": 32,
+      "height": 21,
+      "bytecode_offset": 112
+    },
+    {
+      "x": 3,
+      "y": -10,
+      "width": 16,
+      "height": 21,
+      "bytecode_offset": 119
+    }
+  ],
+  "section_c": [
+    {
+      "first_frame_id": 0,
+      "state_id": 1
+    },
+    {
+      "first_frame_id": 3,
+      "state_id": 2
+    },
+    {
+      "first_frame_id": 6,
+      "state_id": 3
+    }
+  ],
+  "section_d": [
+    {
+      "offset": 0,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 0,
+      "x": 0,
+      "y": 0,
+      "flags": 0
+    },
+    {
+      "offset": 12,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 14,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 1,
+      "x": 0,
+      "y": 0,
+      "flags": 0
+    },
+    {
+      "offset": 26,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 28,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 2,
+      "x": 0,
+      "y": 0,
+      "flags": 0
+    },
+    {
+      "offset": 40,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 42,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 3,
+      "x": 0,
+      "y": 0,
+      "flags": 0
+    },
+    {
+      "offset": 54,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 56,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 4,
+      "x": 0,
+      "y": 0,
+      "flags": 0
+    },
+    {
+      "offset": 68,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 70,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 5,
+      "x": 0,
+      "y": 0,
+      "flags": 0
+    },
+    {
+      "offset": 82,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 84,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 6,
+      "x": 0,
+      "y": 0,
+      "flags": 0
+    },
+    {
+      "offset": 96,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 98,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 7,
+      "x": 0,
+      "y": 0,
+      "flags": 0
+    },
+    {
+      "offset": 110,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 112,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 8,
+      "x": 0,
+      "y": 0,
+      "flags": 0
+    },
+    {
+      "offset": 124,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 126,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 9,
+      "x": 0,
+      "y": 0,
+      "flags": 0
+    },
+    {
+      "offset": 138,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 140,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 10,
+      "x": 0,
+      "y": 0,
+      "flags": 0
+    },
+    {
+      "offset": 152,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 154,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 11,
+      "x": 0,
+      "y": 0,
+      "flags": 0
+    },
+    {
+      "offset": 166,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 168,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 12,
+      "x": 0,
+      "y": 0,
+      "flags": 0
+    },
+    {
+      "offset": 180,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 182,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 13,
+      "x": 0,
+      "y": 0,
+      "flags": 0
+    },
+    {
+      "offset": 194,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 196,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 14,
+      "x": 0,
+      "y": 0,
+      "flags": 0
+    },
+    {
+      "offset": 208,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 210,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 11,
+      "x": 0,
+      "y": 0,
+      "flags": 0
+    },
+    {
+      "offset": 222,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 224,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 15,
+      "x": 0,
+      "y": 0,
+      "flags": 0
+    },
+    {
+      "offset": 236,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 238,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 16,
+      "x": 0,
+      "y": 0,
+      "flags": 0
+    },
+    {
+      "offset": 250,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 252,
+      "cmd": 1,
+      "name": "END_ANM"
+    }
+  ]
+}
