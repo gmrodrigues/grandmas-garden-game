@@ -205,8 +205,6 @@ func _build_spatial_grid(parts: Array) -> Dictionary:
 	var grid: Dictionary = {}
 	for i in range(len(parts)):
 		var p = parts[i]
-		if not p.is_moving:
-			continue
 		var cx = int(floor(float(p.x + p.width_1 / 2) / CELL_SIZE))
 		var cy = int(floor(float(p.y + p.height_1 / 2) / CELL_SIZE))
 		var key = _cell_key(cx, cy)
