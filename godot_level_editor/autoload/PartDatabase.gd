@@ -22,7 +22,7 @@ func _load_catalog() -> void:
 		if data is Array:
 			for item in data:
 				if item is Dictionary and item.has("part_type"):
-					var pt = item["part_type"]
+					var pt = int(item["part_type"])
 					part_catalog[pt] = item
 					part_name_map[pt] = item.get("name", "Part " + str(pt))
 					part_category_map[pt] = item.get("category", "Unknown")

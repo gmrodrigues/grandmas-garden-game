@@ -2,6 +2,7 @@ extends Control
 class_name ConditionEditorDialog
 
 signal confirmed(conditions: Array)
+signal rect_requested(cond_idx: int)
 
 var conditions: Array = []
 var condition_vbox: VBoxContainer
@@ -61,6 +62,12 @@ func setup():
 	cancel_btn.pressed.connect(_on_cancel)
 	btn_hbox.add_child(cancel_btn)
 
+func set_condition_rect(idx: int, rect: Rect2):
+	if idx >= 0 and idx < conditions.size():
+		var sc = conditions[idx]
+		sc.target_rect = rect
+		_refresh_list()
+
 func _refresh_list():
 	for c in condition_vbox.get_children():
 		c.queue_free()
@@ -69,9 +76,17 @@ func _refresh_list():
 		var hbox = HBoxContainer.new()
 		var type_names = ["POSITION", "OFF_SCREEN", "OFF_TOP", "OFF_BOTTOM", "STATE_ONLY"]
 		var tname = type_names[sc.type] if sc.type >= 0 and sc.type < type_names.size() else "?"
+		var rect_info = ""
+		if sc.type == 1:
+			rect_info = " rect=(%d,%d %dx%d)" % [sc.target_rect.position.x, sc.target_rect.position.y, sc.target_rect.size.x, sc.target_rect.size.y]
 		var label = Label.new()
-		label.text = "[%d] %s  part=%d  state=%d" % [i, tname, sc.part_index, sc.target_state]
+		label.text = "[%d] %s  part=%d  state=%d%s" % [i, tname, sc.part_index, sc.target_state, rect_info]
 		hbox.add_child(label)
+		if sc.type == 1:
+			var rect_btn = Button.new()
+			rect_btn.text = "Rect"
+			rect_btn.pressed.connect(func(): rect_requested.emit(i))
+			hbox.add_child(rect_btn)
 		var del_btn = Button.new()
 		del_btn.text = "X"
 		var idx = i
@@ -83,7 +98,10 @@ func _on_add(dropdown: OptionButton, part_input: SpinBox):
 	var sc = SolutionCondition.new(dropdown.get_selected_id(), int(part_input.value))
 	if sc.type == 1:
 		sc.target_rect = Rect2(0, 0, 100, 100)
-	conditions.append(sc)
+		conditions.append(sc)
+		rect_requested.emit(conditions.size() - 1)
+	else:
+		conditions.append(sc)
 	_refresh_list()
 
 func _on_ok():

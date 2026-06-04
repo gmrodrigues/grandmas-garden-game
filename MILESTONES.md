@@ -14,17 +14,9 @@
 - **Phase 4 — Cleanup:** FLAG_FLIP constant across 5 files, missing PNG warning in AnmRenderer
 - **Phase 5 — Verify:** Zero errors
 
-## M3: Remaining Work (unstarted)
-### High Impact
-- **O(N²) collision broadphase** — No spatial grid. Fine for 50 parts, slow at 200+.
-- **SolutionRectTool never wired** — Rect-based POSITION conditions have no visual rect selector.
-- **Resize handles don't update collision_w/h** — `_resize_part` only changes width_1/height_1.
-
-### Medium Impact
-- **`_new_level()` leaks solver/checker** — RefCounted so eventually freed, but not explicit.
-- **`is_moving` derived from flags_1 but also set directly** — _lock_selected toggles both but add_part overwrites from flags_1.
-- **No error handling for missing YAML fields** — _do_load silently sets defaults.
-
-### Low Impact
-- **`orphan_states`/`categories_data`** in BehaviorRegistry loaded but unused externally.
-- **`0x8000` in PhysicsSolver conveyor logic** — uses same bit as FLAG_FLIP but for direction. Bit collision risk.
+## M3: Physics Quality & Condition UX (in progress)
+- **Phase 1 — Rect Selector:** Wire SolutionRectTool into ConditionEditorDialog for POSITION conditions
+- **Phase 2 — collision_w/h on Resize:** Resize handles also update collision_w/collision_h
+- **Phase 3 — YAML Load Warnings:** push_warning on unknown part_type, missing flags, out-of-bounds coords
+- **Phase 4 — Spatial Grid Broadphase:** Replace O(N²) with cell-based spatial hashing in PhysicsSolver
+- **Phase 5 — Verify:** Load 50+ parts smoothly, rect selector works, resize updates collision box, warnings on bad YAML

@@ -11,6 +11,8 @@ const BOUNCE_VELOCITY_THRESHOLD: int = 0x800
 const PROXIMITY_RANGE: int = 50
 const CONSTRAINT_ITERATIONS: int = 3
 const ROPE_PART_TYPES: Array = [7, 10, 76]
+const CELL_SIZE: int = 64
+const CELL_NEIGHBORS: Array = [[0,0],[-1,-1],[0,-1],[1,-1],[-1,0],[1,0],[-1,1],[0,1],[1,1]]
 
 var collision_matrix: Dictionary = {
 	"STATIC": ["DYNAMIC", "EXPLOSIVE", "TOOL", "ROPE"],
@@ -59,21 +61,41 @@ func step() -> void:
 	# Pass 3: Viewport bounds
 	_apply_viewport_bounds(parts, vp)
 
-	# Pass 4: Collisions
-	for i in range(len(parts)):
-		var a = parts[i]
-		if not a.is_moving:
-			continue
-		var cat_a = a.collision_cat
-		for j in range(i + 1, len(parts)):
-			var b = parts[j]
-			var cat_b = b.collision_cat
-			if not _should_collide(cat_a, cat_b):
+	# Pass 4: Collisions (spatial grid broadphase)
+	var grid = _build_spatial_grid(parts)
+	var checked: Dictionary = {}
+	for cell_key in grid:
+		var cell_parts = grid[cell_key]
+		var parts_list = cell_parts[0]
+		var cx = cell_parts[1]
+		var cy = cell_parts[2]
+		for i in range(parts_list.size()):
+			var ai = parts_list[i]
+			var a = parts[ai]
+			if not a.is_moving:
 				continue
-			if a.connected_1 == j or a.connected_2 == j or b.connected_1 == i or b.connected_2 == i:
-				continue
-			if _detect_collision(a, b):
-				_resolve_collision(a, b)
+			var cat_a = a.collision_cat
+			for ni in CELL_NEIGHBORS:
+				var nk = _cell_key(cx + ni[0], cy + ni[1])
+				if not grid.has(nk):
+					continue
+				var neighbor = grid[nk][0]
+				for j in range(neighbor.size()):
+					var bj = neighbor[j]
+					if bj <= ai:
+						continue
+					var pair_key = str(ai) + "," + str(bj)
+					if checked.has(pair_key):
+						continue
+					checked[pair_key] = true
+					var b = parts[bj]
+					var cat_b = b.collision_cat
+					if not _should_collide(cat_a, cat_b):
+						continue
+					if a.connected_1 == bj or a.connected_2 == bj or b.connected_1 == ai or b.connected_2 == ai:
+						continue
+					if _detect_collision(a, b):
+						_resolve_collision(a, b)
 
 	# Pass 5: Proximity + Electrical
 	_check_proximity_behaviors(parts)
@@ -175,6 +197,23 @@ func _apply_viewport_bounds(parts: Array, vp: Array):
 				part.vel_x = 0
 			else:
 				part.vel_x = new_vel
+
+static func _cell_key(cx: int, cy: int) -> String:
+	return str(cx) + "," + str(cy)
+
+func _build_spatial_grid(parts: Array) -> Dictionary:
+	var grid: Dictionary = {}
+	for i in range(len(parts)):
+		var p = parts[i]
+		if not p.is_moving:
+			continue
+		var cx = int(floor(float(p.x + p.width_1 / 2) / CELL_SIZE))
+		var cy = int(floor(float(p.y + p.height_1 / 2) / CELL_SIZE))
+		var key = _cell_key(cx, cy)
+		if not grid.has(key):
+			grid[key] = [[], cx, cy]
+		grid[key][0].append(i)
+	return grid
 
 func _should_collide(cat_a: String, cat_b: String) -> bool:
 	var targets = collision_matrix.get(cat_a, [])

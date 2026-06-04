@@ -66,10 +66,15 @@ var undo_stack: Array = []
 var redo_stack: Array = []
 const UNDO_LIMIT: int = 50
 
+var rect_tool: SolutionRectTool
+var rect_pending_cond_idx: int = -1
+var rect_pending_dialog
+
 func _ready():
 	world = WorldState.new()
 	solver = PhysicsSolver.new(world)
 	anm_renderer = AnmRenderer.new()
+	rect_tool = SolutionRectTool.new()
 	_build_ui()
 	_new_level()
 	print("Editor ready — ", PartDatabase.part_catalog.size(), " parts available")
@@ -77,6 +82,8 @@ func _ready():
 	var level_idx = args.find("--level")
 	if level_idx >= 0 and level_idx + 1 < args.size():
 		_do_load(args[level_idx + 1])
+		if args.has("--preview"):
+			_start_preview()
 
 func _process(_delta):
 	if preview_running and not preview_solved:
@@ -92,6 +99,9 @@ func _process(_delta):
 		if preview_ticks >= PhysicsSolver.MAX_TICKS:
 			status_label.text = "TIMEOUT"
 			_stop_preview()
+		if preview_ticks >= 200 and OS.get_cmdline_args().has("--preview"):
+			_stop_preview()
+			print("Demo: " + str(world.parts.size()) + " parts, 200 ticks")
 
 func _build_ui():
 	var vbox = VBoxContainer.new()
@@ -297,6 +307,24 @@ func _handle_mouse_click(event: InputEventMouseButton):
 		dragging_handle = false
 		handle_drag_idx = -1
 		panning = false
+		if rect_tool and rect_tool.dragging:
+			var rect = rect_tool.finish()
+			var lx = _to_level_x(rect.position.x)
+			var ly = _to_level_y(rect.position.y)
+			var lw = rect.size.x / zoom
+			var lh = rect.size.y / zoom
+			var level_rect = Rect2(lx, ly, lw, lh)
+			if rect_pending_dialog:
+				rect_pending_dialog.set_condition_rect(rect_pending_cond_idx, level_rect)
+			rect_pending_cond_idx = -1
+			rect_pending_dialog = null
+			status_label.text = "Rect selected"
+			queue_redraw()
+		return
+
+	if rect_pending_cond_idx >= 0:
+		if event.button_index == MOUSE_BUTTON_LEFT and _is_in_viewport(mx, my):
+			rect_tool.begin(Vector2(mx, my))
 		return
 
 	if _is_in_viewport(mx, my):
@@ -347,6 +375,11 @@ func _handle_mouse_move(event: InputEventMouseMotion):
 	var mx = event.position.x
 	var my = event.position.y
 
+	if rect_tool and rect_tool.dragging:
+		rect_tool.update(event.position)
+		queue_redraw()
+		return
+
 	if panning:
 		scroll -= (event.relative / zoom)
 		queue_redraw()
@@ -384,6 +417,8 @@ func _handle_mouse_move(event: InputEventMouseMotion):
 				dh = max(min_s, dh + dy)
 			p.width_1 = _snap(dw)
 			p.height_1 = _snap(dh)
+			if p.collision_w > 0: p.collision_w = p.width_1
+			if p.collision_h > 0: p.collision_h = p.height_1
 			p.sync_pos()
 			_update_part_node(selected_part_idx)
 			queue_redraw()
@@ -584,7 +619,7 @@ func _save_dialog():
 	fd.add_filter("*.yaml", "TIM2 Level")
 	add_child(fd)
 	fd.file_selected.connect(_do_save)
-	fd.file_selected.connect(fd.queue_free)
+	fd.file_selected.connect(func(_p): fd.queue_free())
 	fd.canceled.connect(fd.queue_free)
 	fd.popup_centered(Vector2i(500, 400))
 
@@ -623,15 +658,27 @@ func _load_dialog():
 	fd.add_filter("*.yaml", "TIM2 Level")
 	add_child(fd)
 	fd.file_selected.connect(_do_load)
-	fd.file_selected.connect(fd.queue_free)
+	fd.file_selected.connect(func(_p): fd.queue_free())
 	fd.canceled.connect(fd.queue_free)
 	fd.popup_centered(Vector2i(500, 400))
 
 func _do_load(path: String):
+	if not FileAccess.file_exists(path):
+		push_error("Level file not found: " + path)
+		return
 	var data = LevelSerializer.load_yaml(path)
 	_new_level()
-	for d in data.get("parts", []):
-		var pd = PartData.new(d.get("part_type", 0), d.get("x", 0), d.get("y", 0))
+	var parts_raw = data.get("parts", [])
+	var vp = world.viewport
+	for d in parts_raw:
+		var pt = int(d.get("part_type", 0))
+		var px = d.get("x", 0)
+		var py = d.get("y", 0)
+		if pt > 0 and not PartDatabase.part_catalog.has(pt):
+			push_warning("Unknown part_type %d at (%d, %d)" % [pt, px, py])
+		if px < vp[0] - 200 or px > vp[0] + vp[2] + 200 or py < vp[1] - 200 or py > vp[1] + vp[3] + 200:
+			push_warning("Part %d at (%d, %d) is far outside viewport" % [pt, px, py])
+		var pd = PartData.new(pt, px, py)
 		pd.width_1 = d.get("width_1", 32)
 		pd.height_1 = d.get("height_1", 32)
 		pd.width_2 = d.get("width_2", 32)
@@ -645,7 +692,7 @@ func _do_load(path: String):
 		_spawn_part_node(pd)
 	level_title = data.get("title", level_title)
 	level_goal = data.get("goal", level_goal)
-	status_label.text = "Loaded: " + path.get_file()
+	status_label.text = "Loaded: " + path.get_file() + " (" + str(len(parts_raw)) + " parts)"
 	solution_conditions_store.clear()
 	for d in data.get("solution_conditions", []):
 		var sc = SolutionCondition.new()
@@ -657,6 +704,9 @@ func _draw():
 	_draw_grid()
 	_draw_selection()
 	_draw_connection_line()
+	if rect_tool and rect_tool.dragging:
+		var rect = rect_tool.get_rect()
+		draw_rect(rect, Color(0, 1, 0, 0.3), false, 2.0)
 
 func _draw_grid():
 	var grid_color = Color(0.25, 0.3, 0.35, 0.5)
@@ -704,8 +754,15 @@ func _open_condition_editor():
 	dlg.setup()
 	dlg.confirmed.connect(func(conds):
 		solution_conditions_store = conds
+		rect_pending_cond_idx = -1
+		rect_pending_dialog = null
 		is_dirty = true
 		status_label.text = "Conditions updated (" + str(conds.size()) + ")"
+	)
+	dlg.rect_requested.connect(func(idx):
+		rect_pending_cond_idx = idx
+		rect_pending_dialog = dlg
+		status_label.text = "Click and drag in viewport to select rect..."
 	)
 	dlg.popup_centered()
 

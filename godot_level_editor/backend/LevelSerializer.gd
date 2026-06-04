@@ -238,12 +238,8 @@ static func load_yaml(path: String) -> Dictionary:
 					if current_part:
 						level_data["parts"].append(current_part)
 					current_part = {"flags": {}, "dimensions": {}, "physics": {}}
-					in_flags = false
-					in_dimensions = false
-					in_physics = false
-					in_belt_anchor = false
-					in_rope_1_anchor = false
-					in_rope_2_anchor = false
+					in_flags = false; in_dimensions = false; in_physics = false
+					in_belt_anchor = false; in_rope_1_anchor = false; in_rope_2_anchor = false
 					in_programmable = false
 					var val = int(content.split(":")[1].strip_edges())
 					current_part["part_type"] = val
@@ -261,6 +257,12 @@ static func load_yaml(path: String) -> Dictionary:
 					in_rope_2_anchor = true; in_rope_1_anchor = false
 				elif content == "programmable:":
 					in_programmable = true; in_physics = false; in_belt_anchor = false; in_rope_1_anchor = false; in_rope_2_anchor = false
+				elif not in_flags and not in_dimensions and not in_physics and not in_belt_anchor and not in_rope_1_anchor and not in_rope_2_anchor and not in_programmable:
+					var fp = content.split(":", true, 1)
+					if fp.size() == 2:
+						var key = fp[0].strip_edges()
+						if key in ["x", "y", "appearance", "behavior"]:
+							current_part[key] = int(fp[1].strip_edges())
 				elif in_flags:
 					var fp = content.split(":")
 					if fp.size() == 2:
