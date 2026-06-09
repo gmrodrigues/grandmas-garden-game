@@ -1,0 +1,29 @@
+TIM2 RE toolchain status
+generated: 2026-05-20T21:22:47Z
+host:      Linux 7.0.0-15-generic x86_64
+
+── PATH commands ─────────────────────────────────────────────
+  [miss] nasm         (not on PATH)
+  [miss] dosbox-x     (not on PATH)
+  [miss] java         (not on PATH)
+  [ok]   python3      Python 3.14.4
+  [ok]   binutils     GNU objdump (GNU Binutils for Ubuntu) 2.46
+  [ok]   xxd          xxd 2025-11-26 by Juergen Weigert et al.
+  [ok]   curl         curl 8.18.0 (x86_64-pc-linux-gnu) libcurl/8.18.0 OpenSSL/3.5.5 zlib/1.3.1 brotli/1.2.0 zstd/1.5.7 libidn2/2.3.8 libpsl/0.21.2 libssh2/1.11.1 nghttp2/1.68.0 librtmp/2.3 mit-krb5/1.22.1 OpenLDAP/2.6.10
+  [ok]   wget         GNU Wget 1.25.0 construído em linux-gnu.
+  [ok]   unzip        UnZip 6.00 of 20 April 2009, by Debian. Original by Info-ZIP.
+  [ok]   file         file-5.46
+  [miss] imhex        (not on PATH)
+
+── Optional paths ────────────────────────────────────────────
+  [miss] ghidra       (expected at: /home/glauber-m-rodrigues/arquivos/projetos/gmrodrigues.github.com/the-incredible-machine-resources/The-Incredible-Machine-2_DOS_EN_RIP-Version/the incredible machine 2/tools/ghidra/ghidraRun)
+  [miss] 86Box        (expected at: /home/glauber-m-rodrigues/arquivos/projetos/gmrodrigues.github.com/the-incredible-machine-resources/The-Incredible-Machine-2_DOS_EN_RIP-Version/the incredible machine 2/tools/86Box/86Box)
+  [miss] venv python  (expected at: /home/glauber-m-rodrigues/arquivos/projetos/gmrodrigues.github.com/the-incredible-machine-resources/The-Incredible-Machine-2_DOS_EN_RIP-Version/the incredible machine 2/.venv/bin/python)
+
+── Project inputs ────────────────────────────────────────────
+  [ok]   RESOURCE.MAP 11757 bytes
+  [ok]   RESOURCE.001 3689142 bytes
+  [ok]   RESOURCE.CFG 270 bytes
+  [ok]   TIM2.EXE     449936 bytes
+
+OVERALL: some tools missing — run ./scripts/install-toolchain.sh

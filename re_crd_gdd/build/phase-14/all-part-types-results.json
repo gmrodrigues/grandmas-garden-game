@@ -1,0 +1,905 @@
+{
+  "summary": {
+    "total_types": 149,
+    "pass": 149,
+    "fail": 0,
+    "ticks_per_type": 10,
+    "failed_types": []
+  },
+  "results": {
+    "0": {
+      "part_type": 0,
+      "name": "Bowling Ball",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "1": {
+      "part_type": 1,
+      "name": "Brick Wall",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "2": {
+      "part_type": 2,
+      "name": "Wood incline",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "3": {
+      "part_type": 3,
+      "name": "Tipsy Trailer",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "4": {
+      "part_type": 4,
+      "name": "Balloon",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "5": {
+      "part_type": 5,
+      "name": "Conveyor Belt",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "6": {
+      "part_type": 6,
+      "name": "Mouse Motor",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "7": {
+      "part_type": 7,
+      "name": "Pulley",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "8": {
+      "part_type": 8,
+      "name": "Belt",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "9": {
+      "part_type": 9,
+      "name": "Basketball",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "10": {
+      "part_type": 10,
+      "name": "Rope",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "11": {
+      "part_type": 11,
+      "name": "Laundry Basket",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "12": {
+      "part_type": 12,
+      "name": "Curie Cat",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "13": {
+      "part_type": 13,
+      "name": "Jack-in-the-box",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "14": {
+      "part_type": 14,
+      "name": "Gear",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "15": {
+      "part_type": 15,
+      "name": "Fish Tank",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "16": {
+      "part_type": 16,
+      "name": "Bike Pump",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "17": {
+      "part_type": 17,
+      "name": "Bucket",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "18": {
+      "part_type": 18,
+      "name": "Cannon",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "19": {
+      "part_type": 19,
+      "name": "Dynamite",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "20": {
+      "part_type": 20,
+      "name": "Phazer pulse",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "21": {
+      "part_type": 21,
+      "name": "Electric Switch & Outlet",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "22": {
+      "part_type": 22,
+      "name": "Remote Control",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "23": {
+      "part_type": 23,
+      "name": "Boat Cleat",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "24": {
+      "part_type": 24,
+      "name": "Electric Fan",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "25": {
+      "part_type": 25,
+      "name": "Flashlight",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "26": {
+      "part_type": 26,
+      "name": "Generator",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "27": {
+      "part_type": 27,
+      "name": "Captain Z Super Phazer",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "28": {
+      "part_type": 28,
+      "name": "Baseball",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "29": {
+      "part_type": 29,
+      "name": "Lava Lamp",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "30": {
+      "part_type": 30,
+      "name": "Magnifying Glass",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "31": {
+      "part_type": 31,
+      "name": "Mandrill Motor",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "32": {
+      "part_type": 32,
+      "name": "Boris the Bat",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "33": {
+      "part_type": 33,
+      "name": "Cupid",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "34": {
+      "part_type": 34,
+      "name": "Santa Claus",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "35": {
+      "part_type": 35,
+      "name": "Boxing Glove",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "36": {
+      "part_type": 36,
+      "name": "Rocket",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "37": {
+      "part_type": 37,
+      "name": "Hedge Trimmers",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "38": {
+      "part_type": 38,
+      "name": "Solar Panel",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "39": {
+      "part_type": 39,
+      "name": "Springboard",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "40": {
+      "part_type": 40,
+      "name": "Pinwheel",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "41": {
+      "part_type": 41,
+      "name": "explosion",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "42": {
+      "part_type": 42,
+      "name": "Newton Mouse",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "43": {
+      "part_type": 43,
+      "name": "Pinball",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "44": {
+      "part_type": 44,
+      "name": "Tennis Ball",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "45": {
+      "part_type": 45,
+      "name": "Aladdin's Lamp",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "46": {
+      "part_type": 46,
+      "name": "Pipe Wall",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "47": {
+      "part_type": 47,
+      "name": "Curved Pipe Wall",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "48": {
+      "part_type": 48,
+      "name": "Wood Wall",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "49": {
+      "part_type": 49,
+      "name": "rope end (phantom)",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "50": {
+      "part_type": 50,
+      "name": "Electric Motor",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "51": {
+      "part_type": 51,
+      "name": "Vacuum",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "52": {
+      "part_type": 52,
+      "name": "Cheese",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "53": {
+      "part_type": 53,
+      "name": "Thumb Tack",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "54": {
+      "part_type": 54,
+      "name": "Mel Schlemming",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "55": {
+      "part_type": 55,
+      "name": "Remote Control Explosives",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "56": {
+      "part_type": 56,
+      "name": "Caution Wall",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "57": {
+      "part_type": 57,
+      "name": "Large Curved Pipe",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "58": {
+      "part_type": 58,
+      "name": "Mel's House",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "59": {
+      "part_type": 59,
+      "name": "Super Ball",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "60": {
+      "part_type": 60,
+      "name": "Grass Floor",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "61": {
+      "part_type": 61,
+      "name": "Alligator",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "62": {
+      "part_type": 62,
+      "name": "Coffee Pot",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "63": {
+      "part_type": 63,
+      "name": "Pool Ball",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "64": {
+      "part_type": 64,
+      "name": "Pinball Bumper",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "65": {
+      "part_type": 65,
+      "name": "Leprechaun",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "66": {
+      "part_type": 66,
+      "name": "Mouse Hole",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "67": {
+      "part_type": 67,
+      "name": "Can Opener",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "68": {
+      "part_type": 68,
+      "name": "Soccer Ball",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "69": {
+      "part_type": 69,
+      "name": "Anti-Gravity Pad",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "70": {
+      "part_type": 70,
+      "name": "Missile",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "71": {
+      "part_type": 71,
+      "name": "Boxes",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "72": {
+      "part_type": 72,
+      "name": "Peg",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "73": {
+      "part_type": 73,
+      "name": "Trap Door",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "74": {
+      "part_type": 74,
+      "name": "Nitroglycerine",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "75": {
+      "part_type": 75,
+      "name": "Match-on-a-Spring",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "76": {
+      "part_type": 76,
+      "name": "Steel Cable",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "77": {
+      "part_type": 77,
+      "name": "Tin Snips",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "78": {
+      "part_type": 78,
+      "name": "Flint & Tinder",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "79": {
+      "part_type": 79,
+      "name": "Hot Air Balloon",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "80": {
+      "part_type": 80,
+      "name": "Fireworks",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "81": {
+      "part_type": 81,
+      "name": "Toaster",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "82": {
+      "part_type": 82,
+      "name": "Sand Wall",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "83": {
+      "part_type": 83,
+      "name": "Cinder Block Wall",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "84": {
+      "part_type": 84,
+      "name": "Greco-Roman Wall",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "85": {
+      "part_type": 85,
+      "name": "Log Wall",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "86": {
+      "part_type": 86,
+      "name": "Tiny Gear",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "87": {
+      "part_type": 87,
+      "name": "Programmable Ball",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "88": {
+      "part_type": 88,
+      "name": "Accelerator Tube",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "89": {
+      "part_type": 89,
+      "name": "Trans-Roto-Matic",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "90": {
+      "part_type": 90,
+      "name": "Roto-Trans Converter",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "91": {
+      "part_type": 91,
+      "name": "Red Laser",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "92": {
+      "part_type": 92,
+      "name": "Green Laser",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "93": {
+      "part_type": 93,
+      "name": "Blue Laser",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "94": {
+      "part_type": 94,
+      "name": "Angled Mirror",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "95": {
+      "part_type": 95,
+      "name": "Laser Mixer",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "96": {
+      "part_type": 96,
+      "name": "Laser-Activated Plug",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "97": {
+      "part_type": 97,
+      "name": "Large Pipes",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "98": {
+      "part_type": 98,
+      "name": "T-Connector",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "99": {
+      "part_type": 99,
+      "name": "Grass Incline",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "100": {
+      "part_type": 100,
+      "name": "Log Incline",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "101": {
+      "part_type": 101,
+      "name": "Granite Incline",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "102": {
+      "part_type": 102,
+      "name": "Brick Incline",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "103": {
+      "part_type": 103,
+      "name": "Archway",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "104": {
+      "part_type": 104,
+      "name": "Wooden Barrier",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "105": {
+      "part_type": 105,
+      "name": "Scaffold Barrier",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "106": {
+      "part_type": 106,
+      "name": "Lattice Archway",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "107": {
+      "part_type": 107,
+      "name": "Electric Mixer",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "108": {
+      "part_type": 108,
+      "name": "Leaky Bucket",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "109": {
+      "part_type": 109,
+      "name": "Blimp",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "110": {
+      "part_type": 110,
+      "name": "Elm Tree",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "111": {
+      "part_type": 111,
+      "name": "Spruce Tree",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "112": {
+      "part_type": 112,
+      "name": "Cactus",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "113": {
+      "part_type": 113,
+      "name": "Sun",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "114": {
+      "part_type": 114,
+      "name": "Big Cloud",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "115": {
+      "part_type": 115,
+      "name": "Little Cloud",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "116": {
+      "part_type": 116,
+      "name": "Pinball Flipper",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "117": {
+      "part_type": 117,
+      "name": "Pool Cue",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "118": {
+      "part_type": 118,
+      "name": "Pool Table Wall",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "119": {
+      "part_type": 119,
+      "name": "Pool Table Pocket",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "120": {
+      "part_type": 120,
+      "name": "Electrical Outlet",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "121": {
+      "part_type": 121,
+      "name": "Vine Tile",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "122": {
+      "part_type": 122,
+      "name": "tile",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "123": {
+      "part_type": 123,
+      "name": "tile",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "124": {
+      "part_type": 124,
+      "name": "tile",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "125": {
+      "part_type": 125,
+      "name": "Yellow Brick Wall",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "126": {
+      "part_type": 126,
+      "name": "Yellow Brick Incline",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "127": {
+      "part_type": 127,
+      "name": "Color Block",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "128": {
+      "part_type": 128,
+      "name": "purple mountain",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "129": {
+      "part_type": 129,
+      "name": "desert mesa",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "130": {
+      "part_type": 130,
+      "name": "Glass Building",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "131": {
+      "part_type": 131,
+      "name": "apartment building",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "132": {
+      "part_type": 132,
+      "name": "office building",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "133": {
+      "part_type": 133,
+      "name": "car",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "134": {
+      "part_type": 134,
+      "name": "lamp post",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "135": {
+      "part_type": 135,
+      "name": "fire hydrant",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "136": {
+      "part_type": 136,
+      "name": "Message Computer",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "137": {
+      "part_type": 137,
+      "name": "Egg Timer",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "138": {
+      "part_type": 138,
+      "name": "Candle",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "139": {
+      "part_type": 139,
+      "name": "Teeter-Totter",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "140": {
+      "part_type": 140,
+      "name": "Small Cactus",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "141": {
+      "part_type": 141,
+      "name": "Small Maple Tree",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "142": {
+      "part_type": 142,
+      "name": "Small Pine Tree",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "143": {
+      "part_type": 143,
+      "name": "Small Cloud",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "144": {
+      "part_type": 144,
+      "name": "small mountain",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "145": {
+      "part_type": 145,
+      "name": "medium mountain",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "146": {
+      "part_type": 146,
+      "name": "small mesa",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "147": {
+      "part_type": 147,
+      "name": "medium mesa",
+      "ticks": 10,
+      "status": "PASS"
+    },
+    "148": {
+      "part_type": 148,
+      "name": "Laser Detector",
+      "ticks": 10,
+      "status": "PASS"
+    }
+  }
+}

@@ -1,0 +1,135 @@
+J07 — Programmable Parts journey test
+Timestamp: 2026-05-27T07:16:26.283693
+Mode: HEADLESS
+
+=== 1. Asset Existence ===
+  ✅ INFO ANM files exist — 119 INFO JSONs found
+
+=== 2. Programmable Parts ===
+  [ 23] Super Phazer
+        Aim at target parts and fire
+         • aim_angle (0–360)
+         • fire_mode: single/continuous
+  [ 44] Fireworks
+        Launch explosive fireworks on trigger
+         • color (1–4)
+         • explosion_height
+         • delay_ticks
+  [ 55] Pool Ball
+        Programmable initial velocity and spin
+         • velocity_x
+         • velocity_y
+         • spin
+  [ 63] Toaster
+        Toast time and ejection speed
+         • toast_time (seconds)
+         • eject_speed
+  [137] Egg Timer
+        Set countdown duration
+         • timer_duration (1–8)
+  [  4] Balloon
+        Choose from 4 balloon styles
+         • appearance (1–4)
+         • lift_speed
+  [ 54] Mel's House
+        Mel's target house
+         • door_open_speed
+         • has_walkaway
+  [ 70] Mel Schlemming
+        The main character — programmable movement
+         • starting_behavior
+         • speed
+  [ 99] Boxes
+        Spawn boxes on trigger
+         • box_type (1–3)
+         • one_time / repeating
+  [136] Message Computer
+        Display a single character when triggered
+         • character (A–Z, 0–9, symbols)
+  [ 58] Laser Plug
+        Emit laser beam of chosen color
+         • color (red/green/blue)
+         • beam_length
+  [ 57] Color Block
+        Filter laser beam color
+         • color_filter (R/G/B/C/M/Y)
+  [ 55] Programmable Ball
+        Set launch velocity and bounciness
+         • vx
+         • vy
+         • bounce_enabled
+  [ 59] Leaky Bucket
+        Bucket that drips water over time
+         • leak_rate
+         • initial_water_level
+  ✅ Programmable parts documented — 14 parts
+  ✅ Each part has ≥1 option — All parts have options
+
+=== 3. Part Info Dialog Simulation ===
+  [ 23] Super Phazer
+        Description: Any object that can be tied with a rope may be hitched to this boat cleat. Use i...
+        Category: Special Mechanics
+        ANM: PART23 (4 frames)
+  [ 44] Fireworks
+        Description: This tennis ball is very light and bouncy....
+        Category: Balls
+        ANM: PART44 (8 frames)
+  [ 55] Pool Ball
+        Description: These explosives come with the remote control part. They'll blow up all kinds of...
+        Category: Explosives / Projectiles
+        ANM: PART55 (9 frames)
+  [ 63] Toaster
+        Description: This pool ball won't move until it's hit. The harder it's hit, the farther it wi...
+        Category: Balls
+        ANM: PART63 (16 frames)
+  [137] Egg Timer
+        Description: Program this egg timer to a desired amount of time. Then drop something on the t...
+        Category: Special Mechanics
+        ANM: PART137 (33 frames)
+  [  4] Balloon
+        Description: This balloon can be programmed to have four different appearances, which all act...
+        Category: Balloons / Airships
+        ANM: PART4 (23 frames)
+  [ 54] Mel's House
+        Description: Meet Mel Schlemming. Mel walks mindlessly forward until he bumps into something....
+        Category: Characters
+        ANM: PART54 (103 frames)
+  [ 70] Mel Schlemming
+        Description: This missile is handy for blowing up all sorts of things, including most walls. ...
+        Category: Explosives / Projectiles
+        ANM: PART70 (93 frames)
+  [ 99] Boxes
+        Description: Roll balls and other parts up or down this grass incline. Use it to control the ...
+        Category: Inclines
+        ANM: PART99 (4 frames)
+  [136] Message Computer
+        Description: This little computer is a handy way to relay messages one letter at a time. A le...
+        Category: Special Mechanics
+        ANM: PART136 (9 frames)
+  [ 58] Laser Plug
+        Description: Here's Mel Schlemming's cozy suburban duplex. If he sees it, he'll head home. It...
+        Category: Special Mechanics
+        ANM: PART58 (86 frames)
+  [ 57] Color Block
+        Description: Drop balls and other objects into this large curved pipe to make them come out t...
+        Category: Pipe Systems
+        ANM: PART57 (4 frames)
+  [ 55] Programmable Ball
+        Description: These explosives come with the remote control part. They'll blow up all kinds of...
+        Category: Explosives / Projectiles
+        ANM: PART55 (9 frames)
+  [ 59] Leaky Bucket
+        Description: This super ball gains height with each bounce....
+        Category: Balls
+        ANM: PART59 (3 frames)
+  ✅ Info lookups from catalog work
+
+=== 4. Program Dialog Simulation ===
+  [OPEN] Programming dialog for Egg Timer
+  [SET] timer_duration = 5
+  [SAVE] Changes saved, dialog closed
+  ✅ Programming dialog state cycle
+
+==================================================
+RESULTS: 5 passed, 0 failed
+Full log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J07_20260527_071626.log

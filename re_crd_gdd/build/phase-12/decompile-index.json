@@ -1,0 +1,470 @@
+{
+  "enriched_functions": 13,
+  "total_decompiled_files": 1475,
+  "xrefs": {
+    "E-009": [
+      {
+        "name": "physics_integrate_gravity",
+        "offset": "0x05361E",
+        "subsystem": "physics",
+        "doc": "E-009",
+        "decompiled_path": "build/phase-12/decompiled/physics/FUN_4bdc_2636.c"
+      },
+      {
+        "name": "gravity_select_base",
+        "offset": "0x02794B",
+        "subsystem": "physics",
+        "doc": "E-009",
+        "decompiled_path": "build/phase-12/decompiled/misc/FUN_1a9e_7325.c"
+      },
+      {
+        "name": "terminal_velocity_clamp",
+        "offset": "0x05359F",
+        "subsystem": "physics",
+        "doc": "E-009",
+        "decompiled_path": "build/phase-12/decompiled/physics/FUN_4bdc_24de.c"
+      }
+    ],
+    "E-010": [
+      {
+        "name": "collision_detect_aabb",
+        "offset": "0x054459",
+        "subsystem": "physics",
+        "doc": "E-010",
+        "decompiled_path": "build/phase-12/decompiled/physics/FUN_4bdc_3427.c"
+      },
+      {
+        "name": "collision_resolve_position",
+        "offset": "0x057250",
+        "subsystem": "physics",
+        "doc": "E-010"
+      },
+      {
+        "name": "per_part_physics_step",
+        "offset": "0x055353",
+        "subsystem": "physics",
+        "doc": "E-010",
+        "decompiled_path": "build/phase-12/decompiled/misc/FUN_31f7_13f1.c"
+      },
+      {
+        "name": "main_frame_update",
+        "offset": "0x054EAB",
+        "subsystem": "physics",
+        "doc": "E-010",
+        "decompiled_path": "build/phase-12/decompiled/physics/FUN_4bdc_3d8c.c"
+      },
+      {
+        "name": "aabb_compute_extents",
+        "offset": "0x05428B",
+        "subsystem": "physics",
+        "doc": "E-010",
+        "decompiled_path": "build/phase-12/decompiled/physics/FUN_4bdc_32a7.c"
+      },
+      {
+        "name": "spatial_find_nearest_part",
+        "offset": "0x0573B7",
+        "subsystem": "physics",
+        "doc": "E-010",
+        "decompiled_path": "build/phase-12/decompiled/utility/FUN_1000_4099.c"
+      },
+      {
+        "name": "collision_shape_test",
+        "offset": "0x054760",
+        "subsystem": "physics",
+        "doc": "E-010",
+        "decompiled_path": "build/phase-12/decompiled/physics/FUN_4bdc_368d.c"
+      },
+      {
+        "name": "collision_extent_setup",
+        "offset": "0x0543BB",
+        "subsystem": "physics",
+        "doc": "E-010",
+        "decompiled_path": "build/phase-12/decompiled/physics/FUN_4bdc_32e9.c"
+      }
+    ],
+    "E-011": [
+      {
+        "name": "rope_init_pass3",
+        "offset": "0x0550DC",
+        "subsystem": "physics",
+        "doc": "E-011",
+        "decompiled_path": "build/phase-12/decompiled/physics/FUN_4fd6_0143.c"
+      },
+      {
+        "name": "rope_physics_pass4",
+        "offset": "0x05514A",
+        "subsystem": "physics",
+        "doc": "E-011",
+        "decompiled_path": "build/phase-12/decompiled/misc/FUN_406b_1e72.c"
+      }
+    ],
+    "E-012": [
+      {
+        "name": "sound_dispatch_function",
+        "offset": "0x041C00",
+        "subsystem": "sound",
+        "doc": "E-012"
+      },
+      {
+        "name": "sound_processing_loop",
+        "offset": "0x042200",
+        "subsystem": "sound",
+        "doc": "E-012",
+        "decompiled_path": "build/phase-12/decompiled/sound/FUN_31f7_b045.c"
+      },
+      {
+        "name": "adl_drv_load_data_call",
+        "offset": "0x041461",
+        "subsystem": "sound",
+        "doc": "E-012"
+      },
+      {
+        "name": "adl_drv_note_off_call",
+        "offset": "0x041AB8",
+        "subsystem": "sound",
+        "doc": "E-012"
+      },
+      {
+        "name": "adl_drv_note_on_call",
+        "offset": "0x041B09",
+        "subsystem": "sound",
+        "doc": "E-012"
+      },
+      {
+        "name": "adl_drv_controller_call",
+        "offset": "0x041BEA",
+        "subsystem": "sound",
+        "doc": "E-012"
+      },
+      {
+        "name": "adl_drv_program_change_call",
+        "offset": "0x041BDE",
+        "subsystem": "sound",
+        "doc": "E-012"
+      },
+      {
+        "name": "adl_drv_pitch_wheel_call",
+        "offset": "0x042F2A",
+        "subsystem": "sound",
+        "doc": "E-012"
+      },
+      {
+        "name": "adl_drv_dispatch",
+        "offset": "0x1945",
+        "subsystem": "adl_drv",
+        "doc": "E-012"
+      },
+      {
+        "name": "adl_drv_jump_table",
+        "offset": "0x1921",
+        "subsystem": "adl_drv",
+        "doc": "E-012"
+      },
+      {
+        "name": "adl_drv_opl2_write",
+        "offset": "0x208E",
+        "subsystem": "adl_drv",
+        "doc": "E-012"
+      },
+      {
+        "name": "adl_drv_load_data",
+        "offset": "0x2414",
+        "subsystem": "adl_drv",
+        "doc": "E-012"
+      },
+      {
+        "name": "adl_drv_version_info",
+        "offset": "0x2446",
+        "subsystem": "adl_drv",
+        "doc": "E-012"
+      },
+      {
+        "name": "adl_drv_init",
+        "offset": "0x1AD0",
+        "subsystem": "adl_drv",
+        "doc": "E-012"
+      },
+      {
+        "name": "adl_drv_note_on",
+        "offset": "0x1988",
+        "subsystem": "adl_drv",
+        "doc": "E-012"
+      },
+      {
+        "name": "adl_drv_note_off",
+        "offset": "0x1952",
+        "subsystem": "adl_drv",
+        "doc": "E-012"
+      },
+      {
+        "name": "adl_drv_controller",
+        "offset": "0x19CF",
+        "subsystem": "adl_drv",
+        "doc": "E-012"
+      },
+      {
+        "name": "adl_drv_program_change",
+        "offset": "0x1A1B",
+        "subsystem": "adl_drv",
+        "doc": "E-012"
+      },
+      {
+        "name": "adl_drv_pitch_wheel",
+        "offset": "0x1A29",
+        "subsystem": "adl_drv",
+        "doc": "E-012"
+      },
+      {
+        "name": "adl_drv_reset",
+        "offset": "0x237D",
+        "subsystem": "adl_drv",
+        "doc": "E-012"
+      }
+    ],
+    "E-005": [
+      {
+        "name": "adl_drv_dispatch",
+        "offset": "0x1945",
+        "subsystem": "adl_drv",
+        "doc": "E-005"
+      },
+      {
+        "name": "adl_drv_jump_table",
+        "offset": "0x1921",
+        "subsystem": "adl_drv",
+        "doc": "E-005"
+      },
+      {
+        "name": "adl_drv_opl2_write",
+        "offset": "0x208E",
+        "subsystem": "adl_drv",
+        "doc": "E-005"
+      },
+      {
+        "name": "adl_drv_load_data",
+        "offset": "0x2414",
+        "subsystem": "adl_drv",
+        "doc": "E-005"
+      },
+      {
+        "name": "adl_drv_version_info",
+        "offset": "0x2446",
+        "subsystem": "adl_drv",
+        "doc": "E-005"
+      },
+      {
+        "name": "adl_drv_init",
+        "offset": "0x1AD0",
+        "subsystem": "adl_drv",
+        "doc": "E-005"
+      },
+      {
+        "name": "adl_drv_note_on",
+        "offset": "0x1988",
+        "subsystem": "adl_drv",
+        "doc": "E-005"
+      },
+      {
+        "name": "adl_drv_note_off",
+        "offset": "0x1952",
+        "subsystem": "adl_drv",
+        "doc": "E-005"
+      },
+      {
+        "name": "adl_drv_controller",
+        "offset": "0x19CF",
+        "subsystem": "adl_drv",
+        "doc": "E-005"
+      },
+      {
+        "name": "adl_drv_program_change",
+        "offset": "0x1A1B",
+        "subsystem": "adl_drv",
+        "doc": "E-005"
+      },
+      {
+        "name": "adl_drv_pitch_wheel",
+        "offset": "0x1A29",
+        "subsystem": "adl_drv",
+        "doc": "E-005"
+      },
+      {
+        "name": "adl_drv_reset",
+        "offset": "0x237D",
+        "subsystem": "adl_drv",
+        "doc": "E-005"
+      }
+    ],
+    "E-006": [
+      {
+        "name": "adl_drv_load_data_call",
+        "offset": "0x041461",
+        "subsystem": "sound",
+        "doc": "E-006"
+      }
+    ],
+    "GDD-3.4": [],
+    "GDD-3.5": []
+  },
+  "functions_by_subsystem": {
+    "physics": [
+      {
+        "name": "physics_integrate_gravity",
+        "offset": "0x05361E",
+        "description": "Applies gravity to a single part's velocity: velocity_y += gravity_y; velocity_x",
+        "decompiled_path": "build/phase-12/decompiled/physics/FUN_4bdc_2636.c"
+      },
+      {
+        "name": "collision_detect_aabb",
+        "offset": "0x054459",
+        "description": "AABB collision detection and resolution. Computes extents, performs AABB overlap",
+        "decompiled_path": "build/phase-12/decompiled/physics/FUN_4bdc_3427.c"
+      },
+      {
+        "name": "collision_resolve_position",
+        "offset": "0x057250",
+        "description": "Collision position correction: calculates overlap, divides by 2, adjusts pos_x/p"
+      },
+      {
+        "name": "per_part_physics_step",
+        "offset": "0x055353",
+        "description": "Main per-part physics function. Sets physics-active flag, checks disabled/frozen",
+        "decompiled_path": "build/phase-12/decompiled/misc/FUN_31f7_13f1.c"
+      },
+      {
+        "name": "main_frame_update",
+        "offset": "0x054EAB",
+        "description": "Main frame update \u2014 runs 7 passes over all parts: (1) clear state, (2) per-part ",
+        "decompiled_path": "build/phase-12/decompiled/physics/FUN_4bdc_3d8c.c"
+      },
+      {
+        "name": "aabb_compute_extents",
+        "offset": "0x05428B",
+        "description": "Computes AABB bounding box extents for a part based on position (0x22/0x24) and ",
+        "decompiled_path": "build/phase-12/decompiled/physics/FUN_4bdc_32a7.c"
+      },
+      {
+        "name": "gravity_select_base",
+        "offset": "0x02794B",
+        "description": "Selects base gravity value from part category (CX = ES:[BX+0x3E]): CX<2\u21920x1C00, ",
+        "decompiled_path": "build/phase-12/decompiled/misc/FUN_1a9e_7325.c"
+      },
+      {
+        "name": "terminal_velocity_clamp",
+        "offset": "0x05359F",
+        "description": "Applies terminal velocity clamping to gravity fields (0x3A/0x3C). Limits acceler",
+        "decompiled_path": "build/phase-12/decompiled/physics/FUN_4bdc_24de.c"
+      },
+      {
+        "name": "spatial_find_nearest_part",
+        "offset": "0x0573B7",
+        "description": "Spatial search \u2014 iterates over parts (SI=1..count at 0x49AA), finds the part nea",
+        "decompiled_path": "build/phase-12/decompiled/utility/FUN_1000_4099.c"
+      },
+      {
+        "name": "collision_shape_test",
+        "offset": "0x054760",
+        "description": "Shape-specific collision test \u2014 determines which collision test to use (AABB for",
+        "decompiled_path": "build/phase-12/decompiled/physics/FUN_4bdc_368d.c"
+      },
+      {
+        "name": "collision_extent_setup",
+        "offset": "0x0543BB",
+        "description": "Sets up collision extent data for two parts before AABB comparison. Reads positi",
+        "decompiled_path": "build/phase-12/decompiled/physics/FUN_4bdc_32e9.c"
+      },
+      {
+        "name": "rope_init_pass3",
+        "offset": "0x0550DC",
+        "description": "Rope initialization pass 3 from frame update: checks part type 0x11(rope) or 0x6",
+        "decompiled_path": "build/phase-12/decompiled/physics/FUN_4fd6_0143.c"
+      },
+      {
+        "name": "rope_physics_pass4",
+        "offset": "0x05514A",
+        "description": "Rope physics pass 4: calls rope constraint solver at lcall $0x30,$0x54F2, then c",
+        "decompiled_path": "build/phase-12/decompiled/misc/FUN_406b_1e72.c"
+      }
+    ],
+    "sound": [
+      {
+        "name": "sound_dispatch_function",
+        "offset": "0x041C00",
+        "description": "Sound effect dispatch \u2014 CL=sub-function index (0x00-0x17). Handles: init driver "
+      },
+      {
+        "name": "sound_processing_loop",
+        "offset": "0x042200",
+        "description": "Sound processing loop \u2014 processes 16 sound channels. Reads from event queue at C",
+        "decompiled_path": "build/phase-12/decompiled/sound/FUN_31f7_b045.c"
+      },
+      {
+        "name": "adl_drv_load_data_call",
+        "offset": "0x041461",
+        "description": "ADL.DRV LoadData call site: MOV BP, 1; CALL FAR CS:[0x01ED]. Loads SX patch data"
+      },
+      {
+        "name": "adl_drv_note_off_call",
+        "offset": "0x041AB8",
+        "description": "ADL.DRV NoteOff call site: MOV BP, 4; CALL FAR CS:[0x01ED]."
+      },
+      {
+        "name": "adl_drv_note_on_call",
+        "offset": "0x041B09",
+        "description": "ADL.DRV NoteOn call site: MOV BP, 5; CALL FAR CS:[0x01ED]. AX=voice/channel inde"
+      },
+      {
+        "name": "adl_drv_controller_call",
+        "offset": "0x041BEA",
+        "description": "ADL.DRV Controller call site: MOV BP, 7; CALL FAR CS:[0x01ED]."
+      },
+      {
+        "name": "adl_drv_program_change_call",
+        "offset": "0x041BDE",
+        "description": "ADL.DRV ProgramChange call site: MOV BP, 8; CALL FAR CS:[0x01ED]."
+      },
+      {
+        "name": "adl_drv_pitch_wheel_call",
+        "offset": "0x042F2A",
+        "description": "ADL.DRV PitchWheel call site: MOV BP, 9; CALL FAR CS:[0x01ED]."
+      }
+    ],
+    "main": [
+      {
+        "name": "main_game_loop",
+        "offset": "0x053242",
+        "description": "Main game loop: reads input, calls frame update (0x54EAB), renders with VBL wait"
+      },
+      {
+        "name": "interrupt_hook_setup",
+        "offset": "0x0450AF",
+        "description": "Timer interrupt handler setup. Gets current interrupt vector (INT 21h AH=35h), s"
+      }
+    ]
+  },
+  "functions_by_offset": {
+    "0x05361E": "physics_integrate_gravity",
+    "0x054459": "collision_detect_aabb",
+    "0x057250": "collision_resolve_position",
+    "0x055353": "per_part_physics_step",
+    "0x054EAB": "main_frame_update",
+    "0x05428B": "aabb_compute_extents",
+    "0x02794B": "gravity_select_base",
+    "0x05359F": "terminal_velocity_clamp",
+    "0x0573B7": "spatial_find_nearest_part",
+    "0x054760": "collision_shape_test",
+    "0x0543BB": "collision_extent_setup",
+    "0x0550DC": "rope_init_pass3",
+    "0x05514A": "rope_physics_pass4",
+    "0x041C00": "sound_dispatch_function",
+    "0x042200": "sound_processing_loop",
+    "0x041461": "adl_drv_load_data_call",
+    "0x041AB8": "adl_drv_note_off_call",
+    "0x041B09": "adl_drv_note_on_call",
+    "0x041BEA": "adl_drv_controller_call",
+    "0x041BDE": "adl_drv_program_change_call",
+    "0x042F2A": "adl_drv_pitch_wheel_call",
+    "0x053242": "main_game_loop",
+    "0x0450AF": "interrupt_hook_setup"
+  }
+}

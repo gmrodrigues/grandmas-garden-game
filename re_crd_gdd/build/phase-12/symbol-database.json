@@ -1,0 +1,857 @@
+{
+  "version": "1.0",
+  "binary": "TIM2.EXE",
+  "notes": "Symbol database for TIM2 reverse engineering. Offsets are file offsets into TIM2.EXE.",
+  "functions": [
+    {
+      "offset": "0x05361E",
+      "ghidra_addr": "0x4E41E",
+      "subsystem": "physics",
+      "name": "physics_integrate_gravity",
+      "ghidra_name": "FUN_4bdc_2636",
+      "description": "Applies gravity to a single part's velocity: velocity_y += gravity_y; velocity_x += gravity_x (32-bit CWD+ADC)",
+      "segment": "0x4bdc",
+      "calling_conv": "far via LCALL",
+      "doc_ref": "E-009",
+      "decompiled_file": "physics-integration.c",
+      "decompiled_path": "build/phase-12/decompiled/physics/FUN_4bdc_2636.c"
+    },
+    {
+      "offset": "0x054459",
+      "ghidra_addr": "0x4F259",
+      "subsystem": "physics",
+      "name": "collision_detect_aabb",
+      "ghidra_name": "FUN_4bdc_3427",
+      "description": "AABB collision detection and resolution. Computes extents, performs AABB overlap test (4-edge check), follows connected part chain via 0x98/0x9A pointers",
+      "segment": "0x4bdc",
+      "calling_conv": "far via LCALL",
+      "args": "struct part*",
+      "doc_ref": "E-010",
+      "decompiled_file": "collision-detect.c",
+      "decompiled_path": "build/phase-12/decompiled/physics/FUN_4bdc_3427.c"
+    },
+    {
+      "offset": "0x057250",
+      "ghidra_addr": "0x52050",
+      "subsystem": "physics",
+      "name": "collision_resolve_position",
+      "ghidra_name": "part of larger function",
+      "description": "Collision position correction: calculates overlap, divides by 2, adjusts pos_x/pos_y, updates velocity_y. Division by 4 (IDIV 4) in correction calculation.",
+      "segment": "0x4bdc",
+      "calling_conv": "part of collision loop",
+      "doc_ref": "E-010",
+      "decompiled_file": "collision-resolve.c"
+    },
+    {
+      "offset": "0x055353",
+      "ghidra_addr": "0x50153",
+      "subsystem": "physics",
+      "name": "per_part_physics_step",
+      "ghidra_name": "FUN_31f7_13f1",
+      "description": "Main per-part physics function. Sets physics-active flag, checks disabled/frozen, calls gravity integration (0x5361E), calls collision detection (0x54459), re-checks if collision occurred",
+      "segment": "0x31f7",
+      "calling_conv": "far via LCALL",
+      "args": "struct part*",
+      "doc_ref": "E-010",
+      "decompiled_file": "per-part-step.c",
+      "decompiled_path": "build/phase-12/decompiled/misc/FUN_31f7_13f1.c"
+    },
+    {
+      "offset": "0x054EAB",
+      "ghidra_addr": "0x4FCAB",
+      "subsystem": "physics",
+      "name": "main_frame_update",
+      "ghidra_name": "FUN_4bdc_3d8c",
+      "description": "Main frame update \u2014 runs 7 passes over all parts: (1) clear state, (2) per-part physics, (3) rope init, (4) rope + physics, (5) alt rope, (6) disabled cleanup, (7) special parts. Increments tick counter at [0x6873].",
+      "segment": "0x4bdc",
+      "calling_conv": "far via LCALL",
+      "doc_ref": "E-010",
+      "decompiled_file": "main-frame-update.c",
+      "decompiled_path": "build/phase-12/decompiled/physics/FUN_4bdc_3d8c.c"
+    },
+    {
+      "offset": "0x05428B",
+      "ghidra_addr": "0x4F08B",
+      "subsystem": "physics",
+      "name": "aabb_compute_extents",
+      "ghidra_name": "FUN_4bdc_32a7",
+      "description": "Computes AABB bounding box extents for a part based on position (0x22/0x24) and collision dimensions. Stores in global vars 0x63E0-0x63E6 (part1) and 0x63D0-0x63DE (part2).",
+      "segment": "0x4bdc",
+      "calling_conv": "far via LCALL",
+      "doc_ref": "E-010",
+      "decompiled_file": "aabb-extents.c",
+      "decompiled_path": "build/phase-12/decompiled/physics/FUN_4bdc_32a7.c"
+    },
+    {
+      "offset": "0x02794B",
+      "ghidra_addr": "0x2274B",
+      "subsystem": "physics",
+      "name": "gravity_select_base",
+      "ghidra_name": "FUN_1a9e_7325",
+      "description": "Selects base gravity value from part category (CX = ES:[BX+0x3E]): CX<2\u21920x1C00, CX<6\u21920x1A00, CX<10\u21920x1800, CX<21\u21920x1600, CX<121\u21920x1400, CX<151\u21920x1200, else 0x1000. Returns in AX.",
+      "segment": "0x1a9e",
+      "calling_conv": "far via LCALL",
+      "args": "struct part* in DS:[param1]",
+      "doc_ref": "E-009",
+      "decompiled_file": "gravity-base-selector.c",
+      "decompiled_path": "build/phase-12/decompiled/misc/FUN_1a9e_7325.c"
+    },
+    {
+      "offset": "0x05359F",
+      "ghidra_addr": "0x4E39F",
+      "subsystem": "physics",
+      "name": "terminal_velocity_clamp",
+      "ghidra_name": "FUN_4bdc_24de",
+      "description": "Applies terminal velocity clamping to gravity fields (0x3A/0x3C). Limits acceleration to prevent parts from moving too fast per frame.",
+      "segment": "0x4bdc",
+      "calling_conv": "far via LCALL",
+      "doc_ref": "E-009",
+      "decompiled_file": "terminal-velocity.c",
+      "decompiled_path": "build/phase-12/decompiled/physics/FUN_4bdc_24de.c"
+    },
+    {
+      "offset": "0x0573B7",
+      "ghidra_addr": "0x521B7",
+      "subsystem": "physics",
+      "name": "spatial_find_nearest_part",
+      "ghidra_name": "FUN_1000_4099",
+      "description": "Spatial search \u2014 iterates over parts (SI=1..count at 0x49AA), finds the part nearest to a given position by comparing each part's position with the target.",
+      "segment": "0x1000",
+      "calling_conv": "far",
+      "doc_ref": "E-010",
+      "decompiled_file": "spatial-search.c",
+      "decompiled_path": "build/phase-12/decompiled/utility/FUN_1000_4099.c"
+    },
+    {
+      "offset": "0x054760",
+      "ghidra_addr": "0x4F560",
+      "subsystem": "physics",
+      "name": "collision_shape_test",
+      "ghidra_name": "FUN_4bdc_368d",
+      "description": "Shape-specific collision test \u2014 determines which collision test to use (AABB for rectangles, circle for balls with radius field).",
+      "segment": "0x4bdc",
+      "calling_conv": "far via LCALL",
+      "doc_ref": "E-010",
+      "decompiled_file": "collision-shape-test.c",
+      "decompiled_path": "build/phase-12/decompiled/physics/FUN_4bdc_368d.c"
+    },
+    {
+      "offset": "0x0543BB",
+      "ghidra_addr": "0x4F1BB",
+      "subsystem": "physics",
+      "name": "collision_extent_setup",
+      "ghidra_name": "FUN_4bdc_32e9",
+      "description": "Sets up collision extent data for two parts before AABB comparison. Reads positions and dimensions, computes bounding boxes.",
+      "segment": "0x4bdc",
+      "calling_conv": "far via LCALL",
+      "doc_ref": "E-010",
+      "decompiled_file": "extent-setup.c",
+      "decompiled_path": "build/phase-12/decompiled/physics/FUN_4bdc_32e9.c"
+    },
+    {
+      "offset": "0x0550DC",
+      "ghidra_addr": "0x4FEDC",
+      "subsystem": "physics",
+      "name": "rope_init_pass3",
+      "ghidra_name": "FUN_4fd6_0143",
+      "description": "Rope initialization pass 3 from frame update: checks part type 0x11(rope) or 0x6C(cable), reads PAR field at offset 0x38, stores at physics struct offset 0x3E.",
+      "segment": "0x4fd6",
+      "calling_conv": "near",
+      "doc_ref": "E-011",
+      "decompiled_file": "rope-init-pass.c",
+      "decompiled_path": "build/phase-12/decompiled/physics/FUN_4fd6_0143.c"
+    },
+    {
+      "offset": "0x05514A",
+      "ghidra_addr": "0x4FF4A",
+      "subsystem": "physics",
+      "name": "rope_physics_pass4",
+      "ghidra_name": "FUN_406b_1e72",
+      "description": "Rope physics pass 4: calls rope constraint solver at lcall $0x30,$0x54F2, then calls per-part physics (0x55353). This is the main constraint enforcement pass.",
+      "segment": "0x406b",
+      "calling_conv": "near",
+      "doc_ref": "E-011",
+      "decompiled_file": "rope-physics-pass.c",
+      "decompiled_path": "build/phase-12/decompiled/misc/FUN_406b_1e72.c"
+    },
+    {
+      "offset": "0x041C00",
+      "ghidra_addr": "0x3CA00",
+      "subsystem": "sound",
+      "name": "sound_dispatch_function",
+      "ghidra_name": "FUN_3358_59c1",
+      "description": "Sound effect dispatch \u2014 CL=sub-function index (0x00-0x17). Handles: init driver (CL=0x00), load SX data (CL=0x01), init call (CL=0x02), NoteOn/NoteOff/Controller/ProgramChange/PitchWheel wrappers (CL=0x13-0x17).",
+      "segment": "0x3358",
+      "calling_conv": "far",
+      "args": "CL=function_index, AX=various",
+      "doc_ref": "E-012",
+      "decompiled_file": ""
+    },
+    {
+      "offset": "0x042200",
+      "ghidra_addr": "0x3D000",
+      "subsystem": "sound",
+      "name": "sound_processing_loop",
+      "ghidra_name": "FUN_31f7_b045",
+      "description": "Sound processing loop \u2014 processes 16 sound channels. Reads from event queue at CS:[SI+0x16E]. For each channel, calls ADL.DRV functions: Controller, ProgramChange, PitchWheel, NoteOn. Event queue stores (event byte, data1, data2).",
+      "segment": "0x31f7",
+      "calling_conv": "far",
+      "doc_ref": "E-012",
+      "decompiled_file": "sound-processing-loop.c",
+      "decompiled_path": "build/phase-12/decompiled/sound/FUN_31f7_b045.c"
+    },
+    {
+      "offset": "0x041461",
+      "ghidra_addr": "0x3C261",
+      "subsystem": "sound",
+      "name": "adl_drv_load_data_call",
+      "ghidra_name": "\u2014",
+      "description": "ADL.DRV LoadData call site: MOV BP, 1; CALL FAR CS:[0x01ED]. Loads SX patch data into driver buffer.",
+      "segment": "\u2014",
+      "calling_conv": "far via stored pointer",
+      "doc_ref": "E-012",
+      "decompiled_file": ""
+    },
+    {
+      "offset": "0x041AB8",
+      "ghidra_addr": "0x3C8B8",
+      "subsystem": "sound",
+      "name": "adl_drv_note_off_call",
+      "ghidra_name": "\u2014",
+      "description": "ADL.DRV NoteOff call site: MOV BP, 4; CALL FAR CS:[0x01ED].",
+      "segment": "\u2014",
+      "calling_conv": "far via stored pointer",
+      "doc_ref": "E-012",
+      "decompiled_file": ""
+    },
+    {
+      "offset": "0x041B09",
+      "ghidra_addr": "0x3C909",
+      "subsystem": "sound",
+      "name": "adl_drv_note_on_call",
+      "ghidra_name": "\u2014",
+      "description": "ADL.DRV NoteOn call site: MOV BP, 5; CALL FAR CS:[0x01ED]. AX=voice/channel index.",
+      "segment": "\u2014",
+      "calling_conv": "far via stored pointer",
+      "doc_ref": "E-012",
+      "decompiled_file": ""
+    },
+    {
+      "offset": "0x041BEA",
+      "ghidra_addr": "0x3C9EA",
+      "subsystem": "sound",
+      "name": "adl_drv_controller_call",
+      "ghidra_name": "\u2014",
+      "description": "ADL.DRV Controller call site: MOV BP, 7; CALL FAR CS:[0x01ED].",
+      "segment": "\u2014",
+      "calling_conv": "far via stored pointer",
+      "doc_ref": "E-012",
+      "decompiled_file": ""
+    },
+    {
+      "offset": "0x041BDE",
+      "ghidra_addr": "0x3C9DE",
+      "subsystem": "sound",
+      "name": "adl_drv_program_change_call",
+      "ghidra_name": "\u2014",
+      "description": "ADL.DRV ProgramChange call site: MOV BP, 8; CALL FAR CS:[0x01ED].",
+      "segment": "\u2014",
+      "calling_conv": "far via stored pointer",
+      "doc_ref": "E-012",
+      "decompiled_file": ""
+    },
+    {
+      "offset": "0x042F2A",
+      "ghidra_addr": "0x3DD2A",
+      "subsystem": "sound",
+      "name": "adl_drv_pitch_wheel_call",
+      "ghidra_name": "\u2014",
+      "description": "ADL.DRV PitchWheel call site: MOV BP, 9; CALL FAR CS:[0x01ED].",
+      "segment": "\u2014",
+      "calling_conv": "far via stored pointer",
+      "doc_ref": "E-012",
+      "decompiled_file": ""
+    },
+    {
+      "offset": "0x053242",
+      "ghidra_addr": "0x4E042",
+      "subsystem": "main",
+      "name": "main_game_loop",
+      "ghidra_name": "\u2014",
+      "description": "Main game loop: reads input, calls frame update (0x54EAB), renders with VBL wait (port 0x3DA), increments tick counter at [0x6873], loops. Runs at 60 Hz VBL-synchronized.",
+      "segment": "\u2014",
+      "calling_conv": "called from program init",
+      "doc_ref": "E-009",
+      "decompiled_file": ""
+    },
+    {
+      "offset": "0x0450AF",
+      "ghidra_addr": "0x3FEAF",
+      "subsystem": "main",
+      "name": "interrupt_hook_setup",
+      "ghidra_name": "\u2014",
+      "description": "Timer interrupt handler setup. Gets current interrupt vector (INT 21h AH=35h), saves old handler, sets new handler (INT 21h AH=25h) with handler stored at DS:[0x02]:DS:[0x04].",
+      "segment": "\u2014",
+      "calling_conv": "called during init",
+      "doc_ref": "E-009",
+      "decompiled_file": ""
+    }
+  ],
+  "data_addrs": [
+    {
+      "address": "CS:[0x01ED]",
+      "name": "adl_drv_entry_ptr",
+      "type": "far_ptr (4 bytes)",
+      "description": "ADL.DRV API entry point (segment:offset). Set by init function at 0x41428. Called via CALL FAR CS:[0x01ED] with BP = function index.",
+      "doc_ref": "E-012"
+    },
+    {
+      "address": "CS:[0x0010]",
+      "name": "sx_patch_table",
+      "type": "far_ptr table (16 \u00d7 4 = 64 bytes)",
+      "description": "SX patch data far pointer table. 16 entries, each 4 bytes (segment:offset). Indexed by (event_byte & 0xF0) >> 2.",
+      "doc_ref": "E-012"
+    },
+    {
+      "address": "CS:[0x016E+]",
+      "name": "sound_event_queue",
+      "type": "byte array (3 bytes \u00d7 16 channels = 48 bytes)",
+      "description": "Sound event queue: [0x16E]=event_byte, [0x14E]=data1, [0x15E]=data2 for each channel 0-15. Processed by sound processing loop at 0x42200.",
+      "doc_ref": "E-012"
+    },
+    {
+      "address": "segment 0x43C6",
+      "name": "channel_state_struct",
+      "type": "struct (30 bytes \u00d7 25 entries = 750 bytes)",
+      "description": "Per-channel sound state. 30-byte entries for 25 channels. Fields at relative offsets: [+0x02]=patch#, [+0x08~0x09]=volume/pan, [+0x17]=modulation/pitch. Used by sound dispatch functions.",
+      "doc_ref": "E-012"
+    },
+    {
+      "address": "0x63EE:0x63F0",
+      "name": "current_part_ptr",
+      "type": "far_ptr (4 bytes)",
+      "description": "Current part far pointer during collision detection. Set at start of collision_detect at 0x5446D.",
+      "doc_ref": "E-010"
+    },
+    {
+      "address": "[0x49AA]",
+      "name": "part_count",
+      "type": "UINT16",
+      "description": "Total number of moving parts in the current level. Used as loop bound in physics and spatial search functions.",
+      "doc_ref": "E-010"
+    },
+    {
+      "address": "[0x6873]",
+      "name": "tick_counter",
+      "type": "UINT16",
+      "description": "Frame tick counter. Incremented once per frame (INCW at 0x53369) in the VBL-synchronized main game loop.",
+      "doc_ref": "E-009"
+    },
+    {
+      "address": "[0x6887]",
+      "name": "frame_loop_control",
+      "type": "UINT16",
+      "description": "Main loop control flag. When set to 0x2000, the game loop continues. Set by the VBL-synchronized function at 0x55743.",
+      "doc_ref": "E-009"
+    },
+    {
+      "address": "0x63E0/0x63E2",
+      "name": "aabb_extent_part1_x",
+      "type": "INT16 (\u00d72)",
+      "description": "AABB min/max X for part 1 during collision detection. Set by aabb_compute_extents (0x5428B). Compared with part2 extents at 0x63D0/0x63DC.",
+      "doc_ref": "E-010"
+    },
+    {
+      "address": "0x63E4/0x63E6",
+      "name": "aabb_extent_part1_y",
+      "type": "INT16 (\u00d72)",
+      "description": "AABB min/max Y for part 1 during collision detection.",
+      "doc_ref": "E-010"
+    },
+    {
+      "address": "[0x6FBA]",
+      "name": "part_list_next",
+      "type": "far_ptr (4 bytes)",
+      "description": "Linked list head pointer for the part iteration loop. Follows es:[bx+0x00]=next_lo, es:[bx+0x02]=next_hi for 32-bit far pointer.",
+      "doc_ref": "E-010"
+    }
+  ],
+  "structs": [
+    {
+      "name": "part_physics_internal",
+      "description": "INTERNAL physics struct (\u226564 bytes, extends the 48-byte file format with runtime state)",
+      "doc_ref": "E-009, E-010",
+      "base_offset": 0,
+      "fields": [
+        {
+          "offset": 0,
+          "name": "next_part_lo",
+          "type": "UINT16",
+          "description": "Linked list: next part offset (lo)"
+        },
+        {
+          "offset": 2,
+          "name": "next_part_hi",
+          "type": "UINT16",
+          "description": "Linked list: next part offset (hi)"
+        },
+        {
+          "offset": 8,
+          "name": "part_type",
+          "type": "UINT16",
+          "description": "Part type number"
+        },
+        {
+          "offset": 10,
+          "name": "flags_active",
+          "type": "bitfield",
+          "description": "Active flags \u2014 bit 6: physics-active, bit 2: belt/rope connection"
+        },
+        {
+          "offset": 12,
+          "name": "flags_scenery",
+          "type": "bitfield",
+          "description": "Scenery/block flags \u2014 bit 5: disabled, bit 4: collision"
+        },
+        {
+          "offset": 13,
+          "name": "disabled_flag",
+          "type": "UINT8",
+          "description": "Bit 5 (0x20): part disabled"
+        },
+        {
+          "offset": 15,
+          "name": "frozen_flag",
+          "type": "UINT8",
+          "description": "Bit 6 (0x40): part frozen"
+        },
+        {
+          "offset": 20,
+          "name": "pos_x",
+          "type": "INT16",
+          "description": "X position in level coordinates"
+        },
+        {
+          "offset": 22,
+          "name": "pos_y",
+          "type": "INT16",
+          "description": "Y position in level coordinates"
+        },
+        {
+          "offset": 24,
+          "name": "behavior",
+          "type": "INT16",
+          "description": "Physics behavior / collision state / velocity_x lo"
+        },
+        {
+          "offset": 26,
+          "name": "velocity_y_lo",
+          "type": "INT16",
+          "description": "Y-velocity (32-bit signed, low word)"
+        },
+        {
+          "offset": 28,
+          "name": "velocity_y_hi",
+          "type": "INT16",
+          "description": "Y-velocity (32-bit signed, high word)"
+        },
+        {
+          "offset": 30,
+          "name": "velocity_x_lo",
+          "type": "INT16",
+          "description": "X-velocity (32-bit signed, low word)"
+        },
+        {
+          "offset": 32,
+          "name": "velocity_x_hi",
+          "type": "INT16",
+          "description": "X-velocity (32-bit signed, high word)"
+        },
+        {
+          "offset": 34,
+          "name": "pos_y_fixed",
+          "type": "INT16",
+          "description": "Position Y (converted from fixed-point, after SAR 9)"
+        },
+        {
+          "offset": 36,
+          "name": "pos_x_fixed",
+          "type": "INT16",
+          "description": "Position X (converted from fixed-point, after SAR 9)"
+        },
+        {
+          "offset": 58,
+          "name": "gravity_y",
+          "type": "INT16",
+          "description": "Y-acceleration (gravity, per tick). Set from base/4"
+        },
+        {
+          "offset": 60,
+          "name": "gravity_x",
+          "type": "INT16",
+          "description": "X-acceleration (wind/drag, per tick). Usually 0"
+        },
+        {
+          "offset": 62,
+          "name": "part_category",
+          "type": "UINT16",
+          "description": "Part category for gravity lookup (CX input to gravity_select_base)"
+        },
+        {
+          "offset": 152,
+          "name": "connected_part_lo",
+          "type": "UINT16",
+          "description": "Connected part far pointer (lo), used for belt/rope following"
+        },
+        {
+          "offset": 154,
+          "name": "connected_part_hi",
+          "type": "UINT16",
+          "description": "Connected part far pointer (hi)"
+        }
+      ]
+    },
+    {
+      "name": "part_48byte_file",
+      "description": "48-byte part entry in .LEV file (knt47 layout: base_40 + extra_N + tail_8)",
+      "doc_ref": "G1 (GDD section 3.4), ModdingWiki, knt47/timgres",
+      "base_offset": 0,
+      "fields": [
+        {
+          "offset": 0,
+          "name": "part_type",
+          "type": "UINT16LE",
+          "description": "Part type number (e.g., 0=bowling ball)"
+        },
+        {
+          "offset": 2,
+          "name": "flags_1",
+          "type": "UINT16LE",
+          "description": "Orientation/gravity flags"
+        },
+        {
+          "offset": 4,
+          "name": "flags_2",
+          "type": "UINT16LE",
+          "description": "Belt/rope/scale connector flags"
+        },
+        {
+          "offset": 6,
+          "name": "flags_3",
+          "type": "UINT16LE",
+          "description": "Electrical/fire/scenery flags"
+        },
+        {
+          "offset": 8,
+          "name": "appearance",
+          "type": "UINT16LE",
+          "description": "ANM sub-resource ID / sprite appearance"
+        },
+        {
+          "offset": 10,
+          "name": "unknown_10",
+          "type": "UINT16LE",
+          "description": "Alignment \u2014 always 0"
+        },
+        {
+          "offset": 12,
+          "name": "width_1",
+          "type": "INT16LE",
+          "description": "Primary physical width"
+        },
+        {
+          "offset": 14,
+          "name": "height_1",
+          "type": "INT16LE",
+          "description": "Primary physical height"
+        },
+        {
+          "offset": 16,
+          "name": "width_2",
+          "type": "INT16LE",
+          "description": "Flipped/alternate width"
+        },
+        {
+          "offset": 18,
+          "name": "height_2",
+          "type": "INT16LE",
+          "description": "Flipped/alternate height"
+        },
+        {
+          "offset": 20,
+          "name": "pos_x",
+          "type": "INT16LE",
+          "description": "X position in level coordinates"
+        },
+        {
+          "offset": 22,
+          "name": "pos_y",
+          "type": "INT16LE",
+          "description": "Y position in level coordinates"
+        },
+        {
+          "offset": 24,
+          "name": "behavior",
+          "type": "UINT16LE",
+          "description": "Physics behavior modifier / rope segment length"
+        },
+        {
+          "offset": 26,
+          "name": "velocity_y_file",
+          "type": "UINT16LE",
+          "description": "Part of velocity in internal struct; appears as 'unknown_26' in unused level context"
+        },
+        {
+          "offset": 28,
+          "name": "belt_info_1",
+          "type": "UINT16LE",
+          "description": "Packed belt connect pos (LO=cx, HI=cy)"
+        },
+        {
+          "offset": 30,
+          "name": "belt_line_distance",
+          "type": "UINT16LE",
+          "description": "Distance between belt lines"
+        },
+        {
+          "offset": 32,
+          "name": "unknown_32",
+          "type": "UINT16LE",
+          "description": "Alignment \u2014 usually 0"
+        },
+        {
+          "offset": 34,
+          "name": "rope_info_1",
+          "type": "UINT16LE",
+          "description": "Packed rope1 connect pos (LO=x, HI=y)"
+        },
+        {
+          "offset": 36,
+          "name": "unknown_36",
+          "type": "UINT16LE",
+          "description": "Alignment \u2014 usually 0"
+        },
+        {
+          "offset": 38,
+          "name": "rope_info_2",
+          "type": "UINT16LE",
+          "description": "Packed rope2 connect pos (LO=x, HI=y)"
+        },
+        {
+          "offset": -8,
+          "name": "connected_1",
+          "type": "INT16LE",
+          "description": "Index of connected part 1 (belt/rope target)"
+        },
+        {
+          "offset": -6,
+          "name": "connected_2",
+          "type": "INT16LE",
+          "description": "Index of connected part 2"
+        },
+        {
+          "offset": -4,
+          "name": "outlet_plugged_1",
+          "type": "INT16LE",
+          "description": "Index of plugged outlet part 1 (electrical)"
+        },
+        {
+          "offset": -2,
+          "name": "outlet_plugged_2",
+          "type": "INT16LE",
+          "description": "Index of plugged outlet part 2"
+        }
+      ]
+    },
+    {
+      "name": "channel_state_struct",
+      "description": "Sound channel state struct (30 bytes per entry, segment 0x43C6)",
+      "doc_ref": "E-012",
+      "base_offset": 256,
+      "entry_size": 30,
+      "num_entries": 25,
+      "fields": [
+        {
+          "offset": 0,
+          "name": "entry_part_type",
+          "type": "UINT16",
+          "description": "Sound ID / patch number"
+        },
+        {
+          "offset": 2,
+          "name": "channel_patch",
+          "type": "UINT16",
+          "description": "Patch number for ProgramChange"
+        },
+        {
+          "offset": 8,
+          "name": "channel_volume_pan",
+          "type": "UINT16",
+          "description": "Combined volume and pan value"
+        },
+        {
+          "offset": 23,
+          "name": "channel_modulation",
+          "type": "UINT8",
+          "description": "Modulation amount"
+        }
+      ]
+    }
+  ],
+  "xrefs": {
+    "E-009": [
+      "physics_integrate_gravity",
+      "gravity_select_base",
+      "terminal_velocity_clamp",
+      "part_count",
+      "tick_counter",
+      "frame_loop_control",
+      "part_physics_internal"
+    ],
+    "E-010": [
+      "collision_detect_aabb",
+      "collision_resolve_position",
+      "per_part_physics_step",
+      "main_frame_update",
+      "aabb_compute_extents",
+      "spatial_find_nearest_part",
+      "collision_shape_test",
+      "collision_extent_setup",
+      "current_part_ptr",
+      "aabb_extent_part1_x",
+      "aabb_extent_part1_y"
+    ],
+    "E-011": [
+      "rope_init_pass3",
+      "rope_physics_pass4"
+    ],
+    "E-012": [
+      "sound_dispatch_function",
+      "sound_processing_loop",
+      "adl_drv_load_data_call",
+      "adl_drv_note_off_call",
+      "adl_drv_note_on_call",
+      "adl_drv_controller_call",
+      "adl_drv_program_change_call",
+      "adl_drv_pitch_wheel_call",
+      "adl_drv_entry_ptr",
+      "sx_patch_table",
+      "sound_event_queue",
+      "channel_state_struct",
+      "adl_drv_*"
+    ],
+    "E-005": [
+      "adl_drv_*",
+      "adl_drv_dispatch",
+      "adl_drv_opl2_write"
+    ],
+    "E-006": [
+      "adl_drv_load_data_call"
+    ],
+    "GDD-3.4": [
+      "part_48byte_file"
+    ],
+    "GDD-3.5": [
+      "flags_1",
+      "flags_2",
+      "flags_3"
+    ]
+  },
+  "adl_drv": [
+    {
+      "offset": "0x1945",
+      "name": "adl_drv_dispatch",
+      "description": "ADL.DRV dispatch entry: MOV BP, CS:[0x1921+BP]; CALL [BP]; POP BP; RETF"
+    },
+    {
+      "offset": "0x1921",
+      "name": "adl_drv_jump_table",
+      "description": "Jump table with 12 function entries: BP=0(VersionInfo), 1(LoadData), 2(Init), 4(NoteOff), 5(NoteOn), 7(Controller), 8(ProgramChange), 9(PitchWheel)"
+    },
+    {
+      "offset": "0x208E",
+      "name": "adl_drv_opl2_write",
+      "description": "OPL2 register write: BX=register, CX=value. OUT DX,AL to port 0x388/0x389 with delays."
+    },
+    {
+      "offset": "0x2414",
+      "name": "adl_drv_load_data",
+      "description": "SX data load: copies data from ES:SI to CS:0x374, count from CS:0x372"
+    },
+    {
+      "offset": "0x2446",
+      "name": "adl_drv_version_info",
+      "description": "Returns AH=1, AL=3, CH=0, CL=9"
+    },
+    {
+      "offset": "0x1AD0",
+      "name": "adl_drv_init",
+      "description": "OPL2 reset + init instruments"
+    },
+    {
+      "offset": "0x1988",
+      "name": "adl_drv_note_on",
+      "description": "NoteOn handler: AL=note, CH=patch, CL=velocity"
+    },
+    {
+      "offset": "0x1952",
+      "name": "adl_drv_note_off",
+      "description": "NoteOff handler"
+    },
+    {
+      "offset": "0x19CF",
+      "name": "adl_drv_controller",
+      "description": "Controller handler: CH=controller#, CL=value"
+    },
+    {
+      "offset": "0x1A1B",
+      "name": "adl_drv_program_change",
+      "description": "ProgramChange: AL=patch#, stored at CS:0x120[note]"
+    },
+    {
+      "offset": "0x1A29",
+      "name": "adl_drv_pitch_wheel",
+      "description": "PitchWheel: CX=14-bit pitch value"
+    },
+    {
+      "offset": "0x237D",
+      "name": "adl_drv_reset",
+      "description": "OPL2 reset \u2014 writes 0 to all registers 0x00-0xF6"
+    }
+  ],
+  "adl_drv_data": [
+    {
+      "address": "CS:[0x37]",
+      "name": "opl2_addr_port",
+      "value": 904,
+      "description": "OPL2 register address port"
+    },
+    {
+      "address": "CS:[0x3B]",
+      "name": "opl2_data_port",
+      "value": 905,
+      "description": "OPL2 register data port"
+    },
+    {
+      "address": "CS:[0x39]",
+      "name": "opl2_status_port",
+      "value": 904,
+      "description": "OPL2 status/read port (same as addr port)"
+    },
+    {
+      "address": "CS:[0x3D]",
+      "name": "adlib_freq_table",
+      "size": 48,
+      "description": "AdLib frequency table \u2014 48 entries \u00d7 UINT16LE for notes in OPL2 frequency format"
+    },
+    {
+      "address": "CS:[0x374]",
+      "name": "sx_patch_buffer",
+      "description": "SX patch data buffer \u2014 game copies SX data here via LoadData"
+    }
+  ],
+  "_meta": {
+    "decompiled_files_count": 1475,
+    "enriched_count": 13
+  }
+}

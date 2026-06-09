@@ -1,0 +1,63 @@
+@startuml BehaviorRegistry_API
+skinparam classFontSize 13
+
+title BehaviorRegistry — Public API (Autoload)
+
+class BehaviorRegistry <<Node>> {
+
+  -- State Machine --
+  +get_state_limits(part_type: int): Dictionary
+
+
+  +get_solve_transitions(part_type: int): Array
+    Returns: states[] from solve-decoded.json
+    Each state: {anm_state, triggers:[{self,other}], explosive}
+
+  +get_anm_state_for_counter(part_type: int, counter: int): int
+    Maps state_counter → anm_state_id
+    Used by AnmRenderer for sprite frame selection
+
+  +get_trigger_targets(part_type: int, state_counter: int): Dictionary
+    Returns: {self: int, other: int}
+    self >= 0: cascade to own state
+    other >= 0: cascade to connected_1 part
+
+  -- Physics --
+  +get_physics_props(part_type: int): Dictionary
+    Returns: {mass, cor_q8, friction_q8, collision_radius, collision_w, collision_h}
+
+  -- Behavior --
+  +get_behavior(part_type: int): Dictionary
+    Returns: {category, name, triggers, rules, destructible, spawns, solve_states, explosive}
+
+  +get_category(part_type: int): String
+    Returns: "Balls"|"Electrical"|"Explosives"|etc (15 categories)
+
+  +get_trigger_targets(part_type: int, state_counter: int): Dictionary
+    Returns: {self, other} for trigger chain cascade
+
+  -- Validation --
+  +validate_orphan_states(part_type: int): Array
+    Checks for unmapped ANM states
+
+  +validate_trigger_chains(part_type: int): Array
+    Checks for invalid other state references (> 104)
+}
+
+note bottom of BehaviorRegistry
+  Data sources (loaded in _ready):
+  - res://data/solve-decoded.json     → state machine definitions
+  - res://data/behaviors.json         → state limits, sub-limits
+  - res://data/categories.json        → category metadata
+  - res://data/part-properties.json  → mass, cor, friction, dimensions
+  - res://data/part-assets.json       → category mapping, sounds
+  - res://data/state-machine-report.json → orphan ANM states
+
+  15 categories:
+  Balls, Walls/Floors, Inclines, Special Mechanics, Balloons/Airships,
+  Rotating Power Sources, Ropes/Belts/Pulleys, Containers, Characters,
+  Springs/Pneumatics, Explosives/Projectiles, Electrical, Light/Flame Sources,
+  Lasers/Optics, Scenery
+end note
+
+@enduml

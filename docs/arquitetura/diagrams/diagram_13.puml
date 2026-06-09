@@ -1,0 +1,89 @@
+@startuml Part_State_Machine
+skinparam stateFontSize 14
+
+title Part State Machine — advance_state() per tick (60Hz)
+
+note top of IDLE
+  RNG-based delay before first transition
+  _countdown: random [40, 239] ticks
+  _rng_state = (_rng_state * 0x343FD + 0x269EC3) & 0xFFFFFFFF
+end note
+
+state "state_counter == 0\n(Idle / Waiting)" as IDLE
+
+  state "_countdown = _randint(40,239)\nRNG bit == 1" as WAITING_RNG
+  state "_countdown -= 1\n_countdown < 0 → advance" as WAITING_DEC
+  state "_countdown = _randint(40,239)\nnext delay" as WAITING_RESET
+
+  IDLE --> WAITING_RNG : start
+  WAITING_RNG --> WAITING_DEC : _rng_state & 1 == 1
+  WAITING_RNG --> IDLE : _rng_state & 1 == 0\n(deterministic: state_counter += 1)
+  WAITING_DEC --> WAITING_RESET : _countdown < 0\n(state_counter += 1)
+  WAITING_RESET --> IDLE : _rng_state & 1 == 0\n(next RNG bit = 0)
+  WAITING_DEC --> WAITING_RNG : _countdown >= 0
+
+note left of ACTIVE
+  Deterministic increment each tick
+  Wrap at state_limit_upper → state_limit_reset
+end note
+
+state "state_counter != 0\n(Active / Counting)" as ACTIVE
+
+  state "state_counter += 1\nstate_counter >= state_limit_upper?" as ACTIVE_INC
+  state "state_counter = state_limit_reset\n(wrap)" as ACTIVE_WRAP
+  state "state_counter += 1\nsub_counter > 0" as SUBCOUNT_INC
+  state "sub_counter -= 1\nsub_counter == 0?" as SUBCOUNT_DEC
+  state "state_counter = state_limit_reset\n(sub done)" as SUBCOUNT_DONE
+
+  ACTIVE --> ACTIVE_INC : each tick
+  ACTIVE_INC --> ACTIVE_WRAP : state_counter >= state_limit_upper
+  ACTIVE_INC --> ACTIVE : state_counter < state_limit_upper
+  ACTIVE_WRAP --> ACTIVE : state_limit_reset
+
+  note right of ACTIVE_INC
+    Clamp: state_counter < state_limit_lower
+    → state_counter = state_limit_lower - 1
+  end note
+
+note top of SUBCOUNT
+  Used for timed delays between sub-states
+  Advances even when state_counter would wait
+end note
+
+state "sub_counter > 0\n(Delayed Sub-Counter)" as SUBCOUNT
+
+  SUBCOUNT --> SUBCOUNT_DEC : each tick
+  SUBCOUNT_DEC --> SUBCOUNT_DONE : sub_counter == 0
+  SUBCOUNT_DEC --> SUBCOUNT_INC : sub_counter > 0
+  SUBCOUNT_DONE --> ACTIVE : reset complete
+
+note top of SOLVE
+  Triggered by physics collision
+  Only fires if triggers.has("collision")
+  Always increments state_counter
+  (overrides RNG delay)
+end note
+
+state "SOLVE.RES Override\n(on_collision callback)" as SOLVE
+
+  state "state_counter += 1\nstate_counter < state_limit_upper" as SOLVE_INC
+  state "current_state = state_counter\nreturn true" as SOLVE_DONE
+
+  SOLVE --> SOLVE_INC : on_collision(other)
+  SOLVE_INC --> SOLVE_DONE : always
+  SOLVE_DONE --> IDLE : (depends on state_counter value)
+
+[*] --> IDLE : Part created, is_moving=true
+
+IDLE -right-> ACTIVE : _rng_state & 1 == 0\n(deterministic path)
+IDLE -down-> WAITING_RNG : _rng_state & 1 == 1\n(random path)
+ACTIVE -right-> SOLVE : on_collision(other)\n(triggers.has("collision") && state_counter < upper)
+ACTIVE --> SUBCOUNT : sub_counter > 0
+SUBCOUNT --> ACTIVE : sub_counter == 0
+
+note bottom of IDLE
+  State machine freezes when is_moving = false
+  state_counter stays at current value
+end note
+
+@enduml

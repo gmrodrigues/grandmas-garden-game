@@ -1,0 +1,136 @@
+{
+  "milestone": "M20",
+  "timestamp": "2026-05-27T07:23:38.920741",
+  "total": 14,
+  "passed": 13,
+  "failed": 1,
+  "skipped": 0,
+  "results": [
+    {
+      "journey_id": "J01",
+      "name": "Sign-In Window",
+      "status": "PASS",
+      "exit_code": 0,
+      "log_file": "/home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J01_20260527_072338.log",
+      "stdout_tail": "rk blue field\n  State 'name_added': Name appears in light blue registry\n  State 'name_selected': Name is highlighted in registry\n  State 'done': User clicks Done, window closes\n  \u2705 Sign-in state machine defined \u2014 5 states documented\n\n==================================================\nRESULTS: 7 passed, 0 failed\n==================================================\nFull log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J01_20260527_072338.log\n",
+      "stderr_tail": "(empty)"
+    },
+    {
+      "journey_id": "J02",
+      "name": "Main Menu",
+      "status": "PASS",
+      "exit_code": 0,
+      "log_file": "/home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J02_20260527_072338.log",
+      "stdout_tail": "  [OK] Utility icons\n\n=== 3. State Transitions ===\n  idle \u2192 hover button \u2192 click \u2192 redirect to target screen\n  Quit \u2192 confirm dialog \u2192 exit game\n  Sign-In \u2192 open J01 sign-in window\n  Puzzle Play \u2192 open J03 puzzle select\n  Workshop \u2192 open J04 editor\n  [OK] Core transitions documented\n\n==================================================\nRESULTS: 7 passed, 0 failed\nFull log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J02_20260527_072338.log\n",
+      "stderr_tail": "(empty)"
+    },
+    {
+      "journey_id": "J03",
+      "name": "Puzzle Select",
+      "status": "PASS",
+      "exit_code": 0,
+      "log_file": "/home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J03_20260527_072338.log",
+      "stdout_tail": "able\n    (YAML parse skipped \u2014 lib not available)\n  \u2705 Level HLEV1 loadable\n    (YAML parse skipped \u2014 lib not available)\n  \u2705 Level RLEV1 loadable\n    (YAML parse skipped \u2014 lib not available)\n  \u2705 Level HH1 loadable\n    (YAML parse skipped \u2014 lib not available)\n  \u2705 Level data accessible\n\n==================================================\nRESULTS: 6 passed, 0 failed\nFull log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J03_20260527_072338.log\n",
+      "stderr_tail": "(empty)"
+    },
+    {
+      "journey_id": "J04",
+      "name": "Parts Bin \u2192 Browse & Place",
+      "status": "PASS",
+      "exit_code": 0,
+      "log_file": "/home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J04_20260527_072338.log",
+      "stdout_tail": "='Balloon' category='Balloons / Airships'\n  [PLACE] part_type=10 name='Rope' category='Ropes / Belts / Pulleys'\n  [PLACE] part_type=54 name='Mel Schlemming' category='Characters'\n  \u2705 Placement tracking works \u2014 5 parts placed\n  [REMOVE] Last placed part removed\n  \u2705 Part removal works\n\n==================================================\nRESULTS: 8 passed, 0 failed\nFull log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J04_20260527_072338.log\n",
+      "stderr_tail": "(empty)"
+    },
+    {
+      "journey_id": "J05",
+      "name": "Part Handles \u2192 Flip/Stretch/Program/Delete",
+      "status": "PASS",
+      "exit_code": 0,
+      "log_file": "/home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J05_20260527_072338.log",
+      "stdout_tail": "_v \u2192 toggled vflip\n  \u2705 Flip vertical toggles\n  [ACTION] stretch \u2192 width x2, height x2\n  \u2705 Stretch modifies dimensions\n  [ACTION] recycle \u2192 remove part\n  \u2705 Recycle removes part (test_part=None)\n\n=== 4. Flag State Persistence ===\n  Restored part defaults\n  \u2705 Default part state correct\n\n==================================================\nRESULTS: 8 passed, 0 failed\nFull log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J05_20260527_072338.log\n",
+      "stderr_tail": "(empty)"
+    },
+    {
+      "journey_id": "J06",
+      "name": "Connections \u2192 Rope/Belt/Electrical",
+      "status": "PASS",
+      "exit_code": 0,
+      "log_file": "/home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J06_20260527_072338.log",
+      "stdout_tail": " parts\n\n=== 5. Connection Simulation ===\n  Simulating: click part_A(0:BowlingBall)\u2192part_B(10:Rope)\n  Simulating: click part(6:MouseMotor)\u2192part(5:ConveyorBelt)\n  Connection: Bowling Ball \u2192 Rope (0 \u2194 10)\n  Connection: Mouse Motor \u2192 Conveyor Belt (6 \u2194 5)\n  \u2705 Connection simulation works\n\n==================================================\nRESULTS: 6 passed, 0 failed\nFull log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J06_20260527_072338.log\n",
+      "stderr_tail": "(empty)"
+    },
+    {
+      "journey_id": "J07",
+      "name": "Programmable Parts \u2192 14 dialogs",
+      "status": "PASS",
+      "exit_code": 0,
+      "log_file": "/home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J07_20260527_072338.log",
+      "stdout_tail": "ch bounce....\n        Category: Balls\n        ANM: PART59 (3 frames)\n  \u2705 Info lookups from catalog work\n\n=== 4. Program Dialog Simulation ===\n  [OPEN] Programming dialog for Egg Timer\n  [SET] timer_duration = 5\n  [SAVE] Changes saved, dialog closed\n  \u2705 Programming dialog state cycle\n\n==================================================\nRESULTS: 5 passed, 0 failed\nFull log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J07_20260527_072338.log\n",
+      "stderr_tail": "(empty)"
+    },
+    {
+      "journey_id": "J08",
+      "name": "Simulation \u2192 Start/Observe/Pause/Reset",
+      "status": "PASS",
+      "exit_code": 0,
+      "log_file": "/home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J08_20260527_072338.log",
+      "stdout_tail": "3) vel=(0,363)\n  tick  160: pos=( 100, 126) vel=(0,483)\n  Final: pos=( 100, 167) start=( 100,  50)\n  \u2705 Ball moved in y direction \u2014 dy=117 (gravity applied)\n  \u2705 200 ticks completed without error\n\n=== 4. Collision Verification ===\n  \u2705 Ball/floor collision detection \u2014 AABB overlap True\n\n==================================================\nRESULTS: 5 passed, 0 failed\nFull log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J08_20260527_072338.log\n",
+      "stderr_tail": "(empty)"
+    },
+    {
+      "journey_id": "J09",
+      "name": "Simulation \u2192 Solve Conditions",
+      "status": "PASS",
+      "exit_code": 0,
+      "log_file": "/home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J09_20260527_072338.log",
+      "stdout_tail": "NOT in rect (100,50,50,50)\n  \u2705 State-only check (current_state == state_1) \u2014 state=3, target=3\n\n=== 4. Evaluation Logging ===\n  tick=   0  [UNMET]  part not in position\n  tick=  50  [UNMET]  part still falling\n  tick= 120  [MET]  part reached target\n  \u2705 Evaluation tracking simulated\n\n==================================================\nRESULTS: 8 passed, 0 failed\nFull log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J09_20260527_072338.log\n",
+      "stderr_tail": "(empty)"
+    },
+    {
+      "journey_id": "J10",
+      "name": "Save & Load",
+      "status": "FAIL",
+      "exit_code": 1,
+      "log_file": "/home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J10_20260527_072338.log",
+      "stdout_tail": "d \u2014 delta=(100,100)\n\n=== 3. Serialization / Field Integrity ===\n  \u2705 Required fields present \u2014 13/13 fields, missing=[]\n\n=== 4. Temp YAML Save/Load Round-Trip ===\n  \u274c Round-trip test \u2014 yaml lib unavailable\n\n=== 5. Modified Indicator ===\n  \u2705 Modified indicator works \u2014 Dirty flag: True\n\n==================================================\nRESULTS: 6 passed, 1 failed\nFull log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J10_20260527_072338.log\n",
+      "stderr_tail": "(empty)"
+    },
+    {
+      "journey_id": "J11",
+      "name": "Player Preferences",
+      "status": "PASS",
+      "exit_code": 0,
+      "log_file": "/home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J11_20260527_072338.log",
+      "stdout_tail": " correct state \u2014 display: OFF (red)\n\n=== 4. Preferences Persistence ===\n  \u2705 Preferences saved to JSON \u2014 /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/preferences.json\n  \u2705 Preferences reloaded match saved state \u2014 sound_effects: False\n\n==================================================\nRESULTS: 6 passed, 0 failed\nFull log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J11_20260527_072338.log\n",
+      "stderr_tail": "(empty)"
+    },
+    {
+      "journey_id": "J12",
+      "name": "Music & Sound",
+      "status": "PASS",
+      "exit_code": 0,
+      "log_file": "/home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J12_20260527_072338.log",
+      "stdout_tail": "Under the Sea (ELEV1)\n  \u2705 Play initiated\n  [STOP] Track ended\n  \u2705 Stop works\n\n=== 4. Volume Control ===\n  Volume set to 50%\n  \u2705 Volume change to 50%\n  Volume set to 25%\n  \u2705 Volume change to 25%\n  Volume set to 100%\n  \u2705 Volume change to 100%\n  Volume set to 0%\n  \u2705 Volume change to 0%\n\n==================================================\nRESULTS: 8 passed, 0 failed\nFull log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J12_20260527_072338.log\n",
+      "stderr_tail": "(empty)"
+    },
+    {
+      "journey_id": "J13",
+      "name": "Hints & Info Dialogs",
+      "status": "PASS",
+      "exit_code": 0,
+      "log_file": "/home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J13_20260527_072338.log",
+      "stdout_tail": "int 2: (320, 247) icon_flip=0\n    \"This looks like a good place for an anti-gravity pad.\"\n  \u2705 Hints parsed from ELEV1 \u2014 2 hints, 2 active\n\n=== 4. Hint Position Markers ===\n  Hint marker at (285, 73): in_view=Yes\n  Hint marker at (320, 247): in_view=Yes\n  \u2705 Hint positions in viewport\n\n==================================================\nRESULTS: 5 passed, 0 failed\nFull log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J13_20260527_072338.log\n",
+      "stderr_tail": "(empty)"
+    },
+    {
+      "journey_id": "J14",
+      "name": "Head-to-Head",
+      "status": "PASS",
+      "exit_code": 0,
+      "log_file": "/home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J14_20260527_072338.log",
+      "stdout_tail": "s Turn (Red)\n    Placed incline (type=2) at (200, 200)\n  Turn 3: Player 1's Turn (Blue)\n    Placed rope (type=10) connecting parts\n  \u2705 Turn switching works\n\n=== 5. Score Tracking ===\n  Player 1: 2 parts placed, score=0\n  Player 2: 1 parts placed, score=0\n  \u2705 Score tracked per player\n\n==================================================\nRESULTS: 6 passed, 0 failed\nFull log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J14_20260527_072338.log\n",
+      "stderr_tail": "(empty)"
+    }
+  ]
+}

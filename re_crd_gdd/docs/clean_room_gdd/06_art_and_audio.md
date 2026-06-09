@@ -7,7 +7,7 @@ O projeto tem restrições técnicas vitais advindas de sua estratégia jurídic
 Existem duas rotas implementáveis na direção de arte. O *Game Design* base deve comportar ambas:
 
 1. **A Abordagem "Port de Engine" (Modelo ScummVM):** O jogo provê **zero arte visual original**. O jogador providencia o recurso legal `RESOURCE.001` do MS-DOS.
-   - **Renderizador Opcodes (`ANMPlayer.gd`):** O backend reconstrói os mais de 3.000 *sprites* extraídos por processamento cru, sendo essencial possuir um código que suporte 6 opcodes base (A, B, C, D) ditados por `docs/experiments/R-002-anm-format.md`. Nenhuma textura é modificada, respeitando paletas de 256 cores originais (`PARTTEMP.json`).
+   - **Renderizador Opcodes (`ANMPlayer.gd`):** O backend reconstrói os mais de 3.000 *sprites* extraídos por processamento cru, sendo essencial possuir um código que suporte 6 opcodes base (A, B, C, D) ditados por `tim2_specs/experiments/R-002-anm-format.md`. Nenhuma textura é modificada, respeitando paletas de 256 cores originais (`PARTTEMP.json`).
 
 2. **A Abordagem "Remake HD" (Propriedade Intelectual Nova):** Caso a rota escolhida seja evitar o requisito de arquivos originais, toda a arte precisa ser recriada.
    - **Restrição de Gameplay:** Apesar de poder re-imaginar um gato, os **hitboxes (raios de colisão) e offset (x/y center)** devem obrigatoriamente manter os tamanhos ditados na base do projeto (`build/phase-9/part-properties.json`) em ponto fixo (`AABB`). Se o raio de colisão da engrenagem nova no remake em HD for maior que a clássica em 1 pixel, **fases antigas vão quebrar**.

@@ -1,0 +1,1409 @@
+level_info:
+  magic_number: EF AC 13 01
+  background_color: 3
+  title: Things That Launch
+  goal_description: Launch all the rockets, missiles, and fireworks.
+environment:
+  pressure: 67
+  gravity: 272
+  music_track: 1020
+hints:
+  active_hints_count: 4
+  entries:
+  - hint_id: 1
+    x: 33
+    y: 124
+    icon_flip: 0
+    text: A fuse can be lit with fire or by shining light through a magnifying glass.
+  - hint_id: 2
+    x: 112
+    y: -1
+    icon_flip: 0
+    text: When a missile collides with something, it will explode.
+  - hint_id: 3
+    x: 191
+    y: 90
+    icon_flip: 0
+    text: When lit, this part will explode into fireworks before leaving the screen.
+      It's a programmable part.
+  - hint_id: 4
+    x: 390
+    y: 128
+    icon_flip: 1
+    text: Missiles and rockets can be launched horizontally, fireworks can't.
+parts:
+  fixed_count: 22
+  moving_count: 11
+  fixed:
+  - part_type: 78
+    x: 215
+    y: 194
+    appearance: 0
+    flags:
+      flag_1: '0x6000'
+      flag_2: '0x0000'
+      flag_3: '0x8048'
+    flags_meanings:
+      flags_1:
+      - '0x2000: Part cannot move, in fixed position (used with 0x4000).'
+      - '0x4000: Part cannot move, in fixed position (used with 0x2000).'
+      flags_2: []
+      flags_3:
+      - '0x0008: Unknown. Used for several part types, changing it has no apparent
+        consequence. Usually paired with 0x0004 for flammable parts.'
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+      - '0x8000: A ''Puzzle solution'' icon is shown for the part (TIM2/3).'
+    dimensions:
+      width_1: 48
+      height_1: 34
+      width_2: 46
+      height_2: 34
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 78
+    x: 57
+    y: 177
+    appearance: 0
+    flags:
+      flag_1: '0x6000'
+      flag_2: '0x0000'
+      flag_3: '0x8048'
+    flags_meanings:
+      flags_1:
+      - '0x2000: Part cannot move, in fixed position (used with 0x4000).'
+      - '0x4000: Part cannot move, in fixed position (used with 0x2000).'
+      flags_2: []
+      flags_3:
+      - '0x0008: Unknown. Used for several part types, changing it has no apparent
+        consequence. Usually paired with 0x0004 for flammable parts.'
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+      - '0x8000: A ''Puzzle solution'' icon is shown for the part (TIM2/3).'
+    dimensions:
+      width_1: 48
+      height_1: 34
+      width_2: 46
+      height_2: 34
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 56
+    x: 264
+    y: 168
+    appearance: 0
+    flags:
+      flag_1: '0x6000'
+      flag_2: '0x0180'
+      flag_3: '0x2040'
+    flags_meanings:
+      flags_1:
+      - '0x2000: Part cannot move, in fixed position (used with 0x4000).'
+      - '0x4000: Part cannot move, in fixed position (used with 0x2000).'
+      flags_2:
+      - '0x0080: Part can be stretched in at least one direction: inclines, conveyor
+        belt, walls.'
+      - '0x0100: Parts that can be stretched both horizontally and vertically: walls.'
+      flags_3:
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+      - '0x2000: Wall part (TIM2/3).'
+    dimensions:
+      width_1: 16
+      height_1: 208
+      width_2: 16
+      height_2: 208
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 56
+    x: 216
+    y: 168
+    appearance: 0
+    flags:
+      flag_1: '0x6000'
+      flag_2: '0x0180'
+      flag_3: '0x2040'
+    flags_meanings:
+      flags_1:
+      - '0x2000: Part cannot move, in fixed position (used with 0x4000).'
+      - '0x4000: Part cannot move, in fixed position (used with 0x2000).'
+      flags_2:
+      - '0x0080: Part can be stretched in at least one direction: inclines, conveyor
+        belt, walls.'
+      - '0x0100: Parts that can be stretched both horizontally and vertically: walls.'
+      flags_3:
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+      - '0x2000: Wall part (TIM2/3).'
+    dimensions:
+      width_1: 48
+      height_1: 16
+      width_2: 48
+      height_2: 16
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 56
+    x: 136
+    y: 8
+    appearance: 0
+    flags:
+      flag_1: '0x6000'
+      flag_2: '0x0180'
+      flag_3: '0x2040'
+    flags_meanings:
+      flags_1:
+      - '0x2000: Part cannot move, in fixed position (used with 0x4000).'
+      - '0x4000: Part cannot move, in fixed position (used with 0x2000).'
+      flags_2:
+      - '0x0080: Part can be stretched in at least one direction: inclines, conveyor
+        belt, walls.'
+      - '0x0100: Parts that can be stretched both horizontally and vertically: walls.'
+      flags_3:
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+      - '0x2000: Wall part (TIM2/3).'
+    dimensions:
+      width_1: 48
+      height_1: 16
+      width_2: 48
+      height_2: 16
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 82
+    x: 152
+    y: 296
+    appearance: 0
+    flags:
+      flag_1: '0x6000'
+      flag_2: '0x0180'
+      flag_3: '0x2040'
+    flags_meanings:
+      flags_1:
+      - '0x2000: Part cannot move, in fixed position (used with 0x4000).'
+      - '0x4000: Part cannot move, in fixed position (used with 0x2000).'
+      flags_2:
+      - '0x0080: Part can be stretched in at least one direction: inclines, conveyor
+        belt, walls.'
+      - '0x0100: Parts that can be stretched both horizontally and vertically: walls.'
+      flags_3:
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+      - '0x2000: Wall part (TIM2/3).'
+    dimensions:
+      width_1: 16
+      height_1: 80
+      width_2: 16
+      height_2: 80
+    physics:
+      behavior: 8
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 82
+    x: 136
+    y: 280
+    appearance: 0
+    flags:
+      flag_1: '0x6000'
+      flag_2: '0x0180'
+      flag_3: '0x2040'
+    flags_meanings:
+      flags_1:
+      - '0x2000: Part cannot move, in fixed position (used with 0x4000).'
+      - '0x4000: Part cannot move, in fixed position (used with 0x2000).'
+      flags_2:
+      - '0x0080: Part can be stretched in at least one direction: inclines, conveyor
+        belt, walls.'
+      - '0x0100: Parts that can be stretched both horizontally and vertically: walls.'
+      flags_3:
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+      - '0x2000: Wall part (TIM2/3).'
+    dimensions:
+      width_1: 48
+      height_1: 16
+      width_2: 48
+      height_2: 16
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 30
+    x: 128
+    y: 279
+    appearance: 0
+    flags:
+      flag_1: '0x6400'
+      flag_2: '0x0000'
+      flag_3: '0x0048'
+    flags_meanings:
+      flags_1:
+      - '0x0400: Part can be flipped horizontally.'
+      - '0x2000: Part cannot move, in fixed position (used with 0x4000).'
+      - '0x4000: Part cannot move, in fixed position (used with 0x2000).'
+      flags_2: []
+      flags_3:
+      - '0x0008: Unknown. Used for several part types, changing it has no apparent
+        consequence. Usually paired with 0x0004 for flammable parts.'
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+    dimensions:
+      width_1: 24
+      height_1: 40
+      width_2: 18
+      height_2: 40
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 25
+    x: 82
+    y: 279
+    appearance: 0
+    flags:
+      flag_1: '0x6400'
+      flag_2: '0x0000'
+      flag_3: '0x8048'
+    flags_meanings:
+      flags_1:
+      - '0x0400: Part can be flipped horizontally.'
+      - '0x2000: Part cannot move, in fixed position (used with 0x4000).'
+      - '0x4000: Part cannot move, in fixed position (used with 0x2000).'
+      flags_2: []
+      flags_3:
+      - '0x0008: Unknown. Used for several part types, changing it has no apparent
+        consequence. Usually paired with 0x0004 for flammable parts.'
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+      - '0x8000: A ''Puzzle solution'' icon is shown for the part (TIM2/3).'
+    dimensions:
+      width_1: 48
+      height_1: 21
+      width_2: 46
+      height_2: 21
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 83
+    x: 328
+    y: 264
+    appearance: 0
+    flags:
+      flag_1: '0x6000'
+      flag_2: '0x0180'
+      flag_3: '0x2040'
+    flags_meanings:
+      flags_1:
+      - '0x2000: Part cannot move, in fixed position (used with 0x4000).'
+      - '0x4000: Part cannot move, in fixed position (used with 0x2000).'
+      flags_2:
+      - '0x0080: Part can be stretched in at least one direction: inclines, conveyor
+        belt, walls.'
+      - '0x0100: Parts that can be stretched both horizontally and vertically: walls.'
+      flags_3:
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+      - '0x2000: Wall part (TIM2/3).'
+    dimensions:
+      width_1: 16
+      height_1: 112
+      width_2: 16
+      height_2: 112
+    physics:
+      behavior: 8
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 25
+    x: 369
+    y: 254
+    appearance: 0
+    flags:
+      flag_1: '0x6400'
+      flag_2: '0x0010'
+      flag_3: '0x8008'
+    flags_meanings:
+      flags_1:
+      - '0x0400: Part can be flipped horizontally.'
+      - '0x2000: Part cannot move, in fixed position (used with 0x4000).'
+      - '0x4000: Part cannot move, in fixed position (used with 0x2000).'
+      flags_2:
+      - '0x0010: The part sprite is drawn horizontally flipped.'
+      flags_3:
+      - '0x0008: Unknown. Used for several part types, changing it has no apparent
+        consequence. Usually paired with 0x0004 for flammable parts.'
+      - '0x8000: A ''Puzzle solution'' icon is shown for the part (TIM2/3).'
+    dimensions:
+      width_1: 48
+      height_1: 21
+      width_2: 46
+      height_2: 21
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 30
+    x: 347
+    y: 251
+    appearance: 0
+    flags:
+      flag_1: '0x6400'
+      flag_2: '0x0010'
+      flag_3: '0x0048'
+    flags_meanings:
+      flags_1:
+      - '0x0400: Part can be flipped horizontally.'
+      - '0x2000: Part cannot move, in fixed position (used with 0x4000).'
+      - '0x4000: Part cannot move, in fixed position (used with 0x2000).'
+      flags_2:
+      - '0x0010: The part sprite is drawn horizontally flipped.'
+      flags_3:
+      - '0x0008: Unknown. Used for several part types, changing it has no apparent
+        consequence. Usually paired with 0x0004 for flammable parts.'
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+    dimensions:
+      width_1: 24
+      height_1: 40
+      width_2: 18
+      height_2: 40
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 83
+    x: 312
+    y: 248
+    appearance: 0
+    flags:
+      flag_1: '0x6000'
+      flag_2: '0x0180'
+      flag_3: '0x2040'
+    flags_meanings:
+      flags_1:
+      - '0x2000: Part cannot move, in fixed position (used with 0x4000).'
+      - '0x4000: Part cannot move, in fixed position (used with 0x2000).'
+      flags_2:
+      - '0x0080: Part can be stretched in at least one direction: inclines, conveyor
+        belt, walls.'
+      - '0x0100: Parts that can be stretched both horizontally and vertically: walls.'
+      flags_3:
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+      - '0x2000: Wall part (TIM2/3).'
+    dimensions:
+      width_1: 48
+      height_1: 16
+      width_2: 48
+      height_2: 16
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 84
+    x: 440
+    y: 200
+    appearance: 0
+    flags:
+      flag_1: '0x6000'
+      flag_2: '0x0180'
+      flag_3: '0x2040'
+    flags_meanings:
+      flags_1:
+      - '0x2000: Part cannot move, in fixed position (used with 0x4000).'
+      - '0x4000: Part cannot move, in fixed position (used with 0x2000).'
+      flags_2:
+      - '0x0080: Part can be stretched in at least one direction: inclines, conveyor
+        belt, walls.'
+      - '0x0100: Parts that can be stretched both horizontally and vertically: walls.'
+      flags_3:
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+      - '0x2000: Wall part (TIM2/3).'
+    dimensions:
+      width_1: 16
+      height_1: 176
+      width_2: 16
+      height_2: 176
+    physics:
+      behavior: 8
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 84
+    x: 360
+    y: 184
+    appearance: 0
+    flags:
+      flag_1: '0x6000'
+      flag_2: '0x0180'
+      flag_3: '0x2040'
+    flags_meanings:
+      flags_1:
+      - '0x2000: Part cannot move, in fixed position (used with 0x4000).'
+      - '0x4000: Part cannot move, in fixed position (used with 0x2000).'
+      flags_2:
+      - '0x0080: Part can be stretched in at least one direction: inclines, conveyor
+        belt, walls.'
+      - '0x0100: Parts that can be stretched both horizontally and vertically: walls.'
+      flags_3:
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+      - '0x2000: Wall part (TIM2/3).'
+    dimensions:
+      width_1: 144
+      height_1: 16
+      width_2: 144
+      height_2: 16
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 125
+    x: 536
+    y: 152
+    appearance: 0
+    flags:
+      flag_1: '0x6000'
+      flag_2: '0x0180'
+      flag_3: '0x2040'
+    flags_meanings:
+      flags_1:
+      - '0x2000: Part cannot move, in fixed position (used with 0x4000).'
+      - '0x4000: Part cannot move, in fixed position (used with 0x2000).'
+      flags_2:
+      - '0x0080: Part can be stretched in at least one direction: inclines, conveyor
+        belt, walls.'
+      - '0x0100: Parts that can be stretched both horizontally and vertically: walls.'
+      flags_3:
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+      - '0x2000: Wall part (TIM2/3).'
+    dimensions:
+      width_1: 16
+      height_1: 224
+      width_2: 16
+      height_2: 224
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 46
+    x: 56
+    y: 152
+    appearance: 0
+    flags:
+      flag_1: '0x6000'
+      flag_2: '0x0180'
+      flag_3: '0x2040'
+    flags_meanings:
+      flags_1:
+      - '0x2000: Part cannot move, in fixed position (used with 0x4000).'
+      - '0x4000: Part cannot move, in fixed position (used with 0x2000).'
+      flags_2:
+      - '0x0080: Part can be stretched in at least one direction: inclines, conveyor
+        belt, walls.'
+      - '0x0100: Parts that can be stretched both horizontally and vertically: walls.'
+      flags_3:
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+      - '0x2000: Wall part (TIM2/3).'
+    dimensions:
+      width_1: 48
+      height_1: 16
+      width_2: 48
+      height_2: 16
+    physics:
+      behavior: 1
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 46
+    x: 40
+    y: 152
+    appearance: 0
+    flags:
+      flag_1: '0x6000'
+      flag_2: '0x0180'
+      flag_3: '0x2040'
+    flags_meanings:
+      flags_1:
+      - '0x2000: Part cannot move, in fixed position (used with 0x4000).'
+      - '0x4000: Part cannot move, in fixed position (used with 0x2000).'
+      flags_2:
+      - '0x0080: Part can be stretched in at least one direction: inclines, conveyor
+        belt, walls.'
+      - '0x0100: Parts that can be stretched both horizontally and vertically: walls.'
+      flags_3:
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+      - '0x2000: Wall part (TIM2/3).'
+    dimensions:
+      width_1: 16
+      height_1: 224
+      width_2: 16
+      height_2: 224
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 25
+    x: 508
+    y: 114
+    appearance: 0
+    flags:
+      flag_1: '0x6400'
+      flag_2: '0x0010'
+      flag_3: '0x8048'
+    flags_meanings:
+      flags_1:
+      - '0x0400: Part can be flipped horizontally.'
+      - '0x2000: Part cannot move, in fixed position (used with 0x4000).'
+      - '0x4000: Part cannot move, in fixed position (used with 0x2000).'
+      flags_2:
+      - '0x0010: The part sprite is drawn horizontally flipped.'
+      flags_3:
+      - '0x0008: Unknown. Used for several part types, changing it has no apparent
+        consequence. Usually paired with 0x0004 for flammable parts.'
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+      - '0x8000: A ''Puzzle solution'' icon is shown for the part (TIM2/3).'
+    dimensions:
+      width_1: 48
+      height_1: 21
+      width_2: 46
+      height_2: 21
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 30
+    x: 491
+    y: 113
+    appearance: 0
+    flags:
+      flag_1: '0x6400'
+      flag_2: '0x0010'
+      flag_3: '0x0008'
+    flags_meanings:
+      flags_1:
+      - '0x0400: Part can be flipped horizontally.'
+      - '0x2000: Part cannot move, in fixed position (used with 0x4000).'
+      - '0x4000: Part cannot move, in fixed position (used with 0x2000).'
+      flags_2:
+      - '0x0010: The part sprite is drawn horizontally flipped.'
+      flags_3:
+      - '0x0008: Unknown. Used for several part types, changing it has no apparent
+        consequence. Usually paired with 0x0004 for flammable parts.'
+    dimensions:
+      width_1: 24
+      height_1: 40
+      width_2: 18
+      height_2: 40
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 125
+    x: 456
+    y: 104
+    appearance: 0
+    flags:
+      flag_1: '0x6000'
+      flag_2: '0x0180'
+      flag_3: '0x2000'
+    flags_meanings:
+      flags_1:
+      - '0x2000: Part cannot move, in fixed position (used with 0x4000).'
+      - '0x4000: Part cannot move, in fixed position (used with 0x2000).'
+      flags_2:
+      - '0x0080: Part can be stretched in at least one direction: inclines, conveyor
+        belt, walls.'
+      - '0x0100: Parts that can be stretched both horizontally and vertically: walls.'
+      flags_3:
+      - '0x2000: Wall part (TIM2/3).'
+    dimensions:
+      width_1: 48
+      height_1: 16
+      width_2: 48
+      height_2: 16
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 125
+    x: 136
+    y: 24
+    appearance: 0
+    flags:
+      flag_1: '0x6000'
+      flag_2: '0x0180'
+      flag_3: '0x2040'
+    flags_meanings:
+      flags_1:
+      - '0x2000: Part cannot move, in fixed position (used with 0x4000).'
+      - '0x4000: Part cannot move, in fixed position (used with 0x2000).'
+      flags_2:
+      - '0x0080: Part can be stretched in at least one direction: inclines, conveyor
+        belt, walls.'
+      - '0x0100: Parts that can be stretched both horizontally and vertically: walls.'
+      flags_3:
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+      - '0x2000: Wall part (TIM2/3).'
+    dimensions:
+      width_1: 48
+      height_1: 16
+      width_2: 48
+      height_2: 16
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  moving:
+  - part_type: 44
+    x: 95
+    y: 264
+    appearance: 0
+    flags:
+      flag_1: '0x1000'
+      flag_2: '0x0000'
+      flag_3: '0x8008'
+    flags_meanings:
+      flags_1:
+      - '0x1000: "Moving" part, affected by gravity.'
+      flags_2: []
+      flags_3:
+      - '0x0008: Unknown. Used for several part types, changing it has no apparent
+        consequence. Usually paired with 0x0004 for flammable parts.'
+      - '0x8000: A ''Puzzle solution'' icon is shown for the part (TIM2/3).'
+    dimensions:
+      width_1: 16
+      height_1: 15
+      width_2: 15
+      height_2: 15
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 44
+    x: 392
+    y: 234
+    appearance: 0
+    flags:
+      flag_1: '0x1000'
+      flag_2: '0x0000'
+      flag_3: '0x8008'
+    flags_meanings:
+      flags_1:
+      - '0x1000: "Moving" part, affected by gravity.'
+      flags_2: []
+      flags_3:
+      - '0x0008: Unknown. Used for several part types, changing it has no apparent
+        consequence. Usually paired with 0x0004 for flammable parts.'
+      - '0x8000: A ''Puzzle solution'' icon is shown for the part (TIM2/3).'
+    dimensions:
+      width_1: 16
+      height_1: 15
+      width_2: 15
+      height_2: 15
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 44
+    x: 206
+    y: 184
+    appearance: 0
+    flags:
+      flag_1: '0x1000'
+      flag_2: '0x0000'
+      flag_3: '0x8048'
+    flags_meanings:
+      flags_1:
+      - '0x1000: "Moving" part, affected by gravity.'
+      flags_2: []
+      flags_3:
+      - '0x0008: Unknown. Used for several part types, changing it has no apparent
+        consequence. Usually paired with 0x0004 for flammable parts.'
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+      - '0x8000: A ''Puzzle solution'' icon is shown for the part (TIM2/3).'
+    dimensions:
+      width_1: 16
+      height_1: 15
+      width_2: 15
+      height_2: 15
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 44
+    x: 528
+    y: 85
+    appearance: 0
+    flags:
+      flag_1: '0x1000'
+      flag_2: '0x0000'
+      flag_3: '0x8008'
+    flags_meanings:
+      flags_1:
+      - '0x1000: "Moving" part, affected by gravity.'
+      flags_2: []
+      flags_3:
+      - '0x0008: Unknown. Used for several part types, changing it has no apparent
+        consequence. Usually paired with 0x0004 for flammable parts.'
+      - '0x8000: A ''Puzzle solution'' icon is shown for the part (TIM2/3).'
+    dimensions:
+      width_1: 16
+      height_1: 15
+      width_2: 15
+      height_2: 15
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 28
+    x: 95
+    y: 169
+    appearance: 0
+    flags:
+      flag_1: '0x1000'
+      flag_2: '0x0000'
+      flag_3: '0x8048'
+    flags_meanings:
+      flags_1:
+      - '0x1000: "Moving" part, affected by gravity.'
+      flags_2: []
+      flags_3:
+      - '0x0008: Unknown. Used for several part types, changing it has no apparent
+        consequence. Usually paired with 0x0004 for flammable parts.'
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+      - '0x8000: A ''Puzzle solution'' icon is shown for the part (TIM2/3).'
+    dimensions:
+      width_1: 24
+      height_1: 18
+      width_2: 18
+      height_2: 18
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 80
+    x: 227
+    y: 110
+    appearance: 0
+    flags:
+      flag_1: '0x1000'
+      flag_2: '0x0000'
+      flag_3: '0x844c'
+    flags_meanings:
+      flags_1:
+      - '0x1000: "Moving" part, affected by gravity.'
+      flags_2: []
+      flags_3:
+      - '0x0004: The part can burn (candle) or has a fuse that can be lit (dynamite,
+        cannon). Usually combined with 0x0008.'
+      - '0x0008: Unknown. Used for several part types, changing it has no apparent
+        consequence. Usually paired with 0x0004 for flammable parts.'
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+      - '0x0400: A ''program'' icon is shown for the part (TIM2/3).'
+      - '0x8000: A ''Puzzle solution'' icon is shown for the part (TIM2/3).'
+    dimensions:
+      width_1: 26
+      height_1: 86
+      width_2: 23
+      height_2: 86
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 80
+    x: 460
+    y: 47
+    appearance: 0
+    flags:
+      flag_1: '0x1000'
+      flag_2: '0x0000'
+      flag_3: '0x844c'
+    flags_meanings:
+      flags_1:
+      - '0x1000: "Moving" part, affected by gravity.'
+      flags_2: []
+      flags_3:
+      - '0x0004: The part can burn (candle) or has a fuse that can be lit (dynamite,
+        cannon). Usually combined with 0x0008.'
+      - '0x0008: Unknown. Used for several part types, changing it has no apparent
+        consequence. Usually paired with 0x0004 for flammable parts.'
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+      - '0x0400: A ''program'' icon is shown for the part (TIM2/3).'
+      - '0x8000: A ''Puzzle solution'' icon is shown for the part (TIM2/3).'
+    dimensions:
+      width_1: 26
+      height_1: 86
+      width_2: 23
+      height_2: 86
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 36
+    x: 293
+    y: 186
+    appearance: 0
+    flags:
+      flag_1: '0x1600'
+      flag_2: '0x0000'
+      flag_3: '0x804c'
+    flags_meanings:
+      flags_1:
+      - '0x0200: Part can be flipped vertically.'
+      - '0x0400: Part can be flipped horizontally.'
+      - '0x1000: "Moving" part, affected by gravity.'
+      flags_2: []
+      flags_3:
+      - '0x0004: The part can burn (candle) or has a fuse that can be lit (dynamite,
+        cannon). Usually combined with 0x0008.'
+      - '0x0008: Unknown. Used for several part types, changing it has no apparent
+        consequence. Usually paired with 0x0004 for flammable parts.'
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+      - '0x8000: A ''Puzzle solution'' icon is shown for the part (TIM2/3).'
+    dimensions:
+      width_1: 32
+      height_1: 85
+      width_2: 84
+      height_2: 84
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 36
+    x: 36
+    y: 90
+    appearance: 0
+    flags:
+      flag_1: '0x1600'
+      flag_2: '0x0000'
+      flag_3: '0x804c'
+    flags_meanings:
+      flags_1:
+      - '0x0200: Part can be flipped vertically.'
+      - '0x0400: Part can be flipped horizontally.'
+      - '0x1000: "Moving" part, affected by gravity.'
+      flags_2: []
+      flags_3:
+      - '0x0004: The part can burn (candle) or has a fuse that can be lit (dynamite,
+        cannon). Usually combined with 0x0008.'
+      - '0x0008: Unknown. Used for several part types, changing it has no apparent
+        consequence. Usually paired with 0x0004 for flammable parts.'
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+      - '0x8000: A ''Puzzle solution'' icon is shown for the part (TIM2/3).'
+    dimensions:
+      width_1: 32
+      height_1: 85
+      width_2: 84
+      height_2: 84
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 70
+    x: 114
+    y: 204
+    appearance: 0
+    flags:
+      flag_1: '0x1600'
+      flag_2: '0x0000'
+      flag_3: '0x804c'
+    flags_meanings:
+      flags_1:
+      - '0x0200: Part can be flipped vertically.'
+      - '0x0400: Part can be flipped horizontally.'
+      - '0x1000: "Moving" part, affected by gravity.'
+      flags_2: []
+      flags_3:
+      - '0x0004: The part can burn (candle) or has a fuse that can be lit (dynamite,
+        cannon). Usually combined with 0x0008.'
+      - '0x0008: Unknown. Used for several part types, changing it has no apparent
+        consequence. Usually paired with 0x0004 for flammable parts.'
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+      - '0x8000: A ''Puzzle solution'' icon is shown for the part (TIM2/3).'
+    dimensions:
+      width_1: 32
+      height_1: 95
+      width_2: 96
+      height_2: 96
+    physics:
+      behavior: 0
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+  - part_type: 70
+    x: 335
+    y: 126
+    appearance: 39
+    flags:
+      flag_1: '0x1600'
+      flag_2: '0x0000'
+      flag_3: '0x804c'
+    flags_meanings:
+      flags_1:
+      - '0x0200: Part can be flipped vertically.'
+      - '0x0400: Part can be flipped horizontally.'
+      - '0x1000: "Moving" part, affected by gravity.'
+      flags_2: []
+      flags_3:
+      - '0x0004: The part can burn (candle) or has a fuse that can be lit (dynamite,
+        cannon). Usually combined with 0x0008.'
+      - '0x0008: Unknown. Used for several part types, changing it has no apparent
+        consequence. Usually paired with 0x0004 for flammable parts.'
+      - '0x0040: Part is ''locked'' — not placed into the parts bin (TIM2/3).'
+      - '0x8000: A ''Puzzle solution'' icon is shown for the part (TIM2/3).'
+    dimensions:
+      width_1: 100
+      height_1: 25
+      width_2: 96
+      height_2: 96
+    physics:
+      behavior: 1
+      belt_anchor:
+        x: 0
+        y: 0
+      belt_line_distance: 0
+      rope_1_anchor:
+        x: 0
+        y: 0
+      rope_2_anchor:
+        x: 0
+        y: 0
+      connected_1: -1
+      connected_2: -1
+      outlet_plugged_1: -1
+      outlet_plugged_2: -1
+solution:
+  conditions_count: 1
+  delay: 0
+  conditions:
+  - part_index: 30
+    part_state_1: 35
+    part_state_2: 40
+    part_count: 0
+    rect:
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+  - part_index: 29
+    part_state_1: 35
+    part_state_2: 40
+    part_count: 0
+    rect:
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+  - part_index: 31
+    part_state_1: 38
+    part_state_2: 38
+    part_count: 0
+    rect:
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+  - part_index: 27
+    part_state_1: 31
+    part_state_2: 47
+    part_count: 0
+    rect:
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+  - part_index: 28
+    part_state_1: 31
+    part_state_2: 47
+    part_count: 0
+    rect:
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+  - part_index: 32
+    part_state_1: 70
+    part_state_2: 70
+    part_count: 0
+    rect:
+      x: 0
+      y: 0
+      width: 0
+      height: 0

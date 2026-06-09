@@ -79,7 +79,7 @@ func _load_json_files() -> void:
 	var part_assets_raw = load_array.call("res://data/part-assets.json")
 	for item in part_assets_raw:
 		if item is Dictionary and item.has("part_type"):
-			var pt = item["part_type"]
+			var pt = int(item["part_type"])
 			part_to_category[pt] = item.get("category", "Unknown")
 
 func _build_category_rules() -> void:
@@ -205,7 +205,7 @@ func _build_physics_props() -> void:
 	for entry in load_props.call():
 		if not entry is Dictionary or not entry.has("part_type"):
 			continue
-		var pt = entry["part_type"]
+		var pt = int(entry["part_type"])
 		var fields: Dictionary = {}
 		for f in entry.get("fields", []):
 			if f is Dictionary:
@@ -294,6 +294,31 @@ func get_category(part_type: int) -> String:
 
 func get_physics_props(part_type: int) -> Dictionary:
 	return physics_props.get(part_type, {"mass": 2832, "cor_q8": 128, "friction_q8": 0, "collision_radius": 0, "collision_w": 0, "collision_h": 0})
+
+func get_anm_state_for_counter(part_type: int, counter: int) -> int:
+	var pt_str = str(part_type)
+	if solve_data.has(pt_str):
+		var states = solve_data[pt_str].get("states", [])
+		if counter >= 0 and counter < states.size():
+			var anm_state = states[counter].get("anm_state", 0)
+			if anm_state != null:
+				return anm_state
+	var anm = AnmDatabase.get_anm_for_part(part_type)
+	if anm != "":
+		return AnmDatabase.get_default_state_id(anm)
+	return 1
+
+func get_trigger_targets(part_type: int, state_counter: int) -> Dictionary:
+	var result = {"self": -1, "other": -1}
+	var pt_str = str(part_type)
+	if solve_data.has(pt_str):
+		var states = solve_data[pt_str].get("states", [])
+		if state_counter >= 0 and state_counter < states.size():
+			var triggers = states[state_counter].get("triggers", [])
+			if triggers.size() > 0:
+				result["self"] = triggers[0].get("self", -1)
+				result["other"] = triggers[0].get("other", -1)
+	return result
 
 func get_sounds_for_part(part_type: int) -> Array:
 	return part_sounds.get(part_type, [])

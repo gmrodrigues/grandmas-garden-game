@@ -1,0 +1,74 @@
+@startuml Part_Data_Model
+
+title Part Data Model (Simulation - Data-Driven)
+
+rectangle "Part <<Data-Driven>>\n(RefCounted)" as PART #e0e0e0
+note right of PART
+  -- Identity --
+  id: int = -1
+  part_type: int = 0
+  archetype: int = 0
+  name: String = ""
+
+  -- Geometry --
+  x, y: int (setup position)
+  pos_x, pos_y: int (runtime)
+  vel_x, vel_y: int (Q8.8 fixed)
+  width_1/2, height_1/2: int
+  collision_radius: int
+  facing: int = 1
+
+  -- Physics (Q8.8) --
+  mass: int = 2832
+  cor_q8: int = 128
+  friction_q8: int = 0
+  damping: int = 200
+  gravity_category: int = 7
+  gravity_buoyancy: int = 0
+  is_moving: bool
+end note
+
+note right of PART
+  -- State Machine (60Hz) --
+  state_counter: int = 0
+  sub_counter: int = 0
+  state_limit_upper: int = 8
+  state_limit_lower: int = 0
+  state_limit_reset: int = 0
+  state_limit_sub_a: int = 5
+  state_limit_sub_b: int = 5
+  current_state: int = 0
+  _rng_state: int = 1
+  _countdown: int = -1
+
+  -- Connections --
+  connected_1/2: int = -1
+  rope_segment_length: int = 200
+  rope_pull_x/y: int = 0
+  angular_velocity: int = 0
+  triggers: Array = []
+  destructible: bool = false
+  spawns: Array = []
+  destroyed: bool = false
+end note
+
+rectangle "Archetype Enum" as ARCH #d0d0d0
+note right of ARCH
+  ARCH_STATIC: int = 0
+  ARCH_KINETIC: int = 1
+  ARCH_DRIVER: int = 2
+  ARCH_LINK: int = 3
+  ARCH_EMITTER: int = 4
+  ARCH_CONSUMER: int = 5
+end note
+
+rectangle "Flag Constants" as FLAGS #d0d0d0
+note right of FLAGS
+  FLAG_MOVING: int = 0x1000
+  FLAG_FLIP: int = 0x8000
+end note
+
+PART --> ARCH : has archetype
+PART --> FLAGS : uses flags
+
+@enduml

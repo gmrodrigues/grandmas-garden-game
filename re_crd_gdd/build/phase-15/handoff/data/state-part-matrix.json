@@ -1,0 +1,3311 @@
+{
+  "all_state_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    66,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104
+  ],
+  "state_to_parts": {
+    "1": [
+      "BINSOLVE",
+      "BUTTONS",
+      "CNTRLPNL",
+      "CREDITS",
+      "GOALBAR",
+      "HANDLES",
+      "HEDTOHED",
+      "HINTLOCK",
+      "INFO10",
+      "INFO109",
+      "INFO19",
+      "INFO29",
+      "INFO45",
+      "INFO69",
+      "INFO8",
+      "INFO88",
+      "LOADSAVE",
+      "MAINMENU",
+      "PART0",
+      "PART1",
+      "PART10",
+      "PART100",
+      "PART101",
+      "PART102",
+      "PART103",
+      "PART105",
+      "PART107",
+      "PART108",
+      "PART109",
+      "PART115",
+      "PART118",
+      "PART119",
+      "PART12",
+      "PART120",
+      "PART124",
+      "PART125",
+      "PART126",
+      "PART128",
+      "PART130",
+      "PART131",
+      "PART132",
+      "PART133",
+      "PART134",
+      "PART135",
+      "PART138",
+      "PART14",
+      "PART149",
+      "PART150",
+      "PART151",
+      "PART152",
+      "PART153",
+      "PART154",
+      "PART155",
+      "PART156",
+      "PART157",
+      "PART158",
+      "PART159",
+      "PART160",
+      "PART161",
+      "PART162",
+      "PART164",
+      "PART165",
+      "PART166",
+      "PART167",
+      "PART168",
+      "PART169",
+      "PART17",
+      "PART170",
+      "PART171",
+      "PART172",
+      "PART173",
+      "PART174",
+      "PART175",
+      "PART176",
+      "PART177",
+      "PART178",
+      "PART179",
+      "PART18",
+      "PART180",
+      "PART181",
+      "PART182",
+      "PART183",
+      "PART184",
+      "PART185",
+      "PART186",
+      "PART187",
+      "PART188",
+      "PART189",
+      "PART190",
+      "PART191",
+      "PART192",
+      "PART193",
+      "PART194",
+      "PART195",
+      "PART196",
+      "PART197",
+      "PART198",
+      "PART199",
+      "PART2",
+      "PART20",
+      "PART200",
+      "PART201",
+      "PART202",
+      "PART203",
+      "PART204",
+      "PART205",
+      "PART207",
+      "PART208",
+      "PART209",
+      "PART210",
+      "PART211",
+      "PART212",
+      "PART213",
+      "PART214",
+      "PART215",
+      "PART216",
+      "PART217",
+      "PART218",
+      "PART219",
+      "PART220",
+      "PART221",
+      "PART222",
+      "PART223",
+      "PART224",
+      "PART225",
+      "PART226",
+      "PART227",
+      "PART228",
+      "PART229",
+      "PART23",
+      "PART230",
+      "PART231",
+      "PART232",
+      "PART233",
+      "PART234",
+      "PART235",
+      "PART236",
+      "PART237",
+      "PART238",
+      "PART239",
+      "PART24",
+      "PART240",
+      "PART241",
+      "PART242",
+      "PART243",
+      "PART244",
+      "PART245",
+      "PART246",
+      "PART247",
+      "PART248",
+      "PART249",
+      "PART250",
+      "PART251",
+      "PART252",
+      "PART254",
+      "PART255",
+      "PART256",
+      "PART257",
+      "PART258",
+      "PART259",
+      "PART260",
+      "PART261",
+      "PART262",
+      "PART263",
+      "PART264",
+      "PART265",
+      "PART266",
+      "PART267",
+      "PART268",
+      "PART269",
+      "PART27",
+      "PART270",
+      "PART271",
+      "PART272",
+      "PART273",
+      "PART274",
+      "PART277",
+      "PART278",
+      "PART279",
+      "PART28",
+      "PART281",
+      "PART282",
+      "PART283",
+      "PART284",
+      "PART285",
+      "PART286",
+      "PART287",
+      "PART288",
+      "PART289",
+      "PART29",
+      "PART290",
+      "PART291",
+      "PART292",
+      "PART293",
+      "PART294",
+      "PART30",
+      "PART31",
+      "PART32",
+      "PART33",
+      "PART34",
+      "PART39",
+      "PART40",
+      "PART42",
+      "PART43",
+      "PART44",
+      "PART45",
+      "PART46",
+      "PART47",
+      "PART50",
+      "PART52",
+      "PART54",
+      "PART56",
+      "PART57",
+      "PART59",
+      "PART60",
+      "PART61",
+      "PART62",
+      "PART65",
+      "PART66",
+      "PART67",
+      "PART68",
+      "PART69",
+      "PART72",
+      "PART74",
+      "PART75",
+      "PART76",
+      "PART78",
+      "PART79",
+      "PART8",
+      "PART81",
+      "PART82",
+      "PART83",
+      "PART84",
+      "PART85",
+      "PART86",
+      "PART89",
+      "PART90",
+      "PART91",
+      "PART92",
+      "PART93",
+      "PART94",
+      "PART95",
+      "PART97",
+      "PART98",
+      "PART99",
+      "PARTSBIN",
+      "PROFESOR",
+      "PROFESR2",
+      "PUZDISP",
+      "PUZLTYPE",
+      "SIERRA",
+      "SOLVE",
+      "TITLE"
+    ],
+    "2": [
+      "BINSOLVE",
+      "BUTTONS",
+      "HANDLES",
+      "HEDTOHED",
+      "HINTLOCK",
+      "INFO0",
+      "INFO1",
+      "INFO100",
+      "INFO101",
+      "INFO102",
+      "INFO103",
+      "INFO105",
+      "INFO106",
+      "INFO107",
+      "INFO108",
+      "INFO11",
+      "INFO117",
+      "INFO118",
+      "INFO119",
+      "INFO120",
+      "INFO125",
+      "INFO126",
+      "INFO136",
+      "INFO137",
+      "INFO138",
+      "INFO139",
+      "INFO14",
+      "INFO15",
+      "INFO16",
+      "INFO17",
+      "INFO2",
+      "INFO20",
+      "INFO21",
+      "INFO22",
+      "INFO23",
+      "INFO24",
+      "INFO25",
+      "INFO26",
+      "INFO27",
+      "INFO3",
+      "INFO30",
+      "INFO31",
+      "INFO32",
+      "INFO33",
+      "INFO34",
+      "INFO35",
+      "INFO36",
+      "INFO38",
+      "INFO39",
+      "INFO40",
+      "INFO42",
+      "INFO43",
+      "INFO44",
+      "INFO46",
+      "INFO47",
+      "INFO48",
+      "INFO5",
+      "INFO50",
+      "INFO51",
+      "INFO52",
+      "INFO53",
+      "INFO54",
+      "INFO55",
+      "INFO56",
+      "INFO57",
+      "INFO59",
+      "INFO6",
+      "INFO60",
+      "INFO61",
+      "INFO62",
+      "INFO63",
+      "INFO64",
+      "INFO65",
+      "INFO67",
+      "INFO68",
+      "INFO7",
+      "INFO70",
+      "INFO71",
+      "INFO73",
+      "INFO74",
+      "INFO75",
+      "INFO76",
+      "INFO77",
+      "INFO78",
+      "INFO79",
+      "INFO80",
+      "INFO81",
+      "INFO82",
+      "INFO83",
+      "INFO84",
+      "INFO85",
+      "INFO86",
+      "INFO87",
+      "INFO89",
+      "INFO9",
+      "INFO90",
+      "INFO91",
+      "INFO94",
+      "INFO95",
+      "INFO96",
+      "INFO97",
+      "INFO98",
+      "INFO99",
+      "MAINMENU",
+      "PART1",
+      "PART104",
+      "PART107",
+      "PART109",
+      "PART116",
+      "PART118",
+      "PART120",
+      "PART121",
+      "PART122",
+      "PART123",
+      "PART125",
+      "PART138",
+      "PART140",
+      "PART141",
+      "PART142",
+      "PART143",
+      "PART144",
+      "PART145",
+      "PART147",
+      "PART148",
+      "PART16",
+      "PART19",
+      "PART206",
+      "PART23",
+      "PART24",
+      "PART25",
+      "PART26",
+      "PART29",
+      "PART32",
+      "PART33",
+      "PART34",
+      "PART35",
+      "PART36",
+      "PART38",
+      "PART4",
+      "PART40",
+      "PART41",
+      "PART43",
+      "PART45",
+      "PART46",
+      "PART48",
+      "PART5",
+      "PART55",
+      "PART56",
+      "PART60",
+      "PART63",
+      "PART65",
+      "PART66",
+      "PART67",
+      "PART69",
+      "PART70",
+      "PART71",
+      "PART73",
+      "PART75",
+      "PART78",
+      "PART79",
+      "PART81",
+      "PART82",
+      "PART84",
+      "PART85",
+      "PART86",
+      "PART87",
+      "PART89",
+      "PART90",
+      "PART91",
+      "PART92",
+      "PART93",
+      "PART95",
+      "PART96",
+      "PART97",
+      "PARTSBIN",
+      "PROGPART",
+      "PUZDISP",
+      "PUZLTYPE",
+      "SIGN_IN",
+      "SOLVE",
+      "TITLE"
+    ],
+    "3": [
+      "BINSOLVE",
+      "GOALBAR",
+      "HEDTOHED",
+      "HINTLOCK",
+      "INFO104",
+      "INFO109",
+      "INFO116",
+      "INFO13",
+      "INFO148",
+      "INFO18",
+      "INFO28",
+      "INFO37",
+      "INFO66",
+      "INFO92",
+      "LOADSAVE",
+      "MAINMENU",
+      "PART106",
+      "PART109",
+      "PART116",
+      "PART117",
+      "PART118",
+      "PART119",
+      "PART120",
+      "PART13",
+      "PART146",
+      "PART148",
+      "PART18",
+      "PART19",
+      "PART22",
+      "PART25",
+      "PART26",
+      "PART29",
+      "PART31",
+      "PART35",
+      "PART37",
+      "PART38",
+      "PART4",
+      "PART45",
+      "PART48",
+      "PART50",
+      "PART54",
+      "PART56",
+      "PART59",
+      "PART6",
+      "PART60",
+      "PART62",
+      "PART63",
+      "PART64",
+      "PART65",
+      "PART66",
+      "PART67",
+      "PART7",
+      "PART70",
+      "PART71",
+      "PART73",
+      "PART74",
+      "PART75",
+      "PART77",
+      "PART79",
+      "PART81",
+      "PART82",
+      "PART83",
+      "PART84",
+      "PART85",
+      "PART87",
+      "PART9",
+      "PART91",
+      "PART92",
+      "PART93",
+      "PART95",
+      "PART96",
+      "PARTSBIN",
+      "PROFESOR",
+      "PROFESR2",
+      "PUZDISP",
+      "SIGN_IN",
+      "TITLE"
+    ],
+    "4": [
+      "BINSOLVE",
+      "BUTTONS",
+      "GOALBAR",
+      "HEDTOHED",
+      "HINTLOCK",
+      "INFO12",
+      "INFO93",
+      "MAINMENU",
+      "PART108",
+      "PART109",
+      "PART117",
+      "PART119",
+      "PART12",
+      "PART120",
+      "PART13",
+      "PART136",
+      "PART14",
+      "PART148",
+      "PART16",
+      "PART17",
+      "PART18",
+      "PART19",
+      "PART22",
+      "PART25",
+      "PART26",
+      "PART27",
+      "PART31",
+      "PART35",
+      "PART37",
+      "PART39",
+      "PART4",
+      "PART48",
+      "PART5",
+      "PART50",
+      "PART58",
+      "PART59",
+      "PART61",
+      "PART62",
+      "PART63",
+      "PART64",
+      "PART7",
+      "PART70",
+      "PART71",
+      "PART73",
+      "PART75",
+      "PART77",
+      "PART79",
+      "PART81",
+      "PART83",
+      "PART87",
+      "PART9",
+      "PART91",
+      "PART92",
+      "PART93",
+      "PART95",
+      "PART96",
+      "PARTSBIN",
+      "PROFESOR",
+      "PROFESR2",
+      "PUZDISP",
+      "PUZLTYPE",
+      "SIGN_IN",
+      "SOLVE",
+      "TITLE"
+    ],
+    "5": [
+      "BINSOLVE",
+      "BUTTONS",
+      "CNTRLPNL",
+      "GOALBAR",
+      "HEDTOHED",
+      "INFO58",
+      "LOADSAVE",
+      "PART108",
+      "PART109",
+      "PART11",
+      "PART119",
+      "PART12",
+      "PART13",
+      "PART136",
+      "PART139",
+      "PART148",
+      "PART16",
+      "PART26",
+      "PART27",
+      "PART31",
+      "PART39",
+      "PART4",
+      "PART55",
+      "PART58",
+      "PART61",
+      "PART63",
+      "PART71",
+      "PART77",
+      "PART78",
+      "PART79",
+      "PART87",
+      "PART93",
+      "PART95",
+      "PART96",
+      "PARTSBIN",
+      "PROFESOR",
+      "PROFESR2",
+      "PUZDISP",
+      "SIGN_IN",
+      "TITLE"
+    ],
+    "6": [
+      "BINSOLVE",
+      "CNTRLPNL",
+      "GOALBAR",
+      "MAINMENU",
+      "PART108",
+      "PART109",
+      "PART11",
+      "PART119",
+      "PART12",
+      "PART129",
+      "PART136",
+      "PART18",
+      "PART21",
+      "PART27",
+      "PART3",
+      "PART4",
+      "PART5",
+      "PART53",
+      "PART58",
+      "PART6",
+      "PART61",
+      "PART63",
+      "PART71",
+      "PART77",
+      "PART80",
+      "PART81",
+      "PART91",
+      "PART92",
+      "PART93",
+      "PART95",
+      "PART96",
+      "PARTSBIN",
+      "PROFESR2",
+      "PROGPART",
+      "PUZDISP",
+      "SIGN_IN"
+    ],
+    "7": [
+      "BINSOLVE",
+      "CNTRLPNL",
+      "MAINMENU",
+      "PART108",
+      "PART109",
+      "PART119",
+      "PART12",
+      "PART18",
+      "PART21",
+      "PART31",
+      "PART37",
+      "PART4",
+      "PART42",
+      "PART53",
+      "PART61",
+      "PART63",
+      "PART71",
+      "PART78",
+      "PART80",
+      "PART81",
+      "PART87",
+      "PART91",
+      "PART92",
+      "PART93",
+      "PART95",
+      "PART96",
+      "PARTSBIN",
+      "PROFESR2",
+      "PUZDISP",
+      "PUZLTYPE"
+    ],
+    "8": [
+      "BINSOLVE",
+      "CNTRLPNL",
+      "HANDLES",
+      "MAINMENU",
+      "PART108",
+      "PART119",
+      "PART12",
+      "PART21",
+      "PART31",
+      "PART36",
+      "PART37",
+      "PART4",
+      "PART42",
+      "PART5",
+      "PART53",
+      "PART54",
+      "PART58",
+      "PART61",
+      "PART63",
+      "PART70",
+      "PART71",
+      "PART80",
+      "PART81",
+      "PART87",
+      "PART91",
+      "PART92",
+      "PART95",
+      "PART96",
+      "PARTSBIN",
+      "PROGPART"
+    ],
+    "9": [
+      "MAINMENU",
+      "PART108",
+      "PART117",
+      "PART119",
+      "PART12",
+      "PART15",
+      "PART18",
+      "PART21",
+      "PART26",
+      "PART31",
+      "PART36",
+      "PART37",
+      "PART4",
+      "PART42",
+      "PART51",
+      "PART53",
+      "PART54",
+      "PART58",
+      "PART61",
+      "PART63",
+      "PART71",
+      "PART80",
+      "PART81",
+      "PART87",
+      "PART91",
+      "PART92",
+      "PART93",
+      "PART95",
+      "PROFESR2",
+      "PUZLTYPE"
+    ],
+    "10": [
+      "HANDLES",
+      "MAINMENU",
+      "PART108",
+      "PART12",
+      "PART21",
+      "PART26",
+      "PART36",
+      "PART42",
+      "PART5",
+      "PART51",
+      "PART53",
+      "PART61",
+      "PART63",
+      "PART71",
+      "PART80",
+      "PART81",
+      "PART95",
+      "PART96",
+      "PROFESR2",
+      "PROGPART"
+    ],
+    "11": [
+      "CNTRLPNL",
+      "GOALBAR",
+      "MAINMENU",
+      "PART119",
+      "PART12",
+      "PART21",
+      "PART26",
+      "PART37",
+      "PART42",
+      "PART5",
+      "PART53",
+      "PART54",
+      "PART61",
+      "PART63",
+      "PART80",
+      "PART95",
+      "PART96",
+      "PROFESOR",
+      "PROFESR2",
+      "PROGPART",
+      "PUZLTYPE"
+    ],
+    "12": [
+      "CNTRLPNL",
+      "PART117",
+      "PART119",
+      "PART12",
+      "PART21",
+      "PART26",
+      "PART36",
+      "PART42",
+      "PART5",
+      "PART53",
+      "PART61",
+      "PART63",
+      "PART70",
+      "PART80",
+      "PART95",
+      "PART96",
+      "PARTSBIN",
+      "PROFESR2",
+      "PROGPART"
+    ],
+    "13": [
+      "HANDLES",
+      "PART117",
+      "PART119",
+      "PART12",
+      "PART13",
+      "PART21",
+      "PART42",
+      "PART5",
+      "PART53",
+      "PART58",
+      "PART61",
+      "PART63",
+      "PART70",
+      "PART95",
+      "PARTSBIN",
+      "PROFESR2",
+      "PUZLTYPE"
+    ],
+    "14": [
+      "BUTTONS",
+      "HANDLES",
+      "PART117",
+      "PART119",
+      "PART12",
+      "PART15",
+      "PART36",
+      "PART42",
+      "PART5",
+      "PART58",
+      "PART63",
+      "PART70",
+      "PART80",
+      "PART95",
+      "PARTSBIN"
+    ],
+    "15": [
+      "BUTTONS",
+      "CNTRLPNL",
+      "PART117",
+      "PART119",
+      "PART15",
+      "PART18",
+      "PART36",
+      "PART5",
+      "PART54",
+      "PART58",
+      "PART63",
+      "PART70",
+      "PART80",
+      "PART95",
+      "PARTSBIN",
+      "PROFESR2",
+      "PROGPART"
+    ],
+    "16": [
+      "BUTTONS",
+      "CNTRLPNL",
+      "HANDLES",
+      "MAINMENU",
+      "PART119",
+      "PART36",
+      "PART54",
+      "PART63",
+      "PART70",
+      "PART80",
+      "PART88",
+      "PART95",
+      "PARTSBIN",
+      "PROGPART",
+      "PUZLTYPE"
+    ],
+    "17": [
+      "BUTTONS",
+      "CNTRLPNL",
+      "PART117",
+      "PART119",
+      "PART36",
+      "PART63",
+      "PART70",
+      "PART80",
+      "PART95",
+      "PARTSBIN",
+      "PROGPART"
+    ],
+    "18": [
+      "HANDLES",
+      "PART117",
+      "PART119",
+      "PART36",
+      "PART54",
+      "PART70",
+      "PART80",
+      "PROFESR2",
+      "PROGPART"
+    ],
+    "19": [
+      "CNTRLPNL",
+      "PART117",
+      "PART137",
+      "PART18",
+      "PART54",
+      "PART70",
+      "PART80",
+      "PART95",
+      "PARTSBIN",
+      "PROFESR2",
+      "PROGPART"
+    ],
+    "20": [
+      "CNTRLPNL",
+      "HANDLES",
+      "PART117",
+      "PART137",
+      "PART18",
+      "PART36",
+      "PART54",
+      "PART70",
+      "PART80",
+      "PART88",
+      "PART95",
+      "PROFESR2",
+      "PROGPART"
+    ],
+    "21": [
+      "HANDLES",
+      "PART117",
+      "PART137",
+      "PART36",
+      "PART54",
+      "PART70",
+      "PART80",
+      "PART88",
+      "PART95",
+      "PROFESR2",
+      "PROGPART"
+    ],
+    "22": [
+      "BUTTONS",
+      "HANDLES",
+      "PART117",
+      "PART137",
+      "PART18",
+      "PART70",
+      "PART88",
+      "PART95",
+      "PROFESR2",
+      "PROGPART"
+    ],
+    "23": [
+      "BUTTONS",
+      "HANDLES",
+      "PART117",
+      "PART137",
+      "PART18",
+      "PART36",
+      "PART54",
+      "PART95",
+      "PROFESR2",
+      "PROGPART"
+    ],
+    "24": [
+      "BUTTONS",
+      "HANDLES",
+      "PART117",
+      "PART137",
+      "PART18",
+      "PART36",
+      "PART95",
+      "PROFESR2",
+      "PROGPART"
+    ],
+    "25": [
+      "BUTTONS",
+      "HANDLES",
+      "PART117",
+      "PART137",
+      "PART18",
+      "PART36",
+      "PART54",
+      "PART95",
+      "PROFESR2",
+      "PROGPART"
+    ],
+    "26": [
+      "HANDLES",
+      "PART117",
+      "PART137",
+      "PART18",
+      "PART95",
+      "PROFESR2",
+      "PROGPART"
+    ],
+    "27": [
+      "HANDLES",
+      "INFO4",
+      "PART117",
+      "PART137",
+      "PART18",
+      "PART95",
+      "PROFESR2",
+      "PROGPART"
+    ],
+    "28": [
+      "PART117",
+      "PART137",
+      "PART18",
+      "PART95",
+      "PROFESOR",
+      "PROFESR2",
+      "PROGPART"
+    ],
+    "29": [
+      "PART117",
+      "PART137",
+      "PART18",
+      "PART95",
+      "PROFESOR",
+      "PROFESR2",
+      "PROGPART"
+    ],
+    "30": [
+      "BUTTONS",
+      "PART117",
+      "PART137",
+      "PART18",
+      "PART95",
+      "PROFESR2",
+      "PROGPART"
+    ],
+    "31": [
+      "BUTTONS",
+      "PART117",
+      "PART137",
+      "PART18",
+      "PART95"
+    ],
+    "32": [
+      "BUTTONS",
+      "PART117",
+      "PART137",
+      "PART95",
+      "PROGPART"
+    ],
+    "33": [
+      "PART117",
+      "PART137",
+      "PART95",
+      "PROGPART"
+    ],
+    "34": [
+      "PART137",
+      "PART18",
+      "PROGPART"
+    ],
+    "35": [
+      "BUTTONS",
+      "PART137",
+      "PART18",
+      "PROGPART"
+    ],
+    "36": [
+      "BUTTONS",
+      "PART137",
+      "PART18",
+      "PROGPART"
+    ],
+    "37": [
+      "PART137",
+      "PROGPART"
+    ],
+    "38": [
+      "PART137",
+      "PART18"
+    ],
+    "39": [
+      "BUTTONS",
+      "PART137",
+      "PART18"
+    ],
+    "40": [
+      "PART137",
+      "PART18"
+    ],
+    "41": [
+      "PART137",
+      "PART18",
+      "PROGPART"
+    ],
+    "42": [
+      "PART137",
+      "PART18",
+      "PROGPART"
+    ],
+    "43": [
+      "BUTTONS",
+      "PART137",
+      "PART18",
+      "SOLVE"
+    ],
+    "44": [
+      "BUTTONS",
+      "PART137",
+      "PART18",
+      "SOLVE"
+    ],
+    "45": [
+      "BUTTONS",
+      "PART18",
+      "PROGPART",
+      "SOLVE"
+    ],
+    "46": [
+      "PART18"
+    ],
+    "47": [
+      "PART18",
+      "PROGPART"
+    ],
+    "48": [
+      "PART18"
+    ],
+    "49": [
+      "PART18",
+      "PROGPART"
+    ],
+    "50": [
+      "PART18"
+    ],
+    "51": [
+      "PART18",
+      "PART54",
+      "PROGPART"
+    ],
+    "52": [
+      "PART18",
+      "PROGPART"
+    ],
+    "53": [
+      "PROGPART"
+    ],
+    "54": [
+      "PROGPART"
+    ],
+    "55": [
+      "PROGPART"
+    ],
+    "56": [
+      "PROGPART"
+    ],
+    "57": [
+      "PROGPART"
+    ],
+    "59": [
+      "PROGPART"
+    ],
+    "60": [
+      "PROGPART"
+    ],
+    "61": [
+      "PROGPART"
+    ],
+    "62": [
+      "PROGPART"
+    ],
+    "63": [
+      "PROGPART"
+    ],
+    "64": [
+      "PROGPART"
+    ],
+    "66": [
+      "PROGPART"
+    ],
+    "75": [
+      "PROGPART"
+    ],
+    "76": [
+      "PROGPART"
+    ],
+    "77": [
+      "PROGPART"
+    ],
+    "78": [
+      "PROGPART"
+    ],
+    "79": [
+      "PROGPART"
+    ],
+    "80": [
+      "PROGPART"
+    ],
+    "81": [
+      "PROGPART"
+    ],
+    "82": [
+      "PROGPART"
+    ],
+    "83": [
+      "PROGPART"
+    ],
+    "84": [
+      "PROGPART"
+    ],
+    "90": [
+      "PROGPART"
+    ],
+    "91": [
+      "PROGPART"
+    ],
+    "92": [
+      "PROGPART"
+    ],
+    "93": [
+      "PROGPART"
+    ],
+    "94": [
+      "PROGPART"
+    ],
+    "95": [
+      "PROGPART"
+    ],
+    "96": [
+      "PROGPART"
+    ],
+    "97": [
+      "PROGPART"
+    ],
+    "98": [
+      "PROGPART"
+    ],
+    "99": [
+      "PROGPART"
+    ],
+    "100": [
+      "PROGPART"
+    ],
+    "101": [
+      "PROGPART"
+    ],
+    "102": [
+      "PROGPART"
+    ],
+    "103": [
+      "PROGPART"
+    ],
+    "104": [
+      "PROGPART"
+    ]
+  },
+  "part_to_states": {
+    "BINSOLVE": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "BUTTONS": [
+      1,
+      2,
+      4,
+      5,
+      14,
+      15,
+      16,
+      17,
+      22,
+      23,
+      24,
+      25,
+      30,
+      31,
+      32,
+      35,
+      36,
+      39,
+      43,
+      44,
+      45
+    ],
+    "CNTRLPNL": [
+      1,
+      5,
+      6,
+      7,
+      8,
+      11,
+      12,
+      15,
+      16,
+      17,
+      19,
+      20
+    ],
+    "CREDITS": [
+      1
+    ],
+    "GOALBAR": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      11
+    ],
+    "HANDLES": [
+      1,
+      2,
+      8,
+      10,
+      13,
+      14,
+      16,
+      18,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "HEDTOHED": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "HINTLOCK": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "INFO0": [
+      2
+    ],
+    "INFO1": [
+      2
+    ],
+    "INFO10": [
+      1
+    ],
+    "INFO100": [
+      2
+    ],
+    "INFO101": [
+      2
+    ],
+    "INFO102": [
+      2
+    ],
+    "INFO103": [
+      2
+    ],
+    "INFO104": [
+      3
+    ],
+    "INFO105": [
+      2
+    ],
+    "INFO106": [
+      2
+    ],
+    "INFO107": [
+      2
+    ],
+    "INFO108": [
+      2
+    ],
+    "INFO109": [
+      1,
+      3
+    ],
+    "INFO11": [
+      2
+    ],
+    "INFO116": [
+      3
+    ],
+    "INFO117": [
+      2
+    ],
+    "INFO118": [
+      2
+    ],
+    "INFO119": [
+      2
+    ],
+    "INFO12": [
+      4
+    ],
+    "INFO120": [
+      2
+    ],
+    "INFO125": [
+      2
+    ],
+    "INFO126": [
+      2
+    ],
+    "INFO13": [
+      3
+    ],
+    "INFO136": [
+      2
+    ],
+    "INFO137": [
+      2
+    ],
+    "INFO138": [
+      2
+    ],
+    "INFO139": [
+      2
+    ],
+    "INFO14": [
+      2
+    ],
+    "INFO148": [
+      3
+    ],
+    "INFO15": [
+      2
+    ],
+    "INFO16": [
+      2
+    ],
+    "INFO17": [
+      2
+    ],
+    "INFO18": [
+      3
+    ],
+    "INFO19": [
+      1
+    ],
+    "INFO2": [
+      2
+    ],
+    "INFO20": [
+      2
+    ],
+    "INFO21": [
+      2
+    ],
+    "INFO22": [
+      2
+    ],
+    "INFO23": [
+      2
+    ],
+    "INFO24": [
+      2
+    ],
+    "INFO25": [
+      2
+    ],
+    "INFO26": [
+      2
+    ],
+    "INFO27": [
+      2
+    ],
+    "INFO28": [
+      3
+    ],
+    "INFO29": [
+      1
+    ],
+    "INFO3": [
+      2
+    ],
+    "INFO30": [
+      2
+    ],
+    "INFO31": [
+      2
+    ],
+    "INFO32": [
+      2
+    ],
+    "INFO33": [
+      2
+    ],
+    "INFO34": [
+      2
+    ],
+    "INFO35": [
+      2
+    ],
+    "INFO36": [
+      2
+    ],
+    "INFO37": [
+      3
+    ],
+    "INFO38": [
+      2
+    ],
+    "INFO39": [
+      2
+    ],
+    "INFO4": [
+      27
+    ],
+    "INFO40": [
+      2
+    ],
+    "INFO42": [
+      2
+    ],
+    "INFO43": [
+      2
+    ],
+    "INFO44": [
+      2
+    ],
+    "INFO45": [
+      1
+    ],
+    "INFO46": [
+      2
+    ],
+    "INFO47": [
+      2
+    ],
+    "INFO48": [
+      2
+    ],
+    "INFO5": [
+      2
+    ],
+    "INFO50": [
+      2
+    ],
+    "INFO51": [
+      2
+    ],
+    "INFO52": [
+      2
+    ],
+    "INFO53": [
+      2
+    ],
+    "INFO54": [
+      2
+    ],
+    "INFO55": [
+      2
+    ],
+    "INFO56": [
+      2
+    ],
+    "INFO57": [
+      2
+    ],
+    "INFO58": [
+      5
+    ],
+    "INFO59": [
+      2
+    ],
+    "INFO6": [
+      2
+    ],
+    "INFO60": [
+      2
+    ],
+    "INFO61": [
+      2
+    ],
+    "INFO62": [
+      2
+    ],
+    "INFO63": [
+      2
+    ],
+    "INFO64": [
+      2
+    ],
+    "INFO65": [
+      2
+    ],
+    "INFO66": [
+      3
+    ],
+    "INFO67": [
+      2
+    ],
+    "INFO68": [
+      2
+    ],
+    "INFO69": [
+      1
+    ],
+    "INFO7": [
+      2
+    ],
+    "INFO70": [
+      2
+    ],
+    "INFO71": [
+      2
+    ],
+    "INFO73": [
+      2
+    ],
+    "INFO74": [
+      2
+    ],
+    "INFO75": [
+      2
+    ],
+    "INFO76": [
+      2
+    ],
+    "INFO77": [
+      2
+    ],
+    "INFO78": [
+      2
+    ],
+    "INFO79": [
+      2
+    ],
+    "INFO8": [
+      1
+    ],
+    "INFO80": [
+      2
+    ],
+    "INFO81": [
+      2
+    ],
+    "INFO82": [
+      2
+    ],
+    "INFO83": [
+      2
+    ],
+    "INFO84": [
+      2
+    ],
+    "INFO85": [
+      2
+    ],
+    "INFO86": [
+      2
+    ],
+    "INFO87": [
+      2
+    ],
+    "INFO88": [
+      1
+    ],
+    "INFO89": [
+      2
+    ],
+    "INFO9": [
+      2
+    ],
+    "INFO90": [
+      2
+    ],
+    "INFO91": [
+      2
+    ],
+    "INFO92": [
+      3
+    ],
+    "INFO93": [
+      4
+    ],
+    "INFO94": [
+      2
+    ],
+    "INFO95": [
+      2
+    ],
+    "INFO96": [
+      2
+    ],
+    "INFO97": [
+      2
+    ],
+    "INFO98": [
+      2
+    ],
+    "INFO99": [
+      2
+    ],
+    "LOADSAVE": [
+      1,
+      3,
+      5
+    ],
+    "MAINMENU": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      16
+    ],
+    "PART0": [
+      1
+    ],
+    "PART1": [
+      1,
+      2
+    ],
+    "PART10": [
+      1
+    ],
+    "PART100": [
+      1
+    ],
+    "PART101": [
+      1
+    ],
+    "PART102": [
+      1
+    ],
+    "PART103": [
+      1
+    ],
+    "PART104": [
+      2
+    ],
+    "PART105": [
+      1
+    ],
+    "PART106": [
+      3
+    ],
+    "PART107": [
+      1,
+      2
+    ],
+    "PART108": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "PART109": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "PART11": [
+      5,
+      6
+    ],
+    "PART115": [
+      1
+    ],
+    "PART116": [
+      2,
+      3
+    ],
+    "PART117": [
+      3,
+      4,
+      9,
+      12,
+      13,
+      14,
+      15,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "PART118": [
+      1,
+      2,
+      3
+    ],
+    "PART119": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "PART12": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "PART120": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "PART121": [
+      2
+    ],
+    "PART122": [
+      2
+    ],
+    "PART123": [
+      2
+    ],
+    "PART124": [
+      1
+    ],
+    "PART125": [
+      1,
+      2
+    ],
+    "PART126": [
+      1
+    ],
+    "PART128": [
+      1
+    ],
+    "PART129": [
+      6
+    ],
+    "PART13": [
+      3,
+      4,
+      5,
+      13
+    ],
+    "PART130": [
+      1
+    ],
+    "PART131": [
+      1
+    ],
+    "PART132": [
+      1
+    ],
+    "PART133": [
+      1
+    ],
+    "PART134": [
+      1
+    ],
+    "PART135": [
+      1
+    ],
+    "PART136": [
+      4,
+      5,
+      6
+    ],
+    "PART137": [
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "PART138": [
+      1,
+      2
+    ],
+    "PART139": [
+      5
+    ],
+    "PART14": [
+      1,
+      4
+    ],
+    "PART140": [
+      2
+    ],
+    "PART141": [
+      2
+    ],
+    "PART142": [
+      2
+    ],
+    "PART143": [
+      2
+    ],
+    "PART144": [
+      2
+    ],
+    "PART145": [
+      2
+    ],
+    "PART146": [
+      3
+    ],
+    "PART147": [
+      2
+    ],
+    "PART148": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "PART149": [
+      1
+    ],
+    "PART15": [
+      9,
+      14,
+      15
+    ],
+    "PART150": [
+      1
+    ],
+    "PART151": [
+      1
+    ],
+    "PART152": [
+      1
+    ],
+    "PART153": [
+      1
+    ],
+    "PART154": [
+      1
+    ],
+    "PART155": [
+      1
+    ],
+    "PART156": [
+      1
+    ],
+    "PART157": [
+      1
+    ],
+    "PART158": [
+      1
+    ],
+    "PART159": [
+      1
+    ],
+    "PART16": [
+      2,
+      4,
+      5
+    ],
+    "PART160": [
+      1
+    ],
+    "PART161": [
+      1
+    ],
+    "PART162": [
+      1
+    ],
+    "PART164": [
+      1
+    ],
+    "PART165": [
+      1
+    ],
+    "PART166": [
+      1
+    ],
+    "PART167": [
+      1
+    ],
+    "PART168": [
+      1
+    ],
+    "PART169": [
+      1
+    ],
+    "PART17": [
+      1,
+      4
+    ],
+    "PART170": [
+      1
+    ],
+    "PART171": [
+      1
+    ],
+    "PART172": [
+      1
+    ],
+    "PART173": [
+      1
+    ],
+    "PART174": [
+      1
+    ],
+    "PART175": [
+      1
+    ],
+    "PART176": [
+      1
+    ],
+    "PART177": [
+      1
+    ],
+    "PART178": [
+      1
+    ],
+    "PART179": [
+      1
+    ],
+    "PART18": [
+      1,
+      3,
+      4,
+      6,
+      7,
+      9,
+      15,
+      19,
+      20,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      34,
+      35,
+      36,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52
+    ],
+    "PART180": [
+      1
+    ],
+    "PART181": [
+      1
+    ],
+    "PART182": [
+      1
+    ],
+    "PART183": [
+      1
+    ],
+    "PART184": [
+      1
+    ],
+    "PART185": [
+      1
+    ],
+    "PART186": [
+      1
+    ],
+    "PART187": [
+      1
+    ],
+    "PART188": [
+      1
+    ],
+    "PART189": [
+      1
+    ],
+    "PART19": [
+      2,
+      3,
+      4
+    ],
+    "PART190": [
+      1
+    ],
+    "PART191": [
+      1
+    ],
+    "PART192": [
+      1
+    ],
+    "PART193": [
+      1
+    ],
+    "PART194": [
+      1
+    ],
+    "PART195": [
+      1
+    ],
+    "PART196": [
+      1
+    ],
+    "PART197": [
+      1
+    ],
+    "PART198": [
+      1
+    ],
+    "PART199": [
+      1
+    ],
+    "PART2": [
+      1
+    ],
+    "PART20": [
+      1
+    ],
+    "PART200": [
+      1
+    ],
+    "PART201": [
+      1
+    ],
+    "PART202": [
+      1
+    ],
+    "PART203": [
+      1
+    ],
+    "PART204": [
+      1
+    ],
+    "PART205": [
+      1
+    ],
+    "PART206": [
+      2
+    ],
+    "PART207": [
+      1
+    ],
+    "PART208": [
+      1
+    ],
+    "PART209": [
+      1
+    ],
+    "PART21": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "PART210": [
+      1
+    ],
+    "PART211": [
+      1
+    ],
+    "PART212": [
+      1
+    ],
+    "PART213": [
+      1
+    ],
+    "PART214": [
+      1
+    ],
+    "PART215": [
+      1
+    ],
+    "PART216": [
+      1
+    ],
+    "PART217": [
+      1
+    ],
+    "PART218": [
+      1
+    ],
+    "PART219": [
+      1
+    ],
+    "PART22": [
+      3,
+      4
+    ],
+    "PART220": [
+      1
+    ],
+    "PART221": [
+      1
+    ],
+    "PART222": [
+      1
+    ],
+    "PART223": [
+      1
+    ],
+    "PART224": [
+      1
+    ],
+    "PART225": [
+      1
+    ],
+    "PART226": [
+      1
+    ],
+    "PART227": [
+      1
+    ],
+    "PART228": [
+      1
+    ],
+    "PART229": [
+      1
+    ],
+    "PART23": [
+      1,
+      2
+    ],
+    "PART230": [
+      1
+    ],
+    "PART231": [
+      1
+    ],
+    "PART232": [
+      1
+    ],
+    "PART233": [
+      1
+    ],
+    "PART234": [
+      1
+    ],
+    "PART235": [
+      1
+    ],
+    "PART236": [
+      1
+    ],
+    "PART237": [
+      1
+    ],
+    "PART238": [
+      1
+    ],
+    "PART239": [
+      1
+    ],
+    "PART24": [
+      1,
+      2
+    ],
+    "PART240": [
+      1
+    ],
+    "PART241": [
+      1
+    ],
+    "PART242": [
+      1
+    ],
+    "PART243": [
+      1
+    ],
+    "PART244": [
+      1
+    ],
+    "PART245": [
+      1
+    ],
+    "PART246": [
+      1
+    ],
+    "PART247": [
+      1
+    ],
+    "PART248": [
+      1
+    ],
+    "PART249": [
+      1
+    ],
+    "PART25": [
+      2,
+      3,
+      4
+    ],
+    "PART250": [
+      1
+    ],
+    "PART251": [
+      1
+    ],
+    "PART252": [
+      1
+    ],
+    "PART254": [
+      1
+    ],
+    "PART255": [
+      1
+    ],
+    "PART256": [
+      1
+    ],
+    "PART257": [
+      1
+    ],
+    "PART258": [
+      1
+    ],
+    "PART259": [
+      1
+    ],
+    "PART26": [
+      2,
+      3,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12
+    ],
+    "PART260": [
+      1
+    ],
+    "PART261": [
+      1
+    ],
+    "PART262": [
+      1
+    ],
+    "PART263": [
+      1
+    ],
+    "PART264": [
+      1
+    ],
+    "PART265": [
+      1
+    ],
+    "PART266": [
+      1
+    ],
+    "PART267": [
+      1
+    ],
+    "PART268": [
+      1
+    ],
+    "PART269": [
+      1
+    ],
+    "PART27": [
+      1,
+      4,
+      5,
+      6
+    ],
+    "PART270": [
+      1
+    ],
+    "PART271": [
+      1
+    ],
+    "PART272": [
+      1
+    ],
+    "PART273": [
+      1
+    ],
+    "PART274": [
+      1
+    ],
+    "PART277": [
+      1
+    ],
+    "PART278": [
+      1
+    ],
+    "PART279": [
+      1
+    ],
+    "PART28": [
+      1
+    ],
+    "PART281": [
+      1
+    ],
+    "PART282": [
+      1
+    ],
+    "PART283": [
+      1
+    ],
+    "PART284": [
+      1
+    ],
+    "PART285": [
+      1
+    ],
+    "PART286": [
+      1
+    ],
+    "PART287": [
+      1
+    ],
+    "PART288": [
+      1
+    ],
+    "PART289": [
+      1
+    ],
+    "PART29": [
+      1,
+      2,
+      3
+    ],
+    "PART290": [
+      1
+    ],
+    "PART291": [
+      1
+    ],
+    "PART292": [
+      1
+    ],
+    "PART293": [
+      1
+    ],
+    "PART294": [
+      1
+    ],
+    "PART3": [
+      6
+    ],
+    "PART30": [
+      1
+    ],
+    "PART31": [
+      1,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9
+    ],
+    "PART32": [
+      1,
+      2
+    ],
+    "PART33": [
+      1,
+      2
+    ],
+    "PART34": [
+      1,
+      2
+    ],
+    "PART35": [
+      2,
+      3,
+      4
+    ],
+    "PART36": [
+      2,
+      8,
+      9,
+      10,
+      12,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      21,
+      23,
+      24,
+      25
+    ],
+    "PART37": [
+      3,
+      4,
+      7,
+      8,
+      9,
+      11
+    ],
+    "PART38": [
+      2,
+      3
+    ],
+    "PART39": [
+      1,
+      4,
+      5
+    ],
+    "PART4": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "PART40": [
+      1,
+      2
+    ],
+    "PART41": [
+      2
+    ],
+    "PART42": [
+      1,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "PART43": [
+      1,
+      2
+    ],
+    "PART44": [
+      1
+    ],
+    "PART45": [
+      1,
+      2,
+      3
+    ],
+    "PART46": [
+      1,
+      2
+    ],
+    "PART47": [
+      1
+    ],
+    "PART48": [
+      2,
+      3,
+      4
+    ],
+    "PART5": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "PART50": [
+      1,
+      3,
+      4
+    ],
+    "PART51": [
+      9,
+      10
+    ],
+    "PART52": [
+      1
+    ],
+    "PART53": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "PART54": [
+      1,
+      3,
+      8,
+      9,
+      11,
+      15,
+      16,
+      18,
+      19,
+      20,
+      21,
+      23,
+      25,
+      51
+    ],
+    "PART55": [
+      2,
+      5
+    ],
+    "PART56": [
+      1,
+      2,
+      3
+    ],
+    "PART57": [
+      1
+    ],
+    "PART58": [
+      4,
+      5,
+      6,
+      8,
+      9,
+      13,
+      14,
+      15
+    ],
+    "PART59": [
+      1,
+      3,
+      4
+    ],
+    "PART6": [
+      3,
+      6
+    ],
+    "PART60": [
+      1,
+      2,
+      3
+    ],
+    "PART61": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "PART62": [
+      1,
+      3,
+      4
+    ],
+    "PART63": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "PART64": [
+      3,
+      4
+    ],
+    "PART65": [
+      1,
+      2,
+      3
+    ],
+    "PART66": [
+      1,
+      2,
+      3
+    ],
+    "PART67": [
+      1,
+      2,
+      3
+    ],
+    "PART68": [
+      1
+    ],
+    "PART69": [
+      1,
+      2
+    ],
+    "PART7": [
+      3,
+      4
+    ],
+    "PART70": [
+      2,
+      3,
+      4,
+      8,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "PART71": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "PART72": [
+      1
+    ],
+    "PART73": [
+      2,
+      3,
+      4
+    ],
+    "PART74": [
+      1,
+      3
+    ],
+    "PART75": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "PART76": [
+      1
+    ],
+    "PART77": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "PART78": [
+      1,
+      2,
+      5,
+      7
+    ],
+    "PART79": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "PART8": [
+      1
+    ],
+    "PART80": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "PART81": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "PART82": [
+      1,
+      2,
+      3
+    ],
+    "PART83": [
+      1,
+      3,
+      4
+    ],
+    "PART84": [
+      1,
+      2,
+      3
+    ],
+    "PART85": [
+      1,
+      2,
+      3
+    ],
+    "PART86": [
+      1,
+      2
+    ],
+    "PART87": [
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9
+    ],
+    "PART88": [
+      16,
+      20,
+      21,
+      22
+    ],
+    "PART89": [
+      1,
+      2
+    ],
+    "PART9": [
+      3,
+      4
+    ],
+    "PART90": [
+      1,
+      2
+    ],
+    "PART91": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9
+    ],
+    "PART92": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9
+    ],
+    "PART93": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9
+    ],
+    "PART94": [
+      1
+    ],
+    "PART95": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "PART96": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12
+    ],
+    "PART97": [
+      1,
+      2
+    ],
+    "PART98": [
+      1
+    ],
+    "PART99": [
+      1
+    ],
+    "PARTSBIN": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19
+    ],
+    "PROFESOR": [
+      1,
+      3,
+      4,
+      5,
+      11,
+      28,
+      29
+    ],
+    "PROFESR2": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12,
+      13,
+      15,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "PROGPART": [
+      2,
+      6,
+      8,
+      10,
+      11,
+      12,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      41,
+      42,
+      45,
+      47,
+      49,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      66,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104
+    ],
+    "PUZDISP": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "PUZLTYPE": [
+      1,
+      2,
+      4,
+      7,
+      9,
+      11,
+      13,
+      16
+    ],
+    "SIERRA": [
+      1
+    ],
+    "SIGN_IN": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "SOLVE": [
+      1,
+      2,
+      4,
+      43,
+      44,
+      45
+    ],
+    "TITLE": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  }
+}

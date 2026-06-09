@@ -1,0 +1,21 @@
+{
+  "generated": 147,
+  "errors": 0,
+  "png_found": 2339,
+  "png_missing": 410,
+  "total_in_behaviors": 147,
+  "total_in_properties": 149,
+  "total_in_catalog": 149,
+  "levels_scanned": 206,
+  "png_files_in_bitmaps": 3056,
+  "output_dir": "/home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/docs/parts",
+  "data_sources": {
+    "behaviors": "/home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-16/godot/behaviors.json",
+    "properties": "/home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-9/part-properties.json",
+    "catalog": "/home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-9/part-name-catalog.json",
+    "categories": "/home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-16/godot/categories.json",
+    "anm_dir": "/home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-4/anm",
+    "bitmaps_dir": "/home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-3/bitmaps",
+    "yaml_dir": "/home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-5/yaml"
+  }
+}

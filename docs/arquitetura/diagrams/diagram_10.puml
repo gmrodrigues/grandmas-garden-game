@@ -1,0 +1,103 @@
+@startuml Simulation_Loop_Sequence
+autonumber 1
+skinparam sequenceFontSize 12
+
+participant SimulationRunner as SR
+participant ChainManager as CM
+participant PhysicsEngine as PE
+participant Board as BD
+participant Part order 1
+participant SolutionCondition as SC
+
+note over SR: _process() acts as\nwall-clock pacemaker\n(not the game loop)
+
+[-> SR : play()
+activate SR
+SR -> BD : clear_level()
+SR -> BD : level_data = data
+loop per part in level_data
+  SR -> BD : add_part(PartFactory.create_part())
+end
+SR -> BD : spawn_sprites()
+SR -> CM : load_from_level(level_data)
+
+SR -> BD : board.set_process(true)
+SR -> SR : running = true
+
+alt running loop (every ~16.667ms)
+
+  note over SR: tick_accum_ms >= 1000/60
+  SR -> CM : tick_count += 1
+  SR -> CM : evaluate_chain()
+  activate CM
+
+    loop per rule in chain_script
+      alt mode=="once" and already fired
+        CM -> CM : continue
+      end
+      CM -> CM : _check_condition(when)
+      alt condition is TRUE
+        CM -> CM : _execute_actions(actions)
+        alt action.type == "win"
+          CM -> SR : chain_completed.emit(tick)
+        end
+        alt mode == "once"
+          CM -> CM : _fired.append(rule_index)
+        end
+      end
+    end
+
+  deactivate CM
+
+  SR -> PE : physics.step(tick_count)
+  activate PE
+
+    note over PE: Pass 0: State Counters
+    loop per part where is_moving
+      PE -> Part : advance_state()
+      activate Part #PaleGoldenrod
+      Part -> Part : advance_state()\n(sub_counter==0? rand delay?)\n(wrap at state_limit_upper)
+      deactivate Part
+    end
+
+    note over PE: Pass 1: Gravity Integration
+    loop per part where is_moving
+      PE -> Part : tick()\n(gravity, damping, pos update)
+      activate Part #PaleGoldenrod
+      Part -> Part : vel_y += gravity_y\nvel_x += gravity_x\npos_x/y += vel >> 9
+      deactivate Part
+    end
+
+    note over PE: Pass 2-3: Behaviors + Belts
+    note over PE: Pass 4: Wall Constraints
+    note over PE: Pass 5: Collisions (Spatial Grid)
+    Part -> Part : state_counter += 1
+    note over PE: Pass 6: Proximity + Electrical\nPass 7: Emitters/Consumers\nPass 8-9: Flame/Ignition\nPass 10: Remove destroyed\nPass 11-13: Rope constraints x3
+
+  deactivate PE
+
+  SR -> BD : sync_sprites()
+  activate BD
+    loop per sprite
+      BD -> BD : update_sprite()\n(ANM render if state changed)
+    end
+  deactivate BD
+
+  SR -> SC : solution.check()
+  activate SC
+  alt solution met
+    SC -> SR : simulation_finished.emit(true,...)
+  end
+  deactivate SC
+
+  SR -> SR : tick_updated.emit(tick, max_ticks)
+  alt tick >= max_ticks
+    SR -> SR : _on_timeout()
+  end
+end
+
+note over SR: stop() → running = false\nboard.set_process(false)
+
+[<-> SR : state_changed(state)
+
+@enduml

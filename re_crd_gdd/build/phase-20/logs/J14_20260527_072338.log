@@ -1,0 +1,52 @@
+JOURNEY: J14 — Head-to-Head
+TIMESTAMP: 20260527_072338
+MODE: HEADLESS
+EXIT CODE: 0
+============================================================
+STDOUT:
+J14 — Head-to-Head journey test
+Timestamp: 2026-05-27T07:23:38.910348
+Mode: HEADLESS
+
+=== 1. Asset Existence ===
+  ✅ HEDTOHED.ANM decoded — /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-4/anm/HEDTOHED.json
+  ✅ HEDTOHED PNGs exist — 16 PNGs
+
+=== 2. Head-to-Head Mode Structure ===
+  Two-player split-screen puzzle mode:
+  - Player 1 (Blue) vs Player 2 (Red)
+  - Alternating turns for part placement
+  - Separate parts bins per player
+  - Score tracking: parts count, solve time, accuracy
+  - Win conditions: first to solve, best score
+  ✅ H2H mode documented
+
+=== 3. State Machine ===
+  waiting: No game started
+  player1_turn: Player 1 selecting/placing parts
+  player2_turn: Player 2 selecting/placing parts
+  simulating: Physics simulation running
+  scoring: Display results per player
+  finished: Game complete
+  ✅ H2H states defined
+
+=== 4. Turn Switching Simulation ===
+  Turn 1: Player 1's Turn (Blue)
+    Placed bowling ball (type=0) at (100, 150)
+  Turn 2: Player 2's Turn (Red)
+    Placed incline (type=2) at (200, 200)
+  Turn 3: Player 1's Turn (Blue)
+    Placed rope (type=10) connecting parts
+  ✅ Turn switching works
+
+=== 5. Score Tracking ===
+  Player 1: 2 parts placed, score=0
+  Player 2: 1 parts placed, score=0
+  ✅ Score tracked per player
+
+==================================================
+RESULTS: 6 passed, 0 failed
+Full log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J14_20260527_072338.log
+
+============================================================
+STDERR:

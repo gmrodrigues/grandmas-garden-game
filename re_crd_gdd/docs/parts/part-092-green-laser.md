@@ -99,26 +99,26 @@
 
 | Frame | Sprites | PNG References |
 |-------|---------|----------------|
-| 0 | `0002_0000`, `0001_0001` | `build/phase-3/bitmaps/PART92_2_f000.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART92_f001.png :material-check:` |
-| 1 | `0002_0001`, `0001_0004` | `build/phase-3/bitmaps/PART92_2_f001.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART92_f004.png :material-check:` |
-| 2 | `0002_0000`, `0001_0001` | `build/phase-3/bitmaps/PART92_2_f000.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART92_f001.png :material-check:` |
-| 3 | `0002_0001`, `0001_0004` | `build/phase-3/bitmaps/PART92_2_f001.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART92_f004.png :material-check:` |
-| 4 | `0002_0000`, `0001_0001` | `build/phase-3/bitmaps/PART92_2_f000.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART92_f001.png :material-check:` |
-| 5 | `0002_0000`, `0001_0000` | `build/phase-3/bitmaps/PART92_2_f000.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART92_f000.png :material-check:` |
-| 6 | `0002_0000`, `0001_0001` | `build/phase-3/bitmaps/PART92_2_f000.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART92_f001.png :material-check:` |
-| 7 | `0002_0000`, `0001_0002` | `build/phase-3/bitmaps/PART92_2_f000.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART92_f002.png :material-check:` |
-| 8 | `0002_0001`, `0001_0004` | `build/phase-3/bitmaps/PART92_2_f001.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART92_f004.png :material-check:` |
-| 9 | `0002_0001`, `0001_0005` | `build/phase-3/bitmaps/PART92_2_f001.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART92_f005.png :material-check:` |
-| 10 | `0002_0001`, `0001_0004` | `build/phase-3/bitmaps/PART92_2_f001.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART92_f004.png :material-check:` |
-| 11 | `0002_0001`, `0001_0003` | `build/phase-3/bitmaps/PART92_2_f001.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART92_f003.png :material-check:` |
-| 12 | `0002_0000`, `0001_0001` | `build/phase-3/bitmaps/PART92_2_f000.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART92_f001.png :material-check:` |
-| 13 | `0002_0000`, `0001_0000` | `build/phase-3/bitmaps/PART92_2_f000.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART92_f000.png :material-check:` |
-| 14 | `0002_0000`, `0001_0001` | `build/phase-3/bitmaps/PART92_2_f000.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART92_f001.png :material-check:` |
-| 15 | `0002_0000`, `0001_0002` | `build/phase-3/bitmaps/PART92_2_f000.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART92_f002.png :material-check:` |
-| 16 | `0002_0001` | `build/phase-3/bitmaps/PART92_2_f001.png :material-alert-outline: (not found)` |
-| 17 | `0002_0001`, `0001_0005`, `0001_0004` | `build/phase-3/bitmaps/PART92_2_f001.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART92_f005.png :material-check:`<br>`build/phase-3/bitmaps/PART92_f004.png :material-check:` |
-| 18 | `0002_0001`, `0001_0004`, `0001_0004` | `build/phase-3/bitmaps/PART92_2_f001.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART92_f004.png :material-check:`<br>`build/phase-3/bitmaps/PART92_f004.png :material-check:` |
-| 19 | `0002_0001`, `0001_0003`, `0001_0004` | `build/phase-3/bitmaps/PART92_2_f001.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART92_f003.png :material-check:`<br>`build/phase-3/bitmaps/PART92_f004.png :material-check:` |
+| 0 | `0002_0000`, `0001_0001` | `build/phase-3/bitmaps/LASER_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART92_f001.png :material-check:` |
+| 1 | `0002_0001`, `0001_0004` | `build/phase-3/bitmaps/LASER_f001.png :material-check:`<br>`build/phase-3/bitmaps/PART92_f004.png :material-check:` |
+| 2 | `0002_0000`, `0001_0001` | `build/phase-3/bitmaps/LASER_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART92_f001.png :material-check:` |
+| 3 | `0002_0001`, `0001_0004` | `build/phase-3/bitmaps/LASER_f001.png :material-check:`<br>`build/phase-3/bitmaps/PART92_f004.png :material-check:` |
+| 4 | `0002_0000`, `0001_0001` | `build/phase-3/bitmaps/LASER_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART92_f001.png :material-check:` |
+| 5 | `0002_0000`, `0001_0000` | `build/phase-3/bitmaps/LASER_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART92_f000.png :material-check:` |
+| 6 | `0002_0000`, `0001_0001` | `build/phase-3/bitmaps/LASER_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART92_f001.png :material-check:` |
+| 7 | `0002_0000`, `0001_0002` | `build/phase-3/bitmaps/LASER_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART92_f002.png :material-check:` |
+| 8 | `0002_0001`, `0001_0004` | `build/phase-3/bitmaps/LASER_f001.png :material-check:`<br>`build/phase-3/bitmaps/PART92_f004.png :material-check:` |
+| 9 | `0002_0001`, `0001_0005` | `build/phase-3/bitmaps/LASER_f001.png :material-check:`<br>`build/phase-3/bitmaps/PART92_f005.png :material-check:` |
+| 10 | `0002_0001`, `0001_0004` | `build/phase-3/bitmaps/LASER_f001.png :material-check:`<br>`build/phase-3/bitmaps/PART92_f004.png :material-check:` |
+| 11 | `0002_0001`, `0001_0003` | `build/phase-3/bitmaps/LASER_f001.png :material-check:`<br>`build/phase-3/bitmaps/PART92_f003.png :material-check:` |
+| 12 | `0002_0000`, `0001_0001` | `build/phase-3/bitmaps/LASER_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART92_f001.png :material-check:` |
+| 13 | `0002_0000`, `0001_0000` | `build/phase-3/bitmaps/LASER_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART92_f000.png :material-check:` |
+| 14 | `0002_0000`, `0001_0001` | `build/phase-3/bitmaps/LASER_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART92_f001.png :material-check:` |
+| 15 | `0002_0000`, `0001_0002` | `build/phase-3/bitmaps/LASER_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART92_f002.png :material-check:` |
+| 16 | `0002_0001` | `build/phase-3/bitmaps/LASER_f001.png :material-check:` |
+| 17 | `0002_0001`, `0001_0005`, `0001_0004` | `build/phase-3/bitmaps/LASER_f001.png :material-check:`<br>`build/phase-3/bitmaps/PART92_f005.png :material-check:`<br>`build/phase-3/bitmaps/PART92_f004.png :material-check:` |
+| 18 | `0002_0001`, `0001_0004`, `0001_0004` | `build/phase-3/bitmaps/LASER_f001.png :material-check:`<br>`build/phase-3/bitmaps/PART92_f004.png :material-check:`<br>`build/phase-3/bitmaps/PART92_f004.png :material-check:` |
+| 19 | `0002_0001`, `0001_0003`, `0001_0004` | `build/phase-3/bitmaps/LASER_f001.png :material-check:`<br>`build/phase-3/bitmaps/PART92_f003.png :material-check:`<br>`build/phase-3/bitmaps/PART92_f004.png :material-check:` |
 
 ### Sound Effects
 

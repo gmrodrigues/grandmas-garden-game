@@ -63,18 +63,18 @@
 
 | Frame | Sprites | PNG References |
 |-------|---------|----------------|
-| 0 | `0001_0001` | `build/phase-3/bitmaps/PART72_f001.png :material-alert-outline: (not found)` |
-| 1 | `0001_0000` | `build/phase-3/bitmaps/PART72_f000.png :material-alert-outline: (not found)` |
-| 2 | `0001_0003` | `build/phase-3/bitmaps/PART72_f003.png :material-alert-outline: (not found)` |
-| 3 | `0001_0004` | `build/phase-3/bitmaps/PART72_f004.png :material-alert-outline: (not found)` |
-| 4 | `0001_0006` | `build/phase-3/bitmaps/PART72_f006.png :material-alert-outline: (not found)` |
-| 5 | `0001_0005` | `build/phase-3/bitmaps/PART72_f005.png :material-alert-outline: (not found)` |
-| 6 | `0001_0006` | `build/phase-3/bitmaps/PART72_f006.png :material-alert-outline: (not found)` |
-| 7 | `0001_0007` | `build/phase-3/bitmaps/PART72_f007.png :material-alert-outline: (not found)` |
-| 8 | `0001_0006` | `build/phase-3/bitmaps/PART72_f006.png :material-alert-outline: (not found)` |
-| 9 | `0001_0005` | `build/phase-3/bitmaps/PART72_f005.png :material-alert-outline: (not found)` |
-| 10 | `0001_0006` | `build/phase-3/bitmaps/PART72_f006.png :material-alert-outline: (not found)` |
-| 11 | `0001_0005` | `build/phase-3/bitmaps/PART72_f005.png :material-alert-outline: (not found)` |
+| 0 | `0001_0001` | `build/phase-3/bitmaps/PART75_f001.png :material-check:` |
+| 1 | `0001_0000` | `build/phase-3/bitmaps/PART75_f000.png :material-check:` |
+| 2 | `0001_0003` | `build/phase-3/bitmaps/PART75_f003.png :material-check:` |
+| 3 | `0001_0004` | `build/phase-3/bitmaps/PART75_f004.png :material-check:` |
+| 4 | `0001_0006` | `build/phase-3/bitmaps/PART75_f006.png :material-check:` |
+| 5 | `0001_0005` | `build/phase-3/bitmaps/PART75_f005.png :material-check:` |
+| 6 | `0001_0006` | `build/phase-3/bitmaps/PART75_f006.png :material-check:` |
+| 7 | `0001_0007` | `build/phase-3/bitmaps/PART75_f007.png :material-check:` |
+| 8 | `0001_0006` | `build/phase-3/bitmaps/PART75_f006.png :material-check:` |
+| 9 | `0001_0005` | `build/phase-3/bitmaps/PART75_f005.png :material-check:` |
+| 10 | `0001_0006` | `build/phase-3/bitmaps/PART75_f006.png :material-check:` |
+| 11 | `0001_0005` | `build/phase-3/bitmaps/PART75_f005.png :material-check:` |
 
 ### Bytecode Opcodes
 

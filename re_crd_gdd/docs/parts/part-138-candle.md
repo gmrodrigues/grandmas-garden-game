@@ -97,11 +97,11 @@
 | Frame | Sprites | PNG References |
 |-------|---------|----------------|
 | 0 | `0001_0000` | `build/phase-3/bitmaps/PART138.png :material-check:` |
-| 1 | `0001_0000`, `0002_0005` | `build/phase-3/bitmaps/PART138.png :material-check:`<br>`build/phase-3/bitmaps/PART138_2_f005.png :material-alert-outline: (not found)` |
-| 2 | `0001_0000`, `0002_0006` | `build/phase-3/bitmaps/PART138.png :material-check:`<br>`build/phase-3/bitmaps/PART138_2_f006.png :material-alert-outline: (not found)` |
-| 3 | `0001_0000`, `0002_0007` | `build/phase-3/bitmaps/PART138.png :material-check:`<br>`build/phase-3/bitmaps/PART138_2_f007.png :material-alert-outline: (not found)` |
-| 4 | `0001_0000`, `0002_0008` | `build/phase-3/bitmaps/PART138.png :material-check:`<br>`build/phase-3/bitmaps/PART138_2_f008.png :material-alert-outline: (not found)` |
-| 5 | `0001_0000`, `0002_0009` | `build/phase-3/bitmaps/PART138.png :material-check:`<br>`build/phase-3/bitmaps/PART138_2_f009.png :material-alert-outline: (not found)` |
+| 1 | `0001_0000`, `0002_0005` | `build/phase-3/bitmaps/PART138.png :material-check:`<br>`build/phase-3/bitmaps/FLAMES_f005.png :material-check:` |
+| 2 | `0001_0000`, `0002_0006` | `build/phase-3/bitmaps/PART138.png :material-check:`<br>`build/phase-3/bitmaps/FLAMES_f006.png :material-check:` |
+| 3 | `0001_0000`, `0002_0007` | `build/phase-3/bitmaps/PART138.png :material-check:`<br>`build/phase-3/bitmaps/FLAMES_f007.png :material-check:` |
+| 4 | `0001_0000`, `0002_0008` | `build/phase-3/bitmaps/PART138.png :material-check:`<br>`build/phase-3/bitmaps/FLAMES_f008.png :material-check:` |
+| 5 | `0001_0000`, `0002_0009` | `build/phase-3/bitmaps/PART138.png :material-check:`<br>`build/phase-3/bitmaps/FLAMES_f009.png :material-check:` |
 
 ### Bytecode Opcodes
 

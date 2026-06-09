@@ -1,0 +1,45 @@
+@startuml
+title MVP Rube Goldberg Chain
+
+actor Timer as TIM
+participant Gear as GEA
+participant Rope as ROP
+participant Gate as GAT
+participant Ball as BAL
+participant Laser as LAS
+participant Fan as FAN
+participant Balloon as BLN
+participant Thorns as THN
+
+== Phase 1: Countdown (Ticks 0–119) ==
+TIM -> TIM: state_counter += 1 each tick
+
+== Phase 2: Timer Fires (Tick 119) ==
+TIM -> GEA: state_counter >= 120\nGear activates
+note over GEA: angular_velocity = 8\nstate_counter cycles 0–7
+
+== Phase 3: Gate Lifting (Ticks 119–306) ==
+GEA -> ROP: connected_1 = 3 (Gate)
+ROP -> ROP: rope pull physics\nconstraint enforcement
+ROP -> GAT: gp.y += 4 each tick
+GAT -> GAT: Gate rises, holding ball
+
+== Phase 4: Ball Released (Tick 307) ==
+GAT -> BAL: gate.y > ball.y + 10\nBall released
+BAL -> BAL: is_moving = true\nFalling via gravity
+BAL -> LAS: AABB collision overlap
+
+== Phase 5: Laser Triggered (Tick 307) ==
+LAS -> LAS: state_counter = 2\nis_powered = true
+LAS -> FAN: Fan powered ON
+LAS -> BLN: Balloon released\nis_moving = true
+
+== Phase 6: Balloon Escapes (Tick 307) ==
+FAN -> BLN: vel_x += 30 per tick\n(pushes balloon right)
+BLN -> BLN: gravity_buoyancy = -2000\n(floats upward)
+BLN -> THN: y < 80 (balloon reached thorns)
+
+== Phase 7: Win ==
+note over BLN, THN: === WIN ===\nBalloon popped by thorns
+
+@enduml

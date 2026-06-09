@@ -1,0 +1,72 @@
+@startuml Chain_Script_Model
+
+title Chain Script Model - Data-Driven Rules
+
+rectangle "ChainManager" as CM #e0e0e0
+note right of CM
+  chain_script: Array[Rule]
+  _fired: Array[int]
+  _flags: Dictionary
+  event_log: Array
+  tick_count: int = 0
+  max_ticks: int = 2000
+
+  load_from_level(data: Dictionary)
+  reset()
+  evaluate_chain()
+end note
+
+rectangle "Rule (JSON)" as RULE #d0d0d0
+note right of RULE
+  when: Condition
+  actions: Array[Action]
+  mode: "once" | "repeat"
+end note
+
+rectangle "Condition (JSON)" as COND #d0d0d0
+note right of COND
+  type: "tick" | "flag" | "and" |
+        "prop_ge" | "prop_eq" |
+        "prop_gt_ref" | "overlap" |
+        "solution"
+  part: String (optional)
+  prop: String (optional)
+  value: int
+  ref_part: String (for prop_gt_ref)
+  ref_prop: String
+  offset: int
+  a, b: String (for overlap)
+  conditions: Array (for "and")
+end note
+
+rectangle "Action (JSON)" as ACT #d0d0d0
+note right of ACT
+  type: "set_flag" | "inc" | "set" |
+        "delta" | "log" | "win"
+  name: String (for set_flag)
+  value: int/bool
+  part: String (target)
+  prop: String (target property)
+  msg: String (for log/win)
+end note
+
+rectangle "SimulationRunner" as SR #e0e0e0
+note right of SR
+  State: IDLE | RUNNING | PAUSED | SUCCESS | FAIL
+  current_state: int
+  tick_count: int
+  max_ticks: int = 2000
+  sim_speed: float = 1.0
+
+  init(data), play(), pause()
+  resume(), stop(), reset()
+  run_deterministic_test(runs)
+end note
+
+CM --> RULE : chain_script[]
+RULE --> COND
+RULE --> ACT
+SR --> CM
+SR --> Board
+
+@enduml

@@ -1,0 +1,76 @@
+JOURNEY: J04 — Parts Bin → Browse & Place
+TIMESTAMP: 20260527_072338
+MODE: HEADLESS
+EXIT CODE: 0
+============================================================
+STDOUT:
+J04 — Parts Bin journey test
+Timestamp: 2026-05-27T07:23:38.503150
+Mode: HEADLESS
+
+=== 1. Asset Existence ===
+  ✅ BINSOLVE.ANM decoded — /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-4/anm/BINSOLVE.json
+  ✅ BINSOLVE PNGs exist — 8 PNGs found
+
+=== 2. Part Catalog ===
+  ✅ Part catalog JSON exists
+  ✅ Part catalog entries — 149 parts
+
+=== 3. Category Organization ===
+  Balloons / Airships: 3 parts
+      → Balloon, Hot Air Balloon, Blimp
+  Balls: 9 parts
+  Characters: 8 parts
+  Containers: 5 parts
+  Created / Phantom: 2 parts
+      → explosion, rope end (phantom)
+  Cutting / Popping: 3 parts
+      → Hedge Trimmers, Thumb Tack, Tin Snips
+  Electrical: 9 parts
+  Explosives / Projectiles: 10 parts
+  Inclines: 6 parts
+  Lasers / Optics: 8 parts
+  Light / Flame Sources: 5 parts
+  Pipe Systems: 4 parts
+  Pool Table: 2 parts
+      → Pool Table Wall, Pool Table Pocket
+  Ropes / Belts / Pulleys: 4 parts
+  Rotating Power Sources: 7 parts
+  Scenery: 27 parts
+  Special Mechanics: 15 parts
+  Springs / Pneumatics: 7 parts
+  Walls / Floors: 15 parts
+  ✅ Categories extracted — 19 categories
+
+=== 4. Category Hotkeys ===
+  'A' → Balloons / Airships (3 parts)
+  'B' → Balls (9 parts)
+  'C' → Scenery (27 parts)
+  'E' → Explosives / Projectiles (10 parts)
+  'F' → Springs / Pneumatics (7 parts)
+  'G' → Ropes / Belts / Pulleys (4 parts)
+  'I' → Special Mechanics (15 parts)
+  'L' → Electrical (9 parts)
+  'M' → Light / Flame Sources (5 parts)
+  'O' → Rotating Power Sources (7 parts)
+  'P' → Inclines (6 parts)
+  'R' → Containers (5 parts)
+  'W' → Walls / Floors (15 parts)
+  ✅ Hotkey mapping covers main categories
+
+=== 5. Part Placement Simulation ===
+  [PLACE] part_type=0 name='Bowling Ball' category='Balls'
+  [PLACE] part_type=9 name='Basketball' category='Balls'
+  [PLACE] part_type=4 name='Balloon' category='Balloons / Airships'
+  [PLACE] part_type=10 name='Rope' category='Ropes / Belts / Pulleys'
+  [PLACE] part_type=54 name='Mel Schlemming' category='Characters'
+  ✅ Placement tracking works — 5 parts placed
+  [REMOVE] Last placed part removed
+  ✅ Part removal works
+
+==================================================
+RESULTS: 8 passed, 0 failed
+Full log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J04_20260527_072338.log
+
+============================================================
+STDERR:

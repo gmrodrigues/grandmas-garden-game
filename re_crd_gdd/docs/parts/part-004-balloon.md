@@ -120,16 +120,16 @@
 | 10 | `0001_0003` | `build/phase-3/bitmaps/PART4_f003.png :material-check:` |
 | 11 | `0001_0004` | `build/phase-3/bitmaps/PART4_f004.png :material-check:` |
 | 12 | `0001_0005` | `build/phase-3/bitmaps/PART4_f005.png :material-check:` |
-| 13 | `0003_0000` | `build/phase-3/bitmaps/PART4_3_f000.png :material-alert-outline: (not found)` |
-| 14 | `0003_0000` | `build/phase-3/bitmaps/PART4_3_f000.png :material-alert-outline: (not found)` |
-| 15 | `0003_0001` | `build/phase-3/bitmaps/PART4_3_f001.png :material-alert-outline: (not found)` |
-| 16 | `0003_0002` | `build/phase-3/bitmaps/PART4_3_f002.png :material-alert-outline: (not found)` |
-| 17 | `0003_0003` | `build/phase-3/bitmaps/PART4_3_f003.png :material-alert-outline: (not found)` |
-| 18 | `0004_0000` | `build/phase-3/bitmaps/PART4_4_f000.png :material-alert-outline: (not found)` |
-| 19 | `0004_0000` | `build/phase-3/bitmaps/PART4_4_f000.png :material-alert-outline: (not found)` |
-| 20 | `0004_0001` | `build/phase-3/bitmaps/PART4_4_f001.png :material-alert-outline: (not found)` |
-| 21 | `0004_0002` | `build/phase-3/bitmaps/PART4_4_f002.png :material-alert-outline: (not found)` |
-| 22 | `0004_0003` | `build/phase-3/bitmaps/PART4_4_f003.png :material-alert-outline: (not found)` |
+| 13 | `0003_0000` | `build/phase-3/bitmaps/PART4C_f000.png :material-check:` |
+| 14 | `0003_0000` | `build/phase-3/bitmaps/PART4C_f000.png :material-check:` |
+| 15 | `0003_0001` | `build/phase-3/bitmaps/PART4C_f001.png :material-check:` |
+| 16 | `0003_0002` | `build/phase-3/bitmaps/PART4C_f002.png :material-check:` |
+| 17 | `0003_0003` | `build/phase-3/bitmaps/PART4C_f003.png :material-check:` |
+| 18 | `0004_0000` | `build/phase-3/bitmaps/PART4D_f000.png :material-check:` |
+| 19 | `0004_0000` | `build/phase-3/bitmaps/PART4D_f000.png :material-check:` |
+| 20 | `0004_0001` | `build/phase-3/bitmaps/PART4D_f001.png :material-check:` |
+| 21 | `0004_0002` | `build/phase-3/bitmaps/PART4D_f002.png :material-check:` |
+| 22 | `0004_0003` | `build/phase-3/bitmaps/PART4D_f003.png :material-check:` |
 
 ### Sound Effects
 

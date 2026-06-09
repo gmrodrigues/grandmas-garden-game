@@ -1,0 +1,892 @@
+{
+  "pass_count": 131,
+  "fail_count": 0,
+  "timestamp": "2026-05-27",
+  "results": {
+    "gravity_y value": {
+      "pass": true,
+      "expected": 92160,
+      "actual": 92160,
+      "detail": "gravity_y=1536, base=0x1800"
+    },
+    "position after 60 ticks (1s)": {
+      "pass": true,
+      "expected": 5540,
+      "actual": 5540,
+      "detail": "fall distance=5490px"
+    },
+    "highest gravity base": {
+      "pass": true,
+      "expected": 7168,
+      "actual": 7168,
+      "detail": ""
+    },
+    "initial overlap": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "ball is moving": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "floor is static": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "collision updated state": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "ball above floor after collision": {
+      "pass": true,
+      "expected": "ball_bottom(50) <= floor_top(50)+1",
+      "actual": 50,
+      "detail": "ball.y=34, floor.y=50"
+    },
+    "state counter cycle (after init delay)": {
+      "pass": true,
+      "expected": "starts 1\u21922\u2192... at tick 1",
+      "actual": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        0,
+        1,
+        2
+      ],
+      "detail": ""
+    },
+    "collision bumps state": {
+      "pass": true,
+      "expected": 4,
+      "actual": 4,
+      "detail": ""
+    },
+    "collision at limit reaches max": {
+      "pass": true,
+      "expected": 8,
+      "actual": 8,
+      "detail": ""
+    },
+    "bowling ball has ANM": {
+      "pass": true,
+      "expected": "PART0",
+      "actual": "PART0",
+      "detail": ""
+    },
+    "PART0 state 1 \u2192 frame 0": {
+      "pass": true,
+      "expected": 0,
+      "actual": 0,
+      "detail": ""
+    },
+    "frame 0 has metadata": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "frame 0 has bytecodes": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": "2 commands"
+    },
+    "valid opcode 2": {
+      "pass": true,
+      "expected": "0-5",
+      "actual": 2,
+      "detail": "DRAW_BMP"
+    },
+    "valid opcode 0": {
+      "pass": true,
+      "expected": "0-5",
+      "actual": 0,
+      "detail": "END_FRAME"
+    },
+    "ELEV1 has 105 parts": {
+      "pass": true,
+      "expected": 105,
+      "actual": 105,
+      "detail": ""
+    },
+    "ELEV1 has 1 moving part": {
+      "pass": true,
+      "expected": 1,
+      "actual": 1,
+      "detail": ""
+    },
+    "30 ticks executed": {
+      "pass": true,
+      "expected": 30,
+      "actual": 30,
+      "detail": ""
+    },
+    "ball fell > 0 pixels": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": "y=30"
+    },
+    "ball has non-zero velocity after 30 ticks": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": "vel_y=-512 (may be bouncing)"
+    },
+    "ELEV1 loaded (105 parts)": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "ELEV5 loaded (33 parts)": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "ELEV10 loaded (41 parts)": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "ELEV15 loaded (27 parts)": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "ELEV20 loaded (59 parts)": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "ELEV25 loaded (37 parts)": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "ELEV1 has conditions": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "initial state unsolved": {
+      "pass": true,
+      "expected": false,
+      "actual": false,
+      "detail": ""
+    },
+    "failure reasons captured": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": "first: condition_0: part_6 state=(1,110) rect=(0, 0, 0, 0)"
+    },
+    "wall collision \u2014 ball right at wall": {
+      "pass": true,
+      "expected": true,
+      "actual": 560,
+      "detail": ""
+    },
+    "wall collision \u2014 vel_x <= 0 after bounce": {
+      "pass": true,
+      "expected": true,
+      "actual": 0,
+      "detail": ""
+    },
+    "surface clamp \u2014 ball_bottom == floor_top": {
+      "pass": true,
+      "expected": true,
+      "actual": 50,
+      "detail": ""
+    },
+    "static immobility \u2014 floor y unchanged": {
+      "pass": true,
+      "expected": true,
+      "actual": 100,
+      "detail": ""
+    },
+    "static immobility \u2014 floor x unchanged": {
+      "pass": true,
+      "expected": true,
+      "actual": 90,
+      "detail": ""
+    },
+    "collision matrix \u2014 SCENERY passes through DYNAMIC (scenery unchanged)": {
+      "pass": true,
+      "expected": true,
+      "actual": 30,
+      "detail": ""
+    },
+    "collision matrix \u2014 should_collide(SCENERY, DYNAMIC) = False": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "ELEV1 120 ticks \u2014 no crash": {
+      "pass": true,
+      "expected": true,
+      "actual": 120,
+      "detail": ""
+    },
+    "determinism \u2014 two runs identical (100 ticks)": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "PART0 has no section_a (static sprite)": {
+      "pass": true,
+      "expected": true,
+      "actual": false,
+      "detail": ""
+    },
+    "static sprite \u2014 same frame for state_counter 0 and 99": {
+      "pass": true,
+      "expected": true,
+      "actual": "True, True",
+      "detail": ""
+    },
+    "static sprite \u2014 identical surface content at counter 0 and 99": {
+      "pass": true,
+      "expected": true,
+      "actual": "(32, 32) (32, 32)",
+      "detail": ""
+    },
+    "CREDITS has section_a": {
+      "pass": true,
+      "expected": true,
+      "actual": 6,
+      "detail": ""
+    },
+    "CREDITS state=1 frame sequence (state_counter 0\u21927)": {
+      "pass": [
+        1,
+        1,
+        2,
+        3,
+        3,
+        0,
+        1,
+        1
+      ],
+      "expected": [
+        1,
+        1,
+        2,
+        3,
+        3,
+        0,
+        1,
+        1
+      ],
+      "actual": [
+        1,
+        1,
+        2,
+        3,
+        3,
+        0,
+        1,
+        1
+      ],
+      "detail": ""
+    },
+    "CREDITS state=1 \u2014 frame at counter 0 (section_b[1])": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "CREDITS state=1 \u2014 counter 0 maps to section_b[1], counter 2 maps to section_b[2] (different frames)": {
+      "pass": true,
+      "expected": true,
+      "actual": "True, True",
+      "detail": ""
+    },
+    "CREDITS state=1 \u2014 frame at counter 5 (section_b[3]) differs from counter 2": {
+      "pass": true,
+      "expected": true,
+      "actual": "True, True",
+      "detail": ""
+    },
+    "CREDITS state=1 \u2014 frame at counter 6 (section_b[0]) wrap-around differs from counter 5": {
+      "pass": true,
+      "expected": true,
+      "actual": "True, True",
+      "detail": ""
+    },
+    "Section A wrap-around at boundary (counter 12 wraps to same as counter 0 for same state)": {
+      "pass": true,
+      "expected": true,
+      "actual": 1,
+      "detail": ""
+    },
+    "CREDITS counter 0 and 1 map to same section_b[1] (consecutive 1s in section_a)": {
+      "pass": true,
+      "expected": true,
+      "actual": "True True",
+      "detail": ""
+    },
+    "CREDITS counter 1 and 2 map to different frames (section_a[1]=1 vs section_a[2]=1)": {
+      "pass": true,
+      "expected": true,
+      "actual": "True True",
+      "detail": ""
+    },
+    "PH4: overlapping circles detected": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "PH4: non-overlapping circles not detected": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "PH4: circle-wall overlap detected": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "PH4: circle-wall non-overlap not detected": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "PH4: _detect_collision matches circle_aabb_overlap for overlapping parts": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "PH4: circle-wall bounce corrects position (ball.y < floor.y)": {
+      "pass": true,
+      "expected": true,
+      "actual": 198,
+      "detail": ""
+    },
+    "PH4: circle-wall bounce reverses vel_y sign": {
+      "pass": true,
+      "expected": true,
+      "actual": -600,
+      "detail": ""
+    },
+    "PH12: ROPE_PART_TYPES includes pulley (7)": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "PH12: ROPE_PART_TYPES includes rope (10)": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "PH12: ROPE_PART_TYPES includes steel cable (76)": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "PH12: ROPE_PART_TYPES excludes belt (8)": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "PH12: rope_segment_length on Part dataclass": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "PH12: non-rope parts skip constraint loop": {
+      "pass": true,
+      "expected": true,
+      "actual": 50,
+      "detail": ""
+    },
+    "PH11: pulley_rope_1_connect_x exists": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "PH11: pulley_rope_1_connect_y exists": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "PH11: pulley_rope_2_connect_x exists": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "PH11: pulley_rope_2_connect_y exists": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "PH11: rope_index exists": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "PH11: pulley anchor positions settable": {
+      "pass": true,
+      "expected": true,
+      "actual": [
+        10,
+        5
+      ],
+      "detail": ""
+    },
+    "PH11: pulley angular_velocity settable": {
+      "pass": true,
+      "expected": true,
+      "actual": 100,
+      "detail": ""
+    },
+    "PH6: belt_connected_part_1 exists": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "PH6: belt_connected_part_2 exists": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "PH6: belt connections settable": {
+      "pass": true,
+      "expected": true,
+      "actual": [
+        2,
+        5
+      ],
+      "detail": ""
+    },
+    "PH6: motor drives belt angular_velocity": {
+      "pass": true,
+      "expected": true,
+      "actual": 100,
+      "detail": ""
+    },
+    "T1: rope constraint pulls parts within segment_length (50)": {
+      "pass": true,
+      "expected": true,
+      "actual": 50,
+      "detail": "dx=50, dy=0"
+    },
+    "T1: close parts stay within segment_length (\u226450)": {
+      "pass": true,
+      "expected": true,
+      "actual": 10,
+      "detail": ""
+    },
+    "T1: non-rope parts skip constraint (ball stays >50px from gear)": {
+      "pass": true,
+      "expected": true,
+      "actual": 150,
+      "detail": ""
+    },
+    "T2: belt syncs angular_velocity to avg (50)": {
+      "pass": true,
+      "expected": true,
+      "actual": [
+        50,
+        50
+      ],
+      "detail": ""
+    },
+    "T2: belt syncs 200-down to avg (100) and 0-up to avg (100)": {
+      "pass": true,
+      "expected": true,
+      "actual": [
+        100,
+        100
+      ],
+      "detail": ""
+    },
+    "T3: collision matrix has 6 asymmetric pairs": {
+      "pass": true,
+      "expected": true,
+      "actual": 6,
+      "detail": ""
+    },
+    "T3: asymmetric pairs match expected set": {
+      "pass": true,
+      "expected": true,
+      "actual": [
+        [
+          "CREATED",
+          "STATIC"
+        ],
+        [
+          "DYNAMIC",
+          "ROPE"
+        ],
+        [
+          "EXPLOSIVE",
+          "CREATED"
+        ],
+        [
+          "EXPLOSIVE",
+          "ROPE"
+        ],
+        [
+          "EXPLOSIVE",
+          "SCENERY"
+        ],
+        [
+          "STATIC",
+          "ROPE"
+        ]
+      ],
+      "detail": "expected={('EXPLOSIVE', 'ROPE'), ('EXPLOSIVE', 'CREATED'), ('DYNAMIC', 'ROPE'), ('EXPLOSIVE', 'SCENERY'), ('CREATED', 'STATIC'), ('STATIC', 'ROPE')}"
+    },
+    "T3: STATIC collides with DYNAMIC": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "T3: DYNAMIC collides with STATIC": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "T3: SCENERY collides with nothing": {
+      "pass": true,
+      "expected": true,
+      "actual": 0,
+      "detail": ""
+    },
+    "T3: EXPLOSIVE collides with DYNAMIC": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "T3: ROPE only collides with ROPE": {
+      "pass": true,
+      "expected": true,
+      "actual": [
+        "ROPE"
+      ],
+      "detail": ""
+    },
+    "SM3: outlet has flags_3 & 0x2": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "SM3: always-on outlet (120) is active": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "SM3: switch (21) at state=1 is inactive": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "SM3: outlet powers consumer to ON state (2)": {
+      "pass": true,
+      "expected": true,
+      "actual": 2,
+      "detail": ""
+    },
+    "SM3: non-outlet does not change consumer": {
+      "pass": true,
+      "expected": true,
+      "actual": 2,
+      "detail": ""
+    },
+    "SM3: inactive switch turns consumer OFF (state 1)": {
+      "pass": true,
+      "expected": true,
+      "actual": 1,
+      "detail": ""
+    },
+    "SM3: step() propagates power, consumer reaches ON state": {
+      "pass": true,
+      "expected": true,
+      "actual": 2,
+      "detail": ""
+    },
+    "SM3: generator (26) state=2 powers motor to ON state (4)": {
+      "pass": true,
+      "expected": true,
+      "actual": 4,
+      "detail": ""
+    },
+    "SM3: Fan (24) transitions 1\u21922 when powered": {
+      "pass": true,
+      "expected": true,
+      "actual": 2,
+      "detail": ""
+    },
+    "SM3: Motor (50) transitions 1\u21924 when powered": {
+      "pass": true,
+      "expected": true,
+      "actual": 4,
+      "detail": ""
+    },
+    "SM3: Vacuum (51) transitions 9\u219210 when powered": {
+      "pass": true,
+      "expected": true,
+      "actual": 10,
+      "detail": ""
+    },
+    "SM3: Can Opener (67) transitions 1\u21923 when powered": {
+      "pass": true,
+      "expected": true,
+      "actual": 3,
+      "detail": ""
+    },
+    "SM3: Toaster (81) transitions 1\u21928 when powered": {
+      "pass": true,
+      "expected": true,
+      "actual": 8,
+      "detail": ""
+    },
+    "SM3: Mixer (107) transitions 2\u21921 when powered": {
+      "pass": true,
+      "expected": true,
+      "actual": 1,
+      "detail": ""
+    },
+    "SM3: ELECTRICAL_CONSUMER_STATES has 6 entries": {
+      "pass": true,
+      "expected": true,
+      "actual": 6,
+      "detail": ""
+    },
+    "AU4: on_collision fired after collision": {
+      "pass": true,
+      "expected": true,
+      "actual": 1,
+      "detail": ""
+    },
+    "AU4: callback receives correct part types": {
+      "pass": true,
+      "expected": true,
+      "actual": "ball type=0, wall type=20",
+      "detail": ""
+    },
+    "AU4: collision bumps state_counter": {
+      "pass": true,
+      "expected": true,
+      "actual": 1,
+      "detail": ""
+    },
+    "AU4: no crash when on_collision is None": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "AU4: Balloon (type 4) has registered sounds": {
+      "pass": true,
+      "expected": true,
+      "actual": 1,
+      "detail": ""
+    },
+    "AU4: first sound is valid ID": {
+      "pass": true,
+      "expected": true,
+      "actual": 3004,
+      "detail": ""
+    },
+    "AU4: part without sounds returns empty list": {
+      "pass": true,
+      "expected": true,
+      "actual": 0,
+      "detail": ""
+    },
+    "SM3: Always-on Outlet (type 120, state=0) active=True": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "SM3: Switch OFF (type 21, state=1) active=False": {
+      "pass": true,
+      "expected": true,
+      "actual": false,
+      "detail": ""
+    },
+    "SM3: Switch ON (type 21, state=8) active=True": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "SM3: Generator OFF (type 26, state=1) active=False": {
+      "pass": true,
+      "expected": true,
+      "actual": false,
+      "detail": ""
+    },
+    "SM3: Generator ON (type 26, state=2) active=True": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "SM3: Solar Panel OFF (type 38, state=3) active=False": {
+      "pass": true,
+      "expected": true,
+      "actual": false,
+      "detail": ""
+    },
+    "SM3: Solar Panel ON (type 38, state=2) active=True": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "SM3: Flashlight OFF (type 25, state=1) active=False": {
+      "pass": true,
+      "expected": true,
+      "actual": false,
+      "detail": ""
+    },
+    "SM3: Flashlight ON (type 25, state=2) active=True": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "SM3: Laser Plug OFF (type 96, state=0) active=False": {
+      "pass": true,
+      "expected": true,
+      "actual": false,
+      "detail": ""
+    },
+    "SM3: Laser Plug ON (type 96, state=2) active=True": {
+      "pass": true,
+      "expected": true,
+      "actual": true,
+      "detail": ""
+    },
+    "T7: type 12 orphan states": {
+      "pass": true,
+      "expected": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "actual": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "detail": "got 10 orphans: [4, 5, 6, 7, 8, 10, 11, 12, 13, 14]"
+    },
+    "T7: type 18 orphan count": {
+      "pass": true,
+      "expected": ">= 20 orphans",
+      "actual": "24 orphans",
+      "detail": "orphans: [3, 6, 9, 15, 22, 23, 24, 25, 26, 27, 28, 29, 30, 35, 36, 39, 40, 42, 43, 44, 46, 49, 51, 52]"
+    },
+    "T7: type 137 orphan count": {
+      "pass": true,
+      "expected": ">= 15 orphans",
+      "actual": "17 orphans",
+      "detail": "orphans: [20, 21, 24, 25, 27, 29, 31, 32, 35, 37, 38, 39, 40, 41, 42, 43, 44]"
+    },
+    "T7: type 0 (no orphans)": {
+      "pass": true,
+      "expected": "[]",
+      "actual": [],
+      "detail": ""
+    },
+    "T7: type 999 (non-existent)": {
+      "pass": true,
+      "expected": "[]",
+      "actual": [],
+      "detail": ""
+    },
+    "T7: all 149 types smoke test": {
+      "pass": true,
+      "expected": "no exception",
+      "actual": "no exception",
+      "detail": ""
+    },
+    "T8: type 18 broken chains": {
+      "pass": true,
+      "expected": "[]",
+      "actual": [],
+      "detail": ""
+    },
+    "T8: type 49 (phantom, no ANM)": {
+      "pass": true,
+      "expected": "[]",
+      "actual": [],
+      "detail": ""
+    },
+    "T8: type 999 (non-existent)": {
+      "pass": true,
+      "expected": "[]",
+      "actual": [],
+      "detail": ""
+    },
+    "T8: all 149 types smoke test": {
+      "pass": true,
+      "expected": "no exception",
+      "actual": "no exception",
+      "detail": ""
+    }
+  }
+}

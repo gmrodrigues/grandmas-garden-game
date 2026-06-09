@@ -108,7 +108,7 @@
 | 4 | `0001_0003` | `build/phase-3/bitmaps/PART74_f003.png :material-check:` |
 | 5 | `0001_0004` | `build/phase-3/bitmaps/PART74_f004.png :material-check:` |
 | 6 | `0001_0005` | `build/phase-3/bitmaps/PART74_f005.png :material-check:` |
-| 7 | `0002_0000` | `build/phase-3/bitmaps/PART74_2_f000.png :material-alert-outline: (not found)` |
+| 7 | `0002_0000` | `build/phase-3/bitmaps/BLANK.png :material-check:` |
 
 ### Sound Effects
 

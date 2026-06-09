@@ -105,11 +105,11 @@
 | Frame | Sprites | PNG References |
 |-------|---------|----------------|
 | 0 | `0001_0001`, `0001_0000` | `build/phase-3/bitmaps/PART79_f001.png :material-check:`<br>`build/phase-3/bitmaps/PART79_f000.png :material-check:` |
-| 1 | `0001_0001`, `0002_0006`, `0001_0000` | `build/phase-3/bitmaps/PART79_f001.png :material-check:`<br>`build/phase-3/bitmaps/PART79_2_f006.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART79_f000.png :material-check:` |
-| 2 | `0001_0001`, `0002_0007`, `0001_0000` | `build/phase-3/bitmaps/PART79_f001.png :material-check:`<br>`build/phase-3/bitmaps/PART79_2_f007.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART79_f000.png :material-check:` |
-| 3 | `0001_0001`, `0002_0008`, `0001_0000` | `build/phase-3/bitmaps/PART79_f001.png :material-check:`<br>`build/phase-3/bitmaps/PART79_2_f008.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART79_f000.png :material-check:` |
-| 4 | `0001_0001`, `0002_0009`, `0001_0000` | `build/phase-3/bitmaps/PART79_f001.png :material-check:`<br>`build/phase-3/bitmaps/PART79_2_f009.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART79_f000.png :material-check:` |
-| 5 | `0001_0001`, `0002_0005`, `0001_0000` | `build/phase-3/bitmaps/PART79_f001.png :material-check:`<br>`build/phase-3/bitmaps/PART79_2_f005.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART79_f000.png :material-check:` |
+| 1 | `0001_0001`, `0002_0006`, `0001_0000` | `build/phase-3/bitmaps/PART79_f001.png :material-check:`<br>`build/phase-3/bitmaps/FLAMES_f006.png :material-check:`<br>`build/phase-3/bitmaps/PART79_f000.png :material-check:` |
+| 2 | `0001_0001`, `0002_0007`, `0001_0000` | `build/phase-3/bitmaps/PART79_f001.png :material-check:`<br>`build/phase-3/bitmaps/FLAMES_f007.png :material-check:`<br>`build/phase-3/bitmaps/PART79_f000.png :material-check:` |
+| 3 | `0001_0001`, `0002_0008`, `0001_0000` | `build/phase-3/bitmaps/PART79_f001.png :material-check:`<br>`build/phase-3/bitmaps/FLAMES_f008.png :material-check:`<br>`build/phase-3/bitmaps/PART79_f000.png :material-check:` |
+| 4 | `0001_0001`, `0002_0009`, `0001_0000` | `build/phase-3/bitmaps/PART79_f001.png :material-check:`<br>`build/phase-3/bitmaps/FLAMES_f009.png :material-check:`<br>`build/phase-3/bitmaps/PART79_f000.png :material-check:` |
+| 5 | `0001_0001`, `0002_0005`, `0001_0000` | `build/phase-3/bitmaps/PART79_f001.png :material-check:`<br>`build/phase-3/bitmaps/FLAMES_f005.png :material-check:`<br>`build/phase-3/bitmaps/PART79_f000.png :material-check:` |
 | 6 | `0001_0001`, `0001_0000` | `build/phase-3/bitmaps/PART79_f001.png :material-check:`<br>`build/phase-3/bitmaps/PART79_f000.png :material-check:` |
 | 7 | `0001_0001`, `0001_0003` | `build/phase-3/bitmaps/PART79_f001.png :material-check:`<br>`build/phase-3/bitmaps/PART79_f003.png :material-check:` |
 | 8 | `0001_0004`, `0001_0002` | `build/phase-3/bitmaps/PART79_f004.png :material-check:`<br>`build/phase-3/bitmaps/PART79_f002.png :material-check:` |

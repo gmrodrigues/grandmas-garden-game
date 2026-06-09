@@ -1,0 +1,6200 @@
+{
+  "total_parts": 8439,
+  "total_types": 219,
+  "type_defaults": {
+    "69": {
+      "name": "Anti-Gravity Pad",
+      "count": 126,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 32768,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "46": {
+      "name": "Pipe Wall",
+      "count": 140,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 384,
+      "f2_variant_bits": 0,
+      "f3_default": 8192,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0080",
+        "0x0100"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x2000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "47": {
+      "name": "Curved Pipe Wall",
+      "count": 16,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 64,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0040"
+      ],
+      "f3_variant_names": []
+    },
+    "58": {
+      "name": "Mel's House",
+      "count": 21,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 33864,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x0400",
+        "0x8000"
+      ],
+      "f3_variant_names": []
+    },
+    "101": {
+      "name": "Granite Incline",
+      "count": 283,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 128,
+      "f2_variant_bits": 16,
+      "f3_default": 0,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0080"
+      ],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "97": {
+      "name": "Large Pipes",
+      "count": 24,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 384,
+      "f2_variant_bits": 0,
+      "f3_default": 0,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0080",
+        "0x0100"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "57": {
+      "name": "Large Curved Pipe",
+      "count": 122,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 0,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "84": {
+      "name": "Greco-Roman Wall",
+      "count": 272,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 384,
+      "f2_variant_bits": 0,
+      "f3_default": 8192,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0080",
+        "0x0100"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x2000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "127": {
+      "name": "Color Block",
+      "count": 54,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 384,
+      "f2_variant_bits": 0,
+      "f3_default": 5312,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0080",
+        "0x0100"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0040",
+        "0x0080",
+        "0x0400",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "203": {
+      "name": "type_203",
+      "count": 6,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 384,
+      "f2_variant_bits": 0,
+      "f3_default": 4288,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0080",
+        "0x0100"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0040",
+        "0x0080",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "152": {
+      "name": "type_152",
+      "count": 25,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "150": {
+      "name": "type_150",
+      "count": 27,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "169": {
+      "name": "type_169",
+      "count": 11,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "153": {
+      "name": "type_153",
+      "count": 11,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "190": {
+      "name": "type_190",
+      "count": 8,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "210": {
+      "name": "type_210",
+      "count": 12,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "237": {
+      "name": "type_237",
+      "count": 21,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 48,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010",
+        "0x0020"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "250": {
+      "name": "type_250",
+      "count": 17,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "234": {
+      "name": "type_234",
+      "count": 4,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "233": {
+      "name": "type_233",
+      "count": 4,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "242": {
+      "name": "type_242",
+      "count": 12,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "239": {
+      "name": "type_239",
+      "count": 5,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 48,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010",
+        "0x0020"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "245": {
+      "name": "type_245",
+      "count": 9,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "243": {
+      "name": "type_243",
+      "count": 9,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "247": {
+      "name": "type_247",
+      "count": 4,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "251": {
+      "name": "type_251",
+      "count": 3,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "261": {
+      "name": "type_261",
+      "count": 5,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "252": {
+      "name": "type_252",
+      "count": 11,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "254": {
+      "name": "type_254",
+      "count": 9,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "253": {
+      "name": "type_253",
+      "count": 9,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "249": {
+      "name": "type_249",
+      "count": 5,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "255": {
+      "name": "type_255",
+      "count": 5,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "216": {
+      "name": "type_216",
+      "count": 5,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "215": {
+      "name": "type_215",
+      "count": 6,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "220": {
+      "name": "type_220",
+      "count": 3,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "221": {
+      "name": "type_221",
+      "count": 3,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "217": {
+      "name": "type_217",
+      "count": 3,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "179": {
+      "name": "type_179",
+      "count": 72,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "178": {
+      "name": "type_178",
+      "count": 98,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "151": {
+      "name": "type_151",
+      "count": 6,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "260": {
+      "name": "type_260",
+      "count": 8,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "246": {
+      "name": "type_246",
+      "count": 9,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "244": {
+      "name": "type_244",
+      "count": 8,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "238": {
+      "name": "type_238",
+      "count": 9,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "240": {
+      "name": "type_240",
+      "count": 4,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "211": {
+      "name": "type_211",
+      "count": 12,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "209": {
+      "name": "type_209",
+      "count": 13,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "54": {
+      "name": "Mel Schlemming",
+      "count": 45,
+      "f1_default": 5152,
+      "f1_variant_bits": 64,
+      "f2_default": 32768,
+      "f2_variant_bits": 16,
+      "f3_default": 33800,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x0020",
+        "0x0400",
+        "0x1000"
+      ],
+      "f1_variant_names": [
+        "0x0040"
+      ],
+      "f2_default_names": [
+        "0x8000"
+      ],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0400",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "56": {
+      "name": "Caution Wall",
+      "count": 276,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 384,
+      "f2_variant_bits": 0,
+      "f3_default": 8192,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0080",
+        "0x0100"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x2000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "71": {
+      "name": "Boxes",
+      "count": 62,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 1024,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0400"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "1": {
+      "name": "Brick Wall",
+      "count": 219,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 384,
+      "f2_variant_bits": 0,
+      "f3_default": 8192,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0080",
+        "0x0100"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x2000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "102": {
+      "name": "Brick Incline",
+      "count": 180,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 128,
+      "f2_variant_bits": 16,
+      "f3_default": 0,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0080"
+      ],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "55": {
+      "name": "Remote Control Explosives",
+      "count": 72,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 32776,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "22": {
+      "name": "Remote Control",
+      "count": 72,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 4,
+      "f2_variant_bits": 0,
+      "f3_default": 32776,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0004"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "39": {
+      "name": "Springboard",
+      "count": 66,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 8,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "73": {
+      "name": "Trap Door",
+      "count": 37,
+      "f1_default": 25600,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 32768,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "28": {
+      "name": "Baseball",
+      "count": 70,
+      "f1_default": 4096,
+      "f1_variant_bits": 64,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 32776,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x1000"
+      ],
+      "f1_variant_names": [
+        "0x0040"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "43": {
+      "name": "Pinball",
+      "count": 108,
+      "f1_default": 4096,
+      "f1_variant_bits": 64,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 32776,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x1000"
+      ],
+      "f1_variant_names": [
+        "0x0040"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "78": {
+      "name": "Flint & Tinder",
+      "count": 48,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 32776,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "82": {
+      "name": "Sand Wall",
+      "count": 61,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 384,
+      "f2_variant_bits": 0,
+      "f3_default": 8256,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0080",
+        "0x0100"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0040",
+        "0x2000"
+      ],
+      "f3_variant_names": []
+    },
+    "2": {
+      "name": "Wood incline",
+      "count": 154,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 128,
+      "f2_variant_bits": 16,
+      "f3_default": 0,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0080"
+      ],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "85": {
+      "name": "Log Wall",
+      "count": 104,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 384,
+      "f2_variant_bits": 0,
+      "f3_default": 8192,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0080",
+        "0x0100"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x2000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "48": {
+      "name": "Wood Wall",
+      "count": 209,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 384,
+      "f2_variant_bits": 0,
+      "f3_default": 8192,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0080",
+        "0x0100"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x2000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "120": {
+      "name": "Electrical Outlet",
+      "count": 46,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 10,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0002",
+        "0x0008"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "93": {
+      "name": "Blue Laser",
+      "count": 41,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 32777,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0001",
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "123": {
+      "name": "tile",
+      "count": 18,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 384,
+      "f2_variant_bits": 0,
+      "f3_default": 4288,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0080",
+        "0x0100"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0040",
+        "0x0080",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "267": {
+      "name": "type_267",
+      "count": 4,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "163": {
+      "name": "type_163",
+      "count": 5,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "162": {
+      "name": "type_162",
+      "count": 5,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "208": {
+      "name": "type_208",
+      "count": 12,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "94": {
+      "name": "Angled Mirror",
+      "count": 92,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 8,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "117": {
+      "name": "Pool Cue",
+      "count": 48,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 32776,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "25": {
+      "name": "Flashlight",
+      "count": 67,
+      "f1_default": 25600,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 32776,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "257": {
+      "name": "type_257",
+      "count": 5,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "259": {
+      "name": "type_259",
+      "count": 20,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "258": {
+      "name": "type_258",
+      "count": 5,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "207": {
+      "name": "type_207",
+      "count": 3,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "131": {
+      "name": "apartment building",
+      "count": 7,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "130": {
+      "name": "Glass Building",
+      "count": 24,
+      "f1_default": 25600,
+      "f1_variant_bits": 512,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [
+        "0x0200"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "177": {
+      "name": "type_177",
+      "count": 13,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "206": {
+      "name": "type_206",
+      "count": 4,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "42": {
+      "name": "Newton Mouse",
+      "count": 57,
+      "f1_default": 5120,
+      "f1_variant_bits": 64,
+      "f2_default": 32768,
+      "f2_variant_bits": 16,
+      "f3_default": 32776,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x0400",
+        "0x1000"
+      ],
+      "f1_variant_names": [
+        "0x0040"
+      ],
+      "f2_default_names": [
+        "0x8000"
+      ],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "4": {
+      "name": "Balloon",
+      "count": 111,
+      "f1_default": 4128,
+      "f1_variant_bits": 64,
+      "f2_default": 4,
+      "f2_variant_bits": 0,
+      "f3_default": 33800,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0020",
+        "0x1000"
+      ],
+      "f1_variant_names": [
+        "0x0040"
+      ],
+      "f2_default_names": [
+        "0x0004"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0400",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "63": {
+      "name": "Pool Ball",
+      "count": 60,
+      "f1_default": 4096,
+      "f1_variant_bits": 64,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 33800,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x1000"
+      ],
+      "f1_variant_names": [
+        "0x0040"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0400",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "138": {
+      "name": "Candle",
+      "count": 30,
+      "f1_default": 4128,
+      "f1_variant_bits": 64,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 32780,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0020",
+        "0x1000"
+      ],
+      "f1_variant_names": [
+        "0x0040"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0004",
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "80": {
+      "name": "Fireworks",
+      "count": 38,
+      "f1_default": 4096,
+      "f1_variant_bits": 64,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 33804,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x1000"
+      ],
+      "f1_variant_names": [
+        "0x0040"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0004",
+        "0x0008",
+        "0x0400",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "105": {
+      "name": "Scaffold Barrier",
+      "count": 85,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 64,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0040"
+      ],
+      "f3_variant_names": []
+    },
+    "144": {
+      "name": "small mountain",
+      "count": 21,
+      "f1_default": 25600,
+      "f1_variant_bits": 512,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [
+        "0x0200"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "145": {
+      "name": "medium mountain",
+      "count": 30,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "143": {
+      "name": "Small Cloud",
+      "count": 71,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 48,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010",
+        "0x0020"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "114": {
+      "name": "Big Cloud",
+      "count": 59,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "113": {
+      "name": "Sun",
+      "count": 29,
+      "f1_default": 25600,
+      "f1_variant_bits": 512,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [
+        "0x0200"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "87": {
+      "name": "Programmable Ball",
+      "count": 15,
+      "f1_default": 4096,
+      "f1_variant_bits": 64,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 33800,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x1000"
+      ],
+      "f1_variant_names": [
+        "0x0040"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0400",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "109": {
+      "name": "Blimp",
+      "count": 77,
+      "f1_default": 5120,
+      "f1_variant_bits": 64,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 32776,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0400",
+        "0x1000"
+      ],
+      "f1_variant_names": [
+        "0x0040"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "139": {
+      "name": "Teeter-Totter",
+      "count": 69,
+      "f1_default": 25600,
+      "f1_variant_bits": 0,
+      "f2_default": 12,
+      "f2_variant_bits": 0,
+      "f3_default": 0,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0004",
+        "0x0008"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "88": {
+      "name": "Accelerator Tube",
+      "count": 63,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 48,
+      "f3_default": 0,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010",
+        "0x0020"
+      ],
+      "f3_default_names": [],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "157": {
+      "name": "type_157",
+      "count": 7,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "181": {
+      "name": "type_181",
+      "count": 4,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "159": {
+      "name": "type_159",
+      "count": 5,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "158": {
+      "name": "type_158",
+      "count": 8,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "9": {
+      "name": "Basketball",
+      "count": 28,
+      "f1_default": 4096,
+      "f1_variant_bits": 64,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 32776,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x1000"
+      ],
+      "f1_variant_names": [
+        "0x0040"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "68": {
+      "name": "Soccer Ball",
+      "count": 22,
+      "f1_default": 4096,
+      "f1_variant_bits": 64,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 32776,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x1000"
+      ],
+      "f1_variant_names": [
+        "0x0040"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "37": {
+      "name": "Hedge Trimmers",
+      "count": 58,
+      "f1_default": 25600,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 32776,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "10": {
+      "name": "Rope",
+      "count": 209,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 0,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "23": {
+      "name": "Boat Cleat",
+      "count": 138,
+      "f1_default": 25088,
+      "f1_variant_bits": 0,
+      "f2_default": 4,
+      "f2_variant_bits": 32,
+      "f3_default": 8,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0200",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0004"
+      ],
+      "f2_variant_names": [
+        "0x0020"
+      ],
+      "f3_default_names": [
+        "0x0008"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "132": {
+      "name": "office building",
+      "count": 8,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "134": {
+      "name": "lamp post",
+      "count": 10,
+      "f1_default": 24576,
+      "f1_variant_bits": 1536,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [
+        "0x0200",
+        "0x0400"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "52": {
+      "name": "Cheese",
+      "count": 72,
+      "f1_default": 4096,
+      "f1_variant_bits": 64,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 32776,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x1000"
+      ],
+      "f1_variant_names": [
+        "0x0040"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "11": {
+      "name": "Laundry Basket",
+      "count": 13,
+      "f1_default": 4128,
+      "f1_variant_bits": 0,
+      "f2_default": 4,
+      "f2_variant_bits": 0,
+      "f3_default": 32776,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x0020",
+        "0x1000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0004"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "53": {
+      "name": "Thumb Tack",
+      "count": 47,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 8,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "50": {
+      "name": "Electric Motor",
+      "count": 36,
+      "f1_default": 25600,
+      "f1_variant_bits": 0,
+      "f2_default": 2049,
+      "f2_variant_bits": 18,
+      "f3_default": 32777,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0001",
+        "0x0800"
+      ],
+      "f2_variant_names": [
+        "0x0002",
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0001",
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "86": {
+      "name": "Tiny Gear",
+      "count": 47,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 1,
+      "f2_variant_bits": 2,
+      "f3_default": 0,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0001"
+      ],
+      "f2_variant_names": [
+        "0x0002"
+      ],
+      "f3_default_names": [],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "21": {
+      "name": "Electric Switch & Outlet",
+      "count": 69,
+      "f1_default": 25088,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 2,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0200",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0002"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "67": {
+      "name": "Can Opener",
+      "count": 14,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 32777,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0001",
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "26": {
+      "name": "Generator",
+      "count": 17,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 3,
+      "f2_variant_bits": 0,
+      "f3_default": 10,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0001",
+        "0x0002"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0002",
+        "0x0008"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "7": {
+      "name": "Pulley",
+      "count": 224,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 4,
+      "f2_variant_bits": 0,
+      "f3_default": 8,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0004"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "90": {
+      "name": "Roto-Trans Converter",
+      "count": 17,
+      "f1_default": 25088,
+      "f1_variant_bits": 0,
+      "f2_default": 5,
+      "f2_variant_bits": 34,
+      "f3_default": 8,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0200",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0001",
+        "0x0004"
+      ],
+      "f2_variant_names": [
+        "0x0002",
+        "0x0020"
+      ],
+      "f3_default_names": [
+        "0x0008"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "14": {
+      "name": "Gear",
+      "count": 111,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 1,
+      "f2_variant_bits": 2,
+      "f3_default": 0,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0001"
+      ],
+      "f2_variant_names": [
+        "0x0002"
+      ],
+      "f3_default_names": [],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "89": {
+      "name": "Trans-Roto-Matic",
+      "count": 15,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 2053,
+      "f2_variant_bits": 18,
+      "f3_default": 8,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0001",
+        "0x0004",
+        "0x0800"
+      ],
+      "f2_variant_names": [
+        "0x0002",
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "8": {
+      "name": "Belt",
+      "count": 193,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 0,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "12": {
+      "name": "Curie Cat",
+      "count": 27,
+      "f1_default": 5120,
+      "f1_variant_bits": 64,
+      "f2_default": 32768,
+      "f2_variant_bits": 16,
+      "f3_default": 32776,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x0400",
+        "0x1000"
+      ],
+      "f1_variant_names": [
+        "0x0040"
+      ],
+      "f2_default_names": [
+        "0x8000"
+      ],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "75": {
+      "name": "Match-on-a-Spring",
+      "count": 54,
+      "f1_default": 25600,
+      "f1_variant_bits": 0,
+      "f2_default": 4,
+      "f2_variant_bits": 16,
+      "f3_default": 32776,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0004"
+      ],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "125": {
+      "name": "Yellow Brick Wall",
+      "count": 165,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 384,
+      "f2_variant_bits": 0,
+      "f3_default": 8192,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0080",
+        "0x0100"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x2000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "96": {
+      "name": "Laser-Activated Plug",
+      "count": 36,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 1034,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0002",
+        "0x0008",
+        "0x0400"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "107": {
+      "name": "Electric Mixer",
+      "count": 12,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 32777,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0001",
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "6": {
+      "name": "Mouse Motor",
+      "count": 58,
+      "f1_default": 25600,
+      "f1_variant_bits": 0,
+      "f2_default": 2049,
+      "f2_variant_bits": 18,
+      "f3_default": 32768,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0001",
+        "0x0800"
+      ],
+      "f2_variant_names": [
+        "0x0002",
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "126": {
+      "name": "Yellow Brick Incline",
+      "count": 173,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 128,
+      "f2_variant_bits": 16,
+      "f3_default": 0,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0080"
+      ],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "91": {
+      "name": "Red Laser",
+      "count": 35,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 32777,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0001",
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "62": {
+      "name": "Coffee Pot",
+      "count": 18,
+      "f1_default": 5152,
+      "f1_variant_bits": 64,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 32776,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x0020",
+        "0x0400",
+        "0x1000"
+      ],
+      "f1_variant_names": [
+        "0x0040"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "100": {
+      "name": "Log Incline",
+      "count": 67,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 128,
+      "f2_variant_bits": 16,
+      "f3_default": 0,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0080"
+      ],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "3": {
+      "name": "Tipsy Trailer",
+      "count": 51,
+      "f1_default": 25600,
+      "f1_variant_bits": 0,
+      "f2_default": 12,
+      "f2_variant_bits": 0,
+      "f3_default": 0,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0004",
+        "0x0008"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "5": {
+      "name": "Conveyor Belt",
+      "count": 98,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 129,
+      "f2_variant_bits": 2,
+      "f3_default": 0,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0001",
+        "0x0080"
+      ],
+      "f2_variant_names": [
+        "0x0002"
+      ],
+      "f3_default_names": [],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "111": {
+      "name": "Spruce Tree",
+      "count": 51,
+      "f1_default": 25600,
+      "f1_variant_bits": 512,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [
+        "0x0200"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "142": {
+      "name": "Small Pine Tree",
+      "count": 41,
+      "f1_default": 25600,
+      "f1_variant_bits": 512,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [
+        "0x0200"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "110": {
+      "name": "Elm Tree",
+      "count": 22,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "115": {
+      "name": "Little Cloud",
+      "count": 19,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "141": {
+      "name": "Small Maple Tree",
+      "count": 10,
+      "f1_default": 25600,
+      "f1_variant_bits": 512,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [
+        "0x0200"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "128": {
+      "name": "purple mountain",
+      "count": 22,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "44": {
+      "name": "Tennis Ball",
+      "count": 70,
+      "f1_default": 4096,
+      "f1_variant_bits": 64,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 32776,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x1000"
+      ],
+      "f1_variant_names": [
+        "0x0040"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "19": {
+      "name": "Dynamite",
+      "count": 55,
+      "f1_default": 5152,
+      "f1_variant_bits": 64,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 32780,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0020",
+        "0x0400",
+        "0x1000"
+      ],
+      "f1_variant_names": [
+        "0x0040"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0004",
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "79": {
+      "name": "Hot Air Balloon",
+      "count": 33,
+      "f1_default": 4128,
+      "f1_variant_bits": 64,
+      "f2_default": 4,
+      "f2_variant_bits": 0,
+      "f3_default": 32780,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0020",
+        "0x1000"
+      ],
+      "f1_variant_names": [
+        "0x0040"
+      ],
+      "f2_default_names": [
+        "0x0004"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0004",
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "70": {
+      "name": "Missile",
+      "count": 27,
+      "f1_default": 5632,
+      "f1_variant_bits": 64,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 32780,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x1000"
+      ],
+      "f1_variant_names": [
+        "0x0040"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0004",
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "66": {
+      "name": "Mouse Hole",
+      "count": 8,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 32840,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x8000"
+      ],
+      "f3_variant_names": []
+    },
+    "83": {
+      "name": "Cinder Block Wall",
+      "count": 143,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 384,
+      "f2_variant_bits": 0,
+      "f3_default": 8192,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0080",
+        "0x0100"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x2000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "137": {
+      "name": "Egg Timer",
+      "count": 50,
+      "f1_default": 25600,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 33800,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0400",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "99": {
+      "name": "Grass Incline",
+      "count": 28,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 128,
+      "f2_variant_bits": 16,
+      "f3_default": 0,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0080"
+      ],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "35": {
+      "name": "Boxing Glove",
+      "count": 48,
+      "f1_default": 25600,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 32776,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "16": {
+      "name": "Bike Pump",
+      "count": 29,
+      "f1_default": 25600,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 32776,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "256": {
+      "name": "type_256",
+      "count": 5,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "61": {
+      "name": "Alligator",
+      "count": 17,
+      "f1_default": 25600,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 32768,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "64": {
+      "name": "Pinball Bumper",
+      "count": 26,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 8,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "136": {
+      "name": "Message Computer",
+      "count": 17,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 33864,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x0400",
+        "0x8000"
+      ],
+      "f3_variant_names": []
+    },
+    "74": {
+      "name": "Nitroglycerine",
+      "count": 90,
+      "f1_default": 4096,
+      "f1_variant_bits": 64,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 32776,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x1000"
+      ],
+      "f1_variant_names": [
+        "0x0040"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "106": {
+      "name": "Lattice Archway",
+      "count": 9,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 64,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0040"
+      ],
+      "f3_variant_names": []
+    },
+    "31": {
+      "name": "Mandrill Motor",
+      "count": 10,
+      "f1_default": 25600,
+      "f1_variant_bits": 0,
+      "f2_default": 2055,
+      "f2_variant_bits": 16,
+      "f3_default": 32776,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0001",
+        "0x0002",
+        "0x0004",
+        "0x0800"
+      ],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "17": {
+      "name": "Bucket",
+      "count": 61,
+      "f1_default": 4128,
+      "f1_variant_bits": 64,
+      "f2_default": 4,
+      "f2_variant_bits": 0,
+      "f3_default": 32776,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0020",
+        "0x1000"
+      ],
+      "f1_variant_names": [
+        "0x0040"
+      ],
+      "f2_default_names": [
+        "0x0004"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "15": {
+      "name": "Fish Tank",
+      "count": 19,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 32776,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "30": {
+      "name": "Magnifying Glass",
+      "count": 65,
+      "f1_default": 25600,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 8,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "116": {
+      "name": "Pinball Flipper",
+      "count": 31,
+      "f1_default": 25600,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 8,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "13": {
+      "name": "Jack-in-the-box",
+      "count": 31,
+      "f1_default": 25600,
+      "f1_variant_bits": 0,
+      "f2_default": 1,
+      "f2_variant_bits": 18,
+      "f3_default": 32768,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0001"
+      ],
+      "f2_variant_names": [
+        "0x0002",
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "183": {
+      "name": "type_183",
+      "count": 4,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "187": {
+      "name": "type_187",
+      "count": 7,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "188": {
+      "name": "type_188",
+      "count": 3,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "189": {
+      "name": "type_189",
+      "count": 3,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "180": {
+      "name": "type_180",
+      "count": 3,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "193": {
+      "name": "type_193",
+      "count": 4,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "191": {
+      "name": "type_191",
+      "count": 4,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "18": {
+      "name": "Cannon",
+      "count": 27,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 32780,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0004",
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "146": {
+      "name": "small mesa",
+      "count": 9,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "182": {
+      "name": "type_182",
+      "count": 3,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "129": {
+      "name": "desert mesa",
+      "count": 4,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "147": {
+      "name": "medium mesa",
+      "count": 6,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "103": {
+      "name": "Archway",
+      "count": 18,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 64,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0040"
+      ],
+      "f3_variant_names": []
+    },
+    "76": {
+      "name": "Steel Cable",
+      "count": 18,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 0,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "108": {
+      "name": "Leaky Bucket",
+      "count": 17,
+      "f1_default": 4128,
+      "f1_variant_bits": 64,
+      "f2_default": 4,
+      "f2_variant_bits": 0,
+      "f3_default": 33800,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x0020",
+        "0x1000"
+      ],
+      "f1_variant_names": [
+        "0x0040"
+      ],
+      "f2_default_names": [
+        "0x0004"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0400",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "29": {
+      "name": "Lava Lamp",
+      "count": 20,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 4,
+      "f2_variant_bits": 0,
+      "f3_default": 32776,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0004"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "24": {
+      "name": "Electric Fan",
+      "count": 25,
+      "f1_default": 25600,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 32777,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0001",
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "45": {
+      "name": "Aladdin's Lamp",
+      "count": 9,
+      "f1_default": 5152,
+      "f1_variant_bits": 64,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 32780,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x0020",
+        "0x0400",
+        "0x1000"
+      ],
+      "f1_variant_names": [
+        "0x0040"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0004",
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "36": {
+      "name": "Rocket",
+      "count": 28,
+      "f1_default": 5632,
+      "f1_variant_bits": 64,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 32780,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x1000"
+      ],
+      "f1_variant_names": [
+        "0x0040"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0004",
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "119": {
+      "name": "Pool Table Pocket",
+      "count": 34,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 32768,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "118": {
+      "name": "Pool Table Wall",
+      "count": 37,
+      "f1_default": 25088,
+      "f1_variant_bits": 0,
+      "f2_default": 384,
+      "f2_variant_bits": 32,
+      "f3_default": 8192,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x0200",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0080",
+        "0x0100"
+      ],
+      "f2_variant_names": [
+        "0x0020"
+      ],
+      "f3_default_names": [
+        "0x2000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "27": {
+      "name": "Captain Z Super Phazer",
+      "count": 25,
+      "f1_default": 25600,
+      "f1_variant_bits": 0,
+      "f2_default": 4,
+      "f2_variant_bits": 16,
+      "f3_default": 33800,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0004"
+      ],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0400",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "59": {
+      "name": "Super Ball",
+      "count": 8,
+      "f1_default": 4096,
+      "f1_variant_bits": 64,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 32776,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x1000"
+      ],
+      "f1_variant_names": [
+        "0x0040"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "40": {
+      "name": "Pinwheel",
+      "count": 19,
+      "f1_default": 25600,
+      "f1_variant_bits": 0,
+      "f2_default": 2049,
+      "f2_variant_bits": 18,
+      "f3_default": 32776,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0001",
+        "0x0800"
+      ],
+      "f2_variant_names": [
+        "0x0002",
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "92": {
+      "name": "Green Laser",
+      "count": 30,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 32777,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0001",
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "148": {
+      "name": "Laser Detector",
+      "count": 8,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 32776,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "38": {
+      "name": "Solar Panel",
+      "count": 17,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 10,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0002",
+        "0x0008"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "98": {
+      "name": "T-Connector",
+      "count": 5,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 0,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "60": {
+      "name": "Grass Floor",
+      "count": 16,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 384,
+      "f2_variant_bits": 0,
+      "f3_default": 8256,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0080",
+        "0x0100"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0040",
+        "0x2000"
+      ],
+      "f3_variant_names": []
+    },
+    "51": {
+      "name": "Vacuum",
+      "count": 10,
+      "f1_default": 25600,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 32777,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0001",
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "81": {
+      "name": "Toaster",
+      "count": 14,
+      "f1_default": 25600,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 33801,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0001",
+        "0x0008",
+        "0x0400",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "77": {
+      "name": "Tin Snips",
+      "count": 8,
+      "f1_default": 25600,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 32776,
+      "f3_variant_bits": 320,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x8000"
+      ],
+      "f3_variant_names": [
+        "0x0040",
+        "0x0100"
+      ]
+    },
+    "104": {
+      "name": "Wooden Barrier",
+      "count": 20,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 0,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "95": {
+      "name": "Laser Mixer",
+      "count": 19,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 8,
+      "f3_variant_bits": 64,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008"
+      ],
+      "f3_variant_names": [
+        "0x0040"
+      ]
+    },
+    "202": {
+      "name": "type_202",
+      "count": 8,
+      "f1_default": 25600,
+      "f1_variant_bits": 512,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [
+        "0x0200"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "200": {
+      "name": "type_200",
+      "count": 8,
+      "f1_default": 25600,
+      "f1_variant_bits": 512,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [
+        "0x0200"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "165": {
+      "name": "type_165",
+      "count": 5,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "164": {
+      "name": "type_164",
+      "count": 5,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "201": {
+      "name": "type_201",
+      "count": 5,
+      "f1_default": 25600,
+      "f1_variant_bits": 512,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [
+        "0x0200"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "166": {
+      "name": "type_166",
+      "count": 3,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "198": {
+      "name": "type_198",
+      "count": 3,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "160": {
+      "name": "type_160",
+      "count": 5,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "161": {
+      "name": "type_161",
+      "count": 4,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "230": {
+      "name": "type_230",
+      "count": 3,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "280": {
+      "name": "type_280",
+      "count": 26,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 384,
+      "f2_variant_bits": 0,
+      "f3_default": 4288,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0080",
+        "0x0100"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0040",
+        "0x0080",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "248": {
+      "name": "type_248",
+      "count": 3,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "205": {
+      "name": "type_205",
+      "count": 14,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 384,
+      "f2_variant_bits": 0,
+      "f3_default": 4288,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0080",
+        "0x0100"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0040",
+        "0x0080",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "213": {
+      "name": "type_213",
+      "count": 4,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "212": {
+      "name": "type_212",
+      "count": 3,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "155": {
+      "name": "type_155",
+      "count": 3,
+      "f1_default": 25600,
+      "f1_variant_bits": 512,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [
+        "0x0200"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "279": {
+      "name": "type_279",
+      "count": 3,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "186": {
+      "name": "type_186",
+      "count": 4,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "185": {
+      "name": "type_185",
+      "count": 5,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "195": {
+      "name": "type_195",
+      "count": 4,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "167": {
+      "name": "type_167",
+      "count": 3,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "184": {
+      "name": "type_184",
+      "count": 4,
+      "f1_default": 26112,
+      "f1_variant_bits": 0,
+      "f2_default": 0,
+      "f2_variant_bits": 0,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0200",
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "122": {
+      "name": "tile",
+      "count": 3,
+      "f1_default": 24576,
+      "f1_variant_bits": 0,
+      "f2_default": 384,
+      "f2_variant_bits": 0,
+      "f3_default": 4288,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [],
+      "f2_default_names": [
+        "0x0080",
+        "0x0100"
+      ],
+      "f2_variant_names": [],
+      "f3_default_names": [
+        "0x0040",
+        "0x0080",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "156": {
+      "name": "type_156",
+      "count": 5,
+      "f1_default": 25600,
+      "f1_variant_bits": 512,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [
+        "0x0200"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    },
+    "154": {
+      "name": "type_154",
+      "count": 9,
+      "f1_default": 25600,
+      "f1_variant_bits": 512,
+      "f2_default": 0,
+      "f2_variant_bits": 16,
+      "f3_default": 4168,
+      "f3_variant_bits": 0,
+      "f1_default_names": [
+        "0x0400",
+        "0x2000",
+        "0x4000"
+      ],
+      "f1_variant_names": [
+        "0x0200"
+      ],
+      "f2_default_names": [],
+      "f2_variant_names": [
+        "0x0010"
+      ],
+      "f3_default_names": [
+        "0x0008",
+        "0x0040",
+        "0x1000"
+      ],
+      "f3_variant_names": []
+    }
+  },
+  "type_bit_counts": {
+    "type": [
+      [
+        "('f1', 8192)",
+        193
+      ],
+      [
+        "('f1', 16384)",
+        193
+      ],
+      [
+        "('f3', 8)",
+        171
+      ],
+      [
+        "('f1', 1024)",
+        149
+      ],
+      [
+        "('f3', 64)",
+        115
+      ],
+      [
+        "('f1', 512)",
+        112
+      ],
+      [
+        "('f3', 4096)",
+        106
+      ],
+      [
+        "('f3', 32768)",
+        62
+      ],
+      [
+        "('f1', 4096)",
+        26
+      ],
+      [
+        "('f2', 128)",
+        25
+      ],
+      [
+        "('f2', 256)",
+        18
+      ],
+      [
+        "('f2', 4)",
+        16
+      ],
+      [
+        "('f3', 1024)",
+        14
+      ],
+      [
+        "('f3', 8192)",
+        11
+      ],
+      [
+        "('f2', 1)",
+        11
+      ],
+      [
+        "('f1', 32)",
+        10
+      ],
+      [
+        "('f3', 1)",
+        9
+      ],
+      [
+        "('f3', 4)",
+        8
+      ],
+      [
+        "('f3', 128)",
+        6
+      ],
+      [
+        "('f3', 2)",
+        5
+      ],
+      [
+        "('f2', 2048)",
+        5
+      ],
+      [
+        "('f2', 32768)",
+        3
+      ],
+      [
+        "('f2', 8)",
+        2
+      ],
+      [
+        "('f2', 2)",
+        2
+      ]
+    ],
+    "instance": [
+      [
+        "('f3', 64)",
+        104
+      ],
+      [
+        "('f3', 256)",
+        70
+      ],
+      [
+        "('f2', 16)",
+        70
+      ],
+      [
+        "('f1', 64)",
+        25
+      ],
+      [
+        "('f1', 512)",
+        13
+      ],
+      [
+        "('f2', 2)",
+        9
+      ],
+      [
+        "('f2', 32)",
+        7
+      ],
+      [
+        "('f1', 1024)",
+        1
+      ]
+    ]
+  },
+  "instance_patterns": {
+    "0000:0000:0040": {
+      "count": 3526,
+      "behaviors": {
+        "0": 3018,
+        "8": 91,
+        "3": 70,
+        "5": 63,
+        "9": 62
+      },
+      "connections": {
+        "-1": 3214,
+        "2": 30,
+        "1": 29,
+        "5": 22,
+        "4": 19
+      }
+    },
+    "0000:0000:0000": {
+      "count": 3028,
+      "behaviors": {
+        "0": 2806,
+        "1": 17,
+        "57": 10,
+        "9": 7,
+        "5": 7
+      },
+      "connections": {
+        "-1": 2840,
+        "5": 18,
+        "3": 15,
+        "8": 14,
+        "2": 9
+      }
+    },
+    "0000:0010:0040": {
+      "count": 481,
+      "behaviors": {
+        "0": 469,
+        "134": 7,
+        "1": 4,
+        "151": 1
+      },
+      "connections": {
+        "-1": 460,
+        "3": 5,
+        "5": 3,
+        "16": 1,
+        "12": 1
+      }
+    },
+    "0000:0000:0100": {
+      "count": 263,
+      "behaviors": {
+        "0": 260,
+        "34": 1,
+        "104": 1,
+        "48": 1
+      },
+      "connections": {
+        "-1": 254,
+        "3": 3,
+        "2": 3,
+        "1": 1,
+        "18": 1
+      }
+    },
+    "0000:0010:0000": {
+      "count": 240,
+      "behaviors": {
+        "0": 236,
+        "1": 3,
+        "151": 1
+      },
+      "connections": {
+        "-1": 226,
+        "5": 3,
+        "1": 2,
+        "7": 1,
+        "8": 1
+      }
+    },
+    "0200:0000:0000": {
+      "count": 181,
+      "behaviors": {
+        "0": 181
+      },
+      "connections": {
+        "-1": 181
+      }
+    },
+    "0000:0002:0000": {
+      "count": 167,
+      "behaviors": {
+        "0": 167
+      },
+      "connections": {
+        "-1": 135,
+        "5": 3,
+        "17": 2,
+        "13": 2,
+        "29": 2
+      }
+    },
+    "0000:0002:0040": {
+      "count": 142,
+      "behaviors": {
+        "0": 142
+      },
+      "connections": {
+        "-1": 121,
+        "21": 2,
+        "18": 2,
+        "20": 2,
+        "24": 1
+      }
+    },
+    "0040:0000:0040": {
+      "count": 138,
+      "behaviors": {
+        "0": 131,
+        "134": 6,
+        "2": 1
+      },
+      "connections": {
+        "-1": 117,
+        "1": 4,
+        "7": 4,
+        "6": 3,
+        "12": 2
+      }
+    },
+    "0040:0000:0000": {
+      "count": 63,
+      "behaviors": {
+        "0": 63
+      },
+      "connections": {
+        "-1": 51,
+        "5": 2,
+        "19": 1,
+        "11": 1,
+        "2": 1
+      }
+    },
+    "0000:0020:0040": {
+      "count": 30,
+      "behaviors": {
+        "0": 30
+      },
+      "connections": {
+        "-1": 24,
+        "28": 1,
+        "20": 1,
+        "64": 1,
+        "68": 1
+      }
+    },
+    "0000:0012:0000": {
+      "count": 21,
+      "behaviors": {
+        "0": 21
+      },
+      "connections": {
+        "-1": 18,
+        "2": 1,
+        "8": 1,
+        "10": 1
+      }
+    },
+    "0000:0020:0000": {
+      "count": 18,
+      "behaviors": {
+        "0": 18
+      },
+      "connections": {
+        "-1": 14,
+        "69": 1,
+        "70": 1,
+        "71": 1,
+        "72": 1
+      }
+    },
+    "0040:0010:0040": {
+      "count": 18,
+      "behaviors": {
+        "0": 14,
+        "134": 4
+      },
+      "connections": {
+        "-1": 18
+      }
+    },
+    "0000:0012:0040": {
+      "count": 18,
+      "behaviors": {
+        "0": 18
+      },
+      "connections": {
+        "-1": 16,
+        "5": 1,
+        "1": 1
+      }
+    },
+    "0000:0010:0100": {
+      "count": 15,
+      "behaviors": {
+        "0": 15
+      },
+      "connections": {
+        "-1": 15
+      }
+    },
+    "0040:0000:0100": {
+      "count": 12,
+      "behaviors": {
+        "0": 12
+      },
+      "connections": {
+        "-1": 12
+      }
+    },
+    "0000:0030:0000": {
+      "count": 9,
+      "behaviors": {
+        "0": 9
+      },
+      "connections": {
+        "-1": 9
+      }
+    },
+    "0200:0010:0000": {
+      "count": 6,
+      "behaviors": {
+        "0": 6
+      },
+      "connections": {
+        "-1": 6
+      }
+    },
+    "0000:0002:0100": {
+      "count": 6,
+      "behaviors": {
+        "0": 6
+      },
+      "connections": {
+        "-1": 6
+      }
+    },
+    "0000:0022:0040": {
+      "count": 4,
+      "behaviors": {
+        "0": 4
+      },
+      "connections": {
+        "3": 2,
+        "1": 2
+      }
+    },
+    "0040:0010:0000": {
+      "count": 2,
+      "behaviors": {
+        "0": 2
+      },
+      "connections": {
+        "-1": 2
+      }
+    },
+    "0600:0000:0000": {
+      "count": 2,
+      "behaviors": {
+        "0": 2
+      },
+      "connections": {
+        "-1": 2
+      }
+    },
+    "0000:0022:0000": {
+      "count": 2,
+      "behaviors": {
+        "0": 2
+      },
+      "connections": {
+        "4": 1,
+        "3": 1
+      }
+    },
+    "0000:0020:0100": {
+      "count": 1,
+      "behaviors": {
+        "0": 1
+      },
+      "connections": {
+        "-1": 1
+      }
+    }
+  }
+}

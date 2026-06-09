@@ -1,0 +1,54 @@
+JOURNEY: J05 — Part Handles → Flip/Stretch/Program/Delete
+TIMESTAMP: 20260527_072338
+MODE: HEADLESS
+EXIT CODE: 0
+============================================================
+STDOUT:
+J05 — Part Handles journey test
+Timestamp: 2026-05-27T07:23:38.538497
+Mode: HEADLESS
+
+=== 1. Asset Existence ===
+  ✅ HANDLES.ANM + PNGs — ANM: True, PNGs: 57
+  ✅ BUTTONS.ANM + PNGs — ANM: True, PNGs: 55
+
+=== 2. Handle Types ===
+  🗑 Recycle (Trash)
+      Hotkey: DEL — Remove part from workspace
+  ↔ Flip Horizontal
+      Hotkey: H — Toggle horizontal flip
+  ↕ Flip Vertical
+      Hotkey: V — Toggle vertical flip
+  ↗ Stretch (Resize)
+      Hotkey: S — Resize part dimensions
+  💻 Program (Computer)
+      Hotkey: P — Open programming dialog
+  🔍 Info (Magnifying Glass)
+      Hotkey: I — Show part information
+  🏁 Solve (Checkered Flag)
+      Hotkey: F — Mark as solution part
+  🔒 Lock (Padlock)
+      Hotkey: L — Lock/unlock part position
+  ✅ Handle types documented — 8 types
+
+=== 3. Handle Interaction Simulation ===
+  Test part: Bowling Ball at (150, 100)
+  [ACTION] flip_h → toggled hflip
+  ✅ Flip horizontal toggles
+  [ACTION] flip_v → toggled vflip
+  ✅ Flip vertical toggles
+  [ACTION] stretch → width x2, height x2
+  ✅ Stretch modifies dimensions
+  [ACTION] recycle → remove part
+  ✅ Recycle removes part (test_part=None)
+
+=== 4. Flag State Persistence ===
+  Restored part defaults
+  ✅ Default part state correct
+
+==================================================
+RESULTS: 8 passed, 0 failed
+Full log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J05_20260527_072338.log
+
+============================================================
+STDERR:

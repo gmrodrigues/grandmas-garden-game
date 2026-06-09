@@ -1,0 +1,81 @@
+@startuml Editor_Class_Diagram
+skinparam linetype ortho
+
+title Editor Architecture - Class Diagram
+
+rectangle "EditorController\n(Control)" as EC #e0e0e0
+note bottom of EC
+  ToolMode: SELECT|PLACE|DELETE|CONNECT|PREVIEW|LEVEL_INFO
+  canvas, catalog, undo/redo (50 levels)
+  zoom/pan, gizmos, dialogs
+  _input(), _draw(), _handle_*()
+  preview simulation (solver.step())
+end note
+
+rectangle "WorldState\n(RefCounted)" as WS #e0e0e0
+note bottom of WS
+  parts: Array[PartData]
+  gravity: int = 272
+  pressure: int = 67
+  viewport: [0,0,560,377]
+  on_collision: Callable
+  add_part(), remove_part(), reset()
+end note
+
+rectangle "PartData\n(RefCounted, 282 fields)" as PD #d0d0d0
+note bottom of PD
+  identity, geometry, velocity
+  flags, connections (belt/rope/electrical)
+  state machine (same algorithm as Part)
+  animation (anm_frame, anm_name)
+  physics (mass, cor, friction, gravity)
+  collision (circle or AABB)
+end note
+
+rectangle "PhysicsSolver\n(RefCounted)" as PS #e0e0e0
+note bottom of PS
+  MAX_TICKS = 10000
+  7-pass loop (same as PhysicsEngine)
+  behaviors (conveyor, gear, rocket, etc.)
+  trigger chain resolution via BehaviorRegistry
+end note
+
+rectangle "SolutionChecker\n(RefCounted)" as SC #e0e0e0
+note bottom of SC
+  conditions: Array[SolutionCondition]
+  check(world_state) -> [all_met, failed]
+end note
+
+rectangle "BehaviorRegistry\n(Node, Autoload)" as BR #e0e0e0
+note bottom of BR
+  6 JSON data sources
+  278 part types cataloged
+  state limits, physics props, triggers
+  15 categories with rules
+end note
+
+rectangle "AnmRenderer\n(Autoload)" as AR #e0e0e0
+note bottom of AR
+  render_frame(anm, state_id): Image
+  render_wall(anm, w, h): Image
+  get_frame_meta(): offset dictionary
+end note
+
+rectangle "LevelSerializer\n(RefCounted)" as LS #e0e0e0
+note bottom of LS
+  save_yaml(path, level_data)
+  load_yaml(path) -> level_data
+  YAML wire format with sections
+end note
+
+EC --> WS : add/remove/edit parts
+EC --> PS : step() for preview
+EC --> SC : check(world_state)
+EC --> LS : save/load levels
+EC --> BR : query state limits
+WS --> PD : Array[PartData]
+BR --> PD : initialize via add_part()
+AR --> PD : render sprite textures
+PD --> PS : physics integration
+
+@enduml

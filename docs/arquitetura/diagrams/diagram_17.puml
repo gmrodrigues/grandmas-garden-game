@@ -1,0 +1,16 @@
+@startuml Simulation_Overlay_Wireframe
+skinparam componentStyle uml
+
+rectangle "== SIMULATION" as TITLE
+
+rectangle "Controls: [▶ Play] [⏸ Pause] [⏹ Stop] [↺ Reset]   Speed: [====O===] 2x   Tick: 127/2000" as CONTROLS
+
+rectangle "SubViewport (640x480)\n\n  [Ball sprite at (320,240)]\n  [Gear at (200,300)]\n  [Laser at (500,100)]\n" as VIEWPORT
+
+rectangle "Objective Panel:\n  ☐ Primary: Ball reaches laser zone\n  ☐ Secondary: Dont drop ball" as OBJECTIVES
+
+rectangle "State: RUNNING   Events: 12   Speed: 2x" as STATE
+
+rectangle "Notes:\nSimulation isolated in SubViewport\nPlay/Pause/Stop/Reset controls\nSpeed slider (1x-4x)\nObjective checkboxes (signals)" as NOTES
+
+@enduml

@@ -80,14 +80,14 @@
 | Frame | Sprites | PNG References |
 |-------|---------|----------------|
 | 0 | `0001_0000` | `build/phase-3/bitmaps/PART45.png :material-check:` |
-| 1 | `0001_0000`, `0003_0000` | `build/phase-3/bitmaps/PART45.png :material-check:`<br>`build/phase-3/bitmaps/PART45_3_f000.png :material-alert-outline: (not found)` |
-| 2 | `0001_0000`, `0003_0001` | `build/phase-3/bitmaps/PART45.png :material-check:`<br>`build/phase-3/bitmaps/PART45_3_f001.png :material-alert-outline: (not found)` |
-| 3 | `0001_0000`, `0003_0002` | `build/phase-3/bitmaps/PART45.png :material-check:`<br>`build/phase-3/bitmaps/PART45_3_f002.png :material-alert-outline: (not found)` |
-| 4 | `0001_0000`, `0002_0000` | `build/phase-3/bitmaps/PART45.png :material-check:`<br>`build/phase-3/bitmaps/PART45_2_f000.png :material-alert-outline: (not found)` |
-| 5 | `0002_0001`, `0001_0000` | `build/phase-3/bitmaps/PART45_2_f001.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART45.png :material-check:` |
-| 6 | `0001_0000`, `0002_0002` | `build/phase-3/bitmaps/PART45.png :material-check:`<br>`build/phase-3/bitmaps/PART45_2_f002.png :material-alert-outline: (not found)` |
-| 7 | `0001_0000`, `0002_0003` | `build/phase-3/bitmaps/PART45.png :material-check:`<br>`build/phase-3/bitmaps/PART45_2_f003.png :material-alert-outline: (not found)` |
-| 8 | `0001_0000`, `0002_0004` | `build/phase-3/bitmaps/PART45.png :material-check:`<br>`build/phase-3/bitmaps/PART45_2_f004.png :material-alert-outline: (not found)` |
+| 1 | `0001_0000`, `0003_0000` | `build/phase-3/bitmaps/PART45.png :material-check:`<br>`build/phase-3/bitmaps/TWINKLE_f000.png :material-check:` |
+| 2 | `0001_0000`, `0003_0001` | `build/phase-3/bitmaps/PART45.png :material-check:`<br>`build/phase-3/bitmaps/TWINKLE_f001.png :material-check:` |
+| 3 | `0001_0000`, `0003_0002` | `build/phase-3/bitmaps/PART45.png :material-check:`<br>`build/phase-3/bitmaps/TWINKLE_f002.png :material-check:` |
+| 4 | `0001_0000`, `0002_0000` | `build/phase-3/bitmaps/PART45.png :material-check:`<br>`build/phase-3/bitmaps/FLAMES_f000.png :material-check:` |
+| 5 | `0002_0001`, `0001_0000` | `build/phase-3/bitmaps/FLAMES_f001.png :material-check:`<br>`build/phase-3/bitmaps/PART45.png :material-check:` |
+| 6 | `0001_0000`, `0002_0002` | `build/phase-3/bitmaps/PART45.png :material-check:`<br>`build/phase-3/bitmaps/FLAMES_f002.png :material-check:` |
+| 7 | `0001_0000`, `0002_0003` | `build/phase-3/bitmaps/PART45.png :material-check:`<br>`build/phase-3/bitmaps/FLAMES_f003.png :material-check:` |
+| 8 | `0001_0000`, `0002_0004` | `build/phase-3/bitmaps/PART45.png :material-check:`<br>`build/phase-3/bitmaps/FLAMES_f004.png :material-check:` |
 
 ### Bytecode Opcodes
 

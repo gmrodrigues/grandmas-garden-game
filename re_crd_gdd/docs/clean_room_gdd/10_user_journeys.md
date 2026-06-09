@@ -535,10 +535,10 @@ Every journey test script that references ANM states must:
 
 ## See Also
 
-- `docs/game-architecture-specification.md` §1 — Screen flow map
-- `docs/godot-specification.md` §1 — Game loop
-- `docs/state-machine-specification.md` — Full state machine reference
-- `docs/validation-directives.md` — Validation architecture and patterns
+- `build/phase-15/handoff/godot-specification.md` §1 — Game loop (moved from docs/godot-specification.md)
+- `tim2_specs/state-machine-specification.md` — Full state machine reference
+- `tim2_specs/validation-directives.md` — Validation architecture and patterns
+- `tim2_specs/user-journey-specification.md` — Full user journey reference
 - `tim2_editor/main.py` — Python editor reference implementation
 - `tim2_editor/game.py` — Game mode
 - `tim2_editor/sandbox.py` — Interactive part viewer

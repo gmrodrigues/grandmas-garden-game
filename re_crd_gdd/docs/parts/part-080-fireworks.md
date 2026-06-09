@@ -100,141 +100,141 @@
 
 | Frame | Sprites | PNG References |
 |-------|---------|----------------|
-| 0 | `0001_0000`, `0002_0000` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f000.png :material-alert-outline: (not found)` |
-| 1 | `0001_0000`, `0002_0000`, `0002_0005` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f000.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f005.png :material-alert-outline: (not found)` |
-| 2 | `0001_0000`, `0002_0000`, `0002_0005` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f000.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f005.png :material-alert-outline: (not found)` |
-| 3 | `0001_0000`, `0002_0000`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f000.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f006.png :material-alert-outline: (not found)` |
-| 4 | `0001_0000`, `0002_0001`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f001.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f007.png :material-alert-outline: (not found)` |
-| 5 | `0001_0000`, `0002_0001`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f001.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f006.png :material-alert-outline: (not found)` |
-| 6 | `0001_0000`, `0002_0001`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f001.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f006.png :material-alert-outline: (not found)` |
-| 7 | `0001_0000`, `0002_0002`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f002.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f007.png :material-alert-outline: (not found)` |
-| 8 | `0001_0000`, `0002_0002`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f002.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f007.png :material-alert-outline: (not found)` |
-| 9 | `0001_0000`, `0002_0002`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f002.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f006.png :material-alert-outline: (not found)` |
-| 10 | `0001_0000`, `0002_0003`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f003.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f007.png :material-alert-outline: (not found)` |
-| 11 | `0001_0000`, `0002_0003`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f003.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f007.png :material-alert-outline: (not found)` |
-| 12 | `0001_0000`, `0002_0003`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f003.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f006.png :material-alert-outline: (not found)` |
-| 13 | `0001_0000`, `0002_0003`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f003.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f007.png :material-alert-outline: (not found)` |
-| 14 | `0001_0000`, `0002_0004`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f004.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f007.png :material-alert-outline: (not found)` |
-| 15 | `0001_0000`, `0002_0004`, `0001_0000`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f004.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f006.png :material-alert-outline: (not found)` |
+| 0 | `0001_0000`, `0002_0000` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f000.png :material-check:` |
+| 1 | `0001_0000`, `0002_0000`, `0002_0005` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f005.png :material-check:` |
+| 2 | `0001_0000`, `0002_0000`, `0002_0005` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f005.png :material-check:` |
+| 3 | `0001_0000`, `0002_0000`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f006.png :material-check:` |
+| 4 | `0001_0000`, `0002_0001`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f001.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f007.png :material-check:` |
+| 5 | `0001_0000`, `0002_0001`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f001.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f006.png :material-check:` |
+| 6 | `0001_0000`, `0002_0001`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f001.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f006.png :material-check:` |
+| 7 | `0001_0000`, `0002_0002`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f002.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f007.png :material-check:` |
+| 8 | `0001_0000`, `0002_0002`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f002.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f007.png :material-check:` |
+| 9 | `0001_0000`, `0002_0002`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f002.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f006.png :material-check:` |
+| 10 | `0001_0000`, `0002_0003`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f003.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f007.png :material-check:` |
+| 11 | `0001_0000`, `0002_0003`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f003.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f007.png :material-check:` |
+| 12 | `0001_0000`, `0002_0003`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f003.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f006.png :material-check:` |
+| 13 | `0001_0000`, `0002_0003`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f003.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f007.png :material-check:` |
+| 14 | `0001_0000`, `0002_0004`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f004.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f007.png :material-check:` |
+| 15 | `0001_0000`, `0002_0004`, `0001_0000`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f004.png :material-check:`<br>`build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f006.png :material-check:` |
 | 16 | `0001_0000` | `build/phase-3/bitmaps/PART80_f000.png :material-check:` |
 | 17 | `0001_0001` | `build/phase-3/bitmaps/PART80_f001.png :material-check:` |
-| 18 | `0001_0002`, `0002_0008`, `0002_0012` | `build/phase-3/bitmaps/PART80_f002.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f008.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f012.png :material-alert-outline: (not found)` |
-| 19 | `0002_0013`, `0002_0014`, `0002_0015`, `0001_0000`, `0002_0009` | `build/phase-3/bitmaps/PART80_2_f013.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f014.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f015.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f009.png :material-alert-outline: (not found)` |
-| 20 | `0002_0014`, `0002_0017`, `0002_0015`, `0002_0016`, `0001_0000`, `0002_0011` | `build/phase-3/bitmaps/PART80_2_f014.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f017.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f015.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f016.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f011.png :material-alert-outline: (not found)` |
-| 21 | `0001_0000`, `0002_0010` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f010.png :material-alert-outline: (not found)` |
-| 22 | `0001_0000`, `0002_0009` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f009.png :material-alert-outline: (not found)` |
-| 23 | `0001_0000`, `0002_0008` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f008.png :material-alert-outline: (not found)` |
-| 24 | `0001_0000`, `0002_0009` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f009.png :material-alert-outline: (not found)` |
-| 25 | `0001_0000`, `0002_0010` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f010.png :material-alert-outline: (not found)` |
-| 26 | `0001_0000`, `0002_0011` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f011.png :material-alert-outline: (not found)` |
-| 27 | `0004_0000` | `build/phase-3/bitmaps/PART80_4_f000.png :material-alert-outline: (not found)` |
-| 28 | `0004_0000` | `build/phase-3/bitmaps/PART80_4_f000.png :material-alert-outline: (not found)` |
-| 29 | `0004_0001` | `build/phase-3/bitmaps/PART80_4_f001.png :material-alert-outline: (not found)` |
-| 30 | `0004_0002` | `build/phase-3/bitmaps/PART80_4_f002.png :material-alert-outline: (not found)` |
-| 31 | `0004_0003` | `build/phase-3/bitmaps/PART80_4_f003.png :material-alert-outline: (not found)` |
-| 32 | `0004_0004` | `build/phase-3/bitmaps/PART80_4_f004.png :material-alert-outline: (not found)` |
-| 33 | `0004_0005` | `build/phase-3/bitmaps/PART80_4_f005.png :material-alert-outline: (not found)` |
-| 34 | `0004_0006` | `build/phase-3/bitmaps/PART80_4_f006.png :material-alert-outline: (not found)` |
-| 35 | `0004_0007` | `build/phase-3/bitmaps/PART80_4_f007.png :material-alert-outline: (not found)` |
-| 36 | `0004_0008` | `build/phase-3/bitmaps/PART80_4_f008.png :material-alert-outline: (not found)` |
-| 37 | `0004_0009` | `build/phase-3/bitmaps/PART80_4_f009.png :material-alert-outline: (not found)` |
-| 38 | `0004_0010` | `build/phase-3/bitmaps/PART80_4_f010.png :material-alert-outline: (not found)` |
-| 39 | `0004_0011` | `build/phase-3/bitmaps/PART80_4_f011.png :material-alert-outline: (not found)` |
-| 40 | `0004_0012` | `build/phase-3/bitmaps/PART80_4_f012.png :material-alert-outline: (not found)` |
-| 41 | `0004_0013` | `build/phase-3/bitmaps/PART80_4_f013.png :material-alert-outline: (not found)` |
-| 42 | `0004_0014` | `build/phase-3/bitmaps/PART80_4_f014.png :material-alert-outline: (not found)` |
-| 43 | `0003_0000` | `build/phase-3/bitmaps/PART80_3_f000.png :material-alert-outline: (not found)` |
-| 44 | `0001_0000`, `0002_0000` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f000.png :material-alert-outline: (not found)` |
-| 45 | `0001_0000`, `0002_0000`, `0002_0005` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f000.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f005.png :material-alert-outline: (not found)` |
-| 46 | `0001_0000`, `0002_0000`, `0002_0005` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f000.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f005.png :material-alert-outline: (not found)` |
-| 47 | `0001_0000`, `0002_0000`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f000.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f006.png :material-alert-outline: (not found)` |
-| 48 | `0001_0000`, `0002_0001`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f001.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f007.png :material-alert-outline: (not found)` |
-| 49 | `0001_0000`, `0002_0001`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f001.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f006.png :material-alert-outline: (not found)` |
-| 50 | `0001_0000`, `0002_0001`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f001.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f006.png :material-alert-outline: (not found)` |
-| 51 | `0001_0000`, `0002_0002`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f002.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f007.png :material-alert-outline: (not found)` |
-| 52 | `0001_0000`, `0002_0002`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f002.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f007.png :material-alert-outline: (not found)` |
-| 53 | `0001_0000`, `0002_0002`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f002.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f006.png :material-alert-outline: (not found)` |
-| 54 | `0001_0000`, `0002_0003`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f003.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f007.png :material-alert-outline: (not found)` |
-| 55 | `0001_0000`, `0002_0003`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f003.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f007.png :material-alert-outline: (not found)` |
-| 56 | `0001_0000`, `0002_0003`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f003.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f006.png :material-alert-outline: (not found)` |
-| 57 | `0001_0000`, `0002_0003`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f003.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f007.png :material-alert-outline: (not found)` |
-| 58 | `0001_0000`, `0002_0004`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f004.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f007.png :material-alert-outline: (not found)` |
-| 59 | `0001_0000`, `0002_0004`, `0001_0000`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f004.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f006.png :material-alert-outline: (not found)` |
+| 18 | `0001_0002`, `0002_0008`, `0002_0012` | `build/phase-3/bitmaps/PART80_f002.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f008.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f012.png :material-check:` |
+| 19 | `0002_0013`, `0002_0014`, `0002_0015`, `0001_0000`, `0002_0009` | `build/phase-3/bitmaps/ROKTBLAS_f013.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f014.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f015.png :material-check:`<br>`build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f009.png :material-check:` |
+| 20 | `0002_0014`, `0002_0017`, `0002_0015`, `0002_0016`, `0001_0000`, `0002_0011` | `build/phase-3/bitmaps/ROKTBLAS_f014.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f017.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f015.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f016.png :material-check:`<br>`build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f011.png :material-check:` |
+| 21 | `0001_0000`, `0002_0010` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f010.png :material-check:` |
+| 22 | `0001_0000`, `0002_0009` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f009.png :material-check:` |
+| 23 | `0001_0000`, `0002_0008` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f008.png :material-check:` |
+| 24 | `0001_0000`, `0002_0009` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f009.png :material-check:` |
+| 25 | `0001_0000`, `0002_0010` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f010.png :material-check:` |
+| 26 | `0001_0000`, `0002_0011` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f011.png :material-check:` |
+| 27 | `0004_0000` | `build/phase-3/bitmaps/FWBLUE_f000.png :material-check:` |
+| 28 | `0004_0000` | `build/phase-3/bitmaps/FWBLUE_f000.png :material-check:` |
+| 29 | `0004_0001` | `build/phase-3/bitmaps/FWBLUE_f001.png :material-check:` |
+| 30 | `0004_0002` | `build/phase-3/bitmaps/FWBLUE_f002.png :material-check:` |
+| 31 | `0004_0003` | `build/phase-3/bitmaps/FWBLUE_f003.png :material-check:` |
+| 32 | `0004_0004` | `build/phase-3/bitmaps/FWBLUE_f004.png :material-check:` |
+| 33 | `0004_0005` | `build/phase-3/bitmaps/FWBLUE_f005.png :material-check:` |
+| 34 | `0004_0006` | `build/phase-3/bitmaps/FWBLUE_f006.png :material-check:` |
+| 35 | `0004_0007` | `build/phase-3/bitmaps/FWBLUE_f007.png :material-check:` |
+| 36 | `0004_0008` | `build/phase-3/bitmaps/FWBLUE_f008.png :material-check:` |
+| 37 | `0004_0009` | `build/phase-3/bitmaps/FWBLUE_f009.png :material-check:` |
+| 38 | `0004_0010` | `build/phase-3/bitmaps/FWBLUE_f010.png :material-check:` |
+| 39 | `0004_0011` | `build/phase-3/bitmaps/FWBLUE_f011.png :material-check:` |
+| 40 | `0004_0012` | `build/phase-3/bitmaps/FWBLUE_f012.png :material-check:` |
+| 41 | `0004_0013` | `build/phase-3/bitmaps/FWBLUE_f013.png :material-check:` |
+| 42 | `0004_0014` | `build/phase-3/bitmaps/FWBLUE_f014.png :material-check:` |
+| 43 | `0003_0000` | `build/phase-3/bitmaps/BLANK.png :material-check:` |
+| 44 | `0001_0000`, `0002_0000` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f000.png :material-check:` |
+| 45 | `0001_0000`, `0002_0000`, `0002_0005` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f005.png :material-check:` |
+| 46 | `0001_0000`, `0002_0000`, `0002_0005` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f005.png :material-check:` |
+| 47 | `0001_0000`, `0002_0000`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f006.png :material-check:` |
+| 48 | `0001_0000`, `0002_0001`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f001.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f007.png :material-check:` |
+| 49 | `0001_0000`, `0002_0001`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f001.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f006.png :material-check:` |
+| 50 | `0001_0000`, `0002_0001`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f001.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f006.png :material-check:` |
+| 51 | `0001_0000`, `0002_0002`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f002.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f007.png :material-check:` |
+| 52 | `0001_0000`, `0002_0002`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f002.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f007.png :material-check:` |
+| 53 | `0001_0000`, `0002_0002`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f002.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f006.png :material-check:` |
+| 54 | `0001_0000`, `0002_0003`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f003.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f007.png :material-check:` |
+| 55 | `0001_0000`, `0002_0003`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f003.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f007.png :material-check:` |
+| 56 | `0001_0000`, `0002_0003`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f003.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f006.png :material-check:` |
+| 57 | `0001_0000`, `0002_0003`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f003.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f007.png :material-check:` |
+| 58 | `0001_0000`, `0002_0004`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f004.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f007.png :material-check:` |
+| 59 | `0001_0000`, `0002_0004`, `0001_0000`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f004.png :material-check:`<br>`build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f006.png :material-check:` |
 | 60 | `0001_0000` | `build/phase-3/bitmaps/PART80_f000.png :material-check:` |
 | 61 | `0001_0001` | `build/phase-3/bitmaps/PART80_f001.png :material-check:` |
-| 62 | `0001_0002`, `0002_0008`, `0002_0012` | `build/phase-3/bitmaps/PART80_f002.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f008.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f012.png :material-alert-outline: (not found)` |
-| 63 | `0002_0013`, `0002_0014`, `0002_0015`, `0001_0000`, `0002_0009` | `build/phase-3/bitmaps/PART80_2_f013.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f014.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f015.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f009.png :material-alert-outline: (not found)` |
-| 64 | `0002_0014`, `0002_0017`, `0002_0015`, `0002_0016`, `0001_0000`, `0002_0011` | `build/phase-3/bitmaps/PART80_2_f014.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f017.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f015.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f016.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f011.png :material-alert-outline: (not found)` |
-| 65 | `0001_0000`, `0002_0010` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f010.png :material-alert-outline: (not found)` |
-| 66 | `0001_0000`, `0002_0009` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f009.png :material-alert-outline: (not found)` |
-| 67 | `0001_0000`, `0002_0008` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f008.png :material-alert-outline: (not found)` |
-| 68 | `0001_0000`, `0002_0009` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f009.png :material-alert-outline: (not found)` |
-| 69 | `0001_0000`, `0002_0010` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f010.png :material-alert-outline: (not found)` |
-| 70 | `0001_0000`, `0002_0011` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f011.png :material-alert-outline: (not found)` |
-| 71 | `0005_0000` | `build/phase-3/bitmaps/PART80_5_f000.png :material-alert-outline: (not found)` |
-| 72 | `0005_0000` | `build/phase-3/bitmaps/PART80_5_f000.png :material-alert-outline: (not found)` |
-| 73 | `0005_0001` | `build/phase-3/bitmaps/PART80_5_f001.png :material-alert-outline: (not found)` |
-| 74 | `0005_0002` | `build/phase-3/bitmaps/PART80_5_f002.png :material-alert-outline: (not found)` |
-| 75 | `0005_0003` | `build/phase-3/bitmaps/PART80_5_f003.png :material-alert-outline: (not found)` |
-| 76 | `0005_0004` | `build/phase-3/bitmaps/PART80_5_f004.png :material-alert-outline: (not found)` |
-| 77 | `0005_0005` | `build/phase-3/bitmaps/PART80_5_f005.png :material-alert-outline: (not found)` |
-| 78 | `0005_0006` | `build/phase-3/bitmaps/PART80_5_f006.png :material-alert-outline: (not found)` |
-| 79 | `0005_0007` | `build/phase-3/bitmaps/PART80_5_f007.png :material-alert-outline: (not found)` |
-| 80 | `0005_0008` | `build/phase-3/bitmaps/PART80_5_f008.png :material-alert-outline: (not found)` |
-| 81 | `0005_0009` | `build/phase-3/bitmaps/PART80_5_f009.png :material-alert-outline: (not found)` |
-| 82 | `0005_0010` | `build/phase-3/bitmaps/PART80_5_f010.png :material-alert-outline: (not found)` |
-| 83 | `0005_0011` | `build/phase-3/bitmaps/PART80_5_f011.png :material-alert-outline: (not found)` |
-| 84 | `0005_0012` | `build/phase-3/bitmaps/PART80_5_f012.png :material-alert-outline: (not found)` |
-| 85 | `0005_0013` | `build/phase-3/bitmaps/PART80_5_f013.png :material-alert-outline: (not found)` |
-| 86 | `0003_0000` | `build/phase-3/bitmaps/PART80_3_f000.png :material-alert-outline: (not found)` |
-| 87 | `0001_0000`, `0002_0000` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f000.png :material-alert-outline: (not found)` |
-| 88 | `0001_0000`, `0002_0000`, `0002_0005` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f000.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f005.png :material-alert-outline: (not found)` |
-| 89 | `0001_0000`, `0002_0000`, `0002_0005` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f000.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f005.png :material-alert-outline: (not found)` |
-| 90 | `0001_0000`, `0002_0000`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f000.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f006.png :material-alert-outline: (not found)` |
-| 91 | `0001_0000`, `0002_0001`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f001.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f007.png :material-alert-outline: (not found)` |
-| 92 | `0001_0000`, `0002_0001`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f001.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f006.png :material-alert-outline: (not found)` |
-| 93 | `0001_0000`, `0002_0001`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f001.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f006.png :material-alert-outline: (not found)` |
-| 94 | `0001_0000`, `0002_0002`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f002.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f007.png :material-alert-outline: (not found)` |
-| 95 | `0001_0000`, `0002_0002`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f002.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f007.png :material-alert-outline: (not found)` |
-| 96 | `0001_0000`, `0002_0002`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f002.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f006.png :material-alert-outline: (not found)` |
-| 97 | `0001_0000`, `0002_0003`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f003.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f007.png :material-alert-outline: (not found)` |
-| 98 | `0001_0000`, `0002_0003`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f003.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f007.png :material-alert-outline: (not found)` |
-| 99 | `0001_0000`, `0002_0003`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f003.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f006.png :material-alert-outline: (not found)` |
-| 100 | `0001_0000`, `0002_0003`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f003.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f007.png :material-alert-outline: (not found)` |
-| 101 | `0001_0000`, `0002_0004`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f004.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f007.png :material-alert-outline: (not found)` |
-| 102 | `0001_0000`, `0002_0004`, `0001_0000`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f004.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f006.png :material-alert-outline: (not found)` |
+| 62 | `0001_0002`, `0002_0008`, `0002_0012` | `build/phase-3/bitmaps/PART80_f002.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f008.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f012.png :material-check:` |
+| 63 | `0002_0013`, `0002_0014`, `0002_0015`, `0001_0000`, `0002_0009` | `build/phase-3/bitmaps/ROKTBLAS_f013.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f014.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f015.png :material-check:`<br>`build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f009.png :material-check:` |
+| 64 | `0002_0014`, `0002_0017`, `0002_0015`, `0002_0016`, `0001_0000`, `0002_0011` | `build/phase-3/bitmaps/ROKTBLAS_f014.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f017.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f015.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f016.png :material-check:`<br>`build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f011.png :material-check:` |
+| 65 | `0001_0000`, `0002_0010` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f010.png :material-check:` |
+| 66 | `0001_0000`, `0002_0009` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f009.png :material-check:` |
+| 67 | `0001_0000`, `0002_0008` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f008.png :material-check:` |
+| 68 | `0001_0000`, `0002_0009` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f009.png :material-check:` |
+| 69 | `0001_0000`, `0002_0010` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f010.png :material-check:` |
+| 70 | `0001_0000`, `0002_0011` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f011.png :material-check:` |
+| 71 | `0005_0000` | `build/phase-3/bitmaps/FWGREN_f000.png :material-check:` |
+| 72 | `0005_0000` | `build/phase-3/bitmaps/FWGREN_f000.png :material-check:` |
+| 73 | `0005_0001` | `build/phase-3/bitmaps/FWGREN_f001.png :material-check:` |
+| 74 | `0005_0002` | `build/phase-3/bitmaps/FWGREN_f002.png :material-check:` |
+| 75 | `0005_0003` | `build/phase-3/bitmaps/FWGREN_f003.png :material-check:` |
+| 76 | `0005_0004` | `build/phase-3/bitmaps/FWGREN_f004.png :material-check:` |
+| 77 | `0005_0005` | `build/phase-3/bitmaps/FWGREN_f005.png :material-check:` |
+| 78 | `0005_0006` | `build/phase-3/bitmaps/FWGREN_f006.png :material-check:` |
+| 79 | `0005_0007` | `build/phase-3/bitmaps/FWGREN_f007.png :material-check:` |
+| 80 | `0005_0008` | `build/phase-3/bitmaps/FWGREN_f008.png :material-check:` |
+| 81 | `0005_0009` | `build/phase-3/bitmaps/FWGREN_f009.png :material-check:` |
+| 82 | `0005_0010` | `build/phase-3/bitmaps/FWGREN_f010.png :material-check:` |
+| 83 | `0005_0011` | `build/phase-3/bitmaps/FWGREN_f011.png :material-check:` |
+| 84 | `0005_0012` | `build/phase-3/bitmaps/FWGREN_f012.png :material-check:` |
+| 85 | `0005_0013` | `build/phase-3/bitmaps/FWGREN_f013.png :material-check:` |
+| 86 | `0003_0000` | `build/phase-3/bitmaps/BLANK.png :material-check:` |
+| 87 | `0001_0000`, `0002_0000` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f000.png :material-check:` |
+| 88 | `0001_0000`, `0002_0000`, `0002_0005` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f005.png :material-check:` |
+| 89 | `0001_0000`, `0002_0000`, `0002_0005` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f005.png :material-check:` |
+| 90 | `0001_0000`, `0002_0000`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f006.png :material-check:` |
+| 91 | `0001_0000`, `0002_0001`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f001.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f007.png :material-check:` |
+| 92 | `0001_0000`, `0002_0001`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f001.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f006.png :material-check:` |
+| 93 | `0001_0000`, `0002_0001`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f001.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f006.png :material-check:` |
+| 94 | `0001_0000`, `0002_0002`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f002.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f007.png :material-check:` |
+| 95 | `0001_0000`, `0002_0002`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f002.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f007.png :material-check:` |
+| 96 | `0001_0000`, `0002_0002`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f002.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f006.png :material-check:` |
+| 97 | `0001_0000`, `0002_0003`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f003.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f007.png :material-check:` |
+| 98 | `0001_0000`, `0002_0003`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f003.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f007.png :material-check:` |
+| 99 | `0001_0000`, `0002_0003`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f003.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f006.png :material-check:` |
+| 100 | `0001_0000`, `0002_0003`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f003.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f007.png :material-check:` |
+| 101 | `0001_0000`, `0002_0004`, `0002_0007` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f004.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f007.png :material-check:` |
+| 102 | `0001_0000`, `0002_0004`, `0001_0000`, `0002_0006` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f004.png :material-check:`<br>`build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f006.png :material-check:` |
 | 103 | `0001_0000` | `build/phase-3/bitmaps/PART80_f000.png :material-check:` |
 | 104 | `0001_0001` | `build/phase-3/bitmaps/PART80_f001.png :material-check:` |
-| 105 | `0001_0002`, `0002_0008`, `0002_0012` | `build/phase-3/bitmaps/PART80_f002.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f008.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f012.png :material-alert-outline: (not found)` |
-| 106 | `0002_0013`, `0002_0014`, `0002_0015`, `0001_0000`, `0002_0009` | `build/phase-3/bitmaps/PART80_2_f013.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f014.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f015.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f009.png :material-alert-outline: (not found)` |
-| 107 | `0002_0014`, `0002_0017`, `0002_0015`, `0002_0016`, `0001_0000`, `0002_0011` | `build/phase-3/bitmaps/PART80_2_f014.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f017.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f015.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_2_f016.png :material-alert-outline: (not found)`<br>`build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f011.png :material-alert-outline: (not found)` |
-| 108 | `0001_0000`, `0002_0010` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f010.png :material-alert-outline: (not found)` |
-| 109 | `0001_0000`, `0002_0009` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f009.png :material-alert-outline: (not found)` |
-| 110 | `0001_0000`, `0002_0008` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f008.png :material-alert-outline: (not found)` |
-| 111 | `0001_0000`, `0002_0009` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f009.png :material-alert-outline: (not found)` |
-| 112 | `0001_0000`, `0002_0010` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f010.png :material-alert-outline: (not found)` |
-| 113 | `0001_0000`, `0002_0011` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/PART80_2_f011.png :material-alert-outline: (not found)` |
-| 114 | `0006_0000` | `build/phase-3/bitmaps/PART80_6_f000.png :material-alert-outline: (not found)` |
-| 115 | `0006_0000` | `build/phase-3/bitmaps/PART80_6_f000.png :material-alert-outline: (not found)` |
-| 116 | `0006_0001` | `build/phase-3/bitmaps/PART80_6_f001.png :material-alert-outline: (not found)` |
-| 117 | `0006_0002` | `build/phase-3/bitmaps/PART80_6_f002.png :material-alert-outline: (not found)` |
-| 118 | `0006_0003` | `build/phase-3/bitmaps/PART80_6_f003.png :material-alert-outline: (not found)` |
-| 119 | `0006_0004` | `build/phase-3/bitmaps/PART80_6_f004.png :material-alert-outline: (not found)` |
-| 120 | `0006_0005` | `build/phase-3/bitmaps/PART80_6_f005.png :material-alert-outline: (not found)` |
-| 121 | `0006_0006` | `build/phase-3/bitmaps/PART80_6_f006.png :material-alert-outline: (not found)` |
-| 122 | `0006_0007` | `build/phase-3/bitmaps/PART80_6_f007.png :material-alert-outline: (not found)` |
-| 123 | `0006_0008` | `build/phase-3/bitmaps/PART80_6_f008.png :material-alert-outline: (not found)` |
-| 124 | `0006_0009` | `build/phase-3/bitmaps/PART80_6_f009.png :material-alert-outline: (not found)` |
-| 125 | `0006_0010` | `build/phase-3/bitmaps/PART80_6_f010.png :material-alert-outline: (not found)` |
-| 126 | `0006_0011` | `build/phase-3/bitmaps/PART80_6_f011.png :material-alert-outline: (not found)` |
-| 127 | `0006_0012` | `build/phase-3/bitmaps/PART80_6_f012.png :material-alert-outline: (not found)` |
-| 128 | `0006_0013` | `build/phase-3/bitmaps/PART80_6_f013.png :material-alert-outline: (not found)` |
-| 129 | `0006_0014` | `build/phase-3/bitmaps/PART80_6_f014.png :material-alert-outline: (not found)` |
-| 130 | `0006_0015` | `build/phase-3/bitmaps/PART80_6_f015.png :material-alert-outline: (not found)` |
-| 131 | `0006_0016` | `build/phase-3/bitmaps/PART80_6_f016.png :material-alert-outline: (not found)` |
-| 132 | `0006_0017` | `build/phase-3/bitmaps/PART80_6_f017.png :material-alert-outline: (not found)` |
-| 133 | `0006_0018` | `build/phase-3/bitmaps/PART80_6_f018.png :material-alert-outline: (not found)` |
-| 134 | `0003_0000` | `build/phase-3/bitmaps/PART80_3_f000.png :material-alert-outline: (not found)` |
+| 105 | `0001_0002`, `0002_0008`, `0002_0012` | `build/phase-3/bitmaps/PART80_f002.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f008.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f012.png :material-check:` |
+| 106 | `0002_0013`, `0002_0014`, `0002_0015`, `0001_0000`, `0002_0009` | `build/phase-3/bitmaps/ROKTBLAS_f013.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f014.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f015.png :material-check:`<br>`build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f009.png :material-check:` |
+| 107 | `0002_0014`, `0002_0017`, `0002_0015`, `0002_0016`, `0001_0000`, `0002_0011` | `build/phase-3/bitmaps/ROKTBLAS_f014.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f017.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f015.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f016.png :material-check:`<br>`build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f011.png :material-check:` |
+| 108 | `0001_0000`, `0002_0010` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f010.png :material-check:` |
+| 109 | `0001_0000`, `0002_0009` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f009.png :material-check:` |
+| 110 | `0001_0000`, `0002_0008` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f008.png :material-check:` |
+| 111 | `0001_0000`, `0002_0009` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f009.png :material-check:` |
+| 112 | `0001_0000`, `0002_0010` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f010.png :material-check:` |
+| 113 | `0001_0000`, `0002_0011` | `build/phase-3/bitmaps/PART80_f000.png :material-check:`<br>`build/phase-3/bitmaps/ROKTBLAS_f011.png :material-check:` |
+| 114 | `0006_0000` | `build/phase-3/bitmaps/FWYEL_f000.png :material-check:` |
+| 115 | `0006_0000` | `build/phase-3/bitmaps/FWYEL_f000.png :material-check:` |
+| 116 | `0006_0001` | `build/phase-3/bitmaps/FWYEL_f001.png :material-check:` |
+| 117 | `0006_0002` | `build/phase-3/bitmaps/FWYEL_f002.png :material-check:` |
+| 118 | `0006_0003` | `build/phase-3/bitmaps/FWYEL_f003.png :material-check:` |
+| 119 | `0006_0004` | `build/phase-3/bitmaps/FWYEL_f004.png :material-check:` |
+| 120 | `0006_0005` | `build/phase-3/bitmaps/FWYEL_f005.png :material-check:` |
+| 121 | `0006_0006` | `build/phase-3/bitmaps/FWYEL_f006.png :material-check:` |
+| 122 | `0006_0007` | `build/phase-3/bitmaps/FWYEL_f007.png :material-check:` |
+| 123 | `0006_0008` | `build/phase-3/bitmaps/FWYEL_f008.png :material-check:` |
+| 124 | `0006_0009` | `build/phase-3/bitmaps/FWYEL_f009.png :material-check:` |
+| 125 | `0006_0010` | `build/phase-3/bitmaps/FWYEL_f010.png :material-check:` |
+| 126 | `0006_0011` | `build/phase-3/bitmaps/FWYEL_f011.png :material-check:` |
+| 127 | `0006_0012` | `build/phase-3/bitmaps/FWYEL_f012.png :material-check:` |
+| 128 | `0006_0013` | `build/phase-3/bitmaps/FWYEL_f013.png :material-check:` |
+| 129 | `0006_0014` | `build/phase-3/bitmaps/FWYEL_f014.png :material-check:` |
+| 130 | `0006_0015` | `build/phase-3/bitmaps/FWYEL_f015.png :material-check:` |
+| 131 | `0006_0016` | `build/phase-3/bitmaps/FWYEL_f016.png :material-check:` |
+| 132 | `0006_0017` | `build/phase-3/bitmaps/FWYEL_f017.png :material-check:` |
+| 133 | `0006_0018` | `build/phase-3/bitmaps/FWYEL_f018.png :material-check:` |
+| 134 | `0003_0000` | `build/phase-3/bitmaps/BLANK.png :material-check:` |
 
 ### Sound Effects
 

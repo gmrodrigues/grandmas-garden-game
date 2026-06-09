@@ -1,0 +1,166 @@
+[gd_scene load_steps=5 format=3 uid="uid://bqp0mvp123456"]
+
+[ext_resource type="Script" path="res://Scripts/Main.gd" id="1_main"]
+[ext_resource type="Script" path="res://Scripts/SimUI.gd" id="2_simui"]
+[ext_resource type="PackedScene" path="res://Scenes/SimulationOverlay.tscn" id="3_simoverlay"]
+[ext_resource type="Script" path="res://Scripts/EditorToolbar.gd" id="4_toolbar"]
+[ext_resource type="Script" path="res://Scripts/EditorController.gd" id="5_editorctrl"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_main")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(320, 240)
+zoom = Vector2(1, 1)
+
+[node name="SimulationOverlay" parent="." instance=ExtResource("3_simoverlay")]
+visible = false
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="StatusLabel" type="Label" parent="CanvasLayer"]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 400.0
+offset_bottom = 80.0
+text = "Initializing..."
+horizontal_alignment = 1
+
+[node name="PassLabel" type="Label" parent="CanvasLayer"]
+offset_left = 8.0
+offset_top = 80.0
+offset_right = 400.0
+offset_bottom = 120.0
+text = "Passes: - - - - - - -"
+horizontal_alignment = 1
+
+[node name="SimUI" type="CanvasLayer" parent="."]
+script = ExtResource("2_simui")
+
+[node name="VBox" type="VBoxContainer" parent="SimUI"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 0.0
+offset_left = -200.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = 220.0
+grow_horizontal = 0
+
+[node name="GoalLabel" type="Label" parent="SimUI/VBox"]
+layout_mode = 2
+text = "Goal: "
+horizontal_alignment = 1
+
+[node name="HBoxBtns" type="HBoxContainer" parent="SimUI/VBox"]
+layout_mode = 2
+
+[node name="PlayBtn" type="Button" parent="SimUI/VBox/HBoxBtns"]
+layout_mode = 2
+text = "Play"
+
+[node name="StopBtn" type="Button" parent="SimUI/VBox/HBoxBtns"]
+layout_mode = 2
+disabled = true
+text = "Stop"
+
+[node name="ResetBtn" type="Button" parent="SimUI/VBox/HBoxBtns"]
+layout_mode = 2
+text = "Reset"
+
+[node name="SpeedRow" type="HBoxContainer" parent="SimUI/VBox"]
+layout_mode = 2
+
+[node name="SpeedTitle" type="Label" parent="SimUI/VBox/SpeedRow"]
+layout_mode = 2
+text = "Speed:"
+metadata/_edit_use_custom_anchors = true
+
+[node name="SpeedSlider" type="HSlider" parent="SimUI/VBox/SpeedRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 0.0
+max_value = 4.0
+step = 1.0
+value = 1.0
+
+[node name="SpeedLabel" type="Label" parent="SimUI/VBox/SpeedRow"]
+layout_mode = 2
+text = "1x"
+metadata/_edit_use_custom_anchors = true
+
+[node name="TickLabel" type="Label" parent="SimUI/VBox"]
+layout_mode = 2
+text = "Tick: 0"
+horizontal_alignment = 1
+
+[node name="PartsBinTitle" type="Label" parent="SimUI/VBox"]
+layout_mode = 2
+text = "Parts Bin (click to spawn):"
+horizontal_alignment = 1
+
+[node name="PartsBin" type="GridContainer" parent="SimUI/VBox"]
+layout_mode = 2
+columns = 4
+metadata/_edit_use_custom_anchors = true
+
+[node name="PartsLayer" type="Node2D" parent="."]
+
+[node name="EditorController" type="Node2D" parent="."]
+script = ExtResource("5_editorctrl")
+
+[node name="EditorToolbar" type="CanvasLayer" parent="."]
+script = ExtResource("4_toolbar")
+
+[node name="ToolbarPanel" type="PanelContainer" parent="EditorToolbar"]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 500.0
+offset_bottom = 120.0
+
+[node name="VBox" type="VBoxContainer" parent="EditorToolbar/ToolbarPanel"]
+layout_mode = 1
+
+[node name="ToolsRow" type="HBoxContainer" parent="EditorToolbar/ToolbarPanel/VBox"]
+layout_mode = 2
+
+[node name="ZoomRow" type="HBoxContainer" parent="EditorToolbar/ToolbarPanel/VBox"]
+layout_mode = 2
+
+[node name="ZoomOutBtn" type="HBoxContainer" parent="EditorToolbar/ToolbarPanel/VBox/ZoomRow"]
+layout_mode = 2
+
+[node name="ZoomLabel" type="Label" parent="EditorToolbar/ToolbarPanel/VBox/ZoomRow"]
+layout_mode = 2
+text = "1.00x"
+horizontal_alignment = 1
+
+[node name="ZoomInBtn" type="HBoxContainer" parent="EditorToolbar/ToolbarPanel/VBox/ZoomRow"]
+layout_mode = 2
+
+[node name="ActionRow" type="HBoxContainer" parent="EditorToolbar/ToolbarPanel/VBox"]
+layout_mode = 2
+
+[node name="SaveBtn" type="Button" parent="EditorToolbar/ToolbarPanel/VBox/ActionRow"]
+layout_mode = 2
+text = "Save"
+
+[node name="LoadBtn" type="Button" parent="EditorToolbar/ToolbarPanel/VBox/ActionRow"]
+layout_mode = 2
+text = "Load"
+
+[node name="NewBtn" type="Button" parent="EditorToolbar/ToolbarPanel/VBox/ActionRow"]
+layout_mode = 2
+text = "New"
+
+[node name="PlayBtn" type="Button" parent="EditorToolbar/ToolbarPanel/VBox/ActionRow"]
+layout_mode = 2
+text = "PLAY"
+
+[node name="StatusMsg" type="Label" parent="EditorToolbar/ToolbarPanel/VBox"]
+layout_mode = 2
+text = "Ready"
+horizontal_alignment = 1
+metadata/_edit_use_custom_anchors = true

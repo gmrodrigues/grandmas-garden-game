@@ -1,0 +1,2163 @@
+{
+  "fm": [
+    {
+      "sid": 5,
+      "name": "5convey",
+      "mode": 2,
+      "unknown_byte_4": 3,
+      "parameter": 155,
+      "payload_size": 90,
+      "instrument_28_hex": "003d589c6c11793c176c2340f989003df5d866e4018ec6da9dd2b4fa",
+      "seq_size": 62,
+      "seq_stats": {
+        "size": 62,
+        "unique_bytes": 54,
+        "most_common_5": [
+          [
+            46,
+            3
+          ],
+          [
+            99,
+            3
+          ],
+          [
+            238,
+            2
+          ],
+          [
+            101,
+            2
+          ],
+          [
+            202,
+            2
+          ]
+        ],
+        "zero_count": 0,
+        "zero_pct": 0.0,
+        "high_count": 29,
+        "high_pct": 46.8,
+        "runs_of_3plus": 0,
+        "longest_run": 1,
+        "avg_byte_diff": 88.5,
+        "min": 2,
+        "max": 251
+      },
+      "structured_patterns": {
+        "chunk_2": {
+          "unique": 31,
+          "total": 31,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "f42e",
+              1
+            ],
+            [
+              "dcb7",
+              1
+            ],
+            [
+              "5a63",
+              1
+            ]
+          ]
+        },
+        "chunk_3": {
+          "unique": 20,
+          "total": 20,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "f42edc",
+              1
+            ],
+            [
+              "b75a63",
+              1
+            ],
+            [
+              "dbee65",
+              1
+            ]
+          ]
+        },
+        "chunk_4": {
+          "unique": 15,
+          "total": 15,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "f42edcb7",
+              1
+            ],
+            [
+              "5a63dbee",
+              1
+            ],
+            [
+              "659d5ce8",
+              1
+            ]
+          ]
+        },
+        "chunk_5": {
+          "unique": 12,
+          "total": 12,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "f42edcb75a",
+              1
+            ],
+            [
+              "63dbee659d",
+              1
+            ],
+            [
+              "5ce86f6aaa",
+              1
+            ]
+          ]
+        },
+        "chunk_6": {
+          "unique": 10,
+          "total": 10,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "f42edcb75a63",
+              1
+            ],
+            [
+              "dbee659d5ce8",
+              1
+            ],
+            [
+              "6f6aaa4acae3",
+              1
+            ]
+          ]
+        }
+      },
+      "ends_with_0x80": false,
+      "end_bytes_hex": "cc40b902f8639760",
+      "has_0x80_in_seq": false
+    },
+    {
+      "sid": 24,
+      "name": "24FAN",
+      "mode": 2,
+      "unknown_byte_4": 3,
+      "parameter": 951,
+      "payload_size": 309,
+      "instrument_28_hex": "003f988bd8605e76373d780be0bf5cbc0bd863872dc5e4a3c276993a",
+      "seq_size": 281,
+      "seq_stats": {
+        "size": 281,
+        "unique_bytes": 171,
+        "most_common_5": [
+          [
+            94,
+            4
+          ],
+          [
+            67,
+            4
+          ],
+          [
+            168,
+            4
+          ],
+          [
+            63,
+            4
+          ],
+          [
+            191,
+            4
+          ]
+        ],
+        "zero_count": 0,
+        "zero_pct": 0.0,
+        "high_count": 149,
+        "high_pct": 53.0,
+        "runs_of_3plus": 0,
+        "longest_run": 1,
+        "avg_byte_diff": 83.7,
+        "min": 3,
+        "max": 255
+      },
+      "structured_patterns": {
+        "chunk_2": {
+          "unique": 140,
+          "total": 140,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "210e",
+              1
+            ],
+            [
+              "5e40",
+              1
+            ],
+            [
+              "4398",
+              1
+            ]
+          ]
+        },
+        "chunk_3": {
+          "unique": 93,
+          "total": 93,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "210e5e",
+              1
+            ],
+            [
+              "404398",
+              1
+            ],
+            [
+              "b010d2",
+              1
+            ]
+          ]
+        },
+        "chunk_4": {
+          "unique": 70,
+          "total": 70,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "210e5e40",
+              1
+            ],
+            [
+              "4398b010",
+              1
+            ],
+            [
+              "d20e8e10",
+              1
+            ]
+          ]
+        },
+        "chunk_5": {
+          "unique": 56,
+          "total": 56,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "210e5e4043",
+              1
+            ],
+            [
+              "98b010d20e",
+              1
+            ],
+            [
+              "8e10e7eb80",
+              1
+            ]
+          ]
+        },
+        "chunk_6": {
+          "unique": 46,
+          "total": 46,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "210e5e404398",
+              1
+            ],
+            [
+              "b010d20e8e10",
+              1
+            ],
+            [
+              "e7eb80f56a5c",
+              1
+            ]
+          ]
+        }
+      },
+      "ends_with_0x80": false,
+      "end_bytes_hex": "a4fd6a4ee0c587ad",
+      "has_0x80_in_seq": true
+    },
+    {
+      "sid": 26,
+      "name": "26GENER",
+      "mode": 2,
+      "unknown_byte_4": 3,
+      "parameter": 805,
+      "payload_size": 314,
+      "instrument_28_hex": "003f989c2c6dfbe658045860be463972e017318fd15917929003e4e8",
+      "seq_size": 286,
+      "seq_stats": {
+        "size": 286,
+        "unique_bytes": 174,
+        "most_common_5": [
+          [
+            181,
+            5
+          ],
+          [
+            57,
+            4
+          ],
+          [
+            109,
+            4
+          ],
+          [
+            208,
+            4
+          ],
+          [
+            119,
+            4
+          ]
+        ],
+        "zero_count": 2,
+        "zero_pct": 0.7,
+        "high_count": 147,
+        "high_pct": 51.4,
+        "runs_of_3plus": 1,
+        "longest_run": 3,
+        "avg_byte_diff": 84.6,
+        "min": 0,
+        "max": 255
+      },
+      "structured_patterns": {
+        "chunk_2": {
+          "unique": 142,
+          "total": 143,
+          "ratio": 0.993,
+          "top3": [
+            [
+              "7739",
+              2
+            ],
+            [
+              "8439",
+              1
+            ],
+            [
+              "7b10",
+              1
+            ]
+          ]
+        },
+        "chunk_3": {
+          "unique": 95,
+          "total": 95,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "84397b",
+              1
+            ],
+            [
+              "103db5",
+              1
+            ],
+            [
+              "78873d",
+              1
+            ]
+          ]
+        },
+        "chunk_4": {
+          "unique": 71,
+          "total": 71,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "84397b10",
+              1
+            ],
+            [
+              "3db57887",
+              1
+            ],
+            [
+              "3d4c0f9f",
+              1
+            ]
+          ]
+        },
+        "chunk_5": {
+          "unique": 57,
+          "total": 57,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "84397b103d",
+              1
+            ],
+            [
+              "b578873d4c",
+              1
+            ],
+            [
+              "0f9fac07b3",
+              1
+            ]
+          ]
+        },
+        "chunk_6": {
+          "unique": 47,
+          "total": 47,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "84397b103db5",
+              1
+            ],
+            [
+              "78873d4c0f9f",
+              1
+            ],
+            [
+              "ac07b3a6ea85",
+              1
+            ]
+          ]
+        }
+      },
+      "ends_with_0x80": false,
+      "end_bytes_hex": "17779d3569276300",
+      "has_0x80_in_seq": false
+    },
+    {
+      "sid": 50,
+      "name": "50MOTOR",
+      "mode": 2,
+      "unknown_byte_4": 3,
+      "parameter": 707,
+      "payload_size": 231,
+      "instrument_28_hex": "003d5899ec302ff2fa65e05ef31a397317928f09dbe4e703797900de",
+      "seq_size": 203,
+      "seq_stats": {
+        "size": 203,
+        "unique_bytes": 141,
+        "most_common_5": [
+          [
+            8,
+            4
+          ],
+          [
+            55,
+            3
+          ],
+          [
+            82,
+            3
+          ],
+          [
+            251,
+            3
+          ],
+          [
+            105,
+            3
+          ]
+        ],
+        "zero_count": 2,
+        "zero_pct": 1.0,
+        "high_count": 96,
+        "high_pct": 47.3,
+        "runs_of_3plus": 0,
+        "longest_run": 1,
+        "avg_byte_diff": 82.8,
+        "min": 0,
+        "max": 255
+      },
+      "structured_patterns": {
+        "chunk_2": {
+          "unique": 100,
+          "total": 101,
+          "ratio": 0.99,
+          "top3": [
+            [
+              "17c0",
+              2
+            ],
+            [
+              "62cc",
+              1
+            ],
+            [
+              "3778",
+              1
+            ]
+          ]
+        },
+        "chunk_3": {
+          "unique": 67,
+          "total": 67,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "62cc37",
+              1
+            ],
+            [
+              "781d1c",
+              1
+            ],
+            [
+              "1bcfd8",
+              1
+            ]
+          ]
+        },
+        "chunk_4": {
+          "unique": 50,
+          "total": 50,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "62cc3778",
+              1
+            ],
+            [
+              "1d1c1bcf",
+              1
+            ],
+            [
+              "d881eb5f",
+              1
+            ]
+          ]
+        },
+        "chunk_5": {
+          "unique": 40,
+          "total": 40,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "62cc37781d",
+              1
+            ],
+            [
+              "1c1bcfd881",
+              1
+            ],
+            [
+              "eb5fcdd49d",
+              1
+            ]
+          ]
+        },
+        "chunk_6": {
+          "unique": 33,
+          "total": 33,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "62cc37781d1c",
+              1
+            ],
+            [
+              "1bcfd881eb5f",
+              1
+            ],
+            [
+              "cdd49d6e8a52",
+              1
+            ]
+          ]
+        }
+      },
+      "ends_with_0x80": false,
+      "end_bytes_hex": "c0166805f4c3ab00",
+      "has_0x80_in_seq": false
+    },
+    {
+      "sid": 51,
+      "name": "51VAC",
+      "mode": 2,
+      "unknown_byte_4": 3,
+      "parameter": 494,
+      "payload_size": 348,
+      "instrument_28_hex": "003bb89a2c6dfbff3c0ffe182d9aee76d8bc94801f27221b8e06e5ed",
+      "seq_size": 320,
+      "seq_stats": {
+        "size": 320,
+        "unique_bytes": 168,
+        "most_common_5": [
+          [
+            0,
+            9
+          ],
+          [
+            15,
+            8
+          ],
+          [
+            31,
+            7
+          ],
+          [
+            128,
+            7
+          ],
+          [
+            64,
+            5
+          ]
+        ],
+        "zero_count": 9,
+        "zero_pct": 2.8,
+        "high_count": 162,
+        "high_pct": 50.6,
+        "runs_of_3plus": 0,
+        "longest_run": 1,
+        "avg_byte_diff": 103.1,
+        "min": 0,
+        "max": 254
+      },
+      "structured_patterns": {
+        "chunk_2": {
+          "unique": 159,
+          "total": 160,
+          "ratio": 0.994,
+          "top3": [
+            [
+              "007d",
+              2
+            ],
+            [
+              "40f9",
+              1
+            ],
+            [
+              "8960",
+              1
+            ]
+          ]
+        },
+        "chunk_3": {
+          "unique": 106,
+          "total": 106,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "40f989",
+              1
+            ],
+            [
+              "60ae7a",
+              1
+            ],
+            [
+              "b01f3f",
+              1
+            ]
+          ]
+        },
+        "chunk_4": {
+          "unique": 80,
+          "total": 80,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "40f98960",
+              1
+            ],
+            [
+              "ae7ab01f",
+              1
+            ],
+            [
+              "3f580f6f",
+              1
+            ]
+          ]
+        },
+        "chunk_5": {
+          "unique": 64,
+          "total": 64,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "40f98960ae",
+              1
+            ],
+            [
+              "7ab01f3f58",
+              1
+            ],
+            [
+              "0f6f90fed2",
+              1
+            ]
+          ]
+        },
+        "chunk_6": {
+          "unique": 53,
+          "total": 53,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "40f98960ae7a",
+              1
+            ],
+            [
+              "b01f3f580f6f",
+              1
+            ],
+            [
+              "90fed2a1dba5",
+              1
+            ]
+          ]
+        }
+      },
+      "ends_with_0x80": false,
+      "end_bytes_hex": "573082f7b3821940",
+      "has_0x80_in_seq": true
+    },
+    {
+      "sid": 62,
+      "name": "62COFFEE",
+      "mode": 2,
+      "unknown_byte_4": 3,
+      "parameter": 1245,
+      "payload_size": 831,
+      "instrument_28_hex": "0037189cac75fbff6c0fe5b8bc9cb037316e0db9b31bcdb137f161ed",
+      "seq_size": 803,
+      "seq_stats": {
+        "size": 803,
+        "unique_bytes": 247,
+        "most_common_5": [
+          [
+            148,
+            10
+          ],
+          [
+            55,
+            9
+          ],
+          [
+            134,
+            8
+          ],
+          [
+            245,
+            8
+          ],
+          [
+            74,
+            8
+          ]
+        ],
+        "zero_count": 2,
+        "zero_pct": 0.2,
+        "high_count": 376,
+        "high_pct": 46.8,
+        "runs_of_3plus": 0,
+        "longest_run": 1,
+        "avg_byte_diff": 83.6,
+        "min": 0,
+        "max": 255
+      },
+      "structured_patterns": {
+        "chunk_2": {
+          "unique": 400,
+          "total": 401,
+          "ratio": 0.998,
+          "top3": [
+            [
+              "0a51",
+              2
+            ],
+            [
+              "c025",
+              1
+            ],
+            [
+              "996e",
+              1
+            ]
+          ]
+        },
+        "chunk_3": {
+          "unique": 267,
+          "total": 267,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "c02599",
+              1
+            ],
+            [
+              "6e663c",
+              1
+            ],
+            [
+              "77b3e4",
+              1
+            ]
+          ]
+        },
+        "chunk_4": {
+          "unique": 200,
+          "total": 200,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "c025996e",
+              1
+            ],
+            [
+              "663c77b3",
+              1
+            ],
+            [
+              "e49b6f73",
+              1
+            ]
+          ]
+        },
+        "chunk_5": {
+          "unique": 160,
+          "total": 160,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "c025996e66",
+              1
+            ],
+            [
+              "3c77b3e49b",
+              1
+            ],
+            [
+              "6f73a16b51",
+              1
+            ]
+          ]
+        },
+        "chunk_6": {
+          "unique": 133,
+          "total": 133,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "c025996e663c",
+              1
+            ],
+            [
+              "77b3e49b6f73",
+              1
+            ],
+            [
+              "a16b514f29b4",
+              1
+            ]
+          ]
+        }
+      },
+      "ends_with_0x80": true,
+      "end_bytes_hex": "ce6ae6438691df80",
+      "has_0x80_in_seq": true
+    },
+    {
+      "sid": 65,
+      "name": "65LEP",
+      "mode": 2,
+      "unknown_byte_4": 3,
+      "parameter": 727,
+      "payload_size": 363,
+      "instrument_28_hex": "003d589bcc6dfbe3581c0c302a763b3d645e4a400f939c0de5ed80f9",
+      "seq_size": 335,
+      "seq_stats": {
+        "size": 335,
+        "unique_bytes": 181,
+        "most_common_5": [
+          [
+            64,
+            5
+          ],
+          [
+            25,
+            5
+          ],
+          [
+            189,
+            5
+          ],
+          [
+            153,
+            4
+          ],
+          [
+            223,
+            4
+          ]
+        ],
+        "zero_count": 4,
+        "zero_pct": 1.2,
+        "high_count": 170,
+        "high_pct": 50.7,
+        "runs_of_3plus": 0,
+        "longest_run": 1,
+        "avg_byte_diff": 90.6,
+        "min": 0,
+        "max": 255
+      },
+      "structured_patterns": {
+        "chunk_2": {
+          "unique": 167,
+          "total": 167,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "8b40",
+              1
+            ],
+            [
+              "ddcd",
+              1
+            ],
+            [
+              "403e",
+              1
+            ]
+          ]
+        },
+        "chunk_3": {
+          "unique": 111,
+          "total": 111,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "8b40dd",
+              1
+            ],
+            [
+              "cd403e",
+              1
+            ],
+            [
+              "7ec01e",
+              1
+            ]
+          ]
+        },
+        "chunk_4": {
+          "unique": 83,
+          "total": 83,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "8b40ddcd",
+              1
+            ],
+            [
+              "403e7ec0",
+              1
+            ],
+            [
+              "1ee2bab5",
+              1
+            ]
+          ]
+        },
+        "chunk_5": {
+          "unique": 67,
+          "total": 67,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "8b40ddcd40",
+              1
+            ],
+            [
+              "3e7ec01ee2",
+              1
+            ],
+            [
+              "bab56b4dea",
+              1
+            ]
+          ]
+        },
+        "chunk_6": {
+          "unique": 55,
+          "total": 55,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "8b40ddcd403e",
+              1
+            ],
+            [
+              "7ec01ee2bab5",
+              1
+            ],
+            [
+              "6b4dea567b6b",
+              1
+            ]
+          ]
+        }
+      },
+      "ends_with_0x80": false,
+      "end_bytes_hex": "5679fd36ff0239e0",
+      "has_0x80_in_seq": true
+    },
+    {
+      "sid": 67,
+      "name": "67CAN",
+      "mode": 2,
+      "unknown_byte_4": 3,
+      "parameter": 1041,
+      "payload_size": 204,
+      "instrument_28_hex": "003f988398dc30363a340b838ffc5b08c45ee7adc5e4a400f93a210e",
+      "seq_size": 176,
+      "seq_stats": {
+        "size": 176,
+        "unique_bytes": 130,
+        "most_common_5": [
+          [
+            23,
+            4
+          ],
+          [
+            220,
+            3
+          ],
+          [
+            235,
+            3
+          ],
+          [
+            223,
+            3
+          ],
+          [
+            156,
+            3
+          ]
+        ],
+        "zero_count": 0,
+        "zero_pct": 0.0,
+        "high_count": 94,
+        "high_pct": 53.4,
+        "runs_of_3plus": 0,
+        "longest_run": 1,
+        "avg_byte_diff": 100.2,
+        "min": 2,
+        "max": 254
+      },
+      "structured_patterns": {
+        "chunk_2": {
+          "unique": 88,
+          "total": 88,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "5ecc",
+              1
+            ],
+            [
+              "0f98",
+              1
+            ],
+            [
+              "b110",
+              1
+            ]
+          ]
+        },
+        "chunk_3": {
+          "unique": 58,
+          "total": 58,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "5ecc0f",
+              1
+            ],
+            [
+              "98b110",
+              1
+            ],
+            [
+              "dc5503",
+              1
+            ]
+          ]
+        },
+        "chunk_4": {
+          "unique": 44,
+          "total": 44,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "5ecc0f98",
+              1
+            ],
+            [
+              "b110dc55",
+              1
+            ],
+            [
+              "03e7eb81",
+              1
+            ]
+          ]
+        },
+        "chunk_5": {
+          "unique": 35,
+          "total": 35,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "5ecc0f98b1",
+              1
+            ],
+            [
+              "10dc5503e7",
+              1
+            ],
+            [
+              "eb81ed6ddf",
+              1
+            ]
+          ]
+        },
+        "chunk_6": {
+          "unique": 29,
+          "total": 29,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "5ecc0f98b110",
+              1
+            ],
+            [
+              "dc5503e7eb81",
+              1
+            ],
+            [
+              "ed6ddfe04c9d",
+              1
+            ]
+          ]
+        }
+      },
+      "ends_with_0x80": false,
+      "end_bytes_hex": "e956dc4c4782f4a0",
+      "has_0x80_in_seq": false
+    },
+    {
+      "sid": 69,
+      "name": "69ANTGRV",
+      "mode": 2,
+      "unknown_byte_4": 3,
+      "parameter": 151,
+      "payload_size": 50,
+      "instrument_28_hex": "0036189fcc117939003e62f00f7d1a19b800c76f702770ac3ebd0baf",
+      "seq_size": 22,
+      "seq_stats": {
+        "size": 22,
+        "unique_bytes": 21,
+        "most_common_5": [
+          [
+            128,
+            2
+          ],
+          [
+            45,
+            1
+          ],
+          [
+            204,
+            1
+          ],
+          [
+            172,
+            1
+          ],
+          [
+            123,
+            1
+          ]
+        ],
+        "zero_count": 1,
+        "zero_pct": 4.5,
+        "high_count": 9,
+        "high_pct": 40.9,
+        "runs_of_3plus": 0,
+        "longest_run": 1,
+        "avg_byte_diff": 71.6,
+        "min": 0,
+        "max": 254
+      },
+      "structured_patterns": {
+        "chunk_2": {
+          "unique": 11,
+          "total": 11,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "2dcc",
+              1
+            ],
+            [
+              "ac7b",
+              1
+            ],
+            [
+              "7d65",
+              1
+            ]
+          ]
+        },
+        "chunk_3": {
+          "unique": 7,
+          "total": 7,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "2dccac",
+              1
+            ],
+            [
+              "7b7d65",
+              1
+            ],
+            [
+              "5efe94",
+              1
+            ]
+          ]
+        },
+        "chunk_4": {
+          "unique": 5,
+          "total": 5,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "2dccac7b",
+              1
+            ],
+            [
+              "7d655efe",
+              1
+            ],
+            [
+              "94208003",
+              1
+            ]
+          ]
+        },
+        "chunk_5": {
+          "unique": 4,
+          "total": 4,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "2dccac7b7d",
+              1
+            ],
+            [
+              "655efe9420",
+              1
+            ],
+            [
+              "80030200bb",
+              1
+            ]
+          ]
+        },
+        "chunk_6": {
+          "unique": 3,
+          "total": 3,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "2dccac7b7d65",
+              1
+            ],
+            [
+              "5efe94208003",
+              1
+            ],
+            [
+              "0200bbaa951a",
+              1
+            ]
+          ]
+        }
+      },
+      "ends_with_0x80": true,
+      "end_bytes_hex": "bbaa951a794a2280",
+      "has_0x80_in_seq": true
+    },
+    {
+      "sid": 74,
+      "name": "74NITRO",
+      "mode": 2,
+      "unknown_byte_4": 3,
+      "parameter": 965,
+      "payload_size": 648,
+      "instrument_28_hex": "0037188718dbf7d9301dadc5e4e581b98b706dcd98ebb6277e2c3eb8",
+      "seq_size": 620,
+      "seq_stats": {
+        "size": 620,
+        "unique_bytes": 234,
+        "most_common_5": [
+          [
+            87,
+            9
+          ],
+          [
+            232,
+            7
+          ],
+          [
+            33,
+            7
+          ],
+          [
+            84,
+            7
+          ],
+          [
+            81,
+            6
+          ]
+        ],
+        "zero_count": 0,
+        "zero_pct": 0.0,
+        "high_count": 297,
+        "high_pct": 47.9,
+        "runs_of_3plus": 0,
+        "longest_run": 1,
+        "avg_byte_diff": 91.3,
+        "min": 1,
+        "max": 255
+      },
+      "structured_patterns": {
+        "chunk_2": {
+          "unique": 309,
+          "total": 310,
+          "ratio": 0.997,
+          "top3": [
+            [
+              "931d",
+              2
+            ],
+            [
+              "f859",
+              1
+            ],
+            [
+              "96e6",
+              1
+            ]
+          ]
+        },
+        "chunk_3": {
+          "unique": 206,
+          "total": 206,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "f85996",
+              1
+            ],
+            [
+              "e6503d",
+              1
+            ],
+            [
+              "ebe84d",
+              1
+            ]
+          ]
+        },
+        "chunk_4": {
+          "unique": 155,
+          "total": 155,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "f85996e6",
+              1
+            ],
+            [
+              "503debe8",
+              1
+            ],
+            [
+              "4dbbb951",
+              1
+            ]
+          ]
+        },
+        "chunk_5": {
+          "unique": 124,
+          "total": 124,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "f85996e650",
+              1
+            ],
+            [
+              "3debe84dbb",
+              1
+            ],
+            [
+              "b9512aaa99",
+              1
+            ]
+          ]
+        },
+        "chunk_6": {
+          "unique": 103,
+          "total": 103,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "f85996e6503d",
+              1
+            ],
+            [
+              "ebe84dbbb951",
+              1
+            ],
+            [
+              "2aaa99514fbc",
+              1
+            ]
+          ]
+        }
+      },
+      "ends_with_0x80": false,
+      "end_bytes_hex": "1a5133f81fb6be30",
+      "has_0x80_in_seq": true
+    },
+    {
+      "sid": 91,
+      "name": "91LASER1",
+      "mode": 2,
+      "unknown_byte_4": 3,
+      "parameter": 439,
+      "payload_size": 83,
+      "instrument_28_hex": "0036188398d8bc9c801f317a07bf8d0cdc0060736d26825b3dbe0bab",
+      "seq_size": 55,
+      "seq_stats": {
+        "size": 55,
+        "unique_bytes": 49,
+        "most_common_5": [
+          [
+            188,
+            4
+          ],
+          [
+            39,
+            2
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            128,
+            2
+          ],
+          [
+            45,
+            1
+          ]
+        ],
+        "zero_count": 0,
+        "zero_pct": 0.0,
+        "high_count": 23,
+        "high_pct": 41.8,
+        "runs_of_3plus": 0,
+        "longest_run": 1,
+        "avg_byte_diff": 85.4,
+        "min": 1,
+        "max": 249
+      },
+      "structured_patterns": {
+        "chunk_2": {
+          "unique": 27,
+          "total": 27,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "2dcc",
+              1
+            ],
+            [
+              "a877",
+              1
+            ],
+            [
+              "9161",
+              1
+            ]
+          ]
+        },
+        "chunk_3": {
+          "unique": 18,
+          "total": 18,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "2dcca8",
+              1
+            ],
+            [
+              "779161",
+              1
+            ],
+            [
+              "90e551",
+              1
+            ]
+          ]
+        },
+        "chunk_4": {
+          "unique": 13,
+          "total": 13,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "2dcca877",
+              1
+            ],
+            [
+              "916190e5",
+              1
+            ],
+            [
+              "51c75755",
+              1
+            ]
+          ]
+        },
+        "chunk_5": {
+          "unique": 11,
+          "total": 11,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "2dcca87791",
+              1
+            ],
+            [
+              "6190e551c7",
+              1
+            ],
+            [
+              "57553f4e59",
+              1
+            ]
+          ]
+        },
+        "chunk_6": {
+          "unique": 9,
+          "total": 9,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "2dcca8779161",
+              1
+            ],
+            [
+              "90e551c75755",
+              1
+            ],
+            [
+              "3f4e59759563",
+              1
+            ]
+          ]
+        }
+      },
+      "ends_with_0x80": true,
+      "end_bytes_hex": "3980bc8846991780",
+      "has_0x80_in_seq": true
+    },
+    {
+      "sid": 107,
+      "name": "107MIXER",
+      "mode": 2,
+      "unknown_byte_4": 3,
+      "parameter": 497,
+      "payload_size": 110,
+      "instrument_28_hex": "003b1899ec302faaf8e6362f251e0dbbc9cb0572f2015cc5b856c822",
+      "seq_size": 82,
+      "seq_stats": {
+        "size": 82,
+        "unique_bytes": 77,
+        "most_common_5": [
+          [
+            191,
+            2
+          ],
+          [
+            251,
+            2
+          ],
+          [
+            202,
+            2
+          ],
+          [
+            118,
+            2
+          ],
+          [
+            73,
+            2
+          ]
+        ],
+        "zero_count": 0,
+        "zero_pct": 0.0,
+        "high_count": 42,
+        "high_pct": 51.2,
+        "runs_of_3plus": 0,
+        "longest_run": 1,
+        "avg_byte_diff": 87.9,
+        "min": 2,
+        "max": 251
+      },
+      "structured_patterns": {
+        "chunk_2": {
+          "unique": 41,
+          "total": 41,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "382b",
+              1
+            ],
+            [
+              "9fb5",
+              1
+            ],
+            [
+              "03d6",
+              1
+            ]
+          ]
+        },
+        "chunk_3": {
+          "unique": 27,
+          "total": 27,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "382b9f",
+              1
+            ],
+            [
+              "b503d6",
+              1
+            ],
+            [
+              "bf9bbc",
+              1
+            ]
+          ]
+        },
+        "chunk_4": {
+          "unique": 20,
+          "total": 20,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "382b9fb5",
+              1
+            ],
+            [
+              "03d6bf9b",
+              1
+            ],
+            [
+              "bca56e9a",
+              1
+            ]
+          ]
+        },
+        "chunk_5": {
+          "unique": 16,
+          "total": 16,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "382b9fb503",
+              1
+            ],
+            [
+              "d6bf9bbca5",
+              1
+            ],
+            [
+              "6e9a92fb81",
+              1
+            ]
+          ]
+        },
+        "chunk_6": {
+          "unique": 13,
+          "total": 13,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "382b9fb503d6",
+              1
+            ],
+            [
+              "bf9bbca56e9a",
+              1
+            ],
+            [
+              "92fb817565b9",
+              1
+            ]
+          ]
+        }
+      },
+      "ends_with_0x80": true,
+      "end_bytes_hex": "31d526caa6c3eb80",
+      "has_0x80_in_seq": true
+    },
+    {
+      "sid": 109,
+      "name": "109BLIMP",
+      "mode": 2,
+      "unknown_byte_4": 3,
+      "parameter": 851,
+      "payload_size": 94,
+      "instrument_28_hex": "0037188398dbf7d230082dc5e4e581b98b706dcd98ebb6275c587d57",
+      "seq_size": 66,
+      "seq_stats": {
+        "size": 66,
+        "unique_bytes": 59,
+        "most_common_5": [
+          [
+            94,
+            4
+          ],
+          [
+            128,
+            3
+          ],
+          [
+            188,
+            3
+          ],
+          [
+            225,
+            1
+          ],
+          [
+            102,
+            1
+          ]
+        ],
+        "zero_count": 1,
+        "zero_pct": 1.5,
+        "high_count": 30,
+        "high_pct": 45.5,
+        "runs_of_3plus": 0,
+        "longest_run": 1,
+        "avg_byte_diff": 91.4,
+        "min": 0,
+        "max": 243
+      },
+      "structured_patterns": {
+        "chunk_2": {
+          "unique": 33,
+          "total": 33,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "e166",
+              1
+            ],
+            [
+              "5b99",
+              1
+            ],
+            [
+              "31ed",
+              1
+            ]
+          ]
+        },
+        "chunk_3": {
+          "unique": 22,
+          "total": 22,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "e1665b",
+              1
+            ],
+            [
+              "9931ed",
+              1
+            ],
+            [
+              "7d55ad",
+              1
+            ]
+          ]
+        },
+        "chunk_4": {
+          "unique": 16,
+          "total": 16,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "e1665b99",
+              1
+            ],
+            [
+              "31ed7d55",
+              1
+            ],
+            [
+              "ad44e71c",
+              1
+            ]
+          ]
+        },
+        "chunk_5": {
+          "unique": 13,
+          "total": 13,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "e1665b9931",
+              1
+            ],
+            [
+              "ed7d55ad44",
+              1
+            ],
+            [
+              "e71c05925d",
+              1
+            ]
+          ]
+        },
+        "chunk_6": {
+          "unique": 11,
+          "total": 11,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "e1665b9931ed",
+              1
+            ],
+            [
+              "7d55ad44e71c",
+              1
+            ],
+            [
+              "05925d192c80",
+              1
+            ]
+          ]
+        }
+      },
+      "ends_with_0x80": true,
+      "end_bytes_hex": "dc17705ed6c51d80",
+      "has_0x80_in_seq": true
+    },
+    {
+      "sid": 205,
+      "name": "205CONV",
+      "mode": 2,
+      "unknown_byte_4": 3,
+      "parameter": 1555,
+      "payload_size": 300,
+      "instrument_28_hex": "0039588a18605c7637d190bb7bd5913eb62f273813cc5a84edecbfa9",
+      "seq_size": 272,
+      "seq_stats": {
+        "size": 272,
+        "unique_bytes": 161,
+        "most_common_5": [
+          [
+            10,
+            6
+          ],
+          [
+            46,
+            5
+          ],
+          [
+            111,
+            4
+          ],
+          [
+            219,
+            4
+          ],
+          [
+            129,
+            4
+          ]
+        ],
+        "zero_count": 0,
+        "zero_pct": 0.0,
+        "high_count": 135,
+        "high_pct": 49.6,
+        "runs_of_3plus": 0,
+        "longest_run": 1,
+        "avg_byte_diff": 81.3,
+        "min": 2,
+        "max": 255
+      },
+      "structured_patterns": {
+        "chunk_2": {
+          "unique": 136,
+          "total": 136,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "626f",
+              1
+            ],
+            [
+              "6ec3",
+              1
+            ],
+            [
+              "db6f",
+              1
+            ]
+          ]
+        },
+        "chunk_3": {
+          "unique": 90,
+          "total": 90,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "626f6e",
+              1
+            ],
+            [
+              "c3db6f",
+              1
+            ],
+            [
+              "d4f2dc",
+              1
+            ]
+          ]
+        },
+        "chunk_4": {
+          "unique": 68,
+          "total": 68,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "626f6ec3",
+              1
+            ],
+            [
+              "db6fd4f2",
+              1
+            ],
+            [
+              "dcc98ef3",
+              1
+            ]
+          ]
+        },
+        "chunk_5": {
+          "unique": 54,
+          "total": 54,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "626f6ec3db",
+              1
+            ],
+            [
+              "6fd4f2dcc9",
+              1
+            ],
+            [
+              "8ef3ea2ee9",
+              1
+            ]
+          ]
+        },
+        "chunk_6": {
+          "unique": 45,
+          "total": 45,
+          "ratio": 1.0,
+          "top3": [
+            [
+              "626f6ec3db6f",
+              1
+            ],
+            [
+              "d4f2dcc98ef3",
+              1
+            ],
+            [
+              "ea2ee9a58150",
+              1
+            ]
+          ]
+        }
+      },
+      "ends_with_0x80": false,
+      "end_bytes_hex": "0a98777d0a5c6de0",
+      "has_0x80_in_seq": true
+    }
+  ],
+  "wave": [
+    {
+      "sid": 1000,
+      "name": "newtim2",
+      "mode": 3,
+      "unknown_byte_4": 3,
+      "parameter": 16715,
+      "payload_size": 8314,
+      "first_byte": 0,
+      "stats": {
+        "size": 8314,
+        "unique_bytes": 256,
+        "zero_count": 13,
+        "zero_pct": 0.2,
+        "high_count": 4349,
+        "high_pct": 52.3,
+        "runs_of_3plus": 0,
+        "longest_run": 1,
+        "avg_byte_diff": 87.4,
+        "min": 0,
+        "max": 255
+      },
+      "first_64_hex": "000db136d95bf7d8300eb2d6da1da0ce646db47b4a698da538da7b0c9d28ddae5ec308a06d05a685f95bad85208fbb82e597b5c6073a1be632a379c957c2926c",
+      "last_16_hex": "fd7f60a89f71fddfb1dba971f8142780"
+    },
+    {
+      "sid": 1001,
+      "name": "unpluggd",
+      "mode": 3,
+      "unknown_byte_4": 3,
+      "parameter": 16987,
+      "payload_size": 9609,
+      "first_byte": 0,
+      "stats": {
+        "size": 9609,
+        "unique_bytes": 256,
+        "zero_count": 23,
+        "zero_pct": 0.2,
+        "high_count": 4889,
+        "high_pct": 50.9,
+        "runs_of_3plus": 0,
+        "longest_run": 1,
+        "avg_byte_diff": 86.4,
+        "min": 0,
+        "max": 255
+      },
+      "first_64_hex": "001131183277ef8c651a3316dbf4d0a15e5b6eaacbb19ba53edb9f763a9458dde8b0c46dd5479342e3dc452cac5e4a3c27414c67aa1ce5e9839885b3a39cf4d8",
+      "last_16_hex": "bfc55f205ae1afb0d9447e2387c40b98"
+    },
+    {
+      "sid": 1002,
+      "name": "enya",
+      "mode": 3,
+      "unknown_byte_4": 3,
+      "parameter": 16909,
+      "payload_size": 5673,
+      "first_byte": 0,
+      "stats": {
+        "size": 5673,
+        "unique_bytes": 256,
+        "zero_count": 12,
+        "zero_pct": 0.2,
+        "high_count": 3049,
+        "high_pct": 53.7,
+        "runs_of_3plus": 0,
+        "longest_run": 1,
+        "avg_byte_diff": 86.5,
+        "min": 0,
+        "max": 255
+      },
+      "first_64_hex": "00143138590bf7e1b034594b6dce6678d860beb677799fb2c06d86aab015fb96c95846adccdd6367384e6e7a71792b001f279e1c9270ed630eaa71f6d1816d44",
+      "last_16_hex": "74bb6a3c33b6371bb85442564ce11de8"
+    },
+    {
+      "sid": 1003,
+      "name": "country",
+      "mode": 3,
+      "unknown_byte_4": 3,
+      "parameter": 20889,
+      "payload_size": 7356,
+      "first_byte": 0,
+      "stats": {
+        "size": 7356,
+        "unique_bytes": 256,
+        "zero_count": 14,
+        "zero_pct": 0.2,
+        "high_count": 3817,
+        "high_pct": 51.9,
+        "runs_of_3plus": 0,
+        "longest_run": 1,
+        "avg_byte_diff": 86.1,
+        "min": 0,
+        "max": 255
+      },
+      "first_64_hex": "001eb137990bf7f559104ce5b691685030c17d6d37f3316588db238c7529f2daefa788c92a59b2d39ffb80d54c0bdce5dae5673fb752ca05c5eee7a50792a601",
+      "last_16_hex": "bafc0977ea58f0afcbf41b5083211a52"
+    },
+    {
+      "sid": 1004,
+      "name": "progrock",
+      "mode": 3,
+      "unknown_byte_4": 3,
+      "parameter": 25453,
+      "payload_size": 9890,
+      "first_byte": 0,
+      "stats": {
+        "size": 9890,
+        "unique_bytes": 256,
+        "zero_count": 32,
+        "zero_pct": 0.3,
+        "high_count": 5118,
+        "high_pct": 51.7,
+        "runs_of_3plus": 1,
+        "longest_run": 3,
+        "avg_byte_diff": 88.4,
+        "min": 0,
+        "max": 255
+      },
+      "first_64_hex": "0033d8dc968b12f69346d593bf6c16ab858605dc6c8fb1f5d775b52ecb5930ce0224e11f1383854c0bd6a4df4c1708a5f04c055ce3db4e1dc0e95c68610be79f",
+      "last_16_hex": "cb015c216188c8558c7ee36a52dce8a0"
+    }
+  ],
+  "structural_comparison": {
+    "fm_payload_range": "50-831",
+    "fm_seq_range": "22-803",
+    "wave_payload_range": "5673-9890",
+    "fm_all_end_with_0x80": false,
+    "fm_payload_first_byte_always_0x00": true
+  }
+}

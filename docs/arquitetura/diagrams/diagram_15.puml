@@ -1,0 +1,80 @@
+@startuml Editor_Tool_State_Machine
+skinparam stateFontSize 15
+
+title EditorController Tool Modes
+
+note right of MODE_SELECT
+  Default mode
+  Click: select part (hit test)
+  Drag: move part
+  Handle drag: resize part (8 handles)
+  F: flip selected
+  L: lock/unlock
+  Del: delete
+end note
+state MODE_SELECT
+
+note right of MODE_PLACE
+  Click in viewport: place part at snapped position
+  Left panel: part catalog
+  Icon click: select part_type + switch to PLACE
+  Part placed with FLAG_MOVING set
+end note
+state MODE_PLACE
+
+note right of MODE_DELETE
+  Click in viewport: delete part
+  Handles removed
+  Undo-able operation
+end note
+state MODE_DELETE
+
+note right of MODE_CONNECT
+  First click: select source part
+  Second click: connect source.connected_1 = target
+  Visual line shows connection preview
+end note
+state MODE_CONNECT
+
+note right of MODE_PREVIEW
+  Inline simulation running
+  Solver.step() per _process()
+  State counters advance (frozen normally)
+  Sprites sync with PartData positions
+  Checker monitors solution conditions
+  Space: toggle start/stop
+end note
+state MODE_PREVIEW
+
+note right of MODE_LEVEL_INFO
+  Dialog for level metadata
+  title, goal, bg_color, pressure, gravity
+  music_track, solution conditions
+end note
+state MODE_LEVEL_INFO
+
+[*] --> MODE_SELECT : initial
+
+MODE_SELECT --> MODE_PLACE : key P\nor catalog icon click
+MODE_SELECT --> MODE_DELETE : key D
+MODE_SELECT --> MODE_CONNECT : key C
+MODE_SELECT --> MODE_PREVIEW : Space or key Space
+MODE_SELECT --> MODE_LEVEL_INFO : key I
+
+MODE_PLACE --> MODE_SELECT : key S\nor click already placed part
+MODE_DELETE --> MODE_SELECT : key S
+MODE_CONNECT --> MODE_SELECT : key S\nor click empty space
+MODE_PREVIEW --> MODE_SELECT : Space (stop)\nkey S
+MODE_LEVEL_INFO --> MODE_SELECT : dialog closed
+
+note bottom of MODE_SELECT
+  Ctrl+S: save dialog
+  Ctrl+L: load dialog
+  Ctrl+Z: undo (50 levels)
+  Ctrl+Y: redo
+  +/-: zoom (0.25x to 4x)
+  Middle mouse: pan
+  Scroll: zoom (in viewport only)
+end note
+
+@enduml

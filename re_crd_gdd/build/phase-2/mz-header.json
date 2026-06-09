@@ -1,0 +1,20 @@
+{
+  "actual_file_size": 449936,
+  "checksum": "0x0000",
+  "code_size_bytes": 9344,
+  "file_size_bytes": 28195,
+  "has_overlay": false,
+  "header_paragraphs": 1312,
+  "initial_cs": "0x0000",
+  "initial_ip": "0x0000",
+  "initial_sp": "0x0080",
+  "initial_ss": "0x4dfb",
+  "max_extra_paragraphs": 65535,
+  "min_extra_paragraphs": 0,
+  "overlay_number": 0,
+  "pages_on_last_page": 4131,
+  "relocation_table_offset": 62,
+  "relocations": 4131,
+  "signature": "MZ",
+  "total_pages": 48
+}

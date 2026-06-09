@@ -1,0 +1,160 @@
+{
+  "version": 1001,
+  "width": 144,
+  "height": 48,
+  "section_sizes": {
+    "a": 20,
+    "b": 4,
+    "c": 1,
+    "d": 74
+  },
+  "section_a": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "section_b": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 144,
+      "height": 48,
+      "bytecode_offset": 0
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "width": 144,
+      "height": 48,
+      "bytecode_offset": 9
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "width": 144,
+      "height": 48,
+      "bytecode_offset": 18
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "width": 144,
+      "height": 48,
+      "bytecode_offset": 27
+    }
+  ],
+  "section_c": [
+    {
+      "first_frame_id": 0,
+      "state_id": 1
+    }
+  ],
+  "section_d": [
+    {
+      "offset": 0,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 0,
+      "x": 0,
+      "y": 0,
+      "flags": 0
+    },
+    {
+      "offset": 12,
+      "cmd": 5,
+      "name": "PLAY_SFX",
+      "sound_id": 69
+    },
+    {
+      "offset": 16,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 18,
+      "cmd": 5,
+      "name": "PLAY_SFX",
+      "sound_id": 69
+    },
+    {
+      "offset": 22,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 1,
+      "x": 0,
+      "y": 0,
+      "flags": 0
+    },
+    {
+      "offset": 34,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 36,
+      "cmd": 5,
+      "name": "PLAY_SFX",
+      "sound_id": 69
+    },
+    {
+      "offset": 40,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 2,
+      "x": 0,
+      "y": 0,
+      "flags": 0
+    },
+    {
+      "offset": 52,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 54,
+      "cmd": 5,
+      "name": "PLAY_SFX",
+      "sound_id": 69
+    },
+    {
+      "offset": 58,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 3,
+      "x": 0,
+      "y": 0,
+      "flags": 0
+    },
+    {
+      "offset": 70,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 72,
+      "cmd": 1,
+      "name": "END_ANM"
+    }
+  ]
+}

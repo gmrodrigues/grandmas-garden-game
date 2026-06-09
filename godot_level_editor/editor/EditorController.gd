@@ -44,7 +44,7 @@ var level_gravity: int = 272
 var level_music_track: int = 1000
 
 const VIEWPORT_X: int = 10
-const VIEWPORT_Y: int = 50
+const VIEWPORT_Y: int = 60
 const VIEWPORT_W: int = 560
 const VIEWPORT_H: int = 377
 const CATALOG_W: int = 200
@@ -53,6 +53,7 @@ const SNAP_GRID: int = 16
 const MIN_PART_SIZE: int = 8
 
 var canvas: Node2D
+var viewport_bg: ColorRect
 var selection_handles_root: Node2D
 var part_nodes: Dictionary = {}
 var status_label: Label
@@ -116,7 +117,7 @@ func _build_ui():
 	main.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	vbox.add_child(main)
 
-	var viewport_bg = ColorRect.new()
+	viewport_bg = ColorRect.new()
 	viewport_bg.color = Color(0.16, 0.18, 0.22)
 	viewport_bg.anchors_preset = Control.PRESET_FULL_RECT
 	var vp_container = Control.new()
@@ -538,42 +539,64 @@ func _spawn_part_node(pd: PartData):
 	var s = Sprite2D.new()
 	s.name = "P" + str(idx)
 	s.set_meta("pdx", idx)
+	s.set_meta("last_state", pd.state_counter)
+	s.set_meta("off_x", 0)
+	s.set_meta("off_y", 0)
 	canvas.add_child(s)
 	part_nodes[idx] = s
 	_update_sprite(s, pd)
+	s.position = Vector2(pd.x + s.get_meta("off_x", 0), pd.y + s.get_meta("off_y", 0))
 
 func _update_part_node(idx: int):
 	var s = part_nodes.get(idx)
 	var p = _get_part(idx)
 	if s and p:
-		s.position = Vector2(p.x, p.y)
 		_update_sprite(s, p)
+		s.position = Vector2(p.x + s.get_meta("off_x", 0), p.y + s.get_meta("off_y", 0))
 
 func _update_sprite(s: Sprite2D, p: PartData):
 	var tex = null
 	var anm = AnmDatabase.get_anm_for_part(p.part_type)
+	var off_x = 0
+	var off_y = 0
 	if anm != "":
-		var img = anm_renderer.render_frame(anm, AnmDatabase.get_default_state_id(anm), p.state_counter, p.width_1, p.height_1)
+		var anm_data = AnmDatabase.load_anm(anm)
+		var img = null
+		if not anm_data.is_empty() and anm_data.get("section_a", []).is_empty() and anm_data.get("section_c", []).size() == 2:
+			img = anm_renderer.render_wall(anm, p.width_1, p.height_1)
+		if img == null:
+			var anm_state_id = BehaviorRegistry.get_anm_state_for_counter(p.part_type, p.state_counter)
+			var meta = anm_renderer.get_frame_meta(anm, anm_state_id, p.state_counter, p.width_1, p.height_1)
+			off_x = meta.get("x", 0)
+			off_y = meta.get("y", 0)
+			img = anm_renderer.render_frame(anm, anm_state_id, p.state_counter, p.width_1, p.height_1)
 		if img:
-			if p.appearance & PartData.FLAG_FLIP: img.flip_x()
 			tex = ImageTexture.create_from_image(img)
+	s.set_meta("off_x", off_x)
+	s.set_meta("off_y", off_y)
 	if tex:
 		s.texture = tex
 		s.centered = false
 		s.scale = Vector2.ONE
+		s.flip_h = bool(p.appearance & PartData.FLAG_FLIP)
 	else:
 		var img = Image.create(max(p.width_1, 1), max(p.height_1, 1), false, Image.FORMAT_RGBA8)
 		img.fill(Color(0.5, 0.5, 0.6, 0.7))
 		tex = ImageTexture.create_from_image(img)
 		s.texture = tex
 		s.centered = false
+		s.flip_h = bool(p.appearance & PartData.FLAG_FLIP)
 
 func _sync_part_nodes():
 	for i in range(world.parts.size()):
 		var s = part_nodes.get(i)
 		var p = world.parts[i]
 		if s and p:
-			s.position = Vector2(p.x, p.y)
+			var last_state = s.get_meta("last_state", -1)
+			if p.state_counter != last_state:
+				_update_sprite(s, p)
+				s.set_meta("last_state", p.state_counter)
+			s.position = Vector2(p.x + s.get_meta("off_x", 0), p.y + s.get_meta("off_y", 0))
 
 func _reindex():
 	var new_nodes: Dictionary = {}
@@ -610,6 +633,8 @@ func _new_level():
 			c.queue_free()
 	part_nodes.clear()
 	level_title = "Untitled"
+	level_bg_color = 0
+	_update_background_color()
 	status_label.text = "New level"
 	queue_redraw()
 
@@ -678,20 +703,39 @@ func _do_load(path: String):
 			push_warning("Unknown part_type %d at (%d, %d)" % [pt, px, py])
 		if px < vp[0] - 200 or px > vp[0] + vp[2] + 200 or py < vp[1] - 200 or py > vp[1] + vp[3] + 200:
 			push_warning("Part %d at (%d, %d) is far outside viewport" % [pt, px, py])
+		var dims = d.get("dimensions", {})
+		var phys = d.get("physics", {})
 		var pd = PartData.new(pt, px, py)
-		pd.width_1 = d.get("width_1", 32)
-		pd.height_1 = d.get("height_1", 32)
-		pd.width_2 = d.get("width_2", 32)
-		pd.height_2 = d.get("height_2", 32)
+		pd.width_1 = dims.get("width_1", d.get("width_1", 32))
+		pd.height_1 = dims.get("height_1", d.get("height_1", 32))
+		pd.width_2 = dims.get("width_2", d.get("width_2", 32))
+		pd.height_2 = dims.get("height_2", d.get("height_2", 32))
 		pd.appearance = d.get("appearance", 0)
 		var flags = d.get("flags", {})
 		pd.flags_1 = flags.get("flag_1", "0x0000").trim_prefix("'").trim_suffix("'").hex_to_int() if flags.has("flag_1") else d.get("flags_1", 0)
 		pd.flags_2 = flags.get("flag_2", "0x0000").trim_prefix("'").trim_suffix("'").hex_to_int() if flags.has("flag_2") else d.get("flags_2", 0)
 		pd.flags_3 = flags.get("flag_3", "0x0000").trim_prefix("'").trim_suffix("'").hex_to_int() if flags.has("flag_3") else d.get("flags_3", 0)
+		pd.behavior = phys.get("behavior", d.get("behavior", 0))
+		pd.connected_1 = phys.get("connected_1", d.get("connected_1", -256))
+		pd.connected_2 = phys.get("connected_2", d.get("connected_2", -1))
+		pd.outlet_plugged_1 = phys.get("outlet_plugged_1", d.get("outlet_plugged_1", -1))
+		pd.outlet_plugged_2 = phys.get("outlet_plugged_2", d.get("outlet_plugged_2", -1))
+		pd.rope_segment_length = phys.get("rope_segment_length", d.get("rope_segment_length", 200))
+		pd.belt_anchor_x = phys.get("belt_anchor", {}).get("x", d.get("belt_anchor_x", 0))
+		pd.belt_anchor_y = phys.get("belt_anchor", {}).get("y", d.get("belt_anchor_y", 0))
+		pd.belt_line_distance = phys.get("belt_line_distance", d.get("belt_line_distance", 0))
+		var prog = phys.get("programmable", {})
+		if not prog.is_empty():
+			pd.density = prog.get("density", pd.density)
+			pd.elasticity = prog.get("elasticity", pd.elasticity)
+			pd.friction_extra = prog.get("friction", pd.friction_extra)
+			pd.gravity_buoyancy = prog.get("gravity_buoyancy", pd.gravity_buoyancy)
 		world.add_part(pd)
 		_spawn_part_node(pd)
 	level_title = data.get("title", level_title)
 	level_goal = data.get("goal", level_goal)
+	level_bg_color = data.get("background_color", 0)
+	_update_background_color()
 	status_label.text = "Loaded: " + path.get_file() + " (" + str(len(parts_raw)) + " parts)"
 	solution_conditions_store.clear()
 	for d in data.get("solution_conditions", []):
@@ -709,7 +753,7 @@ func _draw():
 		draw_rect(rect, Color(0, 1, 0, 0.3), false, 2.0)
 
 func _draw_grid():
-	var grid_color = Color(0.25, 0.3, 0.35, 0.5)
+	var grid_color = Color(0.235, 0.392, 0.627, 0.5)
 	var step = SNAP_GRID
 	var start_x = floor(scroll.x / step) * step
 	var start_y = floor(scroll.y / step) * step
@@ -745,6 +789,14 @@ func _draw_selection():
 func _draw_connection_line():
 	if connect_preview_line.size() == 2:
 		draw_line(connect_preview_line[0], connect_preview_line[1], Color(1, 0.78, 0, 0.8), 2.0 / zoom)
+
+func _update_background_color():
+	var bg_color = Color(0.16, 0.18, 0.22)
+	if level_bg_color > 0:
+		var pal = anm_renderer.load_palette()
+		if level_bg_color < pal.size():
+			bg_color = pal[level_bg_color]
+	viewport_bg.color = bg_color
 
 func _open_condition_editor():
 	_push_undo()

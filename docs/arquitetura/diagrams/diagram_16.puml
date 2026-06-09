@@ -1,0 +1,16 @@
+@startuml Editor_Wireframe
+skinparam componentStyle uml
+
+rectangle "== LEVEL EDITOR" as TITLE
+
+rectangle "Toolbar\n[New][Save][Load] - [Select][Place][Delete][Connect][Preview][Info][Conditions]" as TOOLBAR
+
+rectangle "Viewport\nGrid(16px)  [Selected Part]  Zoom:1.0x" as VIEWPORT
+
+rectangle "Catalog\nParts: Ball[0] Balloon[4] Wall[1] Gear[6] Motor[50] ..." as CATALOG
+
+rectangle "Status Bar\nMode: SELECT  Status: Ready  Zoom: 1.00x" as STATUSBAR
+
+rectangle "Keyboard shortcuts:\nS=Select P=Place D=Delete C=Connect\nSpace=Preview I=Level Info\nF=Flip L=Lock Del=Delete\nCtrl+Z/Y=Undo/Redo +/-=Zoom" as SHORTCUTS
+
+@enduml

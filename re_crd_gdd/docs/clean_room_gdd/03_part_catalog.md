@@ -26,18 +26,43 @@ O jogo agrupa as peças em categorias que compartilham regras lógicas de simula
 14. **Gatilhos (Triggers):** Interruptores de chão, alavancas puxáveis.
 15. **Estruturas Base:** Blocos construtores.
 
-## Matriz de Interação (SOLVE.RES)
+## Sistema de Máquina de Estados e Interação (SOLVE.RES)
 
-O jogo raramente programa eventos específicos "na unha". A interação ocorre através de uma tabela de decisão baseada em estado (`build/phase-16/solve-decoded.json`), que opera pelo esquema de "Pares de Gatilho":
+Diferente de engines modernas onde cada peça tem scripts de colisão customizados, no TIM2 as interações ocorrem através de uma arquitetura estrita de Máquina de Estados. De acordo com a engenharia reversa do formato ANM e do motor de física, existem quatro conceitos interligados que regem isso:
 
-`{Minha_Peça, Meu_Estado} + {Outra_Peça, Estado_Dela} => {Ação}`
+1. **`state_counter` (Física Interna):** Um contador numérico incrementado automaticamente a cada *tick* (60 Hz) pelo motor do jogo. Ele rege timers, atrasos (como o pavio de uma dinamite) e ciclos de animação.
+2. **`current_state` (Validação):** Uma cópia ou espelho do `state_counter`, utilizada para checar condições de vitória da fase ("Solution") e buscar os estados no ANM.
+3. **`state_id` (Renderização ANM):** Encontrado na "Seção C" do formato `.ANM` (timgres). Ele correlaciona o estado lógico de uma peça a um `first_frame_id`, que aponta qual quadro exato de sprite desenhar na tela e se a peça é ou não animada nesse estado.
+4. **Pares de Gatilho (SOLVE.RES):** A tabela de colisão global (`build/phase-16/solve-decoded.json`). Quando duas peças se encostam, o jogo cruza os dados:
+   `{self: state_counter_A, other: state_counter_B} => anm_state_override`
 
-Exemplos clássicos de interação:
-* **Fogo vs Explosivo:** Se a Chama (Peça A) encostar na Dinamite (Peça B), Peça B avança para seu estado de ignição. A partir daí, o *timer* interno (*state_counter*) da Dinamite cuida do atraso até a explosão, que então gera uma força radial (*push/destroy*).
-* **Laser vs Balão:** O laser projeta o raio. Se a linha de colisão do raio intercepta o balão de festa, aciona o gatilho de *burst* no balão, reproduzindo a animação de destruição.
-* **Gato vs Rato:** A peça Gato executa uma rotina de varredura direcional em seu *pass* de *behavior*. Se "ver" a peça Rato no mesmo eixo, altera sua própria velocidade (`vel_x`) para perseguir o rato.
+### A Resolução de Colisão
+Ao colidir, a *engine* lê os `state_counter`s de ambas as peças e busca um gatilho válido no SOLVE.RES:
+* Se der *match*, o `state_counter` da peça sofre um *override* instantâneo para o valor de `anm_state` definido na tabela. Isso força a peça a pular visualmente para um novo `state_id` no ANM e começar uma nova física.
+* Em alguns casos (`anm_state` nulo na tabela), a peça assume que o estado de animação atual flui diretamente do gatilho (`self`).
+* Por fim, existem dezenas de "Estados Órfãos" no arquivo ANM que o SOLVE.RES nunca chama; eles atuam puramente como frames de transição em animações contínuas impulsionadas pelo avanço livre do `state_counter`.
+
+### Dinâmica do Ciclo de Vida: Início, Transições e Sprites
+
+Para que uma peça ganhe vida de forma determinística, seu comportamento depende do seu estágio na simulação:
+
+1. **Estado Inicial:** 
+   Quando o nível é carregado (ou a simulação inicia ao apertar *Play*), cada peça recebe um `state_counter` inicial. Na grande maioria das peças, o valor é cravado em **0** (o estado "Padrão/Desligado"). Algumas peças específicas herdam estados iniciais predefinidos gravados no cabeçalho do arquivo `.LEV` ou definidos pelo jogador no editor (ex: interruptores pré-ligados, canhões invertidos, gravidade do balão).
+
+2. **O Que Ocasiona Cada Transição?**
+   O `state_counter` avança por três gatilhos motores distintos:
+   * **Colisões Físicas (SOLVE.RES):** O gatilho mestre. A sobreposição exata de duas caixas delimitadoras (*hitboxes*) faz a engine buscar as regras na tabela (ex: Laser toca no Balão $\Rightarrow$ estado transita para "Estourando").
+   * **Avanço Temporal (Tick Loop):** O motor a 60 Hz possui um loop incondicional que auto-incrementa o `state_counter` se a peça tiver limites superiores definidos. Isso causa ciclos de animações contínuas (ex: moinhos girando infinitamente) ou atuam como *timers* de atraso (ex: a chama sobe pelo pavio da dinamite tick a tick até o limite de explosão).
+   * **Estímulos Lógicos/Mecânicos:** Peças ligadas a redes elétricas (fios) ou mecânicas (cordas, correias, engrenagens) sofrem transições de estado remotamente quando o torque ou a energia do sistema muda (ex: a correia transmite força e altera o estado das polias atreladas).
+
+3. **Os Sprites de Cada Estado:**
+   No motor original, um sprite nunca é chamado "manualmente"; ele é um reflexo submisso do estado através das Seções do arquivo `.ANM`:
+   * A **Seção C** do formato cruza a variável global com o design visual: ela diz "O estado `2` corresponde ao conjunto de frames X".
+   * A **Seção B** define o tamanho, largura, altura e o deslocamento de tela desses frames.
+   * A **Seção D** contém as cores em pixel art puras.
+   * **No Clean Room (Godot):** A equipe de desenvolvimento traduzirá essa cadeia complexa para um modelo limpo. Cada peça utilizará um `AnimatedSprite2D` (ou `AnimationPlayer`) que conterá animações nomeadas exatamente como os IDs lógicos (ex: `"state_0"`, `"state_1"`, `"state_2"`). O único papel do script de renderização da Godot será escutar as alterações da variável física `state_counter` e dar um simples `.play("state_" + str(state_counter))`.
 
 ## O Papel do Design Limpo (Clean Room)
 
-Ao implementar cada peça, desenvolvedores da Godot devem consultar **exclusivamente** os dados da pasta `docs/parts/`. 
-Nós não portamos código de C para GDScript; nós olhamos os parâmetros de atrito e massa, as dimensões da Hitbox (AABB offset) e programamos a lógica no Node da peça. O número do estado (`state_id`) dita qual quadro de sprite desenhar e qual som emitir (baseado em `R-016-sound-param-table.md`).
+Ao implementar cada peça, desenvolvedores da Godot devem consultar **exclusivamente** os dados da pasta `docs/parts/`, cruzando sempre a lógica com a especificação canônica em `tim2_specs/state-machine-specification.md`.
+Nós não portamos código de C sujo para GDScript. O correto é traduzir a semântica: programamos o loop de 60 Hz avançando o `state_counter` e deixamos as reações de colisão buscarem o novo estado através de uma cópia da tabela SOLVE.RES estática, mantendo o determinismo 100% idêntico ao jogo de 1993.

@@ -1,0 +1,41 @@
+@startuml Part_State_Machine_API
+
+title Part State Machine API
+
+rectangle "Part State Machine\n(Part / PartData)" as SM #e0e0e0
+note bottom of SM
+  -- State Fields --
+  state_counter: int        // current state (0=initial)
+  sub_counter: int           // delay counter
+  state_limit_upper: int    // wrap bound (def: 8)
+  state_limit_lower: int    // min bound (def: 0)
+  state_limit_reset: int    // wrap target (def: 0)
+  state_limit_sub_a: int    // sub upper (def: 5)
+  state_limit_sub_b: int    // sub wrap (def: 5)
+  current_state: int        // snapshot
+  _rng_state: int           // LCG seed (deterministic)
+  _countdown: int           // random delay [40,239]
+
+  -- Methods --
+  advance_state() -> bool   // 60Hz step
+  on_collision(other)       // SOLVE.RES override
+  aabb_overlap(other) -> bool
+end note
+
+note bottom of SM
+  Deterministic LCG:
+  _rng_state = (_rng_state * 0x343FD + 0x269EC3) & 0xFFFFFFFF
+  _randint(lo, hi) = lo + (_rng_state % (hi - lo + 1))
+
+  Advance Algorithm:
+  sub_counter == 0?
+    -> state_counter != 0: increment + wrap
+    -> state_counter == 0: RNG delay [40,239] or direct inc
+  sub_counter > 0?
+    -> countdown decrement + sub-state wrap
+
+  SOLVE.RES: on_collision() always increments
+  (overrides RNG delay when triggers.has("collision"))
+end note
+
+@enduml

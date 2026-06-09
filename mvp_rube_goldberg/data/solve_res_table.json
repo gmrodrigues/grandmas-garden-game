@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "description": "SOLVE.RES collision table for Grandma's Garden parts",
+  "collision_rules": [
+    {
+      "id": "ball-wall",
+      "source_category": "Balls",
+      "target_category": "Walls / Floors",
+      "result": 3,
+      "cor_override": 128,
+      "notes": "Balls bounce off walls with default COR"
+    },
+    {
+      "id": "ball-ball",
+      "source_category": "Balls",
+      "target_category": "Balls",
+      "result": 1,
+      "target_state_inc": 1,
+      "notes": "Ball-ball collision increments target state"
+    },
+    {
+      "id": "ball-balloon",
+      "source_category": "Balls",
+      "target_category": "Balloons / Airships",
+      "result": 4,
+      "target_destroy": true,
+      "notes": "Balls pop balloons"
+    },
+    {
+      "id": "balloon-special",
+      "source_category": "Balloons / Airships",
+      "target_category": "Special Mechanics",
+      "result": 5,
+      "trigger_name": "proximity",
+      "notes": "Balloons trigger special mechanics"
+    },
+    {
+      "id": "gear-balloon",
+      "source_category": "Rotating Power Sources",
+      "target_category": "Balloons / Airships",
+      "result": 4,
+      "target_destroy": true,
+      "notes": "Gears pop balloons"
+    },
+    {
+      "id": "flame-explosive",
+      "source_category": "Light / Flame Sources",
+      "target_category": "Explosives / Projectiles",
+      "result": 4,
+      "ignition": true,
+      "notes": "Flame ignites explosives"
+    },
+    {
+      "id": "electric-character",
+      "source_category": "Electrical",
+      "target_category": "Characters",
+      "result": 5,
+      "trigger_name": "collision",
+      "notes": "Electrical shocks characters"
+    },
+    {
+      "id": "spring-ball",
+      "source_category": "Springs / Pneumatics",
+      "target_category": "Balls",
+      "result": 3,
+      "vel_boost": 512,
+      "notes": "Springs bounce balls with velocity boost"
+    },
+    {
+      "id": "rope-ball",
+      "source_category": "Ropes / Belts / Pulleys",
+      "target_category": "Balls",
+      "result": 0,
+      "notes": "Ropes don't affect balls directly"
+    },
+    {
+      "id": "explosive-wall",
+      "source_category": "Explosives / Projectiles",
+      "target_category": "Walls / Floors",
+      "result": 4,
+      "explosion_radius": 80,
+      "notes": "Explosives detonate on wall impact"
+    },
+    {
+      "id": "laser-balloon",
+      "source_category": "Lasers / Optics",
+      "target_category": "Balloons / Airships",
+      "result": 4,
+      "target_destroy": true,
+      "notes": "Lasers pop balloons"
+    },
+    {
+      "id": "cutting-balloon",
+      "source_category": "Cutting / Popping",
+      "target_category": "Balloons / Airships",
+      "result": 4,
+      "target_destroy": true,
+      "notes": "Cutting tools pop balloons"
+    },
+    {
+      "id": "ball-incline",
+      "source_category": "Balls",
+      "target_category": "Inclines",
+      "result": 3,
+      "cor_override": 64,
+      "notes": "Balls slide down inclines with low bounce"
+    },
+    {
+      "id": "character-wall",
+      "source_category": "Characters",
+      "target_category": "Walls / Floors",
+      "result": 3,
+      "cor_override": 32,
+      "notes": "Characters bounce weakly off walls"
+    }
+  ]
+}

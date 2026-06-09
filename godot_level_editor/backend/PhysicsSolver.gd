@@ -72,8 +72,6 @@ func step() -> void:
 		for i in range(parts_list.size()):
 			var ai = parts_list[i]
 			var a = parts[ai]
-			if not a.is_moving:
-				continue
 			var cat_a = a.collision_cat
 			for ni in CELL_NEIGHBORS:
 				var nk = _cell_key(cx + ni[0], cy + ni[1])
@@ -82,19 +80,25 @@ func step() -> void:
 				var neighbor = grid[nk][0]
 				for j in range(neighbor.size()):
 					var bj = neighbor[j]
-					if bj <= ai:
+					if bj == ai:
+						continue
+					var b = parts[bj]
+					if b.is_moving and bj < ai:
 						continue
 					var pair_key = str(ai) + "," + str(bj)
 					if checked.has(pair_key):
 						continue
 					checked[pair_key] = true
-					var b = parts[bj]
 					var cat_b = b.collision_cat
 					if not _should_collide(cat_a, cat_b):
 						continue
 					if a.connected_1 == bj or a.connected_2 == bj or b.connected_1 == ai or b.connected_2 == ai:
 						continue
 					if _detect_collision(a, b):
+						if a.collision_cat == "STATIC":
+							a.is_moving = true
+						if b.collision_cat == "STATIC":
+							b.is_moving = true
 						_resolve_collision(a, b)
 
 	# Pass 5: Proximity + Electrical
@@ -109,12 +113,28 @@ func step() -> void:
 			if 0 <= part.connected_1 and part.connected_1 < len(parts):
 				_enforce_rope_constraint(part, parts[part.connected_1])
 
-	# Post-step: state change callbacks
+	# Post-step: state change callbacks + trigger chains
 	if world_state.on_state_change.is_valid():
 		for part in parts:
 			if part.state_counter != part.state_prev:
 				part.state_prev = part.state_counter
 				world_state.on_state_change.call(part)
+	_resolve_trigger_chains(parts)
+
+func _resolve_trigger_chains(parts: Array):
+	for part in parts:
+		var targets = BehaviorRegistry.get_trigger_targets(part.part_type, part.state_counter)
+		var target_self = targets.get("self", -1)
+		if target_self >= 0 and target_self != part.state_counter:
+			part.state_counter = target_self
+			part.current_state = target_self
+		var target_other = targets.get("other", -1)
+		if target_other >= 0:
+			var other_idx = part.connected_1
+			if other_idx >= 0 and other_idx < len(parts):
+				var other = parts[other_idx]
+				other.state_counter = target_other
+				other.current_state = target_other
 
 func _handle_behaviors(parts: Array):
 	for part in parts:
@@ -246,11 +266,13 @@ func _circle_aabb_overlap(circle: PartData, aabb: PartData) -> bool:
 	return dx * dx + dy * dy < c[2] * c[2]
 
 func _resolve_collision(a: PartData, b: PartData):
-	var cor = a.cor_q8
-	var no_bounce = b.part_type == 5
+	var cor_a = a.cor_q8
+	var cor_b = b.cor_q8
+	var no_bounce_a = b.part_type == 5
+	var no_bounce_b = a.part_type == 5
 
 	if a.collision_radius > 0:
-		_resolve_circle_collision(a, b, cor, no_bounce)
+		_resolve_circle_collision(a, b, cor_a, cor_b, no_bounce_a, no_bounce_b)
 		return
 
 	var l1 = a.x; var t1 = a.y
@@ -264,35 +286,60 @@ func _resolve_collision(a: PartData, b: PartData):
 	var overlap_y = min(b1, b2) - max(t1, t2)
 
 	if overlap_x < overlap_y:
+		var push = overlap_x >> 1
 		if a.vel_x >= 0:
-			a.x = b.x - (r1 - l1)
+			a.x -= push
 		else:
-			a.x = b.x + (r2 - l2)
-		a.pos_x = a.x
-		if not no_bounce:
-			a.vel_x = (-a.vel_x * cor) >> 8
+			a.x += push
+		if b.vel_x >= 0:
+			b.x += push
+		else:
+			b.x -= push
+		a.pos_x = a.x; b.pos_x = b.x
+		if not no_bounce_a:
+			var new_vax = (-a.vel_x * cor_a) >> 8
 			var fric = a.friction_q8 >> 1
 			if fric > 0:
-				a.vel_x = int(a.vel_x * (256 - fric) / 256)
+				new_vax = int(new_vax * (256 - fric) / 256)
+			a.vel_x = new_vax
+		if not no_bounce_b:
+			var new_vbx = (-b.vel_x * cor_b) >> 8
+			var fric = b.friction_q8 >> 1
+			if fric > 0:
+				new_vbx = int(new_vbx * (256 - fric) / 256)
+			b.vel_x = new_vbx
 	else:
+		var push = overlap_y >> 1
 		if a.vel_y >= 0:
-			a.y = b.y - (b1 - t1)
+			a.y -= push
 		else:
-			a.y = b.y + (b2 - t2)
-		a.pos_y = a.y
-		if not no_bounce:
-			a.vel_y = (-a.vel_y * cor) >> 8
+			a.y += push
+		if b.vel_y >= 0:
+			b.y += push
+		else:
+			b.y -= push
+		a.pos_y = a.y; b.pos_y = b.y
+		if not no_bounce_a:
+			var new_vay = (-a.vel_y * cor_a) >> 8
 			var fric = a.friction_q8 >> 1
 			if fric > 0:
-				a.vel_x = int(a.vel_x * (256 - fric) / 256)
+				new_vay = int(new_vay * (256 - fric) / 256)
+			a.vel_y = new_vay
+		if not no_bounce_b:
+			var new_vby = (-b.vel_y * cor_b) >> 8
+			var fric = b.friction_q8 >> 1
+			if fric > 0:
+				new_vby = int(new_vby * (256 - fric) / 256)
+			b.vel_y = new_vby
 
 	_apply_solve_collision(a, b)
 	if world_state.on_collision.is_valid():
 		world_state.on_collision.call(a, b)
 
-func _resolve_circle_collision(a: PartData, b: PartData, cor: int, no_bounce: bool):
+func _resolve_circle_collision(a: PartData, b: PartData, cor_a: int, cor_b: int, no_bounce_a: bool, no_bounce_b: bool):
 	var ca = a.get_circle()
 	var ax = ca[0]; var ay = ca[1]; var ar = ca[2]
+	var nx: float = 0; var ny: float = 0; var overlap: float = 0
 
 	if b.collision_radius > 0:
 		var cb = b.get_circle()
@@ -300,17 +347,25 @@ func _resolve_circle_collision(a: PartData, b: PartData, cor: int, no_bounce: bo
 		var dy = ay - cb[1]
 		var dist = sqrt(dx * dx + dy * dy)
 		if dist == 0: dist = 1
-		var overlap = (ar + cb[2]) - dist
-		var nx = dx / dist
-		var ny = dy / dist
-		a.x += int(nx * overlap)
-		a.y += int(ny * overlap)
+		overlap = (ar + cb[2]) - dist
+		nx = dx / dist
+		ny = dy / dist
+		a.x += int(nx * overlap * 0.5)
+		a.y += int(ny * overlap * 0.5)
+		b.x -= int(nx * overlap * 0.5)
+		b.y -= int(ny * overlap * 0.5)
 		a.pos_x = a.x; a.pos_y = a.y
+		b.pos_x = b.x; b.pos_y = b.y
 		var vn = a.vel_x * nx + a.vel_y * ny
-		if vn < 0 and not no_bounce:
-			var cf = 256 + cor
+		if vn < 0 and not no_bounce_a:
+			var cf = 256 + cor_a
 			a.vel_x -= int(vn * cf * nx) >> 8
 			a.vel_y -= int(vn * cf * ny) >> 8
+		var vn_b = -(b.vel_x * nx + b.vel_y * ny)
+		if vn_b < 0 and not no_bounce_b:
+			var cf = 256 + cor_b
+			b.vel_x += int(vn_b * cf * nx) >> 8
+			b.vel_y += int(vn_b * cf * ny) >> 8
 	else:
 		var box = b.get_collision_box()
 		var closest_x = max(box[0], min(ax, box[2]))
@@ -319,17 +374,25 @@ func _resolve_circle_collision(a: PartData, b: PartData, cor: int, no_bounce: bo
 		var dy = ay - closest_y
 		var dist = sqrt(dx * dx + dy * dy)
 		if dist == 0: dist = 1
-		var overlap = ar - dist
-		var nx = dx / dist
-		var ny = dy / dist
-		a.x += int(nx * overlap)
-		a.y += int(ny * overlap)
+		overlap = ar - dist
+		nx = dx / dist
+		ny = dy / dist
+		a.x += int(nx * overlap * 0.5)
+		a.y += int(ny * overlap * 0.5)
+		b.x -= int(nx * overlap * 0.5)
+		b.y -= int(ny * overlap * 0.5)
 		a.pos_x = a.x; a.pos_y = a.y
+		b.pos_x = b.x; b.pos_y = b.y
 		var vn = a.vel_x * nx + a.vel_y * ny
-		if vn < 0 and not no_bounce:
-			var cf = 256 + cor
+		if vn < 0 and not no_bounce_a:
+			var cf = 256 + cor_a
 			a.vel_x -= int(vn * cf * nx) >> 8
 			a.vel_y -= int(vn * cf * ny) >> 8
+		var vn_b = -(b.vel_x * nx + b.vel_y * ny)
+		if vn_b < 0 and not no_bounce_b:
+			var cf = 256 + cor_b
+			b.vel_x += int(vn_b * cf * nx) >> 8
+			b.vel_y += int(vn_b * cf * ny) >> 8
 
 	_apply_solve_collision(a, b)
 	if world_state.on_collision.is_valid():
@@ -360,8 +423,10 @@ func _check_proximity_behaviors(parts: Array):
 					var dx = abs(a.x - b.x)
 					var dy = abs(a.y - b.y)
 					if dx < PROXIMITY_RANGE and dy < PROXIMITY_RANGE:
-						a.state_counter = a.state_limit_upper - 1
-						a.current_state = a.state_counter
+						var target_state = a.state_limit_upper - 1
+						if target_state >= a.state_limit_lower:
+							a.state_counter = target_state
+							a.current_state = target_state
 
 func _is_source_active(part: PartData) -> bool:
 	var pt = part.part_type

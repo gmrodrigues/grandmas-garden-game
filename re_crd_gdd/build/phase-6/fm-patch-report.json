@@ -1,0 +1,3290 @@
+{
+  "fm_patch_count": 14,
+  "patches": [
+    {
+      "sid": 5,
+      "name": "5convey",
+      "header": {
+        "sound_id": 5,
+        "type": 7,
+        "mode": 2,
+        "unknown_byte_4": 3,
+        "parameter": 155,
+        "zero_field": 0,
+        "init_bytes": [
+          16,
+          198,
+          70
+        ],
+        "payload_size": 90
+      },
+      "payload_hex_first64": "003d589c6c11793c176c2340f989003df5d866e4018ec6da9dd2b4faf42edcb75a63dbee659d5ce86f6aaa4acae385363a6947c0a5443ce2ee60a251d417520b",
+      "payload_hex_full": "003d589c6c11793c176c2340f989003df5d866e4018ec6da9dd2b4faf42edcb75a63dbee659d5ce86f6aaa4acae385363a6947c0a5443ce2ee60a251d417520bca914d1cfb66872f2ec72ea38e63383965c1cc40b902f8639760",
+      "sci28_interpretation": {
+        "op0": {
+          "ksl_lo": 0,
+          "mult": 13,
+          "ar": 12,
+          "sl": 12,
+          "egs": true,
+          "dr": 9,
+          "rr": 12,
+          "tl": 23,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 0
+        },
+        "op1": {
+          "ksl_lo": 1,
+          "mult": 0,
+          "ar": 5,
+          "sl": 8,
+          "egs": true,
+          "dr": 4,
+          "rr": 1,
+          "tl": 14,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 2
+        },
+        "mod": {
+          "feedback": 0,
+          "algorithm_sci": false
+        },
+        "opl2_registers": {
+          "reg_0x20_op0": 253,
+          "reg_0x40_op0": 23,
+          "reg_0x60_op0": 201,
+          "reg_0x80_op0": 204,
+          "reg_0xE0_op0": 0,
+          "reg_0x20_op1": 240,
+          "reg_0x40_op1": 78,
+          "reg_0x60_op1": 84,
+          "reg_0x80_op1": 129,
+          "reg_0xE0_op1": 2,
+          "reg_0xC0": 0
+        },
+        "sci28_valid": true,
+        "notes": [],
+        "validation_issues": [],
+        "sequence_after_28": {
+          "size": 62,
+          "first_32_hex": "f42edcb75a63dbee659d5ce86f6aaa4acae385363a6947c0a5443ce2ee60a251",
+          "first_32_bytes": [
+            "0xf4",
+            "0x2e",
+            "0xdc",
+            "0xb7",
+            "0x5a",
+            "0x63",
+            "0xdb",
+            "0xee",
+            "0x65",
+            "0x9d",
+            "0x5c",
+            "0xe8",
+            "0x6f",
+            "0x6a",
+            "0xaa",
+            "0x4a",
+            "0xca",
+            "0xe3",
+            "0x85",
+            "0x36",
+            "0x3a",
+            "0x69",
+            "0x47",
+            "0xc0",
+            "0xa5",
+            "0x44",
+            "0x3c",
+            "0xe2",
+            "0xee",
+            "0x60",
+            "0xa2",
+            "0x51"
+          ],
+          "interpretation": "unknown"
+        }
+      },
+      "sci28_validation_issues": [],
+      "register_pair_hypothesis": {
+        "pairs": [
+          {
+            "reg": "0x00",
+            "val": "0x3d",
+            "reg_dec": 0,
+            "val_dec": 61
+          },
+          {
+            "reg": "0x58",
+            "val": "0x9c",
+            "reg_dec": 88,
+            "val_dec": 156
+          },
+          {
+            "reg": "0x6c",
+            "val": "0x11",
+            "reg_dec": 108,
+            "val_dec": 17
+          },
+          {
+            "reg": "0x79",
+            "val": "0x3c",
+            "reg_dec": 121,
+            "val_dec": 60
+          },
+          {
+            "reg": "0x17",
+            "val": "0x6c",
+            "reg_dec": 23,
+            "val_dec": 108
+          },
+          {
+            "reg": "0x23",
+            "val": "0x40",
+            "reg_dec": 35,
+            "val_dec": 64
+          },
+          {
+            "reg": "0xf9",
+            "val": "0x89",
+            "reg_dec": 249,
+            "val_dec": 137
+          },
+          {
+            "reg": "0x00",
+            "val": "0x3d",
+            "reg_dec": 0,
+            "val_dec": 61
+          },
+          {
+            "reg": "0xf5",
+            "val": "0xd8",
+            "reg_dec": 245,
+            "val_dec": 216
+          },
+          {
+            "reg": "0x66",
+            "val": "0xe4",
+            "reg_dec": 102,
+            "val_dec": 228
+          },
+          {
+            "reg": "0x01",
+            "val": "0x8e",
+            "reg_dec": 1,
+            "val_dec": 142
+          },
+          {
+            "reg": "0xc6",
+            "val": "0xda",
+            "reg_dec": 198,
+            "val_dec": 218
+          },
+          {
+            "reg": "0x9d",
+            "val": "0xd2",
+            "reg_dec": 157,
+            "val_dec": 210
+          },
+          {
+            "reg": "0xb4",
+            "val": "0xfa",
+            "reg_dec": 180,
+            "val_dec": 250
+          },
+          {
+            "reg": "0xf4",
+            "val": "0x2e",
+            "reg_dec": 244,
+            "val_dec": 46
+          },
+          {
+            "reg": "0xdc",
+            "val": "0xb7",
+            "reg_dec": 220,
+            "val_dec": 183
+          },
+          {
+            "reg": "0x5a",
+            "val": "0x63",
+            "reg_dec": 90,
+            "val_dec": 99
+          },
+          {
+            "reg": "0xdb",
+            "val": "0xee",
+            "reg_dec": 219,
+            "val_dec": 238
+          },
+          {
+            "reg": "0x65",
+            "val": "0x9d",
+            "reg_dec": 101,
+            "val_dec": 157
+          },
+          {
+            "reg": "0x5c",
+            "val": "0xe8",
+            "reg_dec": 92,
+            "val_dec": 232
+          }
+        ],
+        "valid_opl2_ratio": "17/20"
+      }
+    },
+    {
+      "sid": 24,
+      "name": "24FAN",
+      "header": {
+        "sound_id": 24,
+        "type": 7,
+        "mode": 2,
+        "unknown_byte_4": 3,
+        "parameter": 951,
+        "zero_field": 0,
+        "init_bytes": [
+          16,
+          198,
+          70
+        ],
+        "payload_size": 309
+      },
+      "payload_hex_first64": "003f988bd8605e76373d780be0bf5cbc0bd863872dc5e4a3c276993a210e5e404398b010d20e8e10e7eb80f56a5c5ba89dde94fac7df365b9943747447346039",
+      "payload_hex_full": "003f988bd8605e76373d780be0bf5cbc0bd863872dc5e4a3c276993a210e5e404398b010d20e8e10e7eb80f56a5c5ba89dde94fac7df365b9943747447346039133f1f08641f1c8c636718f05ee6524ee55a09e7435eacad73332b1b9a5699b740ce2a59d562f9cdd3abda058cd0b926895b68d4ed2391d2ab1a6589d391ad42b0d4a8baa13b56a8eb152d689fd77a2d788373e4ec7ced90a1b3fef69f176a216dbc8dbf99b813773fc6ebe237621779e5d7bfcd7c3dd7fe4683cad08c1b8bf89c7e41c83a5cbfd9cc20b9ffb5d1e2dd219dd5fb5d7e13a1267ef1a7dd8a50943ea8880f7fb98019ba55d291838b5e4cdf664940b74803b2702c508790903b39c85c899733f91243c1bf3f4dcc2ff2f66f7bcb2fb1da0bedb5fb673a7dde4982d8049ef416f530f40cff713f68a4fd6a4ee0c587ad",
+      "sci28_interpretation": {
+        "op0": {
+          "ksl_lo": 0,
+          "mult": 15,
+          "ar": 11,
+          "sl": 8,
+          "egs": true,
+          "dr": 14,
+          "rr": 6,
+          "tl": 55,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 1
+        },
+        "op1": {
+          "ksl_lo": 3,
+          "mult": 12,
+          "ar": 11,
+          "sl": 8,
+          "egs": true,
+          "dr": 7,
+          "rr": 13,
+          "tl": 5,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 2
+        },
+        "mod": {
+          "feedback": 0,
+          "algorithm_sci": false
+        },
+        "opl2_registers": {
+          "reg_0x20_op0": 255,
+          "reg_0x40_op0": 55,
+          "reg_0x60_op0": 190,
+          "reg_0x80_op0": 134,
+          "reg_0xE0_op0": 1,
+          "reg_0x20_op1": 252,
+          "reg_0x40_op1": 197,
+          "reg_0x60_op1": 183,
+          "reg_0x80_op1": 141,
+          "reg_0xE0_op1": 2,
+          "reg_0xC0": 0
+        },
+        "sci28_valid": true,
+        "notes": [],
+        "validation_issues": [],
+        "sequence_after_28": {
+          "size": 281,
+          "first_32_hex": "210e5e404398b010d20e8e10e7eb80f56a5c5ba89dde94fac7df365b99437474",
+          "first_32_bytes": [
+            "0x21",
+            "0x0e",
+            "0x5e",
+            "0x40",
+            "0x43",
+            "0x98",
+            "0xb0",
+            "0x10",
+            "0xd2",
+            "0x0e",
+            "0x8e",
+            "0x10",
+            "0xe7",
+            "0xeb",
+            "0x80",
+            "0xf5",
+            "0x6a",
+            "0x5c",
+            "0x5b",
+            "0xa8",
+            "0x9d",
+            "0xde",
+            "0x94",
+            "0xfa",
+            "0xc7",
+            "0xdf",
+            "0x36",
+            "0x5b",
+            "0x99",
+            "0x43",
+            "0x74",
+            "0x74"
+          ],
+          "interpretation": "unknown"
+        }
+      },
+      "sci28_validation_issues": [],
+      "register_pair_hypothesis": {
+        "pairs": [
+          {
+            "reg": "0x00",
+            "val": "0x3f",
+            "reg_dec": 0,
+            "val_dec": 63
+          },
+          {
+            "reg": "0x98",
+            "val": "0x8b",
+            "reg_dec": 152,
+            "val_dec": 139
+          },
+          {
+            "reg": "0xd8",
+            "val": "0x60",
+            "reg_dec": 216,
+            "val_dec": 96
+          },
+          {
+            "reg": "0x5e",
+            "val": "0x76",
+            "reg_dec": 94,
+            "val_dec": 118
+          },
+          {
+            "reg": "0x37",
+            "val": "0x3d",
+            "reg_dec": 55,
+            "val_dec": 61
+          },
+          {
+            "reg": "0x78",
+            "val": "0x0b",
+            "reg_dec": 120,
+            "val_dec": 11
+          },
+          {
+            "reg": "0xe0",
+            "val": "0xbf",
+            "reg_dec": 224,
+            "val_dec": 191
+          },
+          {
+            "reg": "0x5c",
+            "val": "0xbc",
+            "reg_dec": 92,
+            "val_dec": 188
+          },
+          {
+            "reg": "0x0b",
+            "val": "0xd8",
+            "reg_dec": 11,
+            "val_dec": 216
+          },
+          {
+            "reg": "0x63",
+            "val": "0x87",
+            "reg_dec": 99,
+            "val_dec": 135
+          },
+          {
+            "reg": "0x2d",
+            "val": "0xc5",
+            "reg_dec": 45,
+            "val_dec": 197
+          },
+          {
+            "reg": "0xe4",
+            "val": "0xa3",
+            "reg_dec": 228,
+            "val_dec": 163
+          },
+          {
+            "reg": "0xc2",
+            "val": "0x76",
+            "reg_dec": 194,
+            "val_dec": 118
+          },
+          {
+            "reg": "0x99",
+            "val": "0x3a",
+            "reg_dec": 153,
+            "val_dec": 58
+          },
+          {
+            "reg": "0x21",
+            "val": "0x0e",
+            "reg_dec": 33,
+            "val_dec": 14
+          },
+          {
+            "reg": "0x5e",
+            "val": "0x40",
+            "reg_dec": 94,
+            "val_dec": 64
+          },
+          {
+            "reg": "0x43",
+            "val": "0x98",
+            "reg_dec": 67,
+            "val_dec": 152
+          },
+          {
+            "reg": "0xb0",
+            "val": "0x10",
+            "reg_dec": 176,
+            "val_dec": 16
+          },
+          {
+            "reg": "0xd2",
+            "val": "0x0e",
+            "reg_dec": 210,
+            "val_dec": 14
+          },
+          {
+            "reg": "0x8e",
+            "val": "0x10",
+            "reg_dec": 142,
+            "val_dec": 16
+          }
+        ],
+        "valid_opl2_ratio": "19/20"
+      }
+    },
+    {
+      "sid": 26,
+      "name": "26GENER",
+      "header": {
+        "sound_id": 26,
+        "type": 7,
+        "mode": 2,
+        "unknown_byte_4": 3,
+        "parameter": 805,
+        "zero_field": 0,
+        "init_bytes": [
+          16,
+          198,
+          70
+        ],
+        "payload_size": 314
+      },
+      "payload_hex_first64": "003f989c2c6dfbe658045860be463972e017318fd15917929003e4e884397b103db578873d4c0f9fac07b3a6ea8529da8a4fae12996e6447b57e690156b52c23",
+      "payload_hex_full": "003f989c2c6dfbe658045860be463972e017318fd15917929003e4e884397b103db578873d4c0f9fac07b3a6ea8529da8a4fae12996e6447b57e690156b52c23426d73ef66df0d5452e8df369e46cec5baf91bb38bb6eb7eee2fdfb21c38c38ec9e6a8e0c796a8e79e87d361f5d0fb6d3ef9a78da9e734f5b53de6bf36afdcd7f66bff15033507150b3cae3377399483814f281a00b4605e601639e756a56719ce687739c785d032f7302dea988ec18aec86f1c4ca1f408cfddeda1c19a3f019f866a7026afc5b37136c7786d06e65e1addedede0fec9de5321b135c231f0e9d0da9eeca61da4c7fa4cb4161d033f8135dd66df0583af9076371ff972ef12fb2fe2bcfebb24aedcfb5ba4f626d722209abb0ffb09183ddafb8a8e05cf05eb02d180b584e40e1f1afdbce7ee67d3555f06f4b17779d3569276300",
+      "sci28_interpretation": {
+        "op0": {
+          "ksl_lo": 0,
+          "mult": 15,
+          "ar": 12,
+          "sl": 12,
+          "egs": true,
+          "dr": 11,
+          "rr": 6,
+          "tl": 24,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 0
+        },
+        "op1": {
+          "ksl_lo": 2,
+          "mult": 9,
+          "ar": 0,
+          "sl": 7,
+          "egs": true,
+          "dr": 15,
+          "rr": 1,
+          "tl": 25,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 0
+        },
+        "mod": {
+          "feedback": 0,
+          "algorithm_sci": false
+        },
+        "opl2_registers": {
+          "reg_0x20_op0": 255,
+          "reg_0x40_op0": 24,
+          "reg_0x60_op0": 203,
+          "reg_0x80_op0": 198,
+          "reg_0xE0_op0": 0,
+          "reg_0x20_op1": 249,
+          "reg_0x40_op1": 153,
+          "reg_0x60_op1": 15,
+          "reg_0x80_op1": 113,
+          "reg_0xE0_op1": 0,
+          "reg_0xC0": 0
+        },
+        "sci28_valid": true,
+        "notes": [],
+        "validation_issues": [],
+        "sequence_after_28": {
+          "size": 286,
+          "first_32_hex": "84397b103db578873d4c0f9fac07b3a6ea8529da8a4fae12996e6447b57e6901",
+          "first_32_bytes": [
+            "0x84",
+            "0x39",
+            "0x7b",
+            "0x10",
+            "0x3d",
+            "0xb5",
+            "0x78",
+            "0x87",
+            "0x3d",
+            "0x4c",
+            "0x0f",
+            "0x9f",
+            "0xac",
+            "0x07",
+            "0xb3",
+            "0xa6",
+            "0xea",
+            "0x85",
+            "0x29",
+            "0xda",
+            "0x8a",
+            "0x4f",
+            "0xae",
+            "0x12",
+            "0x99",
+            "0x6e",
+            "0x64",
+            "0x47",
+            "0xb5",
+            "0x7e",
+            "0x69",
+            "0x01"
+          ],
+          "interpretation": "unknown"
+        }
+      },
+      "sci28_validation_issues": [],
+      "register_pair_hypothesis": {
+        "pairs": [
+          {
+            "reg": "0x00",
+            "val": "0x3f",
+            "reg_dec": 0,
+            "val_dec": 63
+          },
+          {
+            "reg": "0x98",
+            "val": "0x9c",
+            "reg_dec": 152,
+            "val_dec": 156
+          },
+          {
+            "reg": "0x2c",
+            "val": "0x6d",
+            "reg_dec": 44,
+            "val_dec": 109
+          },
+          {
+            "reg": "0xfb",
+            "val": "0xe6",
+            "reg_dec": 251,
+            "val_dec": 230
+          },
+          {
+            "reg": "0x58",
+            "val": "0x04",
+            "reg_dec": 88,
+            "val_dec": 4
+          },
+          {
+            "reg": "0x58",
+            "val": "0x60",
+            "reg_dec": 88,
+            "val_dec": 96
+          },
+          {
+            "reg": "0xbe",
+            "val": "0x46",
+            "reg_dec": 190,
+            "val_dec": 70
+          },
+          {
+            "reg": "0x39",
+            "val": "0x72",
+            "reg_dec": 57,
+            "val_dec": 114
+          },
+          {
+            "reg": "0xe0",
+            "val": "0x17",
+            "reg_dec": 224,
+            "val_dec": 23
+          },
+          {
+            "reg": "0x31",
+            "val": "0x8f",
+            "reg_dec": 49,
+            "val_dec": 143
+          },
+          {
+            "reg": "0xd1",
+            "val": "0x59",
+            "reg_dec": 209,
+            "val_dec": 89
+          },
+          {
+            "reg": "0x17",
+            "val": "0x92",
+            "reg_dec": 23,
+            "val_dec": 146
+          },
+          {
+            "reg": "0x90",
+            "val": "0x03",
+            "reg_dec": 144,
+            "val_dec": 3
+          },
+          {
+            "reg": "0xe4",
+            "val": "0xe8",
+            "reg_dec": 228,
+            "val_dec": 232
+          },
+          {
+            "reg": "0x84",
+            "val": "0x39",
+            "reg_dec": 132,
+            "val_dec": 57
+          },
+          {
+            "reg": "0x7b",
+            "val": "0x10",
+            "reg_dec": 123,
+            "val_dec": 16
+          },
+          {
+            "reg": "0x3d",
+            "val": "0xb5",
+            "reg_dec": 61,
+            "val_dec": 181
+          },
+          {
+            "reg": "0x78",
+            "val": "0x87",
+            "reg_dec": 120,
+            "val_dec": 135
+          },
+          {
+            "reg": "0x3d",
+            "val": "0x4c",
+            "reg_dec": 61,
+            "val_dec": 76
+          },
+          {
+            "reg": "0x0f",
+            "val": "0x9f",
+            "reg_dec": 15,
+            "val_dec": 159
+          }
+        ],
+        "valid_opl2_ratio": "18/20"
+      }
+    },
+    {
+      "sid": 50,
+      "name": "50MOTOR",
+      "header": {
+        "sound_id": 50,
+        "type": 7,
+        "mode": 2,
+        "unknown_byte_4": 3,
+        "parameter": 707,
+        "zero_field": 0,
+        "init_bytes": [
+          16,
+          198,
+          70
+        ],
+        "payload_size": 231
+      },
+      "payload_hex_first64": "003d5899ec302ff2fa65e05ef31a397317928f09dbe4e703797900de62cc37781d1c1bcfd881eb5fcdd49d6e8a52fb8174e5b997151431a4463565776923c89f",
+      "payload_hex_full": "003d5899ec302ff2fa65e05ef31a397317928f09dbe4e703797900de62cc37781d1c1bcfd881eb5fcdd49d6e8a52fb8174e5b997151431a4463565776923c89f080230364ff360971e52e046f7731b6cda26ad6e6959cd02e0ceae0ce2a5c1f66953618f4e65af114f045705a9ae56685cba373748aba67374eadd412ea8861547584bae55d790ec08763e3b2320927b4c77edbff6e3fb8ff094bba21ddf8dd196f7ff7e7b22eb83e5c23f527fa94fd4d5e67aa0fd53feaa3f5598983fab91feafdfac34563d2006d351ffe018fb59f97fb008177800be382f88160817c017c0166805f4c3ab00",
+      "sci28_interpretation": {
+        "op0": {
+          "ksl_lo": 0,
+          "mult": 13,
+          "ar": 9,
+          "sl": 12,
+          "egs": true,
+          "dr": 15,
+          "rr": 2,
+          "tl": 58,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 0
+        },
+        "op1": {
+          "ksl_lo": 2,
+          "mult": 9,
+          "ar": 7,
+          "sl": 2,
+          "egs": true,
+          "dr": 9,
+          "rr": 11,
+          "tl": 36,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 2
+        },
+        "mod": {
+          "feedback": 0,
+          "algorithm_sci": false
+        },
+        "opl2_registers": {
+          "reg_0x20_op0": 253,
+          "reg_0x40_op0": 58,
+          "reg_0x60_op0": 159,
+          "reg_0x80_op0": 194,
+          "reg_0xE0_op0": 0,
+          "reg_0x20_op1": 249,
+          "reg_0x40_op1": 164,
+          "reg_0x60_op1": 121,
+          "reg_0x80_op1": 43,
+          "reg_0xE0_op1": 2,
+          "reg_0xC0": 0
+        },
+        "sci28_valid": true,
+        "notes": [],
+        "validation_issues": [],
+        "sequence_after_28": {
+          "size": 203,
+          "first_32_hex": "62cc37781d1c1bcfd881eb5fcdd49d6e8a52fb8174e5b997151431a446356577",
+          "first_32_bytes": [
+            "0x62",
+            "0xcc",
+            "0x37",
+            "0x78",
+            "0x1d",
+            "0x1c",
+            "0x1b",
+            "0xcf",
+            "0xd8",
+            "0x81",
+            "0xeb",
+            "0x5f",
+            "0xcd",
+            "0xd4",
+            "0x9d",
+            "0x6e",
+            "0x8a",
+            "0x52",
+            "0xfb",
+            "0x81",
+            "0x74",
+            "0xe5",
+            "0xb9",
+            "0x97",
+            "0x15",
+            "0x14",
+            "0x31",
+            "0xa4",
+            "0x46",
+            "0x35",
+            "0x65",
+            "0x77"
+          ],
+          "interpretation": "unknown"
+        }
+      },
+      "sci28_validation_issues": [],
+      "register_pair_hypothesis": {
+        "pairs": [
+          {
+            "reg": "0x00",
+            "val": "0x3d",
+            "reg_dec": 0,
+            "val_dec": 61
+          },
+          {
+            "reg": "0x58",
+            "val": "0x99",
+            "reg_dec": 88,
+            "val_dec": 153
+          },
+          {
+            "reg": "0xec",
+            "val": "0x30",
+            "reg_dec": 236,
+            "val_dec": 48
+          },
+          {
+            "reg": "0x2f",
+            "val": "0xf2",
+            "reg_dec": 47,
+            "val_dec": 242
+          },
+          {
+            "reg": "0xfa",
+            "val": "0x65",
+            "reg_dec": 250,
+            "val_dec": 101
+          },
+          {
+            "reg": "0xe0",
+            "val": "0x5e",
+            "reg_dec": 224,
+            "val_dec": 94
+          },
+          {
+            "reg": "0xf3",
+            "val": "0x1a",
+            "reg_dec": 243,
+            "val_dec": 26
+          },
+          {
+            "reg": "0x39",
+            "val": "0x73",
+            "reg_dec": 57,
+            "val_dec": 115
+          },
+          {
+            "reg": "0x17",
+            "val": "0x92",
+            "reg_dec": 23,
+            "val_dec": 146
+          },
+          {
+            "reg": "0x8f",
+            "val": "0x09",
+            "reg_dec": 143,
+            "val_dec": 9
+          },
+          {
+            "reg": "0xdb",
+            "val": "0xe4",
+            "reg_dec": 219,
+            "val_dec": 228
+          },
+          {
+            "reg": "0xe7",
+            "val": "0x03",
+            "reg_dec": 231,
+            "val_dec": 3
+          },
+          {
+            "reg": "0x79",
+            "val": "0x79",
+            "reg_dec": 121,
+            "val_dec": 121
+          },
+          {
+            "reg": "0x00",
+            "val": "0xde",
+            "reg_dec": 0,
+            "val_dec": 222
+          },
+          {
+            "reg": "0x62",
+            "val": "0xcc",
+            "reg_dec": 98,
+            "val_dec": 204
+          },
+          {
+            "reg": "0x37",
+            "val": "0x78",
+            "reg_dec": 55,
+            "val_dec": 120
+          },
+          {
+            "reg": "0x1d",
+            "val": "0x1c",
+            "reg_dec": 29,
+            "val_dec": 28
+          },
+          {
+            "reg": "0x1b",
+            "val": "0xcf",
+            "reg_dec": 27,
+            "val_dec": 207
+          },
+          {
+            "reg": "0xd8",
+            "val": "0x81",
+            "reg_dec": 216,
+            "val_dec": 129
+          },
+          {
+            "reg": "0xeb",
+            "val": "0x5f",
+            "reg_dec": 235,
+            "val_dec": 95
+          }
+        ],
+        "valid_opl2_ratio": "17/20"
+      }
+    },
+    {
+      "sid": 51,
+      "name": "51VAC",
+      "header": {
+        "sound_id": 51,
+        "type": 7,
+        "mode": 2,
+        "unknown_byte_4": 3,
+        "parameter": 494,
+        "zero_field": 0,
+        "init_bytes": [
+          16,
+          198,
+          70
+        ],
+        "payload_size": 348
+      },
+      "payload_hex_first64": "003bb89a2c6dfbff3c0ffe182d9aee76d8bc94801f27221b8e06e5ed40f98960ae7ab01f3f580f6f90fed2a1dba50280ef2dcca5c2812441e1df63e8ad25e205",
+      "payload_hex_full": "003bb89a2c6dfbff3c0ffe182d9aee76d8bc94801f27221b8e06e5ed40f98960ae7ab01f3f580f6f90fed2a1dba50280ef2dcca5c2812441e1df63e8ad25e205e3a6254995181eaa407d8be76edb4807cdb00f94685eade079f783f46d7d16c2007d3c00f9a805f57003e7101faf6c6655c80fd9a01f4080fdba81f0540fbb6a2e748a17dfa81f4ca0fe1b01f50c07e3ad2c8ea942fcb503eb181fcf603eb980fd3526836002fd7007d9007d1803ed001fbe954bdb00bb0c01f7001ec7007dd003b2d3fc76f005d9e00fcf41ef401f8001ed7f7f95e1007c2c01d8800f7800ec601749fbe20c800f4b803b2801d3612f9eeecbcf37b454d779acb52aad6916bd28238c5209e5b10ffbc7eddff3fef13afd11d3e7ed7e7cf6379d72efbe5d84cb9032e01caf6195b0e9643a51c3a8f6eea5ba899750add40b74fb203cb06e732736a36bd6e7b4637a2fdf16c59e431690dac39566573082f7b3821940",
+      "sci28_interpretation": {
+        "op0": {
+          "ksl_lo": 0,
+          "mult": 11,
+          "ar": 10,
+          "sl": 12,
+          "egs": true,
+          "dr": 11,
+          "rr": 15,
+          "tl": 60,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 1
+        },
+        "op1": {
+          "ksl_lo": 2,
+          "mult": 14,
+          "ar": 8,
+          "sl": 12,
+          "egs": true,
+          "dr": 0,
+          "rr": 15,
+          "tl": 39,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 1
+        },
+        "mod": {
+          "feedback": 0,
+          "algorithm_sci": false
+        },
+        "opl2_registers": {
+          "reg_0x20_op0": 251,
+          "reg_0x40_op0": 60,
+          "reg_0x60_op0": 171,
+          "reg_0x80_op0": 207,
+          "reg_0xE0_op0": 1,
+          "reg_0x20_op1": 254,
+          "reg_0x40_op1": 167,
+          "reg_0x60_op1": 128,
+          "reg_0x80_op1": 207,
+          "reg_0xE0_op1": 1,
+          "reg_0xC0": 0
+        },
+        "sci28_valid": true,
+        "notes": [],
+        "validation_issues": [],
+        "sequence_after_28": {
+          "size": 320,
+          "first_32_hex": "40f98960ae7ab01f3f580f6f90fed2a1dba50280ef2dcca5c2812441e1df63e8",
+          "first_32_bytes": [
+            "0x40",
+            "0xf9",
+            "0x89",
+            "0x60",
+            "0xae",
+            "0x7a",
+            "0xb0",
+            "0x1f",
+            "0x3f",
+            "0x58",
+            "0x0f",
+            "0x6f",
+            "0x90",
+            "0xfe",
+            "0xd2",
+            "0xa1",
+            "0xdb",
+            "0xa5",
+            "0x02",
+            "0x80",
+            "0xef",
+            "0x2d",
+            "0xcc",
+            "0xa5",
+            "0xc2",
+            "0x81",
+            "0x24",
+            "0x41",
+            "0xe1",
+            "0xdf",
+            "0x63",
+            "0xe8"
+          ],
+          "interpretation": "unknown"
+        }
+      },
+      "sci28_validation_issues": [],
+      "register_pair_hypothesis": {
+        "pairs": [
+          {
+            "reg": "0x00",
+            "val": "0x3b",
+            "reg_dec": 0,
+            "val_dec": 59
+          },
+          {
+            "reg": "0xb8",
+            "val": "0x9a",
+            "reg_dec": 184,
+            "val_dec": 154
+          },
+          {
+            "reg": "0x2c",
+            "val": "0x6d",
+            "reg_dec": 44,
+            "val_dec": 109
+          },
+          {
+            "reg": "0xfb",
+            "val": "0xff",
+            "reg_dec": 251,
+            "val_dec": 255
+          },
+          {
+            "reg": "0x3c",
+            "val": "0x0f",
+            "reg_dec": 60,
+            "val_dec": 15
+          },
+          {
+            "reg": "0xfe",
+            "val": "0x18",
+            "reg_dec": 254,
+            "val_dec": 24
+          },
+          {
+            "reg": "0x2d",
+            "val": "0x9a",
+            "reg_dec": 45,
+            "val_dec": 154
+          },
+          {
+            "reg": "0xee",
+            "val": "0x76",
+            "reg_dec": 238,
+            "val_dec": 118
+          },
+          {
+            "reg": "0xd8",
+            "val": "0xbc",
+            "reg_dec": 216,
+            "val_dec": 188
+          },
+          {
+            "reg": "0x94",
+            "val": "0x80",
+            "reg_dec": 148,
+            "val_dec": 128
+          },
+          {
+            "reg": "0x1f",
+            "val": "0x27",
+            "reg_dec": 31,
+            "val_dec": 39
+          },
+          {
+            "reg": "0x22",
+            "val": "0x1b",
+            "reg_dec": 34,
+            "val_dec": 27
+          },
+          {
+            "reg": "0x8e",
+            "val": "0x06",
+            "reg_dec": 142,
+            "val_dec": 6
+          },
+          {
+            "reg": "0xe5",
+            "val": "0xed",
+            "reg_dec": 229,
+            "val_dec": 237
+          },
+          {
+            "reg": "0x40",
+            "val": "0xf9",
+            "reg_dec": 64,
+            "val_dec": 249
+          },
+          {
+            "reg": "0x89",
+            "val": "0x60",
+            "reg_dec": 137,
+            "val_dec": 96
+          },
+          {
+            "reg": "0xae",
+            "val": "0x7a",
+            "reg_dec": 174,
+            "val_dec": 122
+          },
+          {
+            "reg": "0xb0",
+            "val": "0x1f",
+            "reg_dec": 176,
+            "val_dec": 31
+          },
+          {
+            "reg": "0x3f",
+            "val": "0x58",
+            "reg_dec": 63,
+            "val_dec": 88
+          },
+          {
+            "reg": "0x0f",
+            "val": "0x6f",
+            "reg_dec": 15,
+            "val_dec": 111
+          }
+        ],
+        "valid_opl2_ratio": "17/20"
+      }
+    },
+    {
+      "sid": 62,
+      "name": "62COFFEE",
+      "header": {
+        "sound_id": 62,
+        "type": 7,
+        "mode": 2,
+        "unknown_byte_4": 3,
+        "parameter": 1245,
+        "zero_field": 0,
+        "init_bytes": [
+          16,
+          198,
+          70
+        ],
+        "payload_size": 831
+      },
+      "payload_hex_first64": "0037189cac75fbff6c0fe5b8bc9cb037316e0db9b31bcdb137f161edc025996e663c77b3e49b6f73a16b514f29b4b9cf551a4f5dd91d8827553f088fcceb5a61",
+      "payload_hex_full": "0037189cac75fbff6c0fe5b8bc9cb037316e0db9b31bcdb137f161edc025996e663c77b3e49b6f73a16b514f29b4b9cf551a4f5dd91d8827553f088fcceb5a6186fa31cc928424507be173f5237f032f1ebc0de45ce73d7ebf196e70c32d67d6a87379db71be12d035e93c2a44cbb4076c914ff25b33928c0e48b4e3557a9b5415bcf5c6f9bec3335728d8b21685633720c1fe490a5112cbf71049d037523884b8c386200df111c2f140365007330c09e264fe3d6bfe57fd08b4038419ce73830c487e60fffcf5f345d7a5eec82778f8aed82b65313e7ca900faa60e99367d87893849a5887d233718bc20a4839ba839f8818c2d75e0a1e0be4a3f4570def7037c5d21f0bea268dea26c6bf50ef22de528941d45063a1e437a94f82734457a3a372372e2be8475d16f836d3947f8a93769bb229dc539100f196169e3ed3b5383f40102c11f92ddffe20f79ebd2bd634120250ae106f0dbeef6adb90a221671ae5675ec3b0b94c2d85f2ab21dc2cd7f0d4d277c94cd20b521747d51214caff5868af2fa603d946bc0e6da1598bfa35315eafbe18b2fabf5b09bc4bc86632d9583ebd8e540ed5acb5a5ebf75502c0b3164b2dfbdad989c22feccca0c2bc046ecadded4a0c5f51126daf98d64b0d3b3b9a26d0e997c32d8468bc151929e324eb6c0f61b48741d72152ea302a837abe7c5acb3d6c5ad1643d62bb4b9896b1c401e8090101eb40dfc8051b93681fd2607cf2918a8c3423bfec802b7a11afac3084508b76d850c4954bc130a2640704d024e949575268535938e983bb7258b32e85937926eb64dbb8e036c9465a82e12569894c0093b004921e33385700a5134a012ba54e4daed11124abfd0424ab7fa06fe28c7de94809e78c762e3b1af7f344a41b242078d36523d099e5442fb3445f245c04aad3a566b9341687b251f71a09a35c144532f5c140a54062b9096ac9f4e37e05461e8b903691b7944107510ee344b537271b999b81ff55a99e907f32a70780a51df5e097289b40ca6654a90ec1bbd9905b14714fa21400c01e04f7d3c948ed38a3057e99bd9fe3bd39dd2708356389effcad34a8541ff7c93210113340d48288e784e1221c63fc6a7d4a382ae984a86a8bb41656837f34f86c08c13556e3a3a2897b56ae3c486ce6ae6438691df80",
+      "sci28_interpretation": {
+        "op0": {
+          "ksl_lo": 0,
+          "mult": 7,
+          "ar": 12,
+          "sl": 12,
+          "egs": true,
+          "dr": 11,
+          "rr": 15,
+          "tl": 44,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 1
+        },
+        "op1": {
+          "ksl_lo": 0,
+          "mult": 0,
+          "ar": 1,
+          "sl": 14,
+          "egs": true,
+          "dr": 9,
+          "rr": 3,
+          "tl": 27,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 1
+        },
+        "mod": {
+          "feedback": 0,
+          "algorithm_sci": false
+        },
+        "opl2_registers": {
+          "reg_0x20_op0": 247,
+          "reg_0x40_op0": 44,
+          "reg_0x60_op0": 203,
+          "reg_0x80_op0": 207,
+          "reg_0xE0_op0": 1,
+          "reg_0x20_op1": 240,
+          "reg_0x40_op1": 27,
+          "reg_0x60_op1": 25,
+          "reg_0x80_op1": 227,
+          "reg_0xE0_op1": 1,
+          "reg_0xC0": 0
+        },
+        "sci28_valid": true,
+        "notes": [],
+        "validation_issues": [],
+        "sequence_after_28": {
+          "size": 803,
+          "first_32_hex": "c025996e663c77b3e49b6f73a16b514f29b4b9cf551a4f5dd91d8827553f088f",
+          "first_32_bytes": [
+            "0xc0",
+            "0x25",
+            "0x99",
+            "0x6e",
+            "0x66",
+            "0x3c",
+            "0x77",
+            "0xb3",
+            "0xe4",
+            "0x9b",
+            "0x6f",
+            "0x73",
+            "0xa1",
+            "0x6b",
+            "0x51",
+            "0x4f",
+            "0x29",
+            "0xb4",
+            "0xb9",
+            "0xcf",
+            "0x55",
+            "0x1a",
+            "0x4f",
+            "0x5d",
+            "0xd9",
+            "0x1d",
+            "0x88",
+            "0x27",
+            "0x55",
+            "0x3f",
+            "0x08",
+            "0x8f"
+          ],
+          "interpretation": "unknown"
+        }
+      },
+      "sci28_validation_issues": [],
+      "register_pair_hypothesis": {
+        "pairs": [
+          {
+            "reg": "0x00",
+            "val": "0x37",
+            "reg_dec": 0,
+            "val_dec": 55
+          },
+          {
+            "reg": "0x18",
+            "val": "0x9c",
+            "reg_dec": 24,
+            "val_dec": 156
+          },
+          {
+            "reg": "0xac",
+            "val": "0x75",
+            "reg_dec": 172,
+            "val_dec": 117
+          },
+          {
+            "reg": "0xfb",
+            "val": "0xff",
+            "reg_dec": 251,
+            "val_dec": 255
+          },
+          {
+            "reg": "0x6c",
+            "val": "0x0f",
+            "reg_dec": 108,
+            "val_dec": 15
+          },
+          {
+            "reg": "0xe5",
+            "val": "0xb8",
+            "reg_dec": 229,
+            "val_dec": 184
+          },
+          {
+            "reg": "0xbc",
+            "val": "0x9c",
+            "reg_dec": 188,
+            "val_dec": 156
+          },
+          {
+            "reg": "0xb0",
+            "val": "0x37",
+            "reg_dec": 176,
+            "val_dec": 55
+          },
+          {
+            "reg": "0x31",
+            "val": "0x6e",
+            "reg_dec": 49,
+            "val_dec": 110
+          },
+          {
+            "reg": "0x0d",
+            "val": "0xb9",
+            "reg_dec": 13,
+            "val_dec": 185
+          },
+          {
+            "reg": "0xb3",
+            "val": "0x1b",
+            "reg_dec": 179,
+            "val_dec": 27
+          },
+          {
+            "reg": "0xcd",
+            "val": "0xb1",
+            "reg_dec": 205,
+            "val_dec": 177
+          },
+          {
+            "reg": "0x37",
+            "val": "0xf1",
+            "reg_dec": 55,
+            "val_dec": 241
+          },
+          {
+            "reg": "0x61",
+            "val": "0xed",
+            "reg_dec": 97,
+            "val_dec": 237
+          },
+          {
+            "reg": "0xc0",
+            "val": "0x25",
+            "reg_dec": 192,
+            "val_dec": 37
+          },
+          {
+            "reg": "0x99",
+            "val": "0x6e",
+            "reg_dec": 153,
+            "val_dec": 110
+          },
+          {
+            "reg": "0x66",
+            "val": "0x3c",
+            "reg_dec": 102,
+            "val_dec": 60
+          },
+          {
+            "reg": "0x77",
+            "val": "0xb3",
+            "reg_dec": 119,
+            "val_dec": 179
+          },
+          {
+            "reg": "0xe4",
+            "val": "0x9b",
+            "reg_dec": 228,
+            "val_dec": 155
+          },
+          {
+            "reg": "0x6f",
+            "val": "0x73",
+            "reg_dec": 111,
+            "val_dec": 115
+          }
+        ],
+        "valid_opl2_ratio": "18/20"
+      }
+    },
+    {
+      "sid": 65,
+      "name": "65LEP",
+      "header": {
+        "sound_id": 65,
+        "type": 7,
+        "mode": 2,
+        "unknown_byte_4": 3,
+        "parameter": 727,
+        "zero_field": 0,
+        "init_bytes": [
+          16,
+          198,
+          70
+        ],
+        "payload_size": 363
+      },
+      "payload_hex_first64": "003d589bcc6dfbe3581c0c302a763b3d645e4a400f939c0de5ed80f98b40ddcd403e7ec01ee2bab56b4dea567b6bdc8e5b9911df276677afcd2a195d7a7ed29d",
+      "payload_hex_full": "003d589bcc6dfbe3581c0c302a763b3d645e4a400f939c0de5ed80f98b40ddcd403e7ec01ee2bab56b4dea567b6bdc8e5b9911df276677afcd2a195d7a7ed29d96426e58f811e081645df85c00b0addf9be890bd8c1af6f9603fab1ee92cd3eb2116eed2583e768f8be8ab485e3a455894ba103419193815445102f4b903e3c3902d45b80ed194c325c8d7e61dae11f6220ea2ef30b0c24f84471487788d556c64a8001708c234fa667fe999f38f8cfffe33fc2033d49999ed4e1c7b134825f540517b09ffeb82fa5a0bf3ae45bdc493eb5a00bdf9018454823808fad0e1172c4102015dd3940a5b18d55f14241f57eafab30a63bc205fb6fdc97ffb91666ab3df1856642aacc640e832059d98f5adab3cbd394072e680feaf9877e2b6cf83bf9d8f7e199005678603de093caacf06783067a4d6fde670bd559fac2b3bc99fcfc8dc0dcfff192fb959e65b84ab3e0bdfafc0479566072716e159fbeba367aa008aadfc5679fd36ff0239e0",
+      "sci28_interpretation": {
+        "op0": {
+          "ksl_lo": 0,
+          "mult": 13,
+          "ar": 11,
+          "sl": 12,
+          "egs": true,
+          "dr": 11,
+          "rr": 3,
+          "tl": 24,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 0
+        },
+        "op1": {
+          "ksl_lo": 2,
+          "mult": 11,
+          "ar": 4,
+          "sl": 14,
+          "egs": true,
+          "dr": 0,
+          "rr": 15,
+          "tl": 19,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 1
+        },
+        "mod": {
+          "feedback": 0,
+          "algorithm_sci": false
+        },
+        "opl2_registers": {
+          "reg_0x20_op0": 253,
+          "reg_0x40_op0": 24,
+          "reg_0x60_op0": 187,
+          "reg_0x80_op0": 195,
+          "reg_0xE0_op0": 0,
+          "reg_0x20_op1": 251,
+          "reg_0x40_op1": 147,
+          "reg_0x60_op1": 64,
+          "reg_0x80_op1": 239,
+          "reg_0xE0_op1": 1,
+          "reg_0xC0": 0
+        },
+        "sci28_valid": true,
+        "notes": [],
+        "validation_issues": [],
+        "sequence_after_28": {
+          "size": 335,
+          "first_32_hex": "8b40ddcd403e7ec01ee2bab56b4dea567b6bdc8e5b9911df276677afcd2a195d",
+          "first_32_bytes": [
+            "0x8b",
+            "0x40",
+            "0xdd",
+            "0xcd",
+            "0x40",
+            "0x3e",
+            "0x7e",
+            "0xc0",
+            "0x1e",
+            "0xe2",
+            "0xba",
+            "0xb5",
+            "0x6b",
+            "0x4d",
+            "0xea",
+            "0x56",
+            "0x7b",
+            "0x6b",
+            "0xdc",
+            "0x8e",
+            "0x5b",
+            "0x99",
+            "0x11",
+            "0xdf",
+            "0x27",
+            "0x66",
+            "0x77",
+            "0xaf",
+            "0xcd",
+            "0x2a",
+            "0x19",
+            "0x5d"
+          ],
+          "interpretation": "unknown"
+        }
+      },
+      "sci28_validation_issues": [],
+      "register_pair_hypothesis": {
+        "pairs": [
+          {
+            "reg": "0x00",
+            "val": "0x3d",
+            "reg_dec": 0,
+            "val_dec": 61
+          },
+          {
+            "reg": "0x58",
+            "val": "0x9b",
+            "reg_dec": 88,
+            "val_dec": 155
+          },
+          {
+            "reg": "0xcc",
+            "val": "0x6d",
+            "reg_dec": 204,
+            "val_dec": 109
+          },
+          {
+            "reg": "0xfb",
+            "val": "0xe3",
+            "reg_dec": 251,
+            "val_dec": 227
+          },
+          {
+            "reg": "0x58",
+            "val": "0x1c",
+            "reg_dec": 88,
+            "val_dec": 28
+          },
+          {
+            "reg": "0x0c",
+            "val": "0x30",
+            "reg_dec": 12,
+            "val_dec": 48
+          },
+          {
+            "reg": "0x2a",
+            "val": "0x76",
+            "reg_dec": 42,
+            "val_dec": 118
+          },
+          {
+            "reg": "0x3b",
+            "val": "0x3d",
+            "reg_dec": 59,
+            "val_dec": 61
+          },
+          {
+            "reg": "0x64",
+            "val": "0x5e",
+            "reg_dec": 100,
+            "val_dec": 94
+          },
+          {
+            "reg": "0x4a",
+            "val": "0x40",
+            "reg_dec": 74,
+            "val_dec": 64
+          },
+          {
+            "reg": "0x0f",
+            "val": "0x93",
+            "reg_dec": 15,
+            "val_dec": 147
+          },
+          {
+            "reg": "0x9c",
+            "val": "0x0d",
+            "reg_dec": 156,
+            "val_dec": 13
+          },
+          {
+            "reg": "0xe5",
+            "val": "0xed",
+            "reg_dec": 229,
+            "val_dec": 237
+          },
+          {
+            "reg": "0x80",
+            "val": "0xf9",
+            "reg_dec": 128,
+            "val_dec": 249
+          },
+          {
+            "reg": "0x8b",
+            "val": "0x40",
+            "reg_dec": 139,
+            "val_dec": 64
+          },
+          {
+            "reg": "0xdd",
+            "val": "0xcd",
+            "reg_dec": 221,
+            "val_dec": 205
+          },
+          {
+            "reg": "0x40",
+            "val": "0x3e",
+            "reg_dec": 64,
+            "val_dec": 62
+          },
+          {
+            "reg": "0x7e",
+            "val": "0xc0",
+            "reg_dec": 126,
+            "val_dec": 192
+          },
+          {
+            "reg": "0x1e",
+            "val": "0xe2",
+            "reg_dec": 30,
+            "val_dec": 226
+          },
+          {
+            "reg": "0xba",
+            "val": "0xb5",
+            "reg_dec": 186,
+            "val_dec": 181
+          }
+        ],
+        "valid_opl2_ratio": "18/20"
+      }
+    },
+    {
+      "sid": 67,
+      "name": "67CAN",
+      "header": {
+        "sound_id": 67,
+        "type": 7,
+        "mode": 2,
+        "unknown_byte_4": 3,
+        "parameter": 1041,
+        "zero_field": 0,
+        "init_bytes": [
+          16,
+          198,
+          70
+        ],
+        "payload_size": 204
+      },
+      "payload_hex_first64": "003f988398dc30363a340b838ffc5b08c45ee7adc5e4a400f93a210e5ecc0f98b110dc5503e7eb81ed6ddfe04c9dc79cfac8129cb73291ee9514ea0842bc059b",
+      "payload_hex_full": "003f988398dc30363a340b838ffc5b08c45ee7adc5e4a400f93a210e5ecc0f98b110dc5503e7eb81ed6ddfe04c9dc79cfac8129cb73291ee9514ea0842bc059b1a3ceb3014402f121776179417702ffc0bc2e6c8c3fb1327c84232e056dd34e4b015f0bbe178c2eb0bac2f2417b2b0f9f05b6fbf9cfe5f3e0f3d07dde89ab9a877a665ea21efaa4b3ac45eba5114dc764d3da50ddb343b8b63bab6dde589df357816af09abc5f528feca90fe52fcd4dff94e025418d521e557e2aacc8e6c0e4266e36122e956dc4c4782f4a0",
+      "sci28_interpretation": {
+        "op0": {
+          "ksl_lo": 0,
+          "mult": 15,
+          "ar": 3,
+          "sl": 8,
+          "egs": true,
+          "dr": 0,
+          "rr": 6,
+          "tl": 58,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 1
+        },
+        "op1": {
+          "ksl_lo": 0,
+          "mult": 11,
+          "ar": 4,
+          "sl": 14,
+          "egs": true,
+          "dr": 13,
+          "rr": 5,
+          "tl": 36,
+          "am": true,
+          "vib": false,
+          "ksr": true,
+          "wf": 2
+        },
+        "mod": {
+          "feedback": 0,
+          "algorithm_sci": false
+        },
+        "opl2_registers": {
+          "reg_0x20_op0": 255,
+          "reg_0x40_op0": 58,
+          "reg_0x60_op0": 48,
+          "reg_0x80_op0": 134,
+          "reg_0xE0_op0": 1,
+          "reg_0x20_op1": 187,
+          "reg_0x40_op1": 36,
+          "reg_0x60_op1": 77,
+          "reg_0x80_op1": 229,
+          "reg_0xE0_op1": 2,
+          "reg_0xC0": 0
+        },
+        "sci28_valid": true,
+        "notes": [],
+        "validation_issues": [],
+        "sequence_after_28": {
+          "size": 176,
+          "first_32_hex": "5ecc0f98b110dc5503e7eb81ed6ddfe04c9dc79cfac8129cb73291ee9514ea08",
+          "first_32_bytes": [
+            "0x5e",
+            "0xcc",
+            "0x0f",
+            "0x98",
+            "0xb1",
+            "0x10",
+            "0xdc",
+            "0x55",
+            "0x03",
+            "0xe7",
+            "0xeb",
+            "0x81",
+            "0xed",
+            "0x6d",
+            "0xdf",
+            "0xe0",
+            "0x4c",
+            "0x9d",
+            "0xc7",
+            "0x9c",
+            "0xfa",
+            "0xc8",
+            "0x12",
+            "0x9c",
+            "0xb7",
+            "0x32",
+            "0x91",
+            "0xee",
+            "0x95",
+            "0x14",
+            "0xea",
+            "0x08"
+          ],
+          "interpretation": "unknown"
+        }
+      },
+      "sci28_validation_issues": [],
+      "register_pair_hypothesis": {
+        "pairs": [
+          {
+            "reg": "0x00",
+            "val": "0x3f",
+            "reg_dec": 0,
+            "val_dec": 63
+          },
+          {
+            "reg": "0x98",
+            "val": "0x83",
+            "reg_dec": 152,
+            "val_dec": 131
+          },
+          {
+            "reg": "0x98",
+            "val": "0xdc",
+            "reg_dec": 152,
+            "val_dec": 220
+          },
+          {
+            "reg": "0x30",
+            "val": "0x36",
+            "reg_dec": 48,
+            "val_dec": 54
+          },
+          {
+            "reg": "0x3a",
+            "val": "0x34",
+            "reg_dec": 58,
+            "val_dec": 52
+          },
+          {
+            "reg": "0x0b",
+            "val": "0x83",
+            "reg_dec": 11,
+            "val_dec": 131
+          },
+          {
+            "reg": "0x8f",
+            "val": "0xfc",
+            "reg_dec": 143,
+            "val_dec": 252
+          },
+          {
+            "reg": "0x5b",
+            "val": "0x08",
+            "reg_dec": 91,
+            "val_dec": 8
+          },
+          {
+            "reg": "0xc4",
+            "val": "0x5e",
+            "reg_dec": 196,
+            "val_dec": 94
+          },
+          {
+            "reg": "0xe7",
+            "val": "0xad",
+            "reg_dec": 231,
+            "val_dec": 173
+          },
+          {
+            "reg": "0xc5",
+            "val": "0xe4",
+            "reg_dec": 197,
+            "val_dec": 228
+          },
+          {
+            "reg": "0xa4",
+            "val": "0x00",
+            "reg_dec": 164,
+            "val_dec": 0
+          },
+          {
+            "reg": "0xf9",
+            "val": "0x3a",
+            "reg_dec": 249,
+            "val_dec": 58
+          },
+          {
+            "reg": "0x21",
+            "val": "0x0e",
+            "reg_dec": 33,
+            "val_dec": 14
+          },
+          {
+            "reg": "0x5e",
+            "val": "0xcc",
+            "reg_dec": 94,
+            "val_dec": 204
+          },
+          {
+            "reg": "0x0f",
+            "val": "0x98",
+            "reg_dec": 15,
+            "val_dec": 152
+          },
+          {
+            "reg": "0xb1",
+            "val": "0x10",
+            "reg_dec": 177,
+            "val_dec": 16
+          },
+          {
+            "reg": "0xdc",
+            "val": "0x55",
+            "reg_dec": 220,
+            "val_dec": 85
+          },
+          {
+            "reg": "0x03",
+            "val": "0xe7",
+            "reg_dec": 3,
+            "val_dec": 231
+          },
+          {
+            "reg": "0xeb",
+            "val": "0x81",
+            "reg_dec": 235,
+            "val_dec": 129
+          }
+        ],
+        "valid_opl2_ratio": "18/20"
+      }
+    },
+    {
+      "sid": 69,
+      "name": "69ANTGRV",
+      "header": {
+        "sound_id": 69,
+        "type": 7,
+        "mode": 2,
+        "unknown_byte_4": 3,
+        "parameter": 151,
+        "zero_field": 0,
+        "init_bytes": [
+          16,
+          198,
+          70
+        ],
+        "payload_size": 50
+      },
+      "payload_hex_first64": "0036189fcc117939003e62f00f7d1a19b800c76f702770ac3ebd0baf2dccac7b7d655efe942080030200bbaa951a794a2280",
+      "payload_hex_full": "0036189fcc117939003e62f00f7d1a19b800c76f702770ac3ebd0baf2dccac7b7d655efe942080030200bbaa951a794a2280",
+      "sci28_interpretation": {
+        "op0": {
+          "ksl_lo": 0,
+          "mult": 6,
+          "ar": 15,
+          "sl": 12,
+          "egs": true,
+          "dr": 9,
+          "rr": 9,
+          "tl": 0,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 3
+        },
+        "op1": {
+          "ksl_lo": 1,
+          "mult": 10,
+          "ar": 8,
+          "sl": 0,
+          "egs": true,
+          "dr": 15,
+          "rr": 0,
+          "tl": 39,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 3
+        },
+        "mod": {
+          "feedback": 0,
+          "algorithm_sci": false
+        },
+        "opl2_registers": {
+          "reg_0x20_op0": 246,
+          "reg_0x40_op0": 0,
+          "reg_0x60_op0": 249,
+          "reg_0x80_op0": 201,
+          "reg_0xE0_op0": 3,
+          "reg_0x20_op1": 250,
+          "reg_0x40_op1": 103,
+          "reg_0x60_op1": 143,
+          "reg_0x80_op1": 0,
+          "reg_0xE0_op1": 3,
+          "reg_0xC0": 0
+        },
+        "sci28_valid": true,
+        "notes": [],
+        "validation_issues": [],
+        "sequence_after_28": {
+          "size": 22,
+          "first_32_hex": "2dccac7b7d655efe942080030200bbaa951a794a2280",
+          "first_32_bytes": [
+            "0x2d",
+            "0xcc",
+            "0xac",
+            "0x7b",
+            "0x7d",
+            "0x65",
+            "0x5e",
+            "0xfe",
+            "0x94",
+            "0x20",
+            "0x80",
+            "0x03",
+            "0x02",
+            "0x00",
+            "0xbb",
+            "0xaa",
+            "0x95",
+            "0x1a",
+            "0x79",
+            "0x4a",
+            "0x22",
+            "0x80"
+          ],
+          "interpretation": "unknown"
+        }
+      },
+      "sci28_validation_issues": [],
+      "register_pair_hypothesis": {
+        "pairs": [
+          {
+            "reg": "0x00",
+            "val": "0x36",
+            "reg_dec": 0,
+            "val_dec": 54
+          },
+          {
+            "reg": "0x18",
+            "val": "0x9f",
+            "reg_dec": 24,
+            "val_dec": 159
+          },
+          {
+            "reg": "0xcc",
+            "val": "0x11",
+            "reg_dec": 204,
+            "val_dec": 17
+          },
+          {
+            "reg": "0x79",
+            "val": "0x39",
+            "reg_dec": 121,
+            "val_dec": 57
+          },
+          {
+            "reg": "0x00",
+            "val": "0x3e",
+            "reg_dec": 0,
+            "val_dec": 62
+          },
+          {
+            "reg": "0x62",
+            "val": "0xf0",
+            "reg_dec": 98,
+            "val_dec": 240
+          },
+          {
+            "reg": "0x0f",
+            "val": "0x7d",
+            "reg_dec": 15,
+            "val_dec": 125
+          },
+          {
+            "reg": "0x1a",
+            "val": "0x19",
+            "reg_dec": 26,
+            "val_dec": 25
+          },
+          {
+            "reg": "0xb8",
+            "val": "0x00",
+            "reg_dec": 184,
+            "val_dec": 0
+          },
+          {
+            "reg": "0xc7",
+            "val": "0x6f",
+            "reg_dec": 199,
+            "val_dec": 111
+          },
+          {
+            "reg": "0x70",
+            "val": "0x27",
+            "reg_dec": 112,
+            "val_dec": 39
+          },
+          {
+            "reg": "0x70",
+            "val": "0xac",
+            "reg_dec": 112,
+            "val_dec": 172
+          },
+          {
+            "reg": "0x3e",
+            "val": "0xbd",
+            "reg_dec": 62,
+            "val_dec": 189
+          },
+          {
+            "reg": "0x0b",
+            "val": "0xaf",
+            "reg_dec": 11,
+            "val_dec": 175
+          },
+          {
+            "reg": "0x2d",
+            "val": "0xcc",
+            "reg_dec": 45,
+            "val_dec": 204
+          },
+          {
+            "reg": "0xac",
+            "val": "0x7b",
+            "reg_dec": 172,
+            "val_dec": 123
+          },
+          {
+            "reg": "0x7d",
+            "val": "0x65",
+            "reg_dec": 125,
+            "val_dec": 101
+          },
+          {
+            "reg": "0x5e",
+            "val": "0xfe",
+            "reg_dec": 94,
+            "val_dec": 254
+          },
+          {
+            "reg": "0x94",
+            "val": "0x20",
+            "reg_dec": 148,
+            "val_dec": 32
+          },
+          {
+            "reg": "0x80",
+            "val": "0x03",
+            "reg_dec": 128,
+            "val_dec": 3
+          }
+        ],
+        "valid_opl2_ratio": "18/20"
+      }
+    },
+    {
+      "sid": 74,
+      "name": "74NITRO",
+      "header": {
+        "sound_id": 74,
+        "type": 7,
+        "mode": 2,
+        "unknown_byte_4": 3,
+        "parameter": 965,
+        "zero_field": 0,
+        "init_bytes": [
+          16,
+          198,
+          70
+        ],
+        "payload_size": 648
+      },
+      "payload_hex_first64": "0037188718dbf7d9301dadc5e4e581b98b706dcd98ebb6277e2c3eb8f85996e6503debe84dbbb9512aaa99514fbc8f6b17e9a3f9cfa258618f4719f1b39d8946",
+      "payload_hex_full": "0037188718dbf7d9301dadc5e4e581b98b706dcd98ebb6277e2c3eb8f85996e6503debe84dbbb9512aaa99514fbc8f6b17e9a3f9cfa258618f4719f1b39d89469b8218a6fb3a77f2f1ef69cf39b24378f8dce84a9ee139a32196fed74bfb23add2c40cbc8dce6c7b24777dcbfc5465a72e887955e407f34560a29c1457980db2f9a87fe84fe9aa295657d5be09350c40f782aa01fcc13f9fc5dc3c1525e20ee0da2f4effb81f25d61219fb328bf0b0693acd210b04fd196121270427c94e8a5feb9949e458632d700b80276a931d043cf86221d61088dbfc0e6a650226fffde51e79ca58cda03fd16b20197a4cb429fa49d03761513b515956df54407ea21a7df0f8ea1810c08078315fe278372cbfe20361de09f1788a5df14da95f8bad8f61d8afd5e157ccb6ff81f9abcd292cc3bf5a1599e85747f9421c0f1c9f6942d15da74be75450e66973ed4f6a53cd2b3e7602b19305f3fe9c3663e995e8134cafcfa2db674caf65cbb8e3d587ef757c5df678b575394680f418a1fbe8ded6b26328e081651bfb5a7f21e9842da6f6ca1b452d81f529d88c47a732f59f8c9eee327b986f5f99b8febb8dba57b193b3611486d27b75f91a9478e359ae3275d8b276716de32757730cb4f07b22f04cb087da18c91d7b65da7d06903e04da5e036f391580e7c95f0e4dece122b0459b5e88ca552847f5c42ac6b2263647b28646d73314f562575711495f431b2fe5abb58452dd58d02526f45442b7f6a05190c4f2297d2075931df62fecc508c4bd2a408620da50050821eef554311c8fca0fdd989946546c3da507652074a8d3d6fe81c104e8372b34af0c57192002915c09e28cd4b358f068215d698f3390541abbca132b49b0c80f5dad29492ccdb4ab62e96622d41a5133f81fb6be30",
+      "sci28_interpretation": {
+        "op0": {
+          "ksl_lo": 0,
+          "mult": 7,
+          "ar": 7,
+          "sl": 8,
+          "egs": true,
+          "dr": 7,
+          "rr": 9,
+          "tl": 48,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 2
+        },
+        "op1": {
+          "ksl_lo": 1,
+          "mult": 1,
+          "ar": 11,
+          "sl": 0,
+          "egs": true,
+          "dr": 13,
+          "rr": 8,
+          "tl": 43,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 0
+        },
+        "mod": {
+          "feedback": 0,
+          "algorithm_sci": false
+        },
+        "opl2_registers": {
+          "reg_0x20_op0": 247,
+          "reg_0x40_op0": 48,
+          "reg_0x60_op0": 119,
+          "reg_0x80_op0": 137,
+          "reg_0xE0_op0": 2,
+          "reg_0x20_op1": 241,
+          "reg_0x40_op1": 107,
+          "reg_0x60_op1": 189,
+          "reg_0x80_op1": 8,
+          "reg_0xE0_op1": 0,
+          "reg_0xC0": 0
+        },
+        "sci28_valid": true,
+        "notes": [],
+        "validation_issues": [],
+        "sequence_after_28": {
+          "size": 620,
+          "first_32_hex": "f85996e6503debe84dbbb9512aaa99514fbc8f6b17e9a3f9cfa258618f4719f1",
+          "first_32_bytes": [
+            "0xf8",
+            "0x59",
+            "0x96",
+            "0xe6",
+            "0x50",
+            "0x3d",
+            "0xeb",
+            "0xe8",
+            "0x4d",
+            "0xbb",
+            "0xb9",
+            "0x51",
+            "0x2a",
+            "0xaa",
+            "0x99",
+            "0x51",
+            "0x4f",
+            "0xbc",
+            "0x8f",
+            "0x6b",
+            "0x17",
+            "0xe9",
+            "0xa3",
+            "0xf9",
+            "0xcf",
+            "0xa2",
+            "0x58",
+            "0x61",
+            "0x8f",
+            "0x47",
+            "0x19",
+            "0xf1"
+          ],
+          "interpretation": "unknown"
+        }
+      },
+      "sci28_validation_issues": [],
+      "register_pair_hypothesis": {
+        "pairs": [
+          {
+            "reg": "0x00",
+            "val": "0x37",
+            "reg_dec": 0,
+            "val_dec": 55
+          },
+          {
+            "reg": "0x18",
+            "val": "0x87",
+            "reg_dec": 24,
+            "val_dec": 135
+          },
+          {
+            "reg": "0x18",
+            "val": "0xdb",
+            "reg_dec": 24,
+            "val_dec": 219
+          },
+          {
+            "reg": "0xf7",
+            "val": "0xd9",
+            "reg_dec": 247,
+            "val_dec": 217
+          },
+          {
+            "reg": "0x30",
+            "val": "0x1d",
+            "reg_dec": 48,
+            "val_dec": 29
+          },
+          {
+            "reg": "0xad",
+            "val": "0xc5",
+            "reg_dec": 173,
+            "val_dec": 197
+          },
+          {
+            "reg": "0xe4",
+            "val": "0xe5",
+            "reg_dec": 228,
+            "val_dec": 229
+          },
+          {
+            "reg": "0x81",
+            "val": "0xb9",
+            "reg_dec": 129,
+            "val_dec": 185
+          },
+          {
+            "reg": "0x8b",
+            "val": "0x70",
+            "reg_dec": 139,
+            "val_dec": 112
+          },
+          {
+            "reg": "0x6d",
+            "val": "0xcd",
+            "reg_dec": 109,
+            "val_dec": 205
+          },
+          {
+            "reg": "0x98",
+            "val": "0xeb",
+            "reg_dec": 152,
+            "val_dec": 235
+          },
+          {
+            "reg": "0xb6",
+            "val": "0x27",
+            "reg_dec": 182,
+            "val_dec": 39
+          },
+          {
+            "reg": "0x7e",
+            "val": "0x2c",
+            "reg_dec": 126,
+            "val_dec": 44
+          },
+          {
+            "reg": "0x3e",
+            "val": "0xb8",
+            "reg_dec": 62,
+            "val_dec": 184
+          },
+          {
+            "reg": "0xf8",
+            "val": "0x59",
+            "reg_dec": 248,
+            "val_dec": 89
+          },
+          {
+            "reg": "0x96",
+            "val": "0xe6",
+            "reg_dec": 150,
+            "val_dec": 230
+          },
+          {
+            "reg": "0x50",
+            "val": "0x3d",
+            "reg_dec": 80,
+            "val_dec": 61
+          },
+          {
+            "reg": "0xeb",
+            "val": "0xe8",
+            "reg_dec": 235,
+            "val_dec": 232
+          },
+          {
+            "reg": "0x4d",
+            "val": "0xbb",
+            "reg_dec": 77,
+            "val_dec": 187
+          },
+          {
+            "reg": "0xb9",
+            "val": "0x51",
+            "reg_dec": 185,
+            "val_dec": 81
+          }
+        ],
+        "valid_opl2_ratio": "17/20"
+      }
+    },
+    {
+      "sid": 91,
+      "name": "91LASER1",
+      "header": {
+        "sound_id": 91,
+        "type": 7,
+        "mode": 2,
+        "unknown_byte_4": 3,
+        "parameter": 439,
+        "zero_field": 0,
+        "init_bytes": [
+          16,
+          198,
+          70
+        ],
+        "payload_size": 83
+      },
+      "payload_hex_first64": "0036188398d8bc9c801f317a07bf8d0cdc0060736d26825b3dbe0bab2dcca877916190e551c757553f4e59759563f9d34b9e345327a1271902017960bc20bcbc",
+      "payload_hex_full": "0036188398d8bc9c801f317a07bf8d0cdc0060736d26825b3dbe0bab2dcca877916190e551c757553f4e59759563f9d34b9e345327a1271902017960bc20bcbc2f04d84c9417e405e9476b3980bc8846991780",
+      "sci28_interpretation": {
+        "op0": {
+          "ksl_lo": 0,
+          "mult": 6,
+          "ar": 3,
+          "sl": 8,
+          "egs": true,
+          "dr": 12,
+          "rr": 12,
+          "tl": 0,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 3
+        },
+        "op1": {
+          "ksl_lo": 3,
+          "mult": 13,
+          "ar": 12,
+          "sl": 0,
+          "egs": true,
+          "dr": 3,
+          "rr": 13,
+          "tl": 38,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 3
+        },
+        "mod": {
+          "feedback": 0,
+          "algorithm_sci": false
+        },
+        "opl2_registers": {
+          "reg_0x20_op0": 246,
+          "reg_0x40_op0": 0,
+          "reg_0x60_op0": 60,
+          "reg_0x80_op0": 140,
+          "reg_0xE0_op0": 3,
+          "reg_0x20_op1": 253,
+          "reg_0x40_op1": 230,
+          "reg_0x60_op1": 195,
+          "reg_0x80_op1": 13,
+          "reg_0xE0_op1": 3,
+          "reg_0xC0": 0
+        },
+        "sci28_valid": true,
+        "notes": [],
+        "validation_issues": [],
+        "sequence_after_28": {
+          "size": 55,
+          "first_32_hex": "2dcca877916190e551c757553f4e59759563f9d34b9e345327a1271902017960",
+          "first_32_bytes": [
+            "0x2d",
+            "0xcc",
+            "0xa8",
+            "0x77",
+            "0x91",
+            "0x61",
+            "0x90",
+            "0xe5",
+            "0x51",
+            "0xc7",
+            "0x57",
+            "0x55",
+            "0x3f",
+            "0x4e",
+            "0x59",
+            "0x75",
+            "0x95",
+            "0x63",
+            "0xf9",
+            "0xd3",
+            "0x4b",
+            "0x9e",
+            "0x34",
+            "0x53",
+            "0x27",
+            "0xa1",
+            "0x27",
+            "0x19",
+            "0x02",
+            "0x01",
+            "0x79",
+            "0x60"
+          ],
+          "interpretation": "unknown"
+        }
+      },
+      "sci28_validation_issues": [],
+      "register_pair_hypothesis": {
+        "pairs": [
+          {
+            "reg": "0x00",
+            "val": "0x36",
+            "reg_dec": 0,
+            "val_dec": 54
+          },
+          {
+            "reg": "0x18",
+            "val": "0x83",
+            "reg_dec": 24,
+            "val_dec": 131
+          },
+          {
+            "reg": "0x98",
+            "val": "0xd8",
+            "reg_dec": 152,
+            "val_dec": 216
+          },
+          {
+            "reg": "0xbc",
+            "val": "0x9c",
+            "reg_dec": 188,
+            "val_dec": 156
+          },
+          {
+            "reg": "0x80",
+            "val": "0x1f",
+            "reg_dec": 128,
+            "val_dec": 31
+          },
+          {
+            "reg": "0x31",
+            "val": "0x7a",
+            "reg_dec": 49,
+            "val_dec": 122
+          },
+          {
+            "reg": "0x07",
+            "val": "0xbf",
+            "reg_dec": 7,
+            "val_dec": 191
+          },
+          {
+            "reg": "0x8d",
+            "val": "0x0c",
+            "reg_dec": 141,
+            "val_dec": 12
+          },
+          {
+            "reg": "0xdc",
+            "val": "0x00",
+            "reg_dec": 220,
+            "val_dec": 0
+          },
+          {
+            "reg": "0x60",
+            "val": "0x73",
+            "reg_dec": 96,
+            "val_dec": 115
+          },
+          {
+            "reg": "0x6d",
+            "val": "0x26",
+            "reg_dec": 109,
+            "val_dec": 38
+          },
+          {
+            "reg": "0x82",
+            "val": "0x5b",
+            "reg_dec": 130,
+            "val_dec": 91
+          },
+          {
+            "reg": "0x3d",
+            "val": "0xbe",
+            "reg_dec": 61,
+            "val_dec": 190
+          },
+          {
+            "reg": "0x0b",
+            "val": "0xab",
+            "reg_dec": 11,
+            "val_dec": 171
+          },
+          {
+            "reg": "0x2d",
+            "val": "0xcc",
+            "reg_dec": 45,
+            "val_dec": 204
+          },
+          {
+            "reg": "0xa8",
+            "val": "0x77",
+            "reg_dec": 168,
+            "val_dec": 119
+          },
+          {
+            "reg": "0x91",
+            "val": "0x61",
+            "reg_dec": 145,
+            "val_dec": 97
+          },
+          {
+            "reg": "0x90",
+            "val": "0xe5",
+            "reg_dec": 144,
+            "val_dec": 229
+          },
+          {
+            "reg": "0x51",
+            "val": "0xc7",
+            "reg_dec": 81,
+            "val_dec": 199
+          },
+          {
+            "reg": "0x57",
+            "val": "0x55",
+            "reg_dec": 87,
+            "val_dec": 85
+          }
+        ],
+        "valid_opl2_ratio": "19/20"
+      }
+    },
+    {
+      "sid": 107,
+      "name": "107MIXER",
+      "header": {
+        "sound_id": 107,
+        "type": 7,
+        "mode": 2,
+        "unknown_byte_4": 3,
+        "parameter": 497,
+        "zero_field": 0,
+        "init_bytes": [
+          16,
+          198,
+          70
+        ],
+        "payload_size": 110
+      },
+      "payload_hex_first64": "003b1899ec302faaf8e6362f251e0dbbc9cb0572f2015cc5b856c822382b9fb503d6bf9bbca56e9a92fb817565b99cbaca59444a777649be091edc74ec84643b",
+      "payload_hex_full": "003b1899ec302faaf8e6362f251e0dbbc9cb0572f2015cc5b856c822382b9fb503d6bf9bbca56e9a92fb817565b99cbaca59444a777649be091edc74ec84643bbbf163b751f2989473f8128361c05d08d15c76cf435a0b502fb049c402fb061dc99e204fbf2931d526caa6c3eb80",
+      "sci28_interpretation": {
+        "op0": {
+          "ksl_lo": 0,
+          "mult": 11,
+          "ar": 9,
+          "sl": 12,
+          "egs": true,
+          "dr": 15,
+          "rr": 10,
+          "tl": 56,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 0
+        },
+        "op1": {
+          "ksl_lo": 2,
+          "mult": 13,
+          "ar": 9,
+          "sl": 11,
+          "egs": true,
+          "dr": 2,
+          "rr": 2,
+          "tl": 1,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 2
+        },
+        "mod": {
+          "feedback": 0,
+          "algorithm_sci": false
+        },
+        "opl2_registers": {
+          "reg_0x20_op0": 251,
+          "reg_0x40_op0": 56,
+          "reg_0x60_op0": 159,
+          "reg_0x80_op0": 202,
+          "reg_0xE0_op0": 0,
+          "reg_0x20_op1": 253,
+          "reg_0x40_op1": 129,
+          "reg_0x60_op1": 146,
+          "reg_0x80_op1": 178,
+          "reg_0xE0_op1": 2,
+          "reg_0xC0": 0
+        },
+        "sci28_valid": true,
+        "notes": [],
+        "validation_issues": [],
+        "sequence_after_28": {
+          "size": 82,
+          "first_32_hex": "382b9fb503d6bf9bbca56e9a92fb817565b99cbaca59444a777649be091edc74",
+          "first_32_bytes": [
+            "0x38",
+            "0x2b",
+            "0x9f",
+            "0xb5",
+            "0x03",
+            "0xd6",
+            "0xbf",
+            "0x9b",
+            "0xbc",
+            "0xa5",
+            "0x6e",
+            "0x9a",
+            "0x92",
+            "0xfb",
+            "0x81",
+            "0x75",
+            "0x65",
+            "0xb9",
+            "0x9c",
+            "0xba",
+            "0xca",
+            "0x59",
+            "0x44",
+            "0x4a",
+            "0x77",
+            "0x76",
+            "0x49",
+            "0xbe",
+            "0x09",
+            "0x1e",
+            "0xdc",
+            "0x74"
+          ],
+          "interpretation": "unknown"
+        }
+      },
+      "sci28_validation_issues": [],
+      "register_pair_hypothesis": {
+        "pairs": [
+          {
+            "reg": "0x00",
+            "val": "0x3b",
+            "reg_dec": 0,
+            "val_dec": 59
+          },
+          {
+            "reg": "0x18",
+            "val": "0x99",
+            "reg_dec": 24,
+            "val_dec": 153
+          },
+          {
+            "reg": "0xec",
+            "val": "0x30",
+            "reg_dec": 236,
+            "val_dec": 48
+          },
+          {
+            "reg": "0x2f",
+            "val": "0xaa",
+            "reg_dec": 47,
+            "val_dec": 170
+          },
+          {
+            "reg": "0xf8",
+            "val": "0xe6",
+            "reg_dec": 248,
+            "val_dec": 230
+          },
+          {
+            "reg": "0x36",
+            "val": "0x2f",
+            "reg_dec": 54,
+            "val_dec": 47
+          },
+          {
+            "reg": "0x25",
+            "val": "0x1e",
+            "reg_dec": 37,
+            "val_dec": 30
+          },
+          {
+            "reg": "0x0d",
+            "val": "0xbb",
+            "reg_dec": 13,
+            "val_dec": 187
+          },
+          {
+            "reg": "0xc9",
+            "val": "0xcb",
+            "reg_dec": 201,
+            "val_dec": 203
+          },
+          {
+            "reg": "0x05",
+            "val": "0x72",
+            "reg_dec": 5,
+            "val_dec": 114
+          },
+          {
+            "reg": "0xf2",
+            "val": "0x01",
+            "reg_dec": 242,
+            "val_dec": 1
+          },
+          {
+            "reg": "0x5c",
+            "val": "0xc5",
+            "reg_dec": 92,
+            "val_dec": 197
+          },
+          {
+            "reg": "0xb8",
+            "val": "0x56",
+            "reg_dec": 184,
+            "val_dec": 86
+          },
+          {
+            "reg": "0xc8",
+            "val": "0x22",
+            "reg_dec": 200,
+            "val_dec": 34
+          },
+          {
+            "reg": "0x38",
+            "val": "0x2b",
+            "reg_dec": 56,
+            "val_dec": 43
+          },
+          {
+            "reg": "0x9f",
+            "val": "0xb5",
+            "reg_dec": 159,
+            "val_dec": 181
+          },
+          {
+            "reg": "0x03",
+            "val": "0xd6",
+            "reg_dec": 3,
+            "val_dec": 214
+          },
+          {
+            "reg": "0xbf",
+            "val": "0x9b",
+            "reg_dec": 191,
+            "val_dec": 155
+          },
+          {
+            "reg": "0xbc",
+            "val": "0xa5",
+            "reg_dec": 188,
+            "val_dec": 165
+          },
+          {
+            "reg": "0x6e",
+            "val": "0x9a",
+            "reg_dec": 110,
+            "val_dec": 154
+          }
+        ],
+        "valid_opl2_ratio": "18/20"
+      }
+    },
+    {
+      "sid": 109,
+      "name": "109BLIMP",
+      "header": {
+        "sound_id": 109,
+        "type": 7,
+        "mode": 2,
+        "unknown_byte_4": 3,
+        "parameter": 851,
+        "zero_field": 0,
+        "init_bytes": [
+          16,
+          198,
+          70
+        ],
+        "payload_size": 94
+      },
+      "payload_hex_first64": "0037188398dbf7d230082dc5e4e581b98b706dcd98ebb6275c587d57e1665b9931ed7d55ad44e71c05925d192c805100bc785e305e805e20bee02f2b04b1f349",
+      "payload_hex_full": "0037188398dbf7d230082dc5e4e581b98b706dcd98ebb6275c587d57e1665b9931ed7d55ad44e71c05925d192c805100bc785e305e805e20bee02f2b04b1f3493ebc8feeec3c7ee62794bf81cd9a3212d210bc217585dc17705ed6c51d80",
+      "sci28_interpretation": {
+        "op0": {
+          "ksl_lo": 0,
+          "mult": 7,
+          "ar": 3,
+          "sl": 8,
+          "egs": true,
+          "dr": 7,
+          "rr": 2,
+          "tl": 48,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 1
+        },
+        "op1": {
+          "ksl_lo": 1,
+          "mult": 1,
+          "ar": 11,
+          "sl": 0,
+          "egs": true,
+          "dr": 13,
+          "rr": 8,
+          "tl": 43,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 3
+        },
+        "mod": {
+          "feedback": 0,
+          "algorithm_sci": false
+        },
+        "opl2_registers": {
+          "reg_0x20_op0": 247,
+          "reg_0x40_op0": 48,
+          "reg_0x60_op0": 55,
+          "reg_0x80_op0": 130,
+          "reg_0xE0_op0": 1,
+          "reg_0x20_op1": 241,
+          "reg_0x40_op1": 107,
+          "reg_0x60_op1": 189,
+          "reg_0x80_op1": 8,
+          "reg_0xE0_op1": 3,
+          "reg_0xC0": 0
+        },
+        "sci28_valid": true,
+        "notes": [],
+        "validation_issues": [],
+        "sequence_after_28": {
+          "size": 66,
+          "first_32_hex": "e1665b9931ed7d55ad44e71c05925d192c805100bc785e305e805e20bee02f2b",
+          "first_32_bytes": [
+            "0xe1",
+            "0x66",
+            "0x5b",
+            "0x99",
+            "0x31",
+            "0xed",
+            "0x7d",
+            "0x55",
+            "0xad",
+            "0x44",
+            "0xe7",
+            "0x1c",
+            "0x05",
+            "0x92",
+            "0x5d",
+            "0x19",
+            "0x2c",
+            "0x80",
+            "0x51",
+            "0x00",
+            "0xbc",
+            "0x78",
+            "0x5e",
+            "0x30",
+            "0x5e",
+            "0x80",
+            "0x5e",
+            "0x20",
+            "0xbe",
+            "0xe0",
+            "0x2f",
+            "0x2b"
+          ],
+          "interpretation": "unknown"
+        }
+      },
+      "sci28_validation_issues": [],
+      "register_pair_hypothesis": {
+        "pairs": [
+          {
+            "reg": "0x00",
+            "val": "0x37",
+            "reg_dec": 0,
+            "val_dec": 55
+          },
+          {
+            "reg": "0x18",
+            "val": "0x83",
+            "reg_dec": 24,
+            "val_dec": 131
+          },
+          {
+            "reg": "0x98",
+            "val": "0xdb",
+            "reg_dec": 152,
+            "val_dec": 219
+          },
+          {
+            "reg": "0xf7",
+            "val": "0xd2",
+            "reg_dec": 247,
+            "val_dec": 210
+          },
+          {
+            "reg": "0x30",
+            "val": "0x08",
+            "reg_dec": 48,
+            "val_dec": 8
+          },
+          {
+            "reg": "0x2d",
+            "val": "0xc5",
+            "reg_dec": 45,
+            "val_dec": 197
+          },
+          {
+            "reg": "0xe4",
+            "val": "0xe5",
+            "reg_dec": 228,
+            "val_dec": 229
+          },
+          {
+            "reg": "0x81",
+            "val": "0xb9",
+            "reg_dec": 129,
+            "val_dec": 185
+          },
+          {
+            "reg": "0x8b",
+            "val": "0x70",
+            "reg_dec": 139,
+            "val_dec": 112
+          },
+          {
+            "reg": "0x6d",
+            "val": "0xcd",
+            "reg_dec": 109,
+            "val_dec": 205
+          },
+          {
+            "reg": "0x98",
+            "val": "0xeb",
+            "reg_dec": 152,
+            "val_dec": 235
+          },
+          {
+            "reg": "0xb6",
+            "val": "0x27",
+            "reg_dec": 182,
+            "val_dec": 39
+          },
+          {
+            "reg": "0x5c",
+            "val": "0x58",
+            "reg_dec": 92,
+            "val_dec": 88
+          },
+          {
+            "reg": "0x7d",
+            "val": "0x57",
+            "reg_dec": 125,
+            "val_dec": 87
+          },
+          {
+            "reg": "0xe1",
+            "val": "0x66",
+            "reg_dec": 225,
+            "val_dec": 102
+          },
+          {
+            "reg": "0x5b",
+            "val": "0x99",
+            "reg_dec": 91,
+            "val_dec": 153
+          },
+          {
+            "reg": "0x31",
+            "val": "0xed",
+            "reg_dec": 49,
+            "val_dec": 237
+          },
+          {
+            "reg": "0x7d",
+            "val": "0x55",
+            "reg_dec": 125,
+            "val_dec": 85
+          },
+          {
+            "reg": "0xad",
+            "val": "0x44",
+            "reg_dec": 173,
+            "val_dec": 68
+          },
+          {
+            "reg": "0xe7",
+            "val": "0x1c",
+            "reg_dec": 231,
+            "val_dec": 28
+          }
+        ],
+        "valid_opl2_ratio": "18/20"
+      }
+    },
+    {
+      "sid": 205,
+      "name": "205CONV",
+      "header": {
+        "sound_id": 205,
+        "type": 7,
+        "mode": 2,
+        "unknown_byte_4": 3,
+        "parameter": 1555,
+        "zero_field": 0,
+        "init_bytes": [
+          16,
+          198,
+          70
+        ],
+        "payload_size": 300
+      },
+      "payload_hex_first64": "0039588a18605c7637d190bb7bd5913eb62f273813cc5a84edecbfa9626f6ec3db6fd4f2dcc98ef3ea2ee9a5815002f40403b161db6076560a09c4d3bed3b8b8",
+      "payload_hex_full": "0039588a18605c7637d190bb7bd5913eb62f273813cc5a84edecbfa9626f6ec3db6fd4f2dcc98ef3ea2ee9a5815002f40403b161db6076560a09c4d3bed3b8b8a063dedfdcdba1702bcf5af47cd3cd9589b32f1b57137156e7756e5d427fbed5e4b575ce7f38e5cdb9744e46ccd1c83475104f54d9486bbc36500a41dac40cd61b091c768d7c1ac02e118ee4c76c80efcd1498f58da064b10c91f70ae64e48f3a44b9e5172dc5533fa5cfe4cc92e544cfd2e409980b9026632e489994b92a67d2e4ba999cbe3c8d675886f0ac61a96d08a798784fd7453e788906c6fcf8b0412181cb80b0fbbd3c3db4cfb81791d023c0bf547fe811c5b87fa79eb4f4fc005b9d93e064f7bf2ff80466181c14179777cfc7def5e205e61211e05fad5fc31b755bf85eef30a98777d0a5c6de0",
+      "sci28_interpretation": {
+        "op0": {
+          "ksl_lo": 0,
+          "mult": 9,
+          "ar": 10,
+          "sl": 8,
+          "egs": true,
+          "dr": 12,
+          "rr": 6,
+          "tl": 55,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 3
+        },
+        "op1": {
+          "ksl_lo": 1,
+          "mult": 1,
+          "ar": 6,
+          "sl": 15,
+          "egs": true,
+          "dr": 8,
+          "rr": 3,
+          "tl": 12,
+          "am": true,
+          "vib": true,
+          "ksr": true,
+          "wf": 1
+        },
+        "mod": {
+          "feedback": 0,
+          "algorithm_sci": false
+        },
+        "opl2_registers": {
+          "reg_0x20_op0": 249,
+          "reg_0x40_op0": 55,
+          "reg_0x60_op0": 172,
+          "reg_0x80_op0": 134,
+          "reg_0xE0_op0": 3,
+          "reg_0x20_op1": 241,
+          "reg_0x40_op1": 76,
+          "reg_0x60_op1": 104,
+          "reg_0x80_op1": 243,
+          "reg_0xE0_op1": 1,
+          "reg_0xC0": 0
+        },
+        "sci28_valid": true,
+        "notes": [],
+        "validation_issues": [],
+        "sequence_after_28": {
+          "size": 272,
+          "first_32_hex": "626f6ec3db6fd4f2dcc98ef3ea2ee9a5815002f40403b161db6076560a09c4d3",
+          "first_32_bytes": [
+            "0x62",
+            "0x6f",
+            "0x6e",
+            "0xc3",
+            "0xdb",
+            "0x6f",
+            "0xd4",
+            "0xf2",
+            "0xdc",
+            "0xc9",
+            "0x8e",
+            "0xf3",
+            "0xea",
+            "0x2e",
+            "0xe9",
+            "0xa5",
+            "0x81",
+            "0x50",
+            "0x02",
+            "0xf4",
+            "0x04",
+            "0x03",
+            "0xb1",
+            "0x61",
+            "0xdb",
+            "0x60",
+            "0x76",
+            "0x56",
+            "0x0a",
+            "0x09",
+            "0xc4",
+            "0xd3"
+          ],
+          "interpretation": "unknown"
+        }
+      },
+      "sci28_validation_issues": [],
+      "register_pair_hypothesis": {
+        "pairs": [
+          {
+            "reg": "0x00",
+            "val": "0x39",
+            "reg_dec": 0,
+            "val_dec": 57
+          },
+          {
+            "reg": "0x58",
+            "val": "0x8a",
+            "reg_dec": 88,
+            "val_dec": 138
+          },
+          {
+            "reg": "0x18",
+            "val": "0x60",
+            "reg_dec": 24,
+            "val_dec": 96
+          },
+          {
+            "reg": "0x5c",
+            "val": "0x76",
+            "reg_dec": 92,
+            "val_dec": 118
+          },
+          {
+            "reg": "0x37",
+            "val": "0xd1",
+            "reg_dec": 55,
+            "val_dec": 209
+          },
+          {
+            "reg": "0x90",
+            "val": "0xbb",
+            "reg_dec": 144,
+            "val_dec": 187
+          },
+          {
+            "reg": "0x7b",
+            "val": "0xd5",
+            "reg_dec": 123,
+            "val_dec": 213
+          },
+          {
+            "reg": "0x91",
+            "val": "0x3e",
+            "reg_dec": 145,
+            "val_dec": 62
+          },
+          {
+            "reg": "0xb6",
+            "val": "0x2f",
+            "reg_dec": 182,
+            "val_dec": 47
+          },
+          {
+            "reg": "0x27",
+            "val": "0x38",
+            "reg_dec": 39,
+            "val_dec": 56
+          },
+          {
+            "reg": "0x13",
+            "val": "0xcc",
+            "reg_dec": 19,
+            "val_dec": 204
+          },
+          {
+            "reg": "0x5a",
+            "val": "0x84",
+            "reg_dec": 90,
+            "val_dec": 132
+          },
+          {
+            "reg": "0xed",
+            "val": "0xec",
+            "reg_dec": 237,
+            "val_dec": 236
+          },
+          {
+            "reg": "0xbf",
+            "val": "0xa9",
+            "reg_dec": 191,
+            "val_dec": 169
+          },
+          {
+            "reg": "0x62",
+            "val": "0x6f",
+            "reg_dec": 98,
+            "val_dec": 111
+          },
+          {
+            "reg": "0x6e",
+            "val": "0xc3",
+            "reg_dec": 110,
+            "val_dec": 195
+          },
+          {
+            "reg": "0xdb",
+            "val": "0x6f",
+            "reg_dec": 219,
+            "val_dec": 111
+          },
+          {
+            "reg": "0xd4",
+            "val": "0xf2",
+            "reg_dec": 212,
+            "val_dec": 242
+          },
+          {
+            "reg": "0xdc",
+            "val": "0xc9",
+            "reg_dec": 220,
+            "val_dec": 201
+          },
+          {
+            "reg": "0x8e",
+            "val": "0xf3",
+            "reg_dec": 142,
+            "val_dec": 243
+          }
+        ],
+        "valid_opl2_ratio": "19/20"
+      }
+    }
+  ],
+  "hypothesis_notes": {
+    "sci28_format": "Standard Sierra SCI AdLib instrument: 28 bytes per voice. Each operator (modulator/carrier) uses 13 bytes. Fields: KSL_lo, MULT, FEEDBACK, AR, SL, EGS, DR, RR, TL, AM, VIB, KSR, ALGORITHM for op0; same for op1; plus 2 waveform bytes. If validation issues are few, this format is likely correct.",
+    "register_pairs": "Hypothesis: payload is a sequence of (register, value) pairs for direct OPL2 writes. Valid if most register values are in the OPL2 range 0x01-0xF5.",
+    "sci28_plus_sequence": "If SCI28 is valid, bytes after offset 28 are note/event sequence data for the sound effect (notes, durations, etc.)."
+  }
+}

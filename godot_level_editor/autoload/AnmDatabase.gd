@@ -33,7 +33,7 @@ func _load_anm_catalog() -> void:
 					var pt = entry.get("part_type")
 					var anm = entry.get("anm_name", "")
 					if pt != null and anm != "":
-						part_to_anm[pt] = anm
+						part_to_anm[int(pt)] = anm
 
 func load_anm(anm_name: String) -> Dictionary:
 	if anm_name in anm_cache:

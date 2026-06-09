@@ -1,0 +1,1691 @@
+{
+  "file": "TIM2.SX",
+  "format": "Sierra SND chunked container",
+  "gaps": [
+    "G19: OPL2 FM register programming format (bytes after 12-byte header) not fully decoded",
+    "G20: RAW sample rate and stereo/mono encoding unknown \u2014 likely 11025 Hz mono"
+  ],
+  "inf": {
+    "patch_count": 38,
+    "type_byte": 3,
+    "version": 2
+  },
+  "patches": [
+    {
+      "data_size": 90,
+      "file_offset": 249,
+      "init_bytes": "10c646",
+      "mode": 2,
+      "name": "5convey",
+      "parameter": 155,
+      "sound_id": 5,
+      "total_size": 102,
+      "type": 7,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 309,
+      "file_offset": 359,
+      "init_bytes": "10c646",
+      "mode": 2,
+      "name": "24FAN",
+      "parameter": 951,
+      "sound_id": 24,
+      "total_size": 321,
+      "type": 7,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 314,
+      "file_offset": 688,
+      "init_bytes": "10c646",
+      "mode": 2,
+      "name": "26GENER",
+      "parameter": 805,
+      "sound_id": 26,
+      "total_size": 326,
+      "type": 7,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 231,
+      "file_offset": 1022,
+      "init_bytes": "10c646",
+      "mode": 2,
+      "name": "50MOTOR",
+      "parameter": 707,
+      "sound_id": 50,
+      "total_size": 243,
+      "type": 7,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 348,
+      "file_offset": 1273,
+      "init_bytes": "10c646",
+      "mode": 2,
+      "name": "51VAC",
+      "parameter": 494,
+      "sound_id": 51,
+      "total_size": 360,
+      "type": 7,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 831,
+      "file_offset": 1641,
+      "init_bytes": "10c646",
+      "mode": 2,
+      "name": "62COFFEE",
+      "parameter": 1245,
+      "sound_id": 62,
+      "total_size": 843,
+      "type": 7,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 363,
+      "file_offset": 2492,
+      "init_bytes": "10c646",
+      "mode": 2,
+      "name": "65LEP",
+      "parameter": 727,
+      "sound_id": 65,
+      "total_size": 375,
+      "type": 7,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 204,
+      "file_offset": 2875,
+      "init_bytes": "10c646",
+      "mode": 2,
+      "name": "67CAN",
+      "parameter": 1041,
+      "sound_id": 67,
+      "total_size": 216,
+      "type": 7,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 50,
+      "file_offset": 3099,
+      "init_bytes": "10c646",
+      "mode": 2,
+      "name": "69ANTGRV",
+      "parameter": 151,
+      "sound_id": 69,
+      "total_size": 62,
+      "type": 7,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 648,
+      "file_offset": 3169,
+      "init_bytes": "10c646",
+      "mode": 2,
+      "name": "74NITRO",
+      "parameter": 965,
+      "sound_id": 74,
+      "total_size": 660,
+      "type": 7,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 83,
+      "file_offset": 3837,
+      "init_bytes": "10c646",
+      "mode": 2,
+      "name": "91LASER1",
+      "parameter": 439,
+      "sound_id": 91,
+      "total_size": 95,
+      "type": 7,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 110,
+      "file_offset": 3940,
+      "init_bytes": "10c646",
+      "mode": 2,
+      "name": "107MIXER",
+      "parameter": 497,
+      "sound_id": 107,
+      "total_size": 122,
+      "type": 7,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 94,
+      "file_offset": 4070,
+      "init_bytes": "10c646",
+      "mode": 2,
+      "name": "109BLIMP",
+      "parameter": 851,
+      "sound_id": 109,
+      "total_size": 106,
+      "type": 7,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 300,
+      "file_offset": 4184,
+      "init_bytes": "10c646",
+      "mode": 2,
+      "name": "205CONV",
+      "parameter": 1555,
+      "sound_id": 205,
+      "total_size": 312,
+      "type": 7,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 8314,
+      "file_offset": 4504,
+      "init_bytes": "10c646",
+      "mode": 3,
+      "name": "newtim2",
+      "parameter": 16715,
+      "sound_id": 1000,
+      "total_size": 8326,
+      "type": 9,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 9609,
+      "file_offset": 12838,
+      "init_bytes": "10c646",
+      "mode": 3,
+      "name": "unpluggd",
+      "parameter": 16987,
+      "sound_id": 1001,
+      "total_size": 9621,
+      "type": 9,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 5673,
+      "file_offset": 22467,
+      "init_bytes": "10c646",
+      "mode": 3,
+      "name": "enya",
+      "parameter": 16909,
+      "sound_id": 1002,
+      "total_size": 5685,
+      "type": 9,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 7356,
+      "file_offset": 28160,
+      "init_bytes": "10c646",
+      "mode": 3,
+      "name": "country",
+      "parameter": 20889,
+      "sound_id": 1003,
+      "total_size": 7368,
+      "type": 9,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 9890,
+      "file_offset": 35536,
+      "init_bytes": "10c646",
+      "mode": 3,
+      "name": "progrock",
+      "parameter": 25453,
+      "sound_id": 1004,
+      "total_size": 9902,
+      "type": 9,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 8195,
+      "file_offset": 45446,
+      "init_bytes": "10c646",
+      "mode": 3,
+      "name": "salsa",
+      "parameter": 17797,
+      "sound_id": 1005,
+      "total_size": 8207,
+      "type": 9,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 3798,
+      "file_offset": 53661,
+      "init_bytes": "10c646",
+      "mode": 3,
+      "name": "techno",
+      "parameter": 20559,
+      "sound_id": 1006,
+      "total_size": 3810,
+      "type": 9,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 8899,
+      "file_offset": 57479,
+      "init_bytes": "10c646",
+      "mode": 3,
+      "name": "steeldrm",
+      "parameter": 39543,
+      "sound_id": 1007,
+      "total_size": 8911,
+      "type": 9,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 5938,
+      "file_offset": 66398,
+      "init_bytes": "10c646",
+      "mode": 3,
+      "name": "grunge",
+      "parameter": 20177,
+      "sound_id": 1008,
+      "total_size": 5950,
+      "type": 9,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 14299,
+      "file_offset": 72356,
+      "init_bytes": "10c646",
+      "mode": 3,
+      "name": "afrotoon",
+      "parameter": 40575,
+      "sound_id": 1009,
+      "total_size": 14311,
+      "type": 9,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 17350,
+      "file_offset": 86675,
+      "init_bytes": "10c646",
+      "mode": 3,
+      "name": "blazooes",
+      "parameter": 42415,
+      "sound_id": 1010,
+      "total_size": 17362,
+      "type": 9,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 13141,
+      "file_offset": 104045,
+      "init_bytes": "10c646",
+      "mode": 3,
+      "name": "junglism",
+      "parameter": 38089,
+      "sound_id": 1011,
+      "total_size": 13153,
+      "type": 9,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 11312,
+      "file_offset": 117206,
+      "init_bytes": "10c646",
+      "mode": 3,
+      "name": "keeptryn",
+      "parameter": 39143,
+      "sound_id": 1012,
+      "total_size": 11324,
+      "type": 9,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 12489,
+      "file_offset": 128538,
+      "init_bytes": "10c646",
+      "mode": 3,
+      "name": "fifties",
+      "parameter": 27223,
+      "sound_id": 1013,
+      "total_size": 12501,
+      "type": 9,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 3482,
+      "file_offset": 141047,
+      "init_bytes": "10c646",
+      "mode": 3,
+      "name": "hiphop",
+      "parameter": 13515,
+      "sound_id": 1014,
+      "total_size": 3494,
+      "type": 9,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 4545,
+      "file_offset": 144549,
+      "init_bytes": "10c646",
+      "mode": 3,
+      "name": "tdream",
+      "parameter": 16273,
+      "sound_id": 1015,
+      "total_size": 4557,
+      "type": 9,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 8327,
+      "file_offset": 149114,
+      "init_bytes": "10c646",
+      "mode": 3,
+      "name": "meatloaf",
+      "parameter": 25735,
+      "sound_id": 1016,
+      "total_size": 8339,
+      "type": 9,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 8603,
+      "file_offset": 157461,
+      "init_bytes": "10c646",
+      "mode": 3,
+      "name": "withagun",
+      "parameter": 38141,
+      "sound_id": 1017,
+      "total_size": 8615,
+      "type": 9,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 5178,
+      "file_offset": 166084,
+      "init_bytes": "10c646",
+      "mode": 3,
+      "name": "60s_rock",
+      "parameter": 13305,
+      "sound_id": 1018,
+      "total_size": 5190,
+      "type": 9,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 4754,
+      "file_offset": 171282,
+      "init_bytes": "10c646",
+      "mode": 3,
+      "name": "pictures",
+      "parameter": 6925,
+      "sound_id": 1019,
+      "total_size": 4766,
+      "type": 9,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 6721,
+      "file_offset": 176056,
+      "init_bytes": "10c646",
+      "mode": 3,
+      "name": "hueydewy",
+      "parameter": 14369,
+      "sound_id": 1020,
+      "total_size": 6733,
+      "type": 9,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 6395,
+      "file_offset": 182797,
+      "init_bytes": "10c646",
+      "mode": 3,
+      "name": "timsrag",
+      "parameter": 13195,
+      "sound_id": 1021,
+      "total_size": 6407,
+      "type": 9,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 1000,
+      "file_offset": 189212,
+      "init_bytes": "10c646",
+      "mode": 1,
+      "name": "logo",
+      "parameter": 1491,
+      "sound_id": 1022,
+      "total_size": 1012,
+      "type": 9,
+      "unknown": 3,
+      "zero": 0
+    },
+    {
+      "data_size": 4098,
+      "file_offset": 190232,
+      "init_bytes": "10c646",
+      "mode": 3,
+      "name": "2001",
+      "parameter": 11937,
+      "sound_id": 1023,
+      "total_size": 4110,
+      "type": 9,
+      "unknown": 3,
+      "zero": 0
+    }
+  ],
+  "raw_files": [
+    {
+      "byte_avg_first256": 127.3,
+      "byte_max": 234,
+      "byte_min": 5,
+      "filename": "SX_3001.RAW",
+      "size": 11609,
+      "sound_id": 3001,
+      "unique_first256": 34
+    },
+    {
+      "byte_avg_first256": 126.8,
+      "byte_max": 193,
+      "byte_min": 75,
+      "filename": "SX_3002.RAW",
+      "size": 5056,
+      "sound_id": 3002,
+      "unique_first256": 40
+    },
+    {
+      "byte_avg_first256": 128.5,
+      "byte_max": 254,
+      "byte_min": 3,
+      "filename": "SX_3003.RAW",
+      "size": 4288,
+      "sound_id": 3003,
+      "unique_first256": 3
+    },
+    {
+      "byte_avg_first256": 129.8,
+      "byte_max": 253,
+      "byte_min": 4,
+      "filename": "SX_3004.RAW",
+      "size": 2864,
+      "sound_id": 3004,
+      "unique_first256": 140
+    },
+    {
+      "byte_avg_first256": 128.9,
+      "byte_max": 169,
+      "byte_min": 92,
+      "filename": "SX_3006.RAW",
+      "size": 1424,
+      "sound_id": 3006,
+      "unique_first256": 74
+    },
+    {
+      "byte_avg_first256": 129.2,
+      "byte_max": 221,
+      "byte_min": 31,
+      "filename": "SX_3012.RAW",
+      "size": 5821,
+      "sound_id": 3012,
+      "unique_first256": 60
+    },
+    {
+      "byte_avg_first256": 129.0,
+      "byte_max": 254,
+      "byte_min": 1,
+      "filename": "SX_3013.RAW",
+      "size": 14340,
+      "sound_id": 3013,
+      "unique_first256": 64
+    },
+    {
+      "byte_avg_first256": 127.8,
+      "byte_max": 232,
+      "byte_min": 35,
+      "filename": "SX_3015.RAW",
+      "size": 9500,
+      "sound_id": 3015,
+      "unique_first256": 133
+    },
+    {
+      "byte_avg_first256": 128.6,
+      "byte_max": 216,
+      "byte_min": 51,
+      "filename": "SX_3016.RAW",
+      "size": 7958,
+      "sound_id": 3016,
+      "unique_first256": 13
+    },
+    {
+      "byte_avg_first256": 128.3,
+      "byte_max": 254,
+      "byte_min": 3,
+      "filename": "SX_3018.RAW",
+      "size": 11261,
+      "sound_id": 3018,
+      "unique_first256": 104
+    },
+    {
+      "byte_avg_first256": 128.9,
+      "byte_max": 231,
+      "byte_min": 44,
+      "filename": "SX_3019.RAW",
+      "size": 21632,
+      "sound_id": 3019,
+      "unique_first256": 30
+    },
+    {
+      "byte_avg_first256": 128.8,
+      "byte_max": 254,
+      "byte_min": 16,
+      "filename": "SX_3021.RAW",
+      "size": 1528,
+      "sound_id": 3021,
+      "unique_first256": 15
+    },
+    {
+      "byte_avg_first256": 128.5,
+      "byte_max": 254,
+      "byte_min": 24,
+      "filename": "SX_3022.RAW",
+      "size": 11406,
+      "sound_id": 3022,
+      "unique_first256": 12
+    },
+    {
+      "byte_avg_first256": 128.6,
+      "byte_max": 254,
+      "byte_min": 42,
+      "filename": "SX_3025.RAW",
+      "size": 420,
+      "sound_id": 3025,
+      "unique_first256": 82
+    },
+    {
+      "byte_avg_first256": 128.5,
+      "byte_max": 251,
+      "byte_min": 7,
+      "filename": "SX_3027.RAW",
+      "size": 12310,
+      "sound_id": 3027,
+      "unique_first256": 6
+    },
+    {
+      "byte_avg_first256": 186.3,
+      "byte_max": 232,
+      "byte_min": 3,
+      "filename": "SX_3029.RAW",
+      "size": 4530,
+      "sound_id": 3029,
+      "unique_first256": 95
+    },
+    {
+      "byte_avg_first256": 128.5,
+      "byte_max": 231,
+      "byte_min": 3,
+      "filename": "SX_3031.RAW",
+      "size": 14038,
+      "sound_id": 3031,
+      "unique_first256": 3
+    },
+    {
+      "byte_avg_first256": 128.6,
+      "byte_max": 244,
+      "byte_min": 3,
+      "filename": "SX_3032.RAW",
+      "size": 1440,
+      "sound_id": 3032,
+      "unique_first256": 16
+    },
+    {
+      "byte_avg_first256": 129.3,
+      "byte_max": 201,
+      "byte_min": 44,
+      "filename": "SX_3033.RAW",
+      "size": 1104,
+      "sound_id": 3033,
+      "unique_first256": 30
+    },
+    {
+      "byte_avg_first256": 131.2,
+      "byte_max": 254,
+      "byte_min": 12,
+      "filename": "SX_3035.RAW",
+      "size": 11030,
+      "sound_id": 3035,
+      "unique_first256": 110
+    },
+    {
+      "byte_avg_first256": 128.6,
+      "byte_max": 233,
+      "byte_min": 3,
+      "filename": "SX_3036.RAW",
+      "size": 10507,
+      "sound_id": 3036,
+      "unique_first256": 4
+    },
+    {
+      "byte_avg_first256": 128.6,
+      "byte_max": 219,
+      "byte_min": 38,
+      "filename": "SX_3037.RAW",
+      "size": 2160,
+      "sound_id": 3037,
+      "unique_first256": 15
+    },
+    {
+      "byte_avg_first256": 126.8,
+      "byte_max": 193,
+      "byte_min": 75,
+      "filename": "SX_3039.RAW",
+      "size": 5056,
+      "sound_id": 3039,
+      "unique_first256": 40
+    },
+    {
+      "byte_avg_first256": 128.9,
+      "byte_max": 203,
+      "byte_min": 43,
+      "filename": "SX_3042.RAW",
+      "size": 6784,
+      "sound_id": 3042,
+      "unique_first256": 17
+    },
+    {
+      "byte_avg_first256": 128.8,
+      "byte_max": 214,
+      "byte_min": 43,
+      "filename": "SX_3054.RAW",
+      "size": 13419,
+      "sound_id": 3054,
+      "unique_first256": 81
+    },
+    {
+      "byte_avg_first256": 128.1,
+      "byte_max": 254,
+      "byte_min": 24,
+      "filename": "SX_3055.RAW",
+      "size": 9806,
+      "sound_id": 3055,
+      "unique_first256": 17
+    },
+    {
+      "byte_avg_first256": 128.3,
+      "byte_max": 254,
+      "byte_min": 9,
+      "filename": "SX_3058.RAW",
+      "size": 1650,
+      "sound_id": 3058,
+      "unique_first256": 46
+    },
+    {
+      "byte_avg_first256": 129.6,
+      "byte_max": 253,
+      "byte_min": 4,
+      "filename": "SX_3061.RAW",
+      "size": 2432,
+      "sound_id": 3061,
+      "unique_first256": 22
+    },
+    {
+      "byte_avg_first256": 128.6,
+      "byte_max": 254,
+      "byte_min": 3,
+      "filename": "SX_3063.RAW",
+      "size": 145,
+      "sound_id": 3063,
+      "unique_first256": 77
+    },
+    {
+      "byte_avg_first256": 127.4,
+      "byte_max": 187,
+      "byte_min": 65,
+      "filename": "SX_3064.RAW",
+      "size": 1488,
+      "sound_id": 3064,
+      "unique_first256": 94
+    },
+    {
+      "byte_avg_first256": 128.6,
+      "byte_max": 215,
+      "byte_min": 54,
+      "filename": "SX_3066.RAW",
+      "size": 3664,
+      "sound_id": 3066,
+      "unique_first256": 2
+    },
+    {
+      "byte_avg_first256": 126.4,
+      "byte_max": 248,
+      "byte_min": 0,
+      "filename": "SX_3067.RAW",
+      "size": 7010,
+      "sound_id": 3067,
+      "unique_first256": 140
+    },
+    {
+      "byte_avg_first256": 128.0,
+      "byte_max": 247,
+      "byte_min": 5,
+      "filename": "SX_3070.RAW",
+      "size": 15382,
+      "sound_id": 3070,
+      "unique_first256": 3
+    },
+    {
+      "byte_avg_first256": 128.6,
+      "byte_max": 254,
+      "byte_min": 3,
+      "filename": "SX_3073.RAW",
+      "size": 3096,
+      "sound_id": 3073,
+      "unique_first256": 4
+    },
+    {
+      "byte_avg_first256": 132.4,
+      "byte_max": 214,
+      "byte_min": 47,
+      "filename": "SX_3074.RAW",
+      "size": 4908,
+      "sound_id": 3074,
+      "unique_first256": 103
+    },
+    {
+      "byte_avg_first256": 128.9,
+      "byte_max": 254,
+      "byte_min": 3,
+      "filename": "SX_3075.RAW",
+      "size": 16724,
+      "sound_id": 3075,
+      "unique_first256": 54
+    },
+    {
+      "byte_avg_first256": 129.6,
+      "byte_max": 254,
+      "byte_min": 3,
+      "filename": "SX_3077.RAW",
+      "size": 1012,
+      "sound_id": 3077,
+      "unique_first256": 37
+    },
+    {
+      "byte_avg_first256": 128.6,
+      "byte_max": 250,
+      "byte_min": 3,
+      "filename": "SX_3078.RAW",
+      "size": 20227,
+      "sound_id": 3078,
+      "unique_first256": 86
+    },
+    {
+      "byte_avg_first256": 128.3,
+      "byte_max": 254,
+      "byte_min": 11,
+      "filename": "SX_3080.RAW",
+      "size": 18454,
+      "sound_id": 3080,
+      "unique_first256": 87
+    },
+    {
+      "byte_avg_first256": 128.8,
+      "byte_max": 237,
+      "byte_min": 3,
+      "filename": "SX_3081.RAW",
+      "size": 5780,
+      "sound_id": 3081,
+      "unique_first256": 39
+    },
+    {
+      "byte_avg_first256": 129.2,
+      "byte_max": 249,
+      "byte_min": 3,
+      "filename": "SX_3088.RAW",
+      "size": 6656,
+      "sound_id": 3088,
+      "unique_first256": 97
+    },
+    {
+      "byte_avg_first256": 129.2,
+      "byte_max": 253,
+      "byte_min": 26,
+      "filename": "SX_3089.RAW",
+      "size": 1240,
+      "sound_id": 3089,
+      "unique_first256": 92
+    },
+    {
+      "byte_avg_first256": 130.0,
+      "byte_max": 251,
+      "byte_min": 14,
+      "filename": "SX_3090.RAW",
+      "size": 1832,
+      "sound_id": 3090,
+      "unique_first256": 47
+    },
+    {
+      "byte_avg_first256": 128.4,
+      "byte_max": 209,
+      "byte_min": 40,
+      "filename": "SX_3108.RAW",
+      "size": 2326,
+      "sound_id": 3108,
+      "unique_first256": 119
+    },
+    {
+      "byte_avg_first256": 126.2,
+      "byte_max": 241,
+      "byte_min": 3,
+      "filename": "SX_3116.RAW",
+      "size": 647,
+      "sound_id": 3116,
+      "unique_first256": 84
+    },
+    {
+      "byte_avg_first256": 128.9,
+      "byte_max": 253,
+      "byte_min": 25,
+      "filename": "SX_3117.RAW",
+      "size": 1314,
+      "sound_id": 3117,
+      "unique_first256": 9
+    },
+    {
+      "byte_avg_first256": 127.3,
+      "byte_max": 254,
+      "byte_min": 12,
+      "filename": "SX_3136.RAW",
+      "size": 2336,
+      "sound_id": 3136,
+      "unique_first256": 108
+    },
+    {
+      "byte_avg_first256": 128.7,
+      "byte_max": 230,
+      "byte_min": 3,
+      "filename": "SX_3137.RAW",
+      "size": 534,
+      "sound_id": 3137,
+      "unique_first256": 107
+    },
+    {
+      "byte_avg_first256": 128.5,
+      "byte_max": 191,
+      "byte_min": 66,
+      "filename": "SX_3139.RAW",
+      "size": 3936,
+      "sound_id": 3139,
+      "unique_first256": 5
+    },
+    {
+      "byte_avg_first256": 128.6,
+      "byte_max": 195,
+      "byte_min": 62,
+      "filename": "SX_3200.RAW",
+      "size": 10518,
+      "sound_id": 3200,
+      "unique_first256": 110
+    },
+    {
+      "byte_avg_first256": 127.7,
+      "byte_max": 197,
+      "byte_min": 26,
+      "filename": "SX_3201.RAW",
+      "size": 9710,
+      "sound_id": 3201,
+      "unique_first256": 95
+    },
+    {
+      "byte_avg_first256": 128.8,
+      "byte_max": 240,
+      "byte_min": 36,
+      "filename": "SX_3206.RAW",
+      "size": 2838,
+      "sound_id": 3206,
+      "unique_first256": 17
+    },
+    {
+      "byte_avg_first256": 126.9,
+      "byte_max": 236,
+      "byte_min": 27,
+      "filename": "SX_3211.RAW",
+      "size": 15062,
+      "sound_id": 3211,
+      "unique_first256": 132
+    },
+    {
+      "byte_avg_first256": 129.7,
+      "byte_max": 242,
+      "byte_min": 20,
+      "filename": "SX_3212.RAW",
+      "size": 1609,
+      "sound_id": 3212,
+      "unique_first256": 28
+    },
+    {
+      "byte_avg_first256": 128.5,
+      "byte_max": 228,
+      "byte_min": 30,
+      "filename": "SX_3231.RAW",
+      "size": 10080,
+      "sound_id": 3231,
+      "unique_first256": 37
+    },
+    {
+      "byte_avg_first256": 128.3,
+      "byte_max": 238,
+      "byte_min": 3,
+      "filename": "SX_3236.RAW",
+      "size": 11286,
+      "sound_id": 3236,
+      "unique_first256": 128
+    },
+    {
+      "byte_avg_first256": 129.2,
+      "byte_max": 251,
+      "byte_min": 53,
+      "filename": "SX_3237.RAW",
+      "size": 4096,
+      "sound_id": 3237,
+      "unique_first256": 30
+    },
+    {
+      "byte_avg_first256": 128.6,
+      "byte_max": 242,
+      "byte_min": 40,
+      "filename": "SX_3254.RAW",
+      "size": 23830,
+      "sound_id": 3254,
+      "unique_first256": 10
+    },
+    {
+      "byte_avg_first256": 129.1,
+      "byte_max": 235,
+      "byte_min": 3,
+      "filename": "SX_3261.RAW",
+      "size": 9238,
+      "sound_id": 3261,
+      "unique_first256": 108
+    },
+    {
+      "byte_avg_first256": 124.8,
+      "byte_max": 254,
+      "byte_min": 44,
+      "filename": "SX_3306.RAW",
+      "size": 2702,
+      "sound_id": 3306,
+      "unique_first256": 20
+    },
+    {
+      "byte_avg_first256": 128.5,
+      "byte_max": 226,
+      "byte_min": 43,
+      "filename": "SX_3312.RAW",
+      "size": 10518,
+      "sound_id": 3312,
+      "unique_first256": 3
+    },
+    {
+      "byte_avg_first256": 126.4,
+      "byte_max": 252,
+      "byte_min": 3,
+      "filename": "SX_3337.RAW",
+      "size": 1568,
+      "sound_id": 3337,
+      "unique_first256": 152
+    },
+    {
+      "byte_avg_first256": 126.3,
+      "byte_max": 244,
+      "byte_min": 22,
+      "filename": "SX_3354.RAW",
+      "size": 2838,
+      "sound_id": 3354,
+      "unique_first256": 94
+    },
+    {
+      "byte_avg_first256": 121.2,
+      "byte_max": 226,
+      "byte_min": 21,
+      "filename": "SX_3454.RAW",
+      "size": 87,
+      "sound_id": 3454,
+      "unique_first256": 71
+    },
+    {
+      "byte_avg_first256": 128.5,
+      "byte_max": 197,
+      "byte_min": 57,
+      "filename": "SX_3500.RAW",
+      "size": 2304,
+      "sound_id": 3500,
+      "unique_first256": 4
+    },
+    {
+      "byte_avg_first256": 128.6,
+      "byte_max": 185,
+      "byte_min": 73,
+      "filename": "SX_3501.RAW",
+      "size": 4200,
+      "sound_id": 3501,
+      "unique_first256": 2
+    },
+    {
+      "byte_avg_first256": 120.2,
+      "byte_max": 193,
+      "byte_min": 63,
+      "filename": "SX_3502.RAW",
+      "size": 8320,
+      "sound_id": 3502,
+      "unique_first256": 84
+    },
+    {
+      "byte_avg_first256": 128.3,
+      "byte_max": 208,
+      "byte_min": 52,
+      "filename": "SX_3503.RAW",
+      "size": 9296,
+      "sound_id": 3503,
+      "unique_first256": 54
+    },
+    {
+      "byte_avg_first256": 129.2,
+      "byte_max": 186,
+      "byte_min": 55,
+      "filename": "SX_3504.RAW",
+      "size": 2814,
+      "sound_id": 3504,
+      "unique_first256": 82
+    },
+    {
+      "byte_avg_first256": 129.0,
+      "byte_max": 214,
+      "byte_min": 46,
+      "filename": "SX_3505.RAW",
+      "size": 4900,
+      "sound_id": 3505,
+      "unique_first256": 124
+    },
+    {
+      "byte_avg_first256": 128.7,
+      "byte_max": 209,
+      "byte_min": 53,
+      "filename": "SX_3506.RAW",
+      "size": 10875,
+      "sound_id": 3506,
+      "unique_first256": 31
+    },
+    {
+      "byte_avg_first256": 128.8,
+      "byte_max": 229,
+      "byte_min": 18,
+      "filename": "SX_3507.RAW",
+      "size": 740,
+      "sound_id": 3507,
+      "unique_first256": 51
+    },
+    {
+      "byte_avg_first256": 128.7,
+      "byte_max": 179,
+      "byte_min": 69,
+      "filename": "SX_3508.RAW",
+      "size": 2229,
+      "sound_id": 3508,
+      "unique_first256": 9
+    },
+    {
+      "byte_avg_first256": 128.6,
+      "byte_max": 224,
+      "byte_min": 53,
+      "filename": "SX_3509.RAW",
+      "size": 7385,
+      "sound_id": 3509,
+      "unique_first256": 22
+    },
+    {
+      "byte_avg_first256": 127.2,
+      "byte_max": 218,
+      "byte_min": 39,
+      "filename": "SX_3510.RAW",
+      "size": 11136,
+      "sound_id": 3510,
+      "unique_first256": 91
+    },
+    {
+      "byte_avg_first256": 128.7,
+      "byte_max": 220,
+      "byte_min": 38,
+      "filename": "SX_3554.RAW",
+      "size": 12253,
+      "sound_id": 3554,
+      "unique_first256": 21
+    },
+    {
+      "byte_avg_first256": 128.5,
+      "byte_max": 238,
+      "byte_min": 15,
+      "filename": "SX_3600.RAW",
+      "size": 2304,
+      "sound_id": 3600,
+      "unique_first256": 6
+    },
+    {
+      "byte_avg_first256": 128.6,
+      "byte_max": 242,
+      "byte_min": 16,
+      "filename": "SX_3601.RAW",
+      "size": 4200,
+      "sound_id": 3601,
+      "unique_first256": 4
+    },
+    {
+      "byte_avg_first256": 115.5,
+      "byte_max": 229,
+      "byte_min": 26,
+      "filename": "SX_3602.RAW",
+      "size": 8320,
+      "sound_id": 3602,
+      "unique_first256": 112
+    },
+    {
+      "byte_avg_first256": 128.3,
+      "byte_max": 254,
+      "byte_min": 8,
+      "filename": "SX_3603.RAW",
+      "size": 9296,
+      "sound_id": 3603,
+      "unique_first256": 74
+    },
+    {
+      "byte_avg_first256": 129.6,
+      "byte_max": 226,
+      "byte_min": 3,
+      "filename": "SX_3604.RAW",
+      "size": 2814,
+      "sound_id": 3604,
+      "unique_first256": 118
+    },
+    {
+      "byte_avg_first256": 129.2,
+      "byte_max": 254,
+      "byte_min": 3,
+      "filename": "SX_3605.RAW",
+      "size": 4900,
+      "sound_id": 3605,
+      "unique_first256": 144
+    },
+    {
+      "byte_avg_first256": 128.9,
+      "byte_max": 254,
+      "byte_min": 11,
+      "filename": "SX_3606.RAW",
+      "size": 10875,
+      "sound_id": 3606,
+      "unique_first256": 46
+    },
+    {
+      "byte_avg_first256": 128.8,
+      "byte_max": 242,
+      "byte_min": 3,
+      "filename": "SX_3607.RAW",
+      "size": 740,
+      "sound_id": 3607,
+      "unique_first256": 54
+    },
+    {
+      "byte_avg_first256": 129.0,
+      "byte_max": 234,
+      "byte_min": 3,
+      "filename": "SX_3608.RAW",
+      "size": 2229,
+      "sound_id": 3608,
+      "unique_first256": 17
+    },
+    {
+      "byte_avg_first256": 128.7,
+      "byte_max": 254,
+      "byte_min": 29,
+      "filename": "SX_3609.RAW",
+      "size": 7385,
+      "sound_id": 3609,
+      "unique_first256": 25
+    },
+    {
+      "byte_avg_first256": 127.5,
+      "byte_max": 233,
+      "byte_min": 19,
+      "filename": "SX_3610.RAW",
+      "size": 5142,
+      "sound_id": 3610,
+      "unique_first256": 103
+    },
+    {
+      "byte_avg_first256": 129.2,
+      "byte_max": 201,
+      "byte_min": 3,
+      "filename": "SX_3611.RAW",
+      "size": 654,
+      "sound_id": 3611,
+      "unique_first256": 51
+    },
+    {
+      "byte_avg_first256": 129.0,
+      "byte_max": 189,
+      "byte_min": 43,
+      "filename": "SX_3612.RAW",
+      "size": 1600,
+      "sound_id": 3612,
+      "unique_first256": 6
+    },
+    {
+      "byte_avg_first256": 129.6,
+      "byte_max": 231,
+      "byte_min": 3,
+      "filename": "SX_3613.RAW",
+      "size": 1075,
+      "sound_id": 3613,
+      "unique_first256": 45
+    },
+    {
+      "byte_avg_first256": 128.8,
+      "byte_max": 225,
+      "byte_min": 32,
+      "filename": "SX_3614.RAW",
+      "size": 7457,
+      "sound_id": 3614,
+      "unique_first256": 134
+    },
+    {
+      "byte_avg_first256": 129.3,
+      "byte_max": 231,
+      "byte_min": 3,
+      "filename": "SX_3615.RAW",
+      "size": 1808,
+      "sound_id": 3615,
+      "unique_first256": 55
+    },
+    {
+      "byte_avg_first256": 129.7,
+      "byte_max": 232,
+      "byte_min": 4,
+      "filename": "SX_3616.RAW",
+      "size": 8032,
+      "sound_id": 3616,
+      "unique_first256": 7
+    },
+    {
+      "byte_avg_first256": 129.9,
+      "byte_max": 225,
+      "byte_min": 16,
+      "filename": "SX_3617.RAW",
+      "size": 5050,
+      "sound_id": 3617,
+      "unique_first256": 32
+    },
+    {
+      "byte_avg_first256": 128.2,
+      "byte_max": 225,
+      "byte_min": 33,
+      "filename": "SX_3618.RAW",
+      "size": 2232,
+      "sound_id": 3618,
+      "unique_first256": 54
+    },
+    {
+      "byte_avg_first256": 128.3,
+      "byte_max": 196,
+      "byte_min": 46,
+      "filename": "SX_3620.RAW",
+      "size": 7958,
+      "sound_id": 3620,
+      "unique_first256": 31
+    },
+    {
+      "byte_avg_first256": 128.6,
+      "byte_max": 253,
+      "byte_min": 14,
+      "filename": "SX_3621.RAW",
+      "size": 1558,
+      "sound_id": 3621,
+      "unique_first256": 66
+    },
+    {
+      "byte_avg_first256": 132.5,
+      "byte_max": 219,
+      "byte_min": 12,
+      "filename": "SX_3622.RAW",
+      "size": 15638,
+      "sound_id": 3622,
+      "unique_first256": 57
+    },
+    {
+      "byte_avg_first256": 129.4,
+      "byte_max": 250,
+      "byte_min": 3,
+      "filename": "SX_3623.RAW",
+      "size": 1109,
+      "sound_id": 3623,
+      "unique_first256": 105
+    },
+    {
+      "byte_avg_first256": 127.4,
+      "byte_max": 199,
+      "byte_min": 68,
+      "filename": "SX_3624.RAW",
+      "size": 1792,
+      "sound_id": 3624,
+      "unique_first256": 62
+    },
+    {
+      "byte_avg_first256": 124.8,
+      "byte_max": 254,
+      "byte_min": 66,
+      "filename": "SX_3625.RAW",
+      "size": 4552,
+      "sound_id": 3625,
+      "unique_first256": 103
+    },
+    {
+      "byte_avg_first256": 129.1,
+      "byte_max": 192,
+      "byte_min": 65,
+      "filename": "SX_3626.RAW",
+      "size": 1952,
+      "sound_id": 3626,
+      "unique_first256": 85
+    },
+    {
+      "byte_avg_first256": 118.8,
+      "byte_max": 254,
+      "byte_min": 3,
+      "filename": "SX_3627.RAW",
+      "size": 832,
+      "sound_id": 3627,
+      "unique_first256": 68
+    },
+    {
+      "byte_avg_first256": 128.6,
+      "byte_max": 165,
+      "byte_min": 104,
+      "filename": "SX_3654.RAW",
+      "size": 3665,
+      "sound_id": 3654,
+      "unique_first256": 2
+    },
+    {
+      "byte_avg_first256": 127.3,
+      "byte_max": 246,
+      "byte_min": 3,
+      "filename": "SX_3700.RAW",
+      "size": 27132,
+      "sound_id": 3700,
+      "unique_first256": 95
+    },
+    {
+      "byte_avg_first256": 127.3,
+      "byte_max": 223,
+      "byte_min": 3,
+      "filename": "SX_3701.RAW",
+      "size": 15840,
+      "sound_id": 3701,
+      "unique_first256": 30
+    },
+    {
+      "byte_avg_first256": 127.4,
+      "byte_max": 216,
+      "byte_min": 31,
+      "filename": "SX_3702.RAW",
+      "size": 3619,
+      "sound_id": 3702,
+      "unique_first256": 13
+    },
+    {
+      "byte_avg_first256": 127.4,
+      "byte_max": 250,
+      "byte_min": 5,
+      "filename": "SX_3703.RAW",
+      "size": 11570,
+      "sound_id": 3703,
+      "unique_first256": 66
+    },
+    {
+      "byte_avg_first256": 127.7,
+      "byte_max": 229,
+      "byte_min": 3,
+      "filename": "SX_3704.RAW",
+      "size": 19872,
+      "sound_id": 3704,
+      "unique_first256": 9
+    },
+    {
+      "byte_avg_first256": 127.4,
+      "byte_max": 230,
+      "byte_min": 34,
+      "filename": "SX_3705.RAW",
+      "size": 4980,
+      "sound_id": 3705,
+      "unique_first256": 46
+    },
+    {
+      "byte_avg_first256": 126.9,
+      "byte_max": 236,
+      "byte_min": 27,
+      "filename": "SX_3706.RAW",
+      "size": 15062,
+      "sound_id": 3706,
+      "unique_first256": 132
+    },
+    {
+      "byte_avg_first256": 128.5,
+      "byte_max": 254,
+      "byte_min": 24,
+      "filename": "SX_3707.RAW",
+      "size": 11406,
+      "sound_id": 3707,
+      "unique_first256": 12
+    },
+    {
+      "byte_avg_first256": 128.5,
+      "byte_max": 142,
+      "byte_min": 116,
+      "filename": "SX_3754.RAW",
+      "size": 5376,
+      "sound_id": 3754,
+      "unique_first256": 4
+    }
+  ],
+  "raw_format": {
+    "center_value": 128,
+    "encoding": "unsigned 8-bit PCM",
+    "header": "none",
+    "sound_id_range": "3001-3754"
+  },
+  "remaining_bytes": 0,
+  "size": 194734,
+  "snd_preamble": "a6f80280",
+  "tag_names": [
+    {
+      "name": "5convey",
+      "sound_id": 5
+    },
+    {
+      "name": "24FAN",
+      "sound_id": 24
+    },
+    {
+      "name": "26GENER",
+      "sound_id": 26
+    },
+    {
+      "name": "50MOTOR",
+      "sound_id": 50
+    },
+    {
+      "name": "51VAC",
+      "sound_id": 51
+    },
+    {
+      "name": "62COFFEE",
+      "sound_id": 62
+    },
+    {
+      "name": "65LEP",
+      "sound_id": 65
+    },
+    {
+      "name": "67CAN",
+      "sound_id": 67
+    },
+    {
+      "name": "69ANTGRV",
+      "sound_id": 69
+    },
+    {
+      "name": "74NITRO",
+      "sound_id": 74
+    },
+    {
+      "name": "91LASER1",
+      "sound_id": 91
+    },
+    {
+      "name": "107MIXER",
+      "sound_id": 107
+    },
+    {
+      "name": "109BLIMP",
+      "sound_id": 109
+    },
+    {
+      "name": "205CONV",
+      "sound_id": 205
+    },
+    {
+      "name": "newtim2",
+      "sound_id": 1000
+    },
+    {
+      "name": "unpluggd",
+      "sound_id": 1001
+    },
+    {
+      "name": "enya",
+      "sound_id": 1002
+    },
+    {
+      "name": "country",
+      "sound_id": 1003
+    },
+    {
+      "name": "progrock",
+      "sound_id": 1004
+    },
+    {
+      "name": "salsa",
+      "sound_id": 1005
+    },
+    {
+      "name": "techno",
+      "sound_id": 1006
+    },
+    {
+      "name": "steeldrm",
+      "sound_id": 1007
+    },
+    {
+      "name": "grunge",
+      "sound_id": 1008
+    },
+    {
+      "name": "afrotoon",
+      "sound_id": 1009
+    },
+    {
+      "name": "blazooes",
+      "sound_id": 1010
+    },
+    {
+      "name": "junglism",
+      "sound_id": 1011
+    },
+    {
+      "name": "keeptryn",
+      "sound_id": 1012
+    },
+    {
+      "name": "fifties",
+      "sound_id": 1013
+    },
+    {
+      "name": "hiphop",
+      "sound_id": 1014
+    },
+    {
+      "name": "tdream",
+      "sound_id": 1015
+    },
+    {
+      "name": "meatloaf",
+      "sound_id": 1016
+    },
+    {
+      "name": "withagun",
+      "sound_id": 1017
+    },
+    {
+      "name": "60s_rock",
+      "sound_id": 1018
+    },
+    {
+      "name": "pictures",
+      "sound_id": 1019
+    },
+    {
+      "name": "hueydewy",
+      "sound_id": 1020
+    },
+    {
+      "name": "timsrag",
+      "sound_id": 1021
+    },
+    {
+      "name": "logo",
+      "sound_id": 1022
+    },
+    {
+      "name": "2001",
+      "sound_id": 1023
+    }
+  ]
+}

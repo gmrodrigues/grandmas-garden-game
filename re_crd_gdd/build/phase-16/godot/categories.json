@@ -1,0 +1,178 @@
+{
+  "Balls": {
+    "name": "Balls",
+    "triggers": [
+      "collision",
+      "trap"
+    ],
+    "destructible": false,
+    "spawns": null,
+    "part_count": 9
+  },
+  "Walls / Floors": {
+    "name": "Walls / Floors",
+    "triggers": [],
+    "destructible": true,
+    "spawns": null,
+    "part_count": 15
+  },
+  "Inclines": {
+    "name": "Inclines",
+    "triggers": [],
+    "destructible": false,
+    "spawns": null,
+    "part_count": 6
+  },
+  "Special Mechanics": {
+    "name": "Special Mechanics",
+    "triggers": [
+      "collision",
+      "electrical",
+      "proximity"
+    ],
+    "destructible": false,
+    "spawns": "custom",
+    "part_count": 15
+  },
+  "Balloons / Airships": {
+    "name": "Balloons / Airships",
+    "triggers": [
+      "collision",
+      "proximity"
+    ],
+    "destructible": true,
+    "spawns": null,
+    "part_count": 3
+  },
+  "Rotating Power Sources": {
+    "name": "Rotating Power Sources",
+    "triggers": [
+      "collision",
+      "electrical",
+      "rope"
+    ],
+    "destructible": false,
+    "spawns": null,
+    "part_count": 7
+  },
+  "Ropes / Belts / Pulleys": {
+    "name": "Ropes / Belts / Pulleys",
+    "triggers": [],
+    "destructible": false,
+    "spawns": null,
+    "part_count": 4
+  },
+  "Containers": {
+    "name": "Containers",
+    "triggers": [
+      "collision"
+    ],
+    "destructible": false,
+    "spawns": null,
+    "part_count": 5
+  },
+  "Characters": {
+    "name": "Characters",
+    "triggers": [
+      "collision",
+      "proximity"
+    ],
+    "destructible": false,
+    "spawns": null,
+    "part_count": 8
+  },
+  "Springs / Pneumatics": {
+    "name": "Springs / Pneumatics",
+    "triggers": [
+      "collision",
+      "electrical"
+    ],
+    "destructible": false,
+    "spawns": null,
+    "part_count": 7
+  },
+  "Explosives / Projectiles": {
+    "name": "Explosives / Projectiles",
+    "triggers": [
+      "collision",
+      "proximity",
+      "timer"
+    ],
+    "destructible": true,
+    "spawns": "projectile",
+    "part_count": 10
+  },
+  "Electrical": {
+    "name": "Electrical",
+    "triggers": [
+      "electrical",
+      "collision"
+    ],
+    "destructible": false,
+    "spawns": null,
+    "part_count": 9
+  },
+  "Light / Flame Sources": {
+    "name": "Light / Flame Sources",
+    "triggers": [
+      "proximity",
+      "electrical"
+    ],
+    "destructible": false,
+    "spawns": "fire",
+    "part_count": 5
+  },
+  "Lasers / Optics": {
+    "name": "Lasers / Optics",
+    "triggers": [
+      "electrical",
+      "proximity",
+      "collision"
+    ],
+    "destructible": false,
+    "spawns": "laser_beam",
+    "part_count": 8
+  },
+  "Cutting / Popping": {
+    "name": "Cutting / Popping",
+    "triggers": [
+      "collision"
+    ],
+    "destructible": false,
+    "spawns": null,
+    "part_count": 3
+  },
+  "Created / Phantom": {
+    "name": "Created / Phantom",
+    "triggers": [],
+    "destructible": false,
+    "spawns": null,
+    "part_count": 1
+  },
+  "Pipe Systems": {
+    "name": "Pipe Systems",
+    "triggers": [
+      "collision",
+      "electrical"
+    ],
+    "destructible": false,
+    "spawns": null,
+    "part_count": 4
+  },
+  "Scenery": {
+    "name": "Scenery",
+    "triggers": [],
+    "destructible": true,
+    "spawns": null,
+    "part_count": 26
+  },
+  "Pool Table": {
+    "name": "Pool Table",
+    "triggers": [
+      "collision"
+    ],
+    "destructible": false,
+    "spawns": null,
+    "part_count": 2
+  }
+}

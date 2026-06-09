@@ -1,0 +1,66 @@
+J12 — Music & Sound journey test
+Timestamp: 2026-05-27T07:17:03.150503
+Mode: HEADLESS
+
+=== 1. Music Tracks (IDs 1000–1023) ===
+  [1000] Main Theme
+  [1001] Puzzle Theme (Easy 1)
+  [1002] Puzzle Theme (Easy 2)
+  [1003] Puzzle Theme (Medium 1)
+  [1004] Puzzle Theme (Medium 2)
+  [1005] Puzzle Theme (Hard 1)
+  [1006] Puzzle Theme (Hard 2)
+  [1007] Workshop Theme
+  [1008] Head-to-Head Theme
+  [1009] Tutorial Theme
+  [1010] Credits Theme
+  [1011] Victory Fanfare
+  [1012] Puzzle Solved Jingle
+  [1013] Menu Ambient
+  [1014] Sign-In Theme
+  [1015] Under the Sea (ELEV1)
+  [1016] Desert Theme
+  [1017] Forest Theme
+  [1018] Cave Theme
+  [1019] Space Theme
+  [1020] City Theme
+  [1021] Circus Theme
+  [1022] Lab Theme
+  [1023] Finale Theme
+  ✅ Music tracks documented — 24 tracks
+
+=== 2. Sound Effects from behaviors.json ===
+  Parts with sound effects: 53
+    [  4] Balloon: 1 sound(s) → [3004]
+    [  5] Conveyor Belt: 1 sound(s) → [5]
+    [  6] Mouse Motor: 1 sound(s) → [3006]
+    [ 12] Curie Cat: 2 sound(s) → [3012, 3312]
+    [ 13] Jack-in-the-box: 1 sound(s) → [3013]
+    [ 15] Fish Tank: 1 sound(s) → [3015]
+    [ 16] Bike Pump: 1 sound(s) → [3016]
+    [ 18] Cannon: 2 sound(s) → [3018, 3019]
+    [ 19] Dynamite: 1 sound(s) → [3019]
+    [ 22] Remote Control: 1 sound(s) → [3022]
+    ... and 43 more
+  ✅ Sound effects extracted from behaviors.json — 53 parts with sounds
+
+=== 3. Play/Stop Simulation ===
+  State: playing=False, track=None, volume=75%
+  [PLAY] Track 1015: Under the Sea (ELEV1)
+  ✅ Play initiated
+  [STOP] Track ended
+  ✅ Stop works
+
+=== 4. Volume Control ===
+  Volume set to 50%
+  ✅ Volume change to 50%
+  Volume set to 25%
+  ✅ Volume change to 25%
+  Volume set to 100%
+  ✅ Volume change to 100%
+  Volume set to 0%
+  ✅ Volume change to 0%
+
+==================================================
+RESULTS: 8 passed, 0 failed
+Full log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J12_20260527_071703.log

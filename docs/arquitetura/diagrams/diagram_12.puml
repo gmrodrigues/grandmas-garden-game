@@ -1,0 +1,101 @@
+@startuml Chain_Evaluation_Sequence
+autonumber 1
+
+participant SimulationRunner as SR
+participant ChainManager as CM
+participant "chain_script[i]" as Rule
+
+[-> CM : evaluate_chain()
+activate CM
+
+loop for each rule in chain_script
+  CM -> Rule : mode = rule.get("mode")
+  alt mode == "once" and _fired.has(i)
+    CM -> CM : continue to next rule
+  end
+
+  CM -> CM : _check_condition(when)
+  activate CM
+
+    alt condition type
+
+      alt "tick"
+        CM -> CM : return true
+
+      alt "flag"
+        CM -> CM : return _flags[name] == value
+
+      alt "and"
+        loop per condition in conditions
+          CM -> CM : _check_condition(c)
+          alt not true
+            CM -> CM : return false
+          end
+        end
+        CM -> CM : return true
+
+      alt "prop_ge"
+        CM -> CM : p = _find_part(part_name)
+        CM -> CM : return p[prop] >= value
+
+      alt "prop_eq"
+        CM -> CM : p = _find_part(part_name)
+        CM -> CM : return p[prop] == value
+
+      alt "prop_gt_ref"
+        CM -> CM : p = _find_part(part_name)
+        CM -> CM : ref = _find_part(ref_part_name)
+        CM -> CM : return p[prop] > ref[ref_prop] + offset
+
+      alt "overlap"
+        CM -> CM : a = _find_part(a_name)
+        CM -> CM : b = _find_part(b_name)
+        CM -> CM : return a.aabb_overlap(b)
+
+      alt "solution"
+        CM -> CM : return board.solution.check()
+
+    end
+
+  deactivate CM
+
+  alt condition TRUE
+    CM -> CM : _execute_actions(actions)
+    activate CM
+
+      loop per action in actions
+        alt "set_flag"
+          CM -> CM : _flags[name] = value
+        else "inc"
+          CM -> CM : p = _find_part(part)
+          CM -> CM : p[prop] = p[prop] + value
+        else "set"
+          CM -> CM : p = _find_part(part)
+          CM -> CM : p[prop] = value
+        else "delta"
+          CM -> CM : p = _find_part(part)
+          CM -> CM : p[prop] = p[prop] + value
+          alt prop == "x"
+            CM -> CM : p.pos_x = value
+          end
+        else "log"
+          CM -> CM : _log(msg % [tick_count/60.0])
+          CM -> CM : event_log.append()
+          CM -> CM : event_logged.emit(msg)
+        else "win"
+          CM -> CM : _log(msg)
+          CM -> CM : chain_completed.emit(tick_count)
+        end
+      end
+
+    deactivate CM
+
+    alt mode == "once"
+      CM -> CM : _fired.append(i)
+    end
+  end
+end
+
+CM -> SR : chain_completed(tick)\n(if "win" action fired)
+
+@enduml

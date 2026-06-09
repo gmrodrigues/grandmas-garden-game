@@ -1,0 +1,41 @@
+JOURNEY: J02 — Main Menu
+TIMESTAMP: 20260527_072017
+MODE: HEADLESS
+EXIT CODE: 0
+============================================================
+STDOUT:
+J02 — Main Menu journey test
+Mode: HEADLESS
+=== 1. Asset Checks ===
+  [OK] MAINMENU.ANM exists
+  [OK] States: 11 (expect 11)
+  [OK] Frames: 116 (expect 116)
+  [OK] Menu PNGs: 31
+
+=== 2. Button Layout ===
+  'Puzzle Play' → J03 @ (130, 80, 130, 50)
+  'Workshop' → J04 @ (290, 80, 130, 50)
+  'Head-to-Head' → J14 @ (450, 80, 130, 50)
+  'Guided Tour' → tour @ (130, 150, 130, 50)
+  'Sign-In' → J01 @ (290, 150, 130, 50)
+  'Tutorial' → tutorial @ (450, 150, 130, 50)
+  [OK] Main buttons
+  Icon 'Preferences (computer)' → J11 @ (550, 250, 50, 50)
+  Icon 'Quit (stop sign)' → quit @ (610, 250, 50, 50)
+  Icon 'Help (?)' → help @ (550, 310, 50, 50)
+  [OK] Utility icons
+
+=== 3. State Transitions ===
+  idle → hover button → click → redirect to target screen
+  Quit → confirm dialog → exit game
+  Sign-In → open J01 sign-in window
+  Puzzle Play → open J03 puzzle select
+  Workshop → open J04 editor
+  [OK] Core transitions documented
+
+==================================================
+RESULTS: 7 passed, 0 failed
+Full log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J02_20260527_072017.log
+
+============================================================
+STDERR:

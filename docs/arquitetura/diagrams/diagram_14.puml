@@ -1,0 +1,71 @@
+@startuml Simulation_State_Machine
+skinparam stateFontSize 16
+
+title SimulationRunner States - play/pause/stop/reset/timeout
+
+note right of IDLE
+  Initial state after init()
+  Board loaded, chain_script parsed
+  Sprites rendered at initial positions
+end note
+state IDLE
+
+note right of RUNNING
+  _process() pacemaker active
+  tick_accum_ms accumulates wall-clock
+  chain.evaluate_chain() + physics.step() per 16.667ms
+  board.sync_sprites() updates visuals
+end note
+state RUNNING
+
+state "Tick Loop" as TICK_LOOP
+note bottom of TICK_LOOP
+  while tick_accum_ms >= 16.667ms:
+    tick_accum_ms -= 16.667ms
+    tick_count += 1
+    chain.evaluate_chain()
+    physics.step(tick_count)
+    board.sync_sprites()
+end note
+
+note right of PAUSED
+  Pacemaker halted
+  Board frozen
+  Can resume to RUNNING
+end note
+state PAUSED
+
+note right of SUCCESS
+  solution.check() returned true
+  OR chain "win" action fired
+  simulation_finished.emit(true, ...)
+  Board frozen
+end note
+state SUCCESS
+
+note right of FAIL
+  tick_count >= max_ticks (timeout)
+  OR explicit failure condition
+  simulation_finished.emit(false, ...)
+  Board frozen
+end note
+state FAIL
+
+[*] --> IDLE : init(data)
+
+IDLE --> RUNNING : play()
+RUNNING --> PAUSED : pause()
+PAUSED --> RUNNING : resume()
+RUNNING --> IDLE : stop()
+PAUSED --> IDLE : stop()
+RUNNING --> SUCCESS : solution.check() == true\nOR chain "win" action
+RUNNING --> FAIL : tick_count >= max_ticks
+SUCCESS --> IDLE : reset() -> _reset_simulation()
+FAIL --> IDLE : reset() -> _reset_simulation()
+IDLE --> IDLE : reset() (re-init from same data)
+
+note bottom of SUCCESS
+  play() after SUCCESS -> _reset_simulation() first
+end note
+
+@enduml

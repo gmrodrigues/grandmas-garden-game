@@ -1,0 +1,26 @@
+J08 — Simulation Run journey test
+Timestamp: 2026-05-27T07:15:22.583976
+Mode: HEADLESS
+
+=== 1. Engine Import ===
+  ✅ tim2_editor.engine imports
+
+=== 2. PhysicsWorld Creation ===
+  ✅ PhysicsWorld created with 1 part
+
+=== 3. Simulation Ticks (200 cycles) ===
+  tick    0: pos=( 100,  50) vel=(0,3)
+  tick   40: pos=( 100,  55) vel=(0,123)
+  tick   80: pos=( 100,  69) vel=(0,243)
+  tick  120: pos=( 100,  93) vel=(0,363)
+  tick  160: pos=( 100, 126) vel=(0,483)
+  Final: pos=( 100, 167) start=( 100,  50)
+  ✅ Ball moved in y direction — dy=117 (gravity applied)
+  ✅ 200 ticks completed without error
+
+=== 4. Collision Verification ===
+  ✅ Ball/floor collision detection — AABB overlap True
+
+==================================================
+RESULTS: 5 passed, 0 failed
+Full log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J08_20260527_071522.log

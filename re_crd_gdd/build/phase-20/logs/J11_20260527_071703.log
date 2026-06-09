@@ -1,0 +1,43 @@
+J11 — Player Preferences journey test
+Timestamp: 2026-05-27T07:17:03.118272
+Mode: HEADLESS
+
+=== 1. Preference Toggles ===
+  [Ambient Animation]
+      Show idle animations on parts in the workshop
+      Default: ON
+  [Scenery]
+      Show scenery/background parts in the editor
+      Default: ON
+  [Background]
+      Render background image behind the puzzle
+      Default: ON
+  [Info Handles]
+      Show info button on parts (magnifying glass)
+      Default: ON
+  [Sound Effects]
+      Play sound effects during puzzle/simulation
+      Default: ON
+  ✅ 5 preferences defined — 5 toggles
+
+=== 2. Toggle State Machine ===
+  Initial preference states:
+    Ambient Animation: ON (green)
+    Scenery: ON (green)
+    Background: ON (green)
+    Info Handles: ON (green)
+    Sound Effects: OFF (red)
+  ✅ Initial states loaded
+
+=== 3. Toggle Interaction ===
+  [TOGGLE] Sound Effects: OFF → ON
+  ✅ Toggle state change works
+  ✅ Toggle indicator in correct state — display: ON (green)
+
+=== 4. Preferences Persistence ===
+  ✅ Preferences saved to JSON — /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/preferences.json
+  ✅ Preferences reloaded match saved state — sound_effects: True
+
+==================================================
+RESULTS: 6 passed, 0 failed
+Full log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J11_20260527_071703.log

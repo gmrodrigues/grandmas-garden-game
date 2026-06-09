@@ -1,0 +1,37 @@
+{
+  "log_analysis": {
+    "total_lines": 95,
+    "opl_write_lines": 4,
+    "opl_writes": [
+      {
+        "line_num": 0,
+        "raw": "Logging: opened logfile 'build/phase-6/dosbox/opl2-capture.log' successfully. All further logging will go to this file."
+      },
+      {
+        "line_num": 42,
+        "raw": "MPU-401 Registering I/O ports as if IBM PC MPU-401 at base 330h"
+      },
+      {
+        "line_num": 54,
+        "raw": "0       SBLASTER:DSP:Reset"
+      },
+      {
+        "line_num": 93,
+        "raw": "8088216       SBLASTER:DSP:Reset"
+      }
+    ],
+    "register_write_count": 0
+  },
+  "comparison": {
+    "status": "no_register_writes",
+    "message": "Found 4 OPL-related lines but no register/value pairs",
+    "sample_lines": [
+      "Logging: opened logfile 'build/phase-6/dosbox/opl2-capture.log' successfully. All further logging will go to this file.",
+      "MPU-401 Registering I/O ports as if IBM PC MPU-401 at base 330h",
+      "0       SBLASTER:DSP:Reset",
+      "8088216       SBLASTER:DSP:Reset"
+    ]
+  },
+  "fm_patch_count": 14,
+  "note": "Compare voice_param_writes with SCI28 decoded registers"
+}

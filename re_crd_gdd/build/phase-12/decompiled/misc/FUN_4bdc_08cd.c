@@ -1,0 +1,24 @@
+// TIM2.EXE: FUN_4bdc_08cd @ file 0x05188D Ghidra 0x4C68D
+// Subsystem: misc | Size: 10 bytes
+
+
+void __cdecl16far FUN_4bdc_08cd(void)
+
+{
+  byte in_CF;
+  byte in_PF;
+  byte in_AF;
+  byte in_ZF;
+  byte in_SF;
+  byte in_TF;
+  byte in_IF;
+  byte in_OF;
+  byte in_NT;
+  
+  FUN_4bdc_0cf1((uint)(in_NT & 1) * 0x4000 | (uint)(in_OF & 1) * 0x800 | (uint)(in_IF & 1) * 0x200 |
+                (uint)(in_TF & 1) * 0x100 | (uint)(in_SF & 1) * 0x80 | (uint)(in_ZF & 1) * 0x40 |
+                (uint)(in_AF & 1) * 0x10 | (uint)(in_PF & 1) * 4 | (uint)(in_CF & 1));
+  FUN_4bdc_0da0();
+  return;
+}
+

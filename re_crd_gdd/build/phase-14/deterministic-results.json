@@ -1,0 +1,86 @@
+{
+  "pass_count": 11,
+  "fail_count": 0,
+  "results": {
+    "y position identical across 3 runs": {
+      "pass": true,
+      "expected": "identical",
+      "actual": [
+        375800,
+        768000,
+        375800
+      ],
+      "detail": "y=375800 vel_y=768000"
+    },
+    "vel_y identical across 3 runs": {
+      "pass": true,
+      "expected": "identical",
+      "actual": [
+        375800,
+        768000,
+        375800
+      ],
+      "detail": ""
+    },
+    "Integer vs float identical for 10000 ticks": {
+      "pass": true,
+      "expected": "identical",
+      "actual": "identical",
+      "detail": ""
+    },
+    "Position history identical across 3 collision runs": {
+      "pass": true,
+      "expected": "identical",
+      "actual": "len=100",
+      "detail": ""
+    },
+    "State sequence identical across 3 runs": {
+      "pass": true,
+      "expected": "identical",
+      "actual": "len=200",
+      "detail": "first_states=[(0, 0, 63, 2745024), (1, 0, 63, 2745024), (2, 0, 63, 2745024), (3, 0, 63, 2745024), (4, 0, 63, 2745024)]"
+    },
+    "Seeded RNG gives identical sequence": {
+      "pass": true,
+      "expected": "identical",
+      "actual": "identical",
+      "detail": "first_5_diffs=[]"
+    },
+    "Save/restore: same x after 500 ticks": {
+      "pass": true,
+      "expected": 528,
+      "actual": 528,
+      "detail": ""
+    },
+    "Save/restore: same y after 500 ticks": {
+      "pass": true,
+      "expected": [
+        313,
+        313
+      ],
+      "actual": [
+        313,
+        313
+      ],
+      "detail": ""
+    },
+    "Save/restore: same vel_y after 500 ticks": {
+      "pass": true,
+      "expected": 0,
+      "actual": 0,
+      "detail": ""
+    },
+    "Save/restore: same state_counter": {
+      "pass": true,
+      "expected": 1,
+      "actual": 1,
+      "detail": ""
+    },
+    "ELEV1 200 ticks identical across runs": {
+      "pass": true,
+      "expected": "identical",
+      "actual": "identical",
+      "detail": "Mismatches: 0 / 105 parts"
+    }
+  }
+}

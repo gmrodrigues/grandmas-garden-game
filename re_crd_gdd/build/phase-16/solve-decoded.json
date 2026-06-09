@@ -1,0 +1,2938 @@
+{
+  "0": {
+    "part_type": 0,
+    "solve_name": "Bowling Ball",
+    "catalog_name": "Bowling Ball",
+    "category": "Balls",
+    "states": [
+      {
+        "name": "",
+        "triggers": [
+          {
+            "self": 1,
+            "other": -1
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      }
+    ]
+  },
+  "1": {
+    "part_type": 1,
+    "solve_name": "Wall",
+    "catalog_name": "Brick Wall",
+    "category": "Walls / Floors",
+    "states": []
+  },
+  "2": {
+    "part_type": 2,
+    "solve_name": "Incline",
+    "catalog_name": "Wood incline",
+    "category": "Inclines",
+    "states": []
+  },
+  "3": {
+    "part_type": 3,
+    "solve_name": "Teeter-Totter",
+    "catalog_name": "Tipsy Trailer",
+    "category": "Special Mechanics",
+    "states": []
+  },
+  "4": {
+    "part_type": 4,
+    "solve_name": "Balloon",
+    "catalog_name": "Balloon",
+    "category": "Balloons / Airships",
+    "states": [
+      {
+        "name": "Not Popped",
+        "triggers": [
+          {
+            "self": 3,
+            "other": 7
+          },
+          {
+            "self": 2,
+            "other": 6
+          },
+          {
+            "self": 4,
+            "other": 8
+          },
+          {
+            "self": 5,
+            "other": 9
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      },
+      {
+        "name": "Popped",
+        "triggers": [
+          {
+            "self": 7,
+            "other": 2
+          },
+          {
+            "self": 6,
+            "other": 4
+          },
+          {
+            "self": 8,
+            "other": 5
+          },
+          {
+            "self": 9,
+            "other": -1
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      }
+    ]
+  },
+  "5": {
+    "part_type": 5,
+    "solve_name": "Conveyor Belt",
+    "catalog_name": "Conveyor Belt",
+    "category": "Rotating Power Sources",
+    "states": []
+  },
+  "6": {
+    "part_type": 6,
+    "solve_name": "Mouse Motor",
+    "catalog_name": "Mouse Motor",
+    "category": "Rotating Power Sources",
+    "states": [
+      {
+        "name": "Not Running",
+        "triggers": [
+          {
+            "self": 3,
+            "other": 6
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      },
+      {
+        "name": "Running",
+        "triggers": [
+          {
+            "self": 6,
+            "other": -1
+          }
+        ],
+        "anm_state": 6,
+        "explosive": false
+      }
+    ]
+  },
+  "7": {
+    "part_type": 7,
+    "solve_name": "Pulley",
+    "catalog_name": "Pulley",
+    "category": "Ropes / Belts / Pulleys",
+    "states": []
+  },
+  "8": {
+    "part_type": 8,
+    "solve_name": "Belt",
+    "catalog_name": "Belt",
+    "category": "Ropes / Belts / Pulleys",
+    "states": []
+  },
+  "9": {
+    "part_type": 9,
+    "solve_name": "Basketball",
+    "catalog_name": "Basketball",
+    "category": "Balls",
+    "states": [
+      {
+        "name": "",
+        "triggers": [
+          {
+            "self": 3,
+            "other": -1
+          }
+        ],
+        "anm_state": 3,
+        "explosive": false
+      }
+    ]
+  },
+  "10": {
+    "part_type": 10,
+    "solve_name": "Rope",
+    "catalog_name": "Rope",
+    "category": "Ropes / Belts / Pulleys",
+    "states": []
+  },
+  "11": {
+    "part_type": 11,
+    "solve_name": "Laundry Basket",
+    "catalog_name": "Laundry Basket",
+    "category": "Containers",
+    "states": [
+      {
+        "name": "",
+        "triggers": [
+          {
+            "self": 6,
+            "other": 5
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      }
+    ]
+  },
+  "12": {
+    "part_type": 12,
+    "solve_name": "Curie Cat",
+    "catalog_name": "Curie Cat",
+    "category": "Characters",
+    "states": [
+      {
+        "name": "Hasn't Eaten",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 9
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      },
+      {
+        "name": "Has Eaten",
+        "triggers": [
+          {
+            "self": 9,
+            "other": -1
+          }
+        ],
+        "anm_state": 9,
+        "explosive": false
+      }
+    ]
+  },
+  "13": {
+    "part_type": 13,
+    "solve_name": "Jack-in-the-box",
+    "catalog_name": "Jack-in-the-box",
+    "category": "Springs / Pneumatics",
+    "states": [
+      {
+        "name": "Closed",
+        "triggers": [
+          {
+            "self": 3,
+            "other": 4
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      },
+      {
+        "name": "Popped Out",
+        "triggers": [
+          {
+            "self": 5,
+            "other": -1
+          }
+        ],
+        "anm_state": 4,
+        "explosive": false
+      }
+    ]
+  },
+  "14": {
+    "part_type": 14,
+    "solve_name": "Gear",
+    "catalog_name": "Gear",
+    "category": "Rotating Power Sources",
+    "states": []
+  },
+  "15": {
+    "part_type": 15,
+    "solve_name": "Bill the Goldfish",
+    "catalog_name": "Fish Tank",
+    "category": "Containers",
+    "states": [
+      {
+        "name": "Not Broken",
+        "triggers": [
+          {
+            "self": 15,
+            "other": 9
+          }
+        ],
+        "anm_state": 15,
+        "explosive": false
+      },
+      {
+        "name": "Broken",
+        "triggers": [
+          {
+            "self": 9,
+            "other": -1
+          }
+        ],
+        "anm_state": 14,
+        "explosive": false
+      }
+    ]
+  },
+  "16": {
+    "part_type": 16,
+    "solve_name": "Bike Pump",
+    "catalog_name": "Bike Pump",
+    "category": "Springs / Pneumatics",
+    "states": [
+      {
+        "name": "Not Pumped",
+        "triggers": [
+          {
+            "self": 2,
+            "other": 4
+          }
+        ],
+        "anm_state": 2,
+        "explosive": false
+      },
+      {
+        "name": "Pumped",
+        "triggers": [
+          {
+            "self": 4,
+            "other": -1
+          }
+        ],
+        "anm_state": 5,
+        "explosive": false
+      }
+    ]
+  },
+  "17": {
+    "part_type": 17,
+    "solve_name": "Bucket",
+    "catalog_name": "Bucket",
+    "category": "Containers",
+    "states": [
+      {
+        "name": "",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 4
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      }
+    ]
+  },
+  "18": {
+    "part_type": 18,
+    "solve_name": "Cannon",
+    "catalog_name": "Cannon",
+    "category": "Explosives / Projectiles",
+    "states": [
+      {
+        "name": "Not Fired",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 23
+          },
+          {
+            "self": 4,
+            "other": 25
+          },
+          {
+            "self": 7,
+            "other": 27
+          },
+          {
+            "self": 34,
+            "other": 35
+          },
+          {
+            "self": 41,
+            "other": 42
+          },
+          {
+            "self": 47,
+            "other": 48
+          }
+        ],
+        "anm_state": 47,
+        "explosive": false
+      },
+      {
+        "name": "Fired",
+        "triggers": [
+          {
+            "self": 19,
+            "other": 4
+          },
+          {
+            "self": 20,
+            "other": 7
+          },
+          {
+            "self": 31,
+            "other": 34
+          },
+          {
+            "self": 38,
+            "other": 41
+          },
+          {
+            "self": 45,
+            "other": 47
+          },
+          {
+            "self": 50,
+            "other": -1
+          }
+        ],
+        "anm_state": 48,
+        "explosive": false
+      }
+    ]
+  },
+  "19": {
+    "part_type": 19,
+    "solve_name": "Dynamite",
+    "catalog_name": "Dynamite",
+    "category": "Explosives / Projectiles",
+    "states": [
+      {
+        "name": "Not Blown up",
+        "triggers": [
+          {
+            "self": 2,
+            "other": 3
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      },
+      {
+        "name": "Blown up",
+        "triggers": [
+          {
+            "self": 3,
+            "other": -1
+          }
+        ],
+        "anm_state": 3,
+        "explosive": true
+      }
+    ]
+  },
+  "20": {
+    "part_type": 20,
+    "solve_name": "Bullet",
+    "catalog_name": "Phazer pulse",
+    "category": "Explosives / Projectiles",
+    "states": []
+  },
+  "21": {
+    "part_type": 21,
+    "solve_name": "Electric Outlet",
+    "catalog_name": "Electric Switch & Outlet",
+    "category": "Electrical",
+    "states": []
+  },
+  "23": {
+    "part_type": 23,
+    "solve_name": "Boat Cleat",
+    "catalog_name": "Boat Cleat",
+    "category": "Special Mechanics",
+    "states": []
+  },
+  "24": {
+    "part_type": 24,
+    "solve_name": "Electric Fan",
+    "catalog_name": "Electric Fan",
+    "category": "Electrical",
+    "states": [
+      {
+        "name": "Off",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 2
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      },
+      {
+        "name": "On",
+        "triggers": [
+          {
+            "self": 2,
+            "other": -1
+          }
+        ],
+        "anm_state": 2,
+        "explosive": false
+      }
+    ]
+  },
+  "25": {
+    "part_type": 25,
+    "solve_name": "Flashlight",
+    "catalog_name": "Flashlight",
+    "category": "Light / Flame Sources",
+    "states": [
+      {
+        "name": "Off",
+        "triggers": [
+          {
+            "self": 3,
+            "other": 4
+          }
+        ],
+        "anm_state": 3,
+        "explosive": false
+      },
+      {
+        "name": "On",
+        "triggers": [
+          {
+            "self": 4,
+            "other": -1
+          }
+        ],
+        "anm_state": 2,
+        "explosive": false
+      }
+    ]
+  },
+  "26": {
+    "part_type": 26,
+    "solve_name": "Generator",
+    "catalog_name": "Generator",
+    "category": "Electrical",
+    "states": [
+      {
+        "name": "Off",
+        "triggers": [
+          {
+            "self": 9,
+            "other": 10
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      },
+      {
+        "name": "On",
+        "triggers": [
+          {
+            "self": 2,
+            "other": 3
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      }
+    ]
+  },
+  "27": {
+    "part_type": 27,
+    "solve_name": "Phazer Gun",
+    "catalog_name": "Captain Z Super Phazer",
+    "category": "Explosives / Projectiles",
+    "states": [
+      {
+        "name": "Not Fired",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 6
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      },
+      {
+        "name": "Fired",
+        "triggers": [
+          {
+            "self": 6,
+            "other": -1
+          }
+        ],
+        "anm_state": 6,
+        "explosive": false
+      }
+    ]
+  },
+  "28": {
+    "part_type": 28,
+    "solve_name": "Baseball",
+    "catalog_name": "Baseball",
+    "category": "Balls",
+    "states": [
+      {
+        "name": "",
+        "triggers": [
+          {
+            "self": 1,
+            "other": -1
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      }
+    ]
+  },
+  "29": {
+    "part_type": 29,
+    "solve_name": "Lava Lamp",
+    "catalog_name": "Lava Lamp",
+    "category": "Light / Flame Sources",
+    "states": [
+      {
+        "name": "Off",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 2
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      },
+      {
+        "name": "On",
+        "triggers": [
+          {
+            "self": 2,
+            "other": -1
+          }
+        ],
+        "anm_state": 3,
+        "explosive": false
+      }
+    ]
+  },
+  "30": {
+    "part_type": 30,
+    "solve_name": "Magnifying Glass",
+    "catalog_name": "Magnifying Glass",
+    "category": "Lasers / Optics",
+    "states": []
+  },
+  "31": {
+    "part_type": 31,
+    "solve_name": "Mandrill Motor",
+    "catalog_name": "Mandrill Motor",
+    "category": "Rotating Power Sources",
+    "states": [
+      {
+        "name": "Sitting",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 4
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      },
+      {
+        "name": "Treading",
+        "triggers": [
+          {
+            "self": 4,
+            "other": 7
+          }
+        ],
+        "anm_state": 5,
+        "explosive": false
+      },
+      {
+        "name": "Bonked",
+        "triggers": [
+          {
+            "self": 7,
+            "other": -1
+          }
+        ],
+        "anm_state": 9,
+        "explosive": false
+      }
+    ]
+  },
+  "32": {
+    "part_type": 32,
+    "solve_name": "Boris Bat",
+    "catalog_name": "Boris the Bat",
+    "category": "Characters",
+    "states": []
+  },
+  "33": {
+    "part_type": 33,
+    "solve_name": "Cupid",
+    "catalog_name": "Cupid",
+    "category": "Characters",
+    "states": []
+  },
+  "34": {
+    "part_type": 34,
+    "solve_name": "Santa Claus Light",
+    "catalog_name": "Santa Claus",
+    "category": "Characters",
+    "states": [
+      {
+        "name": "Off",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 2
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      },
+      {
+        "name": "On",
+        "triggers": [
+          {
+            "self": 2,
+            "other": -1
+          }
+        ],
+        "anm_state": 2,
+        "explosive": false
+      },
+      {
+        "name": "!Part",
+        "triggers": [],
+        "anm_state": null,
+        "explosive": false
+      },
+      {
+        "name": "Boxing Glove",
+        "triggers": [],
+        "anm_state": null,
+        "explosive": false
+      },
+      {
+        "name": "Cocked",
+        "triggers": [
+          {
+            "self": 2,
+            "other": 3
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      },
+      {
+        "name": "Punched",
+        "triggers": [
+          {
+            "self": 3,
+            "other": -1
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      }
+    ]
+  },
+  "36": {
+    "part_type": 36,
+    "solve_name": "Rocket",
+    "catalog_name": "Rocket",
+    "category": "Explosives / Projectiles",
+    "states": [
+      {
+        "name": "Not Fired",
+        "triggers": [
+          {
+            "self": 2,
+            "other": 17
+          },
+          {
+            "self": 12,
+            "other": 18
+          },
+          {
+            "self": 25,
+            "other": 21
+          }
+        ],
+        "anm_state": 25,
+        "explosive": false
+      },
+      {
+        "name": "Fired",
+        "triggers": [
+          {
+            "self": 8,
+            "other": 12
+          },
+          {
+            "self": 15,
+            "other": 25
+          },
+          {
+            "self": 24,
+            "other": -1
+          }
+        ],
+        "anm_state": 21,
+        "explosive": false
+      }
+    ]
+  },
+  "37": {
+    "part_type": 37,
+    "solve_name": "Hedge Trimmers",
+    "catalog_name": "Hedge Trimmers",
+    "category": "Cutting / Popping",
+    "states": [
+      {
+        "name": "Open",
+        "triggers": [
+          {
+            "self": 7,
+            "other": 11
+          }
+        ],
+        "anm_state": 7,
+        "explosive": false
+      },
+      {
+        "name": "Closed",
+        "triggers": [
+          {
+            "self": 3,
+            "other": -1
+          }
+        ],
+        "anm_state": 4,
+        "explosive": false
+      }
+    ]
+  },
+  "38": {
+    "part_type": 38,
+    "solve_name": "Solar Panel",
+    "catalog_name": "Solar Panel",
+    "category": "Electrical",
+    "states": []
+  },
+  "39": {
+    "part_type": 39,
+    "solve_name": "Springboard",
+    "catalog_name": "Springboard",
+    "category": "Springs / Pneumatics",
+    "states": []
+  },
+  "40": {
+    "part_type": 40,
+    "solve_name": "Pinwheel",
+    "catalog_name": "Pinwheel",
+    "category": "Rotating Power Sources",
+    "states": [
+      {
+        "name": "Not Spinning",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 2
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      },
+      {
+        "name": "Spinning",
+        "triggers": [
+          {
+            "self": 2,
+            "other": -1
+          }
+        ],
+        "anm_state": 2,
+        "explosive": false
+      }
+    ]
+  },
+  "41": {
+    "part_type": 41,
+    "solve_name": "Explosion",
+    "catalog_name": "explosion",
+    "category": "Created / Phantom",
+    "states": []
+  },
+  "42": {
+    "part_type": 42,
+    "solve_name": "Newton Mouse",
+    "catalog_name": "Newton Mouse",
+    "category": "Characters",
+    "states": [
+      {
+        "name": "Hasn't Eaten",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 10
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      },
+      {
+        "name": "Has Eaten",
+        "triggers": [
+          {
+            "self": 10,
+            "other": -1
+          }
+        ],
+        "anm_state": 10,
+        "explosive": false
+      }
+    ]
+  },
+  "43": {
+    "part_type": 43,
+    "solve_name": "Pinball",
+    "catalog_name": "Pinball",
+    "category": "Balls",
+    "states": [
+      {
+        "name": "",
+        "triggers": [
+          {
+            "self": 1,
+            "other": -1
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      }
+    ]
+  },
+  "44": {
+    "part_type": 44,
+    "solve_name": "Tennis Ball",
+    "catalog_name": "Tennis Ball",
+    "category": "Balls",
+    "states": [
+      {
+        "name": "",
+        "triggers": [
+          {
+            "self": 1,
+            "other": -1
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      }
+    ]
+  },
+  "45": {
+    "part_type": 45,
+    "solve_name": "Aladdin's Lamp",
+    "catalog_name": "Aladdin's Lamp",
+    "category": "Light / Flame Sources",
+    "states": [
+      {
+        "name": "Out",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 2
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      },
+      {
+        "name": "Lit",
+        "triggers": [
+          {
+            "self": 2,
+            "other": -1
+          }
+        ],
+        "anm_state": 2,
+        "explosive": false
+      }
+    ]
+  },
+  "46": {
+    "part_type": 46,
+    "solve_name": "Straight Pipe",
+    "catalog_name": "Pipe Wall",
+    "category": "Walls / Floors",
+    "states": []
+  },
+  "47": {
+    "part_type": 47,
+    "solve_name": "Curved Pipe",
+    "catalog_name": "Curved Pipe Wall",
+    "category": "Walls / Floors",
+    "states": []
+  },
+  "48": {
+    "part_type": 48,
+    "solve_name": "Wooden Wall",
+    "catalog_name": "Wood Wall",
+    "category": "Walls / Floors",
+    "states": []
+  },
+  "49": {
+    "part_type": 49,
+    "solve_name": "Phantom",
+    "catalog_name": "rope end (phantom)",
+    "category": "Created / Phantom",
+    "states": []
+  },
+  "50": {
+    "part_type": 50,
+    "solve_name": "Electric Motor",
+    "catalog_name": "Electric Motor",
+    "category": "Rotating Power Sources",
+    "states": [
+      {
+        "name": "Off",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 4
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      },
+      {
+        "name": "Running",
+        "triggers": [
+          {
+            "self": 4,
+            "other": -1
+          }
+        ],
+        "anm_state": 3,
+        "explosive": false
+      }
+    ]
+  },
+  "51": {
+    "part_type": 51,
+    "solve_name": "Vacuum Cleaner",
+    "catalog_name": "Vacuum",
+    "category": "Electrical",
+    "states": [
+      {
+        "name": "Off",
+        "triggers": [
+          {
+            "self": 9,
+            "other": 10
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      },
+      {
+        "name": "Vacuuming",
+        "triggers": [
+          {
+            "self": 10,
+            "other": -1
+          }
+        ],
+        "anm_state": 10,
+        "explosive": false
+      }
+    ]
+  },
+  "52": {
+    "part_type": 52,
+    "solve_name": "Cheese",
+    "catalog_name": "Cheese",
+    "category": "Special Mechanics",
+    "states": [
+      {
+        "name": "",
+        "triggers": [
+          {
+            "self": 1,
+            "other": -1
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      }
+    ]
+  },
+  "53": {
+    "part_type": 53,
+    "solve_name": "Tack",
+    "catalog_name": "Thumb Tack",
+    "category": "Cutting / Popping",
+    "states": []
+  },
+  "54": {
+    "part_type": 54,
+    "solve_name": "Mel Schlemming",
+    "catalog_name": "Mel Schlemming",
+    "category": "Characters",
+    "states": [
+      {
+        "name": "Normal",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 8
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      },
+      {
+        "name": "Sleeping",
+        "triggers": [
+          {
+            "self": 51,
+            "other": -1
+          }
+        ],
+        "anm_state": 11,
+        "explosive": false
+      }
+    ]
+  },
+  "55": {
+    "part_type": 55,
+    "solve_name": "Remote Control Bomb",
+    "catalog_name": "Remote Control Explosives",
+    "category": "Explosives / Projectiles",
+    "states": [
+      {
+        "name": "Not Exploded",
+        "triggers": [
+          {
+            "self": 2,
+            "other": 5
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      },
+      {
+        "name": "Exploded",
+        "triggers": [
+          {
+            "self": 5,
+            "other": -1
+          }
+        ],
+        "anm_state": null,
+        "explosive": true
+      }
+    ]
+  },
+  "56": {
+    "part_type": 56,
+    "solve_name": "Caution Wall",
+    "catalog_name": "Caution Wall",
+    "category": "Walls / Floors",
+    "states": []
+  },
+  "57": {
+    "part_type": 57,
+    "solve_name": "Big Curved Pipe",
+    "catalog_name": "Large Curved Pipe",
+    "category": "Pipe Systems",
+    "states": []
+  },
+  "58": {
+    "part_type": 58,
+    "solve_name": "Mel's House",
+    "catalog_name": "Mel's House",
+    "category": "Special Mechanics",
+    "states": [
+      {
+        "name": "Vacant",
+        "triggers": [
+          {
+            "self": 5,
+            "other": 6
+          },
+          {
+            "self": 4,
+            "other": 15
+          }
+        ],
+        "anm_state": 4,
+        "explosive": false
+      },
+      {
+        "name": "Occupied",
+        "triggers": [
+          {
+            "self": 6,
+            "other": 4
+          },
+          {
+            "self": 15,
+            "other": -1
+          }
+        ],
+        "anm_state": 15,
+        "explosive": false
+      }
+    ]
+  },
+  "59": {
+    "part_type": 59,
+    "solve_name": "Superball",
+    "catalog_name": "Super Ball",
+    "category": "Balls",
+    "states": [
+      {
+        "name": "",
+        "triggers": [
+          {
+            "self": 1,
+            "other": -1
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      }
+    ]
+  },
+  "60": {
+    "part_type": 60,
+    "solve_name": "Dirt Wall",
+    "catalog_name": "Grass Floor",
+    "category": "Walls / Floors",
+    "states": []
+  },
+  "61": {
+    "part_type": 61,
+    "solve_name": "Edison Alligator",
+    "catalog_name": "Alligator",
+    "category": "Characters",
+    "states": [
+      {
+        "name": "Hasn't Eaten",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 5
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      },
+      {
+        "name": "Has Eaten",
+        "triggers": [
+          {
+            "self": 5,
+            "other": -1
+          }
+        ],
+        "anm_state": 5,
+        "explosive": false
+      }
+    ]
+  },
+  "62": {
+    "part_type": 62,
+    "solve_name": "Coffee Pot",
+    "catalog_name": "Coffee Pot",
+    "category": "Special Mechanics",
+    "states": [
+      {
+        "name": "Off",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 3
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      },
+      {
+        "name": "Percolating",
+        "triggers": [
+          {
+            "self": 3,
+            "other": -1
+          }
+        ],
+        "anm_state": 4,
+        "explosive": false
+      }
+    ]
+  },
+  "63": {
+    "part_type": 63,
+    "solve_name": "Pool Ball",
+    "catalog_name": "Pool Ball",
+    "category": "Balls",
+    "states": [
+      {
+        "name": "",
+        "triggers": [
+          {
+            "self": 2,
+            "other": 3
+          },
+          {
+            "self": 3,
+            "other": 4
+          },
+          {
+            "self": 4,
+            "other": 5
+          },
+          {
+            "self": 5,
+            "other": 6
+          },
+          {
+            "self": 6,
+            "other": 7
+          },
+          {
+            "self": 7,
+            "other": 8
+          },
+          {
+            "self": 8,
+            "other": 9
+          },
+          {
+            "self": 9,
+            "other": 10
+          },
+          {
+            "self": 10,
+            "other": 11
+          },
+          {
+            "self": 11,
+            "other": 12
+          },
+          {
+            "self": 12,
+            "other": 13
+          },
+          {
+            "self": 13,
+            "other": 14
+          },
+          {
+            "self": 14,
+            "other": 15
+          },
+          {
+            "self": 15,
+            "other": 16
+          },
+          {
+            "self": 16,
+            "other": 17
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      }
+    ]
+  },
+  "64": {
+    "part_type": 64,
+    "solve_name": "Pinball Bumper",
+    "catalog_name": "Pinball Bumper",
+    "category": "Special Mechanics",
+    "states": []
+  },
+  "65": {
+    "part_type": 65,
+    "solve_name": "Leprechaun",
+    "catalog_name": "Leprechaun",
+    "category": "Characters",
+    "states": [
+      {
+        "name": "Resting",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 2
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      },
+      {
+        "name": "Dancing",
+        "triggers": [
+          {
+            "self": 2,
+            "other": -1
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      }
+    ]
+  },
+  "66": {
+    "part_type": 66,
+    "solve_name": "Mouse Hole",
+    "catalog_name": "Mouse Hole",
+    "category": "Special Mechanics",
+    "states": [
+      {
+        "name": "Vacant",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 3
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      },
+      {
+        "name": "Occupied",
+        "triggers": [
+          {
+            "self": 3,
+            "other": -1
+          }
+        ],
+        "anm_state": 2,
+        "explosive": false
+      }
+    ]
+  },
+  "67": {
+    "part_type": 67,
+    "solve_name": "Can Opener",
+    "catalog_name": "Can Opener",
+    "category": "Electrical",
+    "states": [
+      {
+        "name": "Unopened",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 3
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      },
+      {
+        "name": "Opened",
+        "triggers": [
+          {
+            "self": 2,
+            "other": -1
+          }
+        ],
+        "anm_state": 2,
+        "explosive": false
+      }
+    ]
+  },
+  "68": {
+    "part_type": 68,
+    "solve_name": "Soccer Ball",
+    "catalog_name": "Soccer Ball",
+    "category": "Balls",
+    "states": [
+      {
+        "name": "",
+        "triggers": [
+          {
+            "self": 1,
+            "other": -1
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      }
+    ]
+  },
+  "69": {
+    "part_type": 69,
+    "solve_name": "Anti-Gravity Pad",
+    "catalog_name": "Anti-Gravity Pad",
+    "category": "Special Mechanics",
+    "states": [
+      {
+        "name": "Unactivated",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 2
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      },
+      {
+        "name": "Operating",
+        "triggers": [
+          {
+            "self": 2,
+            "other": -1
+          }
+        ],
+        "anm_state": 2,
+        "explosive": false
+      }
+    ]
+  },
+  "70": {
+    "part_type": 70,
+    "solve_name": "Missile",
+    "catalog_name": "Missile",
+    "category": "Explosives / Projectiles",
+    "states": [
+      {
+        "name": "Not Launched",
+        "triggers": [
+          {
+            "self": 2,
+            "other": 8
+          },
+          {
+            "self": 13,
+            "other": 14
+          },
+          {
+            "self": 18,
+            "other": 19
+          }
+        ],
+        "anm_state": 18,
+        "explosive": false
+      },
+      {
+        "name": "Launched",
+        "triggers": [
+          {
+            "self": 3,
+            "other": 12
+          },
+          {
+            "self": 16,
+            "other": 17
+          },
+          {
+            "self": 21,
+            "other": 22
+          }
+        ],
+        "anm_state": 19,
+        "explosive": false
+      },
+      {
+        "name": "Exploded",
+        "triggers": [
+          {
+            "self": 12,
+            "other": 13
+          },
+          {
+            "self": 17,
+            "other": 18
+          },
+          {
+            "self": 22,
+            "other": -1
+          }
+        ],
+        "anm_state": null,
+        "explosive": true
+      }
+    ]
+  },
+  "71": {
+    "part_type": 71,
+    "solve_name": "Boxes",
+    "catalog_name": "Boxes",
+    "category": "Containers",
+    "states": []
+  },
+  "72": {
+    "part_type": 72,
+    "solve_name": "Peg",
+    "catalog_name": "Peg",
+    "category": "Special Mechanics",
+    "states": []
+  },
+  "73": {
+    "part_type": 73,
+    "solve_name": "Trap Door",
+    "catalog_name": "Trap Door",
+    "category": "Special Mechanics",
+    "states": [
+      {
+        "name": "Up",
+        "triggers": [
+          {
+            "self": 2,
+            "other": 3
+          }
+        ],
+        "anm_state": 2,
+        "explosive": false
+      },
+      {
+        "name": "Down",
+        "triggers": [
+          {
+            "self": 3,
+            "other": -1
+          }
+        ],
+        "anm_state": 4,
+        "explosive": false
+      }
+    ]
+  },
+  "74": {
+    "part_type": 74,
+    "solve_name": "Nitroglycerine",
+    "catalog_name": "Nitroglycerine",
+    "category": "Explosives / Projectiles",
+    "states": [
+      {
+        "name": "Unexploded",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 3
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      },
+      {
+        "name": "Exploded",
+        "triggers": [
+          {
+            "self": 3,
+            "other": -1
+          }
+        ],
+        "anm_state": null,
+        "explosive": true
+      }
+    ]
+  },
+  "75": {
+    "part_type": 75,
+    "solve_name": "Match-on-a-Spring",
+    "catalog_name": "Match-on-a-Spring",
+    "category": "Springs / Pneumatics",
+    "states": [
+      {
+        "name": "Unlit",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 4
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      },
+      {
+        "name": "Lit",
+        "triggers": [
+          {
+            "self": 3,
+            "other": -1
+          }
+        ],
+        "anm_state": 2,
+        "explosive": false
+      }
+    ]
+  },
+  "76": {
+    "part_type": 76,
+    "solve_name": "Steel Cable",
+    "catalog_name": "Steel Cable",
+    "category": "Ropes / Belts / Pulleys",
+    "states": []
+  },
+  "77": {
+    "part_type": 77,
+    "solve_name": "Tin Snips",
+    "catalog_name": "Tin Snips",
+    "category": "Cutting / Popping",
+    "states": [
+      {
+        "name": "Open",
+        "triggers": [
+          {
+            "self": 4,
+            "other": 5
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      },
+      {
+        "name": "Closed",
+        "triggers": [
+          {
+            "self": 3,
+            "other": -1
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      }
+    ]
+  },
+  "78": {
+    "part_type": 78,
+    "solve_name": "Flint & Tinder",
+    "catalog_name": "Flint & Tinder",
+    "category": "Light / Flame Sources",
+    "states": [
+      {
+        "name": "Unlit",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 2
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      },
+      {
+        "name": "Lit",
+        "triggers": [
+          {
+            "self": 2,
+            "other": -1
+          }
+        ],
+        "anm_state": 7,
+        "explosive": false
+      }
+    ]
+  },
+  "79": {
+    "part_type": 79,
+    "solve_name": "Hot Air Balloon",
+    "catalog_name": "Hot Air Balloon",
+    "category": "Balloons / Airships",
+    "states": [
+      {
+        "name": "Not Lit",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 5
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      },
+      {
+        "name": "Lit",
+        "triggers": [
+          {
+            "self": 5,
+            "other": 4
+          }
+        ],
+        "anm_state": 5,
+        "explosive": false
+      },
+      {
+        "name": "Popped",
+        "triggers": [
+          {
+            "self": 4,
+            "other": -1
+          }
+        ],
+        "anm_state": 2,
+        "explosive": false
+      }
+    ]
+  },
+  "80": {
+    "part_type": 80,
+    "solve_name": "Fireworks",
+    "catalog_name": "Fireworks",
+    "category": "Explosives / Projectiles",
+    "states": [
+      {
+        "name": "Not Set Off",
+        "triggers": [
+          {
+            "self": 9,
+            "other": 19
+          },
+          {
+            "self": 12,
+            "other": 20
+          },
+          {
+            "self": 16,
+            "other": 21
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      },
+      {
+        "name": "Set Off",
+        "triggers": [
+          {
+            "self": 6,
+            "other": 12
+          },
+          {
+            "self": 7,
+            "other": 16
+          },
+          {
+            "self": 8,
+            "other": -1
+          }
+        ],
+        "anm_state": 21,
+        "explosive": false
+      }
+    ]
+  },
+  "81": {
+    "part_type": 81,
+    "solve_name": "Toaster",
+    "catalog_name": "Toaster",
+    "category": "Electrical",
+    "states": [
+      {
+        "name": "Not Toasting",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 8
+          },
+          {
+            "self": 6,
+            "other": 9
+          },
+          {
+            "self": 7,
+            "other": 10
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      },
+      {
+        "name": "Toasting",
+        "triggers": [
+          {
+            "self": 2,
+            "other": 6
+          },
+          {
+            "self": 3,
+            "other": 7
+          },
+          {
+            "self": 4,
+            "other": -1
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      }
+    ]
+  },
+  "82": {
+    "part_type": 82,
+    "solve_name": "Wall1",
+    "catalog_name": "Sand Wall",
+    "category": "Walls / Floors",
+    "states": []
+  },
+  "83": {
+    "part_type": 83,
+    "solve_name": "wall2",
+    "catalog_name": "Cinder Block Wall",
+    "category": "Walls / Floors",
+    "states": []
+  },
+  "84": {
+    "part_type": 84,
+    "solve_name": "Wall3",
+    "catalog_name": "Greco-Roman Wall",
+    "category": "Walls / Floors",
+    "states": []
+  },
+  "85": {
+    "part_type": 85,
+    "solve_name": "Wall4",
+    "catalog_name": "Log Wall",
+    "category": "Walls / Floors",
+    "states": []
+  },
+  "86": {
+    "part_type": 86,
+    "solve_name": "Small Gear",
+    "catalog_name": "Tiny Gear",
+    "category": "Rotating Power Sources",
+    "states": []
+  },
+  "87": {
+    "part_type": 87,
+    "solve_name": "Programmable Ball",
+    "catalog_name": "Programmable Ball",
+    "category": "Balls",
+    "states": [
+      {
+        "name": "",
+        "triggers": [
+          {
+            "self": 2,
+            "other": 3
+          },
+          {
+            "self": 3,
+            "other": 7
+          },
+          {
+            "self": 7,
+            "other": 8
+          },
+          {
+            "self": 8,
+            "other": 9
+          },
+          {
+            "self": 9,
+            "other": 5
+          },
+          {
+            "self": 5,
+            "other": 4
+          },
+          {
+            "self": 4,
+            "other": -1
+          }
+        ],
+        "anm_state": 4,
+        "explosive": false
+      }
+    ]
+  },
+  "88": {
+    "part_type": 88,
+    "solve_name": "Accelerator Tube",
+    "catalog_name": "Accelerator Tube",
+    "category": "Pipe Systems",
+    "states": []
+  },
+  "89": {
+    "part_type": 89,
+    "solve_name": "Trans-Roto-Matic",
+    "catalog_name": "Trans-Roto-Matic",
+    "category": "Special Mechanics",
+    "states": []
+  },
+  "90": {
+    "part_type": 90,
+    "solve_name": "Roto-Trans Converter",
+    "catalog_name": "Roto-Trans Converter",
+    "category": "Special Mechanics",
+    "states": []
+  },
+  "91": {
+    "part_type": 91,
+    "solve_name": "Red Laser",
+    "catalog_name": "Red Laser",
+    "category": "Lasers / Optics",
+    "states": [
+      {
+        "name": "Not Operating",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 6
+          },
+          {
+            "self": 6,
+            "other": 7
+          },
+          {
+            "self": 7,
+            "other": 8
+          },
+          {
+            "self": 8,
+            "other": 9
+          }
+        ],
+        "anm_state": 8,
+        "explosive": false
+      },
+      {
+        "name": "Operating",
+        "triggers": [
+          {
+            "self": 9,
+            "other": 4
+          },
+          {
+            "self": 4,
+            "other": 3
+          },
+          {
+            "self": 3,
+            "other": 2
+          },
+          {
+            "self": 2,
+            "other": -1
+          }
+        ],
+        "anm_state": 2,
+        "explosive": false
+      }
+    ]
+  },
+  "92": {
+    "part_type": 92,
+    "solve_name": "Green Laser",
+    "catalog_name": "Green Laser",
+    "category": "Lasers / Optics",
+    "states": [
+      {
+        "name": "Not Operating",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 6
+          },
+          {
+            "self": 6,
+            "other": 7
+          },
+          {
+            "self": 7,
+            "other": 8
+          },
+          {
+            "self": 8,
+            "other": 9
+          }
+        ],
+        "anm_state": 8,
+        "explosive": false
+      },
+      {
+        "name": "Operating",
+        "triggers": [
+          {
+            "self": 9,
+            "other": 4
+          },
+          {
+            "self": 4,
+            "other": 3
+          },
+          {
+            "self": 3,
+            "other": 2
+          },
+          {
+            "self": 2,
+            "other": -1
+          }
+        ],
+        "anm_state": 2,
+        "explosive": false
+      }
+    ]
+  },
+  "93": {
+    "part_type": 93,
+    "solve_name": "Blue Laser",
+    "catalog_name": "Blue Laser",
+    "category": "Lasers / Optics",
+    "states": [
+      {
+        "name": "Not Operating",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 5
+          },
+          {
+            "self": 5,
+            "other": 6
+          },
+          {
+            "self": 6,
+            "other": 7
+          },
+          {
+            "self": 7,
+            "other": 9
+          }
+        ],
+        "anm_state": 7,
+        "explosive": false
+      },
+      {
+        "name": "Operating",
+        "triggers": [
+          {
+            "self": 9,
+            "other": 4
+          },
+          {
+            "self": 4,
+            "other": 3
+          },
+          {
+            "self": 3,
+            "other": 2
+          },
+          {
+            "self": 2,
+            "other": -1
+          }
+        ],
+        "anm_state": 2,
+        "explosive": false
+      }
+    ]
+  },
+  "94": {
+    "part_type": 94,
+    "solve_name": "Mirror",
+    "catalog_name": "Angled Mirror",
+    "category": "Lasers / Optics",
+    "states": []
+  },
+  "95": {
+    "part_type": 95,
+    "solve_name": "Laser Mixer",
+    "catalog_name": "Laser Mixer",
+    "category": "Lasers / Optics",
+    "states": []
+  },
+  "96": {
+    "part_type": 96,
+    "solve_name": "Laser-Activated Plug",
+    "catalog_name": "Laser-Activated Plug",
+    "category": "Lasers / Optics",
+    "states": []
+  },
+  "97": {
+    "part_type": 97,
+    "solve_name": "Large Pipes",
+    "catalog_name": "Large Pipes",
+    "category": "Pipe Systems",
+    "states": []
+  },
+  "98": {
+    "part_type": 98,
+    "solve_name": "Large T Pipe",
+    "catalog_name": "T-Connector",
+    "category": "Pipe Systems",
+    "states": []
+  },
+  "99": {
+    "part_type": 99,
+    "solve_name": "Grass Incline",
+    "catalog_name": "Grass Incline",
+    "category": "Inclines",
+    "states": []
+  },
+  "100": {
+    "part_type": 100,
+    "solve_name": "Log Incline",
+    "catalog_name": "Log Incline",
+    "category": "Inclines",
+    "states": []
+  },
+  "101": {
+    "part_type": 101,
+    "solve_name": "Column Incline",
+    "catalog_name": "Granite Incline",
+    "category": "Inclines",
+    "states": []
+  },
+  "102": {
+    "part_type": 102,
+    "solve_name": "Brick Incline",
+    "catalog_name": "Brick Incline",
+    "category": "Inclines",
+    "states": []
+  },
+  "103": {
+    "part_type": 103,
+    "solve_name": "Arch Block",
+    "catalog_name": "Archway",
+    "category": "Walls / Floors",
+    "states": []
+  },
+  "104": {
+    "part_type": 104,
+    "solve_name": "Wood Block",
+    "catalog_name": "Wooden Barrier",
+    "category": "Walls / Floors",
+    "states": []
+  },
+  "105": {
+    "part_type": 105,
+    "solve_name": "Scaffold Block",
+    "catalog_name": "Scaffold Barrier",
+    "category": "Walls / Floors",
+    "states": []
+  },
+  "106": {
+    "part_type": 106,
+    "solve_name": "Lattice Archway",
+    "catalog_name": "Lattice Archway",
+    "category": "Walls / Floors",
+    "states": []
+  },
+  "107": {
+    "part_type": 107,
+    "solve_name": "Electric Mixer",
+    "catalog_name": "Electric Mixer",
+    "category": "Electrical",
+    "states": [
+      {
+        "name": "Not Mixing",
+        "triggers": [
+          {
+            "self": 2,
+            "other": 1
+          }
+        ],
+        "anm_state": 2,
+        "explosive": false
+      },
+      {
+        "name": "Mixing",
+        "triggers": [
+          {
+            "self": 1,
+            "other": -1
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      }
+    ]
+  },
+  "108": {
+    "part_type": 108,
+    "solve_name": "Leaky Bucket",
+    "catalog_name": "Leaky Bucket",
+    "category": "Containers",
+    "states": [
+      {
+        "name": "Dripping",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 4
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      },
+      {
+        "name": "Empty",
+        "triggers": [
+          {
+            "self": 4,
+            "other": 10
+          }
+        ],
+        "anm_state": 4,
+        "explosive": false
+      }
+    ]
+  },
+  "109": {
+    "part_type": 109,
+    "solve_name": "Blimp",
+    "catalog_name": "Blimp",
+    "category": "Balloons / Airships",
+    "states": [
+      {
+        "name": "Normal",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 2
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      },
+      {
+        "name": "Popped",
+        "triggers": [
+          {
+            "self": 2,
+            "other": 5
+          }
+        ],
+        "anm_state": 7,
+        "explosive": false
+      },
+      {
+        "name": "Blown Up",
+        "triggers": [
+          {
+            "self": 5,
+            "other": -1
+          }
+        ],
+        "anm_state": 6,
+        "explosive": false
+      }
+    ]
+  },
+  "110": {
+    "part_type": 110,
+    "solve_name": "Tree1",
+    "catalog_name": "Elm Tree",
+    "category": "Scenery",
+    "states": []
+  },
+  "111": {
+    "part_type": 111,
+    "solve_name": "Tree2",
+    "catalog_name": "Spruce Tree",
+    "category": "Scenery",
+    "states": []
+  },
+  "112": {
+    "part_type": 112,
+    "solve_name": "Cactus",
+    "catalog_name": "Cactus",
+    "category": "Scenery",
+    "states": []
+  },
+  "113": {
+    "part_type": 113,
+    "solve_name": "Sun",
+    "catalog_name": "Sun",
+    "category": "Scenery",
+    "states": []
+  },
+  "114": {
+    "part_type": 114,
+    "solve_name": "Cloud1",
+    "catalog_name": "Big Cloud",
+    "category": "Scenery",
+    "states": []
+  },
+  "115": {
+    "part_type": 115,
+    "solve_name": "Cloud2",
+    "catalog_name": "Little Cloud",
+    "category": "Scenery",
+    "states": []
+  },
+  "116": {
+    "part_type": 116,
+    "solve_name": "Flipper",
+    "catalog_name": "Pinball Flipper",
+    "category": "Springs / Pneumatics",
+    "states": []
+  },
+  "117": {
+    "part_type": 117,
+    "solve_name": "Pool Cue",
+    "catalog_name": "Pool Cue",
+    "category": "Springs / Pneumatics",
+    "states": [
+      {
+        "name": "Not Hit",
+        "triggers": [
+          {
+            "self": 3,
+            "other": 4
+          },
+          {
+            "self": 12,
+            "other": 13
+          },
+          {
+            "self": 15,
+            "other": 17
+          },
+          {
+            "self": 19,
+            "other": 20
+          },
+          {
+            "self": 22,
+            "other": 23
+          },
+          {
+            "self": 25,
+            "other": 26
+          },
+          {
+            "self": 28,
+            "other": 29
+          },
+          {
+            "self": 31,
+            "other": 32
+          }
+        ],
+        "anm_state": 31,
+        "explosive": false
+      },
+      {
+        "name": "Hit",
+        "triggers": [
+          {
+            "self": 4,
+            "other": 12
+          },
+          {
+            "self": 13,
+            "other": 15
+          },
+          {
+            "self": 17,
+            "other": 19
+          },
+          {
+            "self": 20,
+            "other": 22
+          },
+          {
+            "self": 23,
+            "other": 25
+          },
+          {
+            "self": 26,
+            "other": 28
+          },
+          {
+            "self": 29,
+            "other": 31
+          },
+          {
+            "self": 32,
+            "other": -1
+          }
+        ],
+        "anm_state": 33,
+        "explosive": false
+      }
+    ]
+  },
+  "118": {
+    "part_type": 118,
+    "solve_name": "Pool Wall",
+    "catalog_name": "Pool Table Wall",
+    "category": "Pool Table",
+    "states": []
+  },
+  "119": {
+    "part_type": 119,
+    "solve_name": "Pool Hole",
+    "catalog_name": "Pool Table Pocket",
+    "category": "Pool Table",
+    "states": [
+      {
+        "name": "Hole Empty",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 3
+          },
+          {
+            "self": 3,
+            "other": 4
+          },
+          {
+            "self": 4,
+            "other": 5
+          },
+          {
+            "self": 5,
+            "other": 6
+          },
+          {
+            "self": 6,
+            "other": 7
+          },
+          {
+            "self": 7,
+            "other": 8
+          },
+          {
+            "self": 8,
+            "other": 9
+          },
+          {
+            "self": 9,
+            "other": 11
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      },
+      {
+        "name": "Hole Full",
+        "triggers": [
+          {
+            "self": 11,
+            "other": 12
+          },
+          {
+            "self": 12,
+            "other": 13
+          },
+          {
+            "self": 13,
+            "other": 14
+          },
+          {
+            "self": 14,
+            "other": 15
+          },
+          {
+            "self": 15,
+            "other": 16
+          },
+          {
+            "self": 16,
+            "other": 17
+          },
+          {
+            "self": 17,
+            "other": 18
+          },
+          {
+            "self": 18,
+            "other": -1
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      }
+    ]
+  },
+  "120": {
+    "part_type": 120,
+    "solve_name": "Electric Plug",
+    "catalog_name": "Electrical Outlet",
+    "category": "Electrical",
+    "states": []
+  },
+  "121": {
+    "part_type": 121,
+    "solve_name": "Vine Tile",
+    "catalog_name": "Vine Tile",
+    "category": "Scenery",
+    "states": []
+  },
+  "122": {
+    "part_type": 122,
+    "solve_name": "Tile2",
+    "catalog_name": "tile",
+    "category": "Scenery",
+    "states": []
+  },
+  "123": {
+    "part_type": 123,
+    "solve_name": "Tile 3",
+    "catalog_name": "tile",
+    "category": "Scenery",
+    "states": []
+  },
+  "124": {
+    "part_type": 124,
+    "solve_name": "Tile 4",
+    "catalog_name": "tile",
+    "category": "Scenery",
+    "states": []
+  },
+  "125": {
+    "part_type": 125,
+    "solve_name": "Yellow Wall",
+    "catalog_name": "Yellow Brick Wall",
+    "category": "Walls / Floors",
+    "states": []
+  },
+  "126": {
+    "part_type": 126,
+    "solve_name": "Yellow Incline",
+    "catalog_name": "Yellow Brick Incline",
+    "category": "Inclines",
+    "states": []
+  },
+  "127": {
+    "part_type": 127,
+    "solve_name": "Background Color",
+    "catalog_name": "Color Block",
+    "category": "Scenery",
+    "states": []
+  },
+  "128": {
+    "part_type": 128,
+    "solve_name": "Background Mountain",
+    "catalog_name": "purple mountain",
+    "category": "Scenery",
+    "states": []
+  },
+  "129": {
+    "part_type": 129,
+    "solve_name": "Background Mesa",
+    "catalog_name": "desert mesa",
+    "category": "Scenery",
+    "states": []
+  },
+  "130": {
+    "part_type": 130,
+    "solve_name": "Background Office",
+    "catalog_name": "Glass Building",
+    "category": "Scenery",
+    "states": []
+  },
+  "131": {
+    "part_type": 131,
+    "solve_name": "Background Apartment",
+    "catalog_name": "apartment building",
+    "category": "Scenery",
+    "states": []
+  },
+  "132": {
+    "part_type": 132,
+    "solve_name": "Background Library",
+    "catalog_name": "office building",
+    "category": "Scenery",
+    "states": []
+  },
+  "133": {
+    "part_type": 133,
+    "solve_name": "Background Car",
+    "catalog_name": "car",
+    "category": "Scenery",
+    "states": []
+  },
+  "134": {
+    "part_type": 134,
+    "solve_name": "Background Lamp",
+    "catalog_name": "lamp post",
+    "category": "Scenery",
+    "states": []
+  },
+  "135": {
+    "part_type": 135,
+    "solve_name": "Backround Hydrant",
+    "catalog_name": "fire hydrant",
+    "category": "Scenery",
+    "states": []
+  },
+  "136": {
+    "part_type": 136,
+    "solve_name": "Message Machine",
+    "catalog_name": "Message Computer",
+    "category": "Special Mechanics",
+    "states": [
+      {
+        "name": "Off",
+        "triggers": [
+          {
+            "self": 4,
+            "other": 5
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      },
+      {
+        "name": "On",
+        "triggers": [
+          {
+            "self": 5,
+            "other": -1
+          }
+        ],
+        "anm_state": 5,
+        "explosive": false
+      }
+    ]
+  },
+  "137": {
+    "part_type": 137,
+    "solve_name": "Egg Timer",
+    "catalog_name": "Egg Timer",
+    "category": "Special Mechanics",
+    "states": [
+      {
+        "name": "Unactivated",
+        "triggers": [
+          {
+            "self": 22,
+            "other": 37
+          },
+          {
+            "self": 23,
+            "other": 38
+          },
+          {
+            "self": 26,
+            "other": 39
+          },
+          {
+            "self": 28,
+            "other": 40
+          },
+          {
+            "self": 30,
+            "other": 41
+          },
+          {
+            "self": 36,
+            "other": 42
+          },
+          {
+            "self": 33,
+            "other": 43
+          },
+          {
+            "self": 34,
+            "other": 44
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      },
+      {
+        "name": "Time Out",
+        "triggers": [
+          {
+            "self": 19,
+            "other": -1
+          },
+          {
+            "self": 19,
+            "other": -1
+          },
+          {
+            "self": 19,
+            "other": -1
+          },
+          {
+            "self": 19,
+            "other": -1
+          },
+          {
+            "self": 19,
+            "other": -1
+          },
+          {
+            "self": 19,
+            "other": -1
+          },
+          {
+            "self": 19,
+            "other": -1
+          },
+          {
+            "self": 19,
+            "other": -1
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      }
+    ]
+  },
+  "138": {
+    "part_type": 138,
+    "solve_name": "Candle",
+    "catalog_name": "Candle",
+    "category": "Light / Flame Sources",
+    "states": [
+      {
+        "name": "Unlit",
+        "triggers": [
+          {
+            "self": 1,
+            "other": 2
+          }
+        ],
+        "anm_state": 1,
+        "explosive": false
+      },
+      {
+        "name": "Lit",
+        "triggers": [
+          {
+            "self": 2,
+            "other": -1
+          }
+        ],
+        "anm_state": 2,
+        "explosive": false
+      }
+    ]
+  },
+  "139": {
+    "part_type": 139,
+    "solve_name": "Teeter-Totter",
+    "catalog_name": "Teeter-Totter",
+    "category": "Special Mechanics",
+    "states": []
+  },
+  "140": {
+    "part_type": 140,
+    "solve_name": "Background Cactus2",
+    "catalog_name": "Small Cactus",
+    "category": "Scenery",
+    "states": []
+  },
+  "141": {
+    "part_type": 141,
+    "solve_name": "Background Deciduous2 tree",
+    "catalog_name": "Small Maple Tree",
+    "category": "Scenery",
+    "states": []
+  },
+  "142": {
+    "part_type": 142,
+    "solve_name": "Background Evergreen",
+    "catalog_name": "Small Pine Tree",
+    "category": "Scenery",
+    "states": []
+  },
+  "143": {
+    "part_type": 143,
+    "solve_name": "Background Cloud2",
+    "catalog_name": "Small Cloud",
+    "category": "Scenery",
+    "states": []
+  },
+  "144": {
+    "part_type": 144,
+    "solve_name": "Background Mountain2",
+    "catalog_name": "small mountain",
+    "category": "Scenery",
+    "states": []
+  },
+  "145": {
+    "part_type": 145,
+    "solve_name": "Background Mountain3",
+    "catalog_name": "medium mountain",
+    "category": "Scenery",
+    "states": []
+  },
+  "146": {
+    "part_type": 146,
+    "solve_name": "Background Mesa2",
+    "catalog_name": "small mesa",
+    "category": "Scenery",
+    "states": []
+  },
+  "147": {
+    "part_type": 147,
+    "solve_name": "Background Mesa3",
+    "catalog_name": "medium mesa",
+    "category": "Scenery",
+    "states": []
+  },
+  "148": {
+    "part_type": 148,
+    "solve_name": "Laser Detector",
+    "catalog_name": "Laser Detector",
+    "category": "Lasers / Optics",
+    "states": [
+      {
+        "name": "Not Activated",
+        "triggers": [
+          {
+            "self": 2,
+            "other": 3
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      },
+      {
+        "name": "Activated",
+        "triggers": [
+          {
+            "self": 3,
+            "other": 4
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      },
+      {
+        "name": "Alarm On",
+        "triggers": [
+          {
+            "self": 4,
+            "other": -1
+          }
+        ],
+        "anm_state": null,
+        "explosive": false
+      }
+    ]
+  },
+  "22": {
+    "part_type": 22,
+    "solve_name": "Remote Control",
+    "catalog_name": "Remote Control",
+    "category": "Explosives / Projectiles",
+    "states": []
+  },
+  "35": {
+    "part_type": 35,
+    "solve_name": "Boxing Glove",
+    "catalog_name": "Boxing Glove",
+    "category": "Springs / Pneumatics",
+    "states": []
+  }
+}

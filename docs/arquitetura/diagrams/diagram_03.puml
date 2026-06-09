@@ -1,0 +1,34 @@
+@startuml C4_Simulation_Component
+!include ../.plantuml/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+
+title C4 Component — Simulation Isolated in SubViewport
+
+Container_Boundary(sim_overlay, "SimulationOverlay (SubViewport)") {
+  Container(sim_runner, "SimulationRunner", "Node2D", "Pacemaker wall-clock, state machine, tick orchestration")
+  Container(board, "Board", "Node2D", "Parts container + sprite rendering + level_data bridge")
+  Container(part, "Part", "RefCounted x32", "Data+physics per part — position, velocity, state_counter, archetype")
+  Container(physics_eng, "PhysicsEngine", "RefCounted", "7-pass physics loop — gravity, collisions, constraints")
+  Container(chain_mgr, "ChainManager", "RefCounted", "Data-driven rule evaluator — chain_script")
+  Container(solution_cond, "SolutionCondition", "RefCounted", "Win condition checker — AABB_overlap, state_match")
+  Container(overlay_ui, "SimUI", "Control", "Play/Pause/Stop/Reset, speed slider, tick counter, objective checkboxes")
+}
+
+Container_Boundary(godot_main, "Main.gd (Mode Switcher)") {
+  Container(main, "Main", "Node2D", "Toggle EDITOR ↔ SIMULATION modes")
+}
+
+Rel(overlay_ui, sim_runner, "play() pause() stop() reset() set_speed()")
+Rel(overlay_ui, sim_runner, "state_changed, tick_updated, simulation_finished, objective_updated (signals)")
+Rel(sim_runner, board, "board.init() board.sync_sprites()")
+Rel(sim_runner, chain_mgr, "chain.load_from_level() chain.evaluate_chain()")
+Rel(sim_runner, physics_eng, "physics.step(tick)")
+Rel(board, part, "board.parts[] board.add_part()")
+Rel(physics_eng, part, "Modifica pos_x/y, vel_x/y, state_counter")
+Rel(chain_mgr, part, "Modifica via ações (inc, set, delta)")
+Rel(board, solution_cond, "board.solution.check()")
+Rel(main, sim_overlay, "Mode.SIMULATION: add_child(sim_overlay)")
+Rel(main, overlay_ui, "overlay_ui.connect_signals()")
+
+@enduml

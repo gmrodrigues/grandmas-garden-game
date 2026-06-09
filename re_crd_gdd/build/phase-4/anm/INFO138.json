@@ -1,0 +1,242 @@
+{
+  "version": 1001,
+  "width": 80,
+  "height": 108,
+  "section_sizes": {
+    "a": 0,
+    "b": 5,
+    "c": 1,
+    "d": 202
+  },
+  "section_a": [],
+  "section_b": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 80,
+      "height": 108,
+      "bytecode_offset": 0
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "width": 80,
+      "height": 108,
+      "bytecode_offset": 20
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "width": 80,
+      "height": 108,
+      "bytecode_offset": 40
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "width": 80,
+      "height": 108,
+      "bytecode_offset": 60
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "width": 80,
+      "height": 108,
+      "bytecode_offset": 80
+    }
+  ],
+  "section_c": [
+    {
+      "first_frame_id": 0,
+      "state_id": 2
+    }
+  ],
+  "section_d": [
+    {
+      "offset": 0,
+      "cmd": 3,
+      "name": "DRAW_RECT",
+      "x": 30,
+      "y": 0,
+      "width": 26,
+      "height": 26,
+      "color": 11,
+      "flags": 32779
+    },
+    {
+      "offset": 14,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 0,
+      "x": 0,
+      "y": 17,
+      "flags": 0
+    },
+    {
+      "offset": 26,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 2,
+      "sub_image": 0,
+      "x": 36,
+      "y": 3,
+      "flags": 0
+    },
+    {
+      "offset": 38,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 40,
+      "cmd": 3,
+      "name": "DRAW_RECT",
+      "x": 30,
+      "y": 0,
+      "width": 26,
+      "height": 26,
+      "color": 11,
+      "flags": 32779
+    },
+    {
+      "offset": 54,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 0,
+      "x": 0,
+      "y": 17,
+      "flags": 0
+    },
+    {
+      "offset": 66,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 2,
+      "sub_image": 1,
+      "x": 35,
+      "y": 3,
+      "flags": 0
+    },
+    {
+      "offset": 78,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 80,
+      "cmd": 3,
+      "name": "DRAW_RECT",
+      "x": 30,
+      "y": 0,
+      "width": 26,
+      "height": 26,
+      "color": 11,
+      "flags": 32779
+    },
+    {
+      "offset": 94,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 0,
+      "x": 0,
+      "y": 17,
+      "flags": 0
+    },
+    {
+      "offset": 106,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 2,
+      "sub_image": 2,
+      "x": 36,
+      "y": 3,
+      "flags": 0
+    },
+    {
+      "offset": 118,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 120,
+      "cmd": 3,
+      "name": "DRAW_RECT",
+      "x": 30,
+      "y": 0,
+      "width": 26,
+      "height": 26,
+      "color": 11,
+      "flags": 32779
+    },
+    {
+      "offset": 134,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 0,
+      "x": 0,
+      "y": 17,
+      "flags": 0
+    },
+    {
+      "offset": 146,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 2,
+      "sub_image": 3,
+      "x": 36,
+      "y": 3,
+      "flags": 0
+    },
+    {
+      "offset": 158,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 160,
+      "cmd": 3,
+      "name": "DRAW_RECT",
+      "x": 30,
+      "y": 0,
+      "width": 26,
+      "height": 26,
+      "color": 11,
+      "flags": 32779
+    },
+    {
+      "offset": 174,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 0,
+      "x": 0,
+      "y": 17,
+      "flags": 0
+    },
+    {
+      "offset": 186,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 2,
+      "sub_image": 4,
+      "x": 38,
+      "y": 3,
+      "flags": 0
+    },
+    {
+      "offset": 198,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 200,
+      "cmd": 1,
+      "name": "END_ANM"
+    }
+  ]
+}

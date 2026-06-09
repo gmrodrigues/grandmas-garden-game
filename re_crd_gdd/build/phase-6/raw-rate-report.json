@@ -1,0 +1,188 @@
+{
+  "binary_evidence": {
+    "driver": "AUDBLAST.DRV (Sound Blaster Pro/16)",
+    "literal_11025_count": 17,
+    "literal_11025_offsets": [
+      "0x1807F",
+      "0x18087",
+      "0x1820C",
+      "0x183EE",
+      "0x183FC",
+      "0x33646",
+      "0x33710",
+      "0x33771",
+      "0x33971",
+      "0x339B8",
+      "0x33A47",
+      "0x33BC7",
+      "0x33C60",
+      "0x33CBF",
+      "0x3447F",
+      "0x3D3E0",
+      "0x4FE1E"
+    ],
+    "sb_tc_table_entries": [
+      {
+        "approx_rate_hz": 15625.0,
+        "index": 0,
+        "offset": "0x2FF0",
+        "raw_a": "0x3340",
+        "raw_b": "0x09C0",
+        "time_constant": 192
+      },
+      {
+        "approx_rate_hz": 13888.9,
+        "index": 1,
+        "offset": "0x2FF4",
+        "raw_a": "0x3340",
+        "raw_b": "0x09B8",
+        "time_constant": 184
+      },
+      {
+        "approx_rate_hz": 10989.0,
+        "index": 2,
+        "offset": "0x2FF8",
+        "raw_a": "0x3340",
+        "raw_b": "0x09A5",
+        "time_constant": 165
+      },
+      {
+        "approx_rate_hz": 8000.0,
+        "index": 3,
+        "offset": "0x2FFC",
+        "raw_a": "0x3340",
+        "raw_b": "0x0983",
+        "time_constant": 131
+      },
+      {
+        "approx_rate_hz": 7575.8,
+        "index": 4,
+        "offset": "0x3000",
+        "raw_a": "0x3340",
+        "raw_b": "0x097C",
+        "time_constant": 124
+      },
+      {
+        "approx_rate_hz": 5814.0,
+        "index": 5,
+        "offset": "0x3004",
+        "raw_a": "0x3340",
+        "raw_b": "0x0954",
+        "time_constant": 84
+      },
+      {
+        "approx_rate_hz": 5181.3,
+        "index": 6,
+        "offset": "0x3008",
+        "raw_a": "0x3340",
+        "raw_b": "0x093F",
+        "time_constant": 63
+      },
+      {
+        "approx_rate_hz": 4950.5,
+        "index": 7,
+        "offset": "0x300C",
+        "raw_a": "0x3340",
+        "raw_b": "0x0936",
+        "time_constant": 54
+      },
+      {
+        "approx_rate_hz": 4366.8,
+        "index": 8,
+        "offset": "0x3010",
+        "raw_a": "0x3340",
+        "raw_b": "0x091B",
+        "time_constant": 27
+      },
+      {
+        "approx_rate_hz": 0,
+        "index": 9,
+        "offset": "0x3014",
+        "raw_a": "0x3340",
+        "raw_b": "0x0900",
+        "time_constant": 0
+      },
+      {
+        "approx_rate_hz": 23255.8,
+        "index": 10,
+        "offset": "0x3018",
+        "raw_a": "0x3340",
+        "raw_b": "0x08D5",
+        "time_constant": 213
+      },
+      {
+        "approx_rate_hz": 14285.7,
+        "index": 11,
+        "offset": "0x301C",
+        "raw_a": "0x3340",
+        "raw_b": "0x08BA",
+        "time_constant": 186
+      },
+      {
+        "approx_rate_hz": 10416.7,
+        "index": 12,
+        "offset": "0x3020",
+        "raw_a": "0x3340",
+        "raw_b": "0x08A0",
+        "time_constant": 160
+      },
+      {
+        "approx_rate_hz": 8928.6,
+        "index": 13,
+        "offset": "0x3024",
+        "raw_a": "0x3340",
+        "raw_b": "0x0890",
+        "time_constant": 144
+      },
+      {
+        "approx_rate_hz": 7936.5,
+        "index": 14,
+        "offset": "0x3028",
+        "raw_a": "0x3340",
+        "raw_b": "0x0882",
+        "time_constant": 130
+      }
+    ],
+    "sb_tc_table_offset": "0x2FF0",
+    "tc_for_11025": "0xA5 (entry index 2, approx 10989 Hz)"
+  },
+  "candidates_tested": [
+    8000,
+    11025,
+    22050
+  ],
+  "confirmed_rate": 11025,
+  "duration_table": {
+    "SX_3001.RAW": {
+      "description": "Bowling ball hit",
+      "duration_at_11025hz": 1.053,
+      "duration_at_22050hz": 0.5265,
+      "duration_at_8000hz": 1.4511,
+      "size_bytes": 11609
+    },
+    "SX_3500.RAW": {
+      "description": "Short tone",
+      "duration_at_11025hz": 0.209,
+      "duration_at_22050hz": 0.1045,
+      "duration_at_8000hz": 0.288,
+      "size_bytes": 2304
+    },
+    "SX_3700.RAW": {
+      "description": "Longer effect",
+      "duration_at_11025hz": 2.461,
+      "duration_at_22050hz": 1.2305,
+      "duration_at_8000hz": 3.3915,
+      "size_bytes": 27132
+    }
+  },
+  "method": "binary analysis (SB time constant table + literal value search) + WAV comparison",
+  "raw_format": {
+    "center_value": 128,
+    "channels": 1,
+    "encoding": "unsigned 8-bit PCM",
+    "file_count": 113,
+    "header": "none",
+    "id_range": "3001-3754"
+  },
+  "wav_outputs": "/home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-6/raw-wav"
+}

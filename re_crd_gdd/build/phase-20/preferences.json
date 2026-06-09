@@ -1,0 +1,7 @@
+{
+  "ambient_animation": true,
+  "scenery": true,
+  "background": true,
+  "info_handles": true,
+  "sound_effects": false
+}

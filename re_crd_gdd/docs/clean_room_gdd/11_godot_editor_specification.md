@@ -178,7 +178,7 @@ Algumas dúvidas de arquitetura não cobertas pelas User Journeys básicas foram
 
 ### Q1. Diferenciação de Inventário (Parts Bin) vs Cenário Fixo
 - **A Dúvida:** Quando estou criando um nível novo, como eu digo para a engine que a "Corda" que acabei de colocar deve ir para o inventário do jogador (Parts Bin) ao invés de aparecer travada no cenário?
-- **Resposta Baseada no Clean Room (YAML):** A extração do *timgres* e os YAMLs de fase (`docs/user-journey-specification.md`) revelam que o comportamento da peça depende da sua máscara de bits. O `flag_1` contendo `0x0040` dita que a peça está *Locked* (travada).
+- **Resposta Baseada no Clean Room (YAML):** A extração do *timgres* e os YAMLs de fase (`tim2_specs/user-journey-specification.md`) revelam que o comportamento da peça depende da sua máscara de bits. O `flag_1` contendo `0x0040` dita que a peça está *Locked* (travada).
 - **Diretriz para a Godot:** O Editor deve possuir um botão de "Cadeado" no painel de propriedades ou um Handle de *Lock/Unlock* na peça. Se destrancada (sem o `0x0040`), a peça não aparece na tela na hora de jogar, mas sim contabilizada dentro do Parts Bin do jogador.
 
 ### Q2. Ordem de Renderização (Z-Indexing Overlap)

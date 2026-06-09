@@ -1,0 +1,76 @@
+@startuml Simulation_Class_Diagram
+skinparam linetype ortho
+
+title Simulation Architecture - Class Diagram
+
+rectangle "SimulationRunner\n(Node2D)" as SR #e0e0e0
+note bottom of SR
+  States: IDLE | RUNNING | PAUSED | SUCCESS | FAIL
+  tick_count, max_ticks, sim_speed
+  init(), play(), pause(), stop(), reset()
+  _process(): accumulator + tick dispatch
+end note
+
+rectangle "Board\n(Node2D)" as BOARD #e0e0e0
+note bottom of BOARD
+  MAX_PARTS: int = 32
+  parts: Array[Part]
+  part_sprites: Array[Sprite2D]
+  level_data: Dictionary
+  solution: SolutionCondition
+  add_part(), clear_level(), load_level()
+  spawn_sprites(), sync_sprites()
+end note
+
+rectangle "PhysicsEngine\n(RefCounted)" as PE #e0e0e0
+note bottom of PE
+  13-pass loop per tick:
+  0: advance_state() 1: gravity
+  2: driver/link forces 3: belts
+  4: pressure fields 5: wall bounds
+  6: collisions (AABB+circles)
+  7: proximity 8: emitters/consumers
+  9-10: electrical 11: flame/ignition
+  12: remove destroyed 13: ropes x3
+end note
+
+rectangle "Part\n(RefCounted)" as PART #d0d0d0
+note bottom of PART
+  identity, geometry
+  physics (Q8.8 fixed-point)
+  state machine (60Hz)
+  connections, lifecycle
+end note
+
+rectangle "ChainManager\n(RefCounted)" as CM #e0e0e0
+note bottom of CM
+  chain_script: Array[Rule]
+  _flags: Dictionary
+  evaluate_chain() per tick
+  7 condition types, 6 action types
+  event_log, deterministic_log
+end note
+
+rectangle "SolutionCondition\n(RefCounted)" as SC #e0e0e0
+note bottom of SC
+  type: AABB_overlap, state_match
+  target_part, zone, required_state
+  check() -> bool
+end note
+
+rectangle "PartFactory\n(Static)" as PF #e0e0e0
+note bottom of PF
+  create_part(id, data): Part
+  archetype mapping per part_type
+end note
+
+SR --> BOARD : orchestrates
+SR --> PE : physics.step(tick)
+SR --> CM : evaluate_chain()
+BOARD --> PART : parts[] += Part
+PE --> PART : modifies physics+state
+CM --> PART : modifies via actions
+BOARD --> SC : solution.check()
+PF ..> PART : creates Part
+
+@enduml

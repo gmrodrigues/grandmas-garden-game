@@ -1,0 +1,44 @@
+JOURNEY: J01 — Sign-In Window
+TIMESTAMP: 20260527_072338
+MODE: HEADLESS
+EXIT CODE: 0
+============================================================
+STDOUT:
+J01 — Sign-In Window journey test
+Timestamp: 2026-05-27T07:23:38.348081
+Mode: HEADLESS
+
+=== 1. Asset Existence ===
+  ✅ SIGN_IN.ANM decoded JSON exists — /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-4/anm/SIGN_IN.json
+
+=== 2. ANM Structure ===
+  ✅ Window canvas size — 279x125 (using Section B dimensions if header is 0)
+  ✅ ANM has frames (Section B) — 8 frames
+  ✅ ANM has bytecode (Section D) — 21 commands
+  ✅ Window canvas size — 279x125
+
+=== 3. State Map (Section C) ===
+  State 5 → frame 0
+  State 2 → frame 1
+  State 3 → frame 2
+  State 4 → frame 4
+  State 6 → frame 6
+
+=== 4. BMP Assets ===
+  ✅ BMP resources have decoded PNGs — 1/1 found, 0 missing
+
+=== 5. User Interaction States ===
+  State 'idle': Window displays, waiting for input
+  State 'text_entry': User is typing name in dark blue field
+  State 'name_added': Name appears in light blue registry
+  State 'name_selected': Name is highlighted in registry
+  State 'done': User clicks Done, window closes
+  ✅ Sign-in state machine defined — 5 states documented
+
+==================================================
+RESULTS: 7 passed, 0 failed
+==================================================
+Full log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J01_20260527_072338.log
+
+============================================================
+STDERR:

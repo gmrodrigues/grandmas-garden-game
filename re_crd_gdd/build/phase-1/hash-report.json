@@ -1,0 +1,117 @@
+{
+  "actual_entry_count": 1467,
+  "conclusion": "MAP entries are 8 bytes: UINT16LE type + UINT32LE hash + UINT16LE offset. The offset field matches record_offset for entries with offset < 65536 (first 5 of 10 sampled), but diverges for larger offsets. The hash function is non-standard and must be recovered from TIM2.EXE disassembly (see Phase 2).",
+  "declared_entry_count": 1796,
+  "entry_data_start": 19,
+  "entry_size": 8,
+  "header_size": 19,
+  "offset_matches_first_10": 5,
+  "offset_mismatch_indices": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sample_entries": [
+    {
+      "hash": "0x53596d60",
+      "index": 0,
+      "offset": 0,
+      "offset_match": true,
+      "record_name": "SYSTEM.VIN",
+      "type_ascii": "..",
+      "type_code": "0x05bb"
+    },
+    {
+      "hash": "0x5358e1f7",
+      "index": 1,
+      "offset": 168,
+      "offset_match": true,
+      "record_name": "SYSTEM.RES",
+      "type_ascii": "..",
+      "type_code": "0x0000"
+    },
+    {
+      "hash": "0x564d5820",
+      "index": 2,
+      "offset": 927,
+      "offset_match": true,
+      "record_name": "VM.OVL",
+      "type_ascii": "..",
+      "type_code": "0x0000"
+    },
+    {
+      "hash": "0x53583b80",
+      "index": 3,
+      "offset": 15678,
+      "offset_match": true,
+      "record_name": "SX.OVL",
+      "type_ascii": "..",
+      "type_code": "0x0000"
+    },
+    {
+      "hash": "0x54492ec1",
+      "index": 4,
+      "offset": 59811,
+      "offset_match": true,
+      "record_name": "TIM2.SX",
+      "type_ascii": "..",
+      "type_code": "0x0000"
+    },
+    {
+      "hash": "0x5041be58",
+      "index": 5,
+      "offset": 57954,
+      "offset_match": false,
+      "record_name": "PARTTEMP.PAL",
+      "record_offset": 254562,
+      "type_ascii": "..",
+      "type_code": "0x0000"
+    },
+    {
+      "hash": "0x5454bed9",
+      "index": 6,
+      "offset": 58755,
+      "offset_match": false,
+      "record_name": "TTLDARK.PAL",
+      "record_offset": 255363,
+      "type_ascii": "..",
+      "type_code": "0x0003"
+    },
+    {
+      "hash": "0x53497fdd",
+      "index": 7,
+      "offset": 59556,
+      "offset_match": false,
+      "record_name": "SIERRA03.PAL",
+      "record_offset": 256164,
+      "type_ascii": "..",
+      "type_code": "0x0003"
+    },
+    {
+      "hash": "0x5348fb8b",
+      "index": 8,
+      "offset": 60357,
+      "offset_match": false,
+      "record_name": "SIERRA04.PAL",
+      "record_offset": 256965,
+      "type_ascii": "..",
+      "type_code": "0x0003"
+    },
+    {
+      "hash": "0x534903ad",
+      "index": 9,
+      "offset": 61158,
+      "offset_match": false,
+      "record_name": "SIERRA05.PAL",
+      "record_offset": 257766,
+      "type_ascii": "..",
+      "type_code": "0x0003"
+    }
+  ],
+  "trailer_size": 2,
+  "version": 256,
+  "volume_count": 1,
+  "volume_name": "RESOURCE.001"
+}

@@ -1,0 +1,83 @@
+{
+  "build_root": "/home/glauber-m-rodrigues/arquivos/projetos/gmrodrigues.github.com/the-incredible-machine-resources/The-Incredible-Machine-2_DOS_EN_RIP-Version/the incredible machine 2/build",
+  "milestones": {
+    "M0_environment": true,
+    "M1_asset_manifest": true,
+    "M2_hash_function": "pending (requires TIM2.EXE disassembly)",
+    "M3_bmp_decoder": "pending",
+    "M4_anm_parser": true,
+    "M5_level_parser": true,
+    "M6_audio_pipeline": true,
+    "M7_physics_engine": true,
+    "M8_all_levels_playable": "pending"
+  },
+  "phase_results": [
+    {
+      "build_dir": "/home/glauber-m-rodrigues/arquivos/projetos/gmrodrigues.github.com/the-incredible-machine-resources/The-Incredible-Machine-2_DOS_EN_RIP-Version/the incredible machine 2/build/phase-0",
+      "build_dir_exists": true,
+      "complete": true,
+      "phase": "phase-0",
+      "sentinel": "/home/glauber-m-rodrigues/arquivos/projetos/gmrodrigues.github.com/the-incredible-machine-resources/The-Incredible-Machine-2_DOS_EN_RIP-Version/the incredible machine 2/build/phase-0/status.txt"
+    },
+    {
+      "build_dir": "/home/glauber-m-rodrigues/arquivos/projetos/gmrodrigues.github.com/the-incredible-machine-resources/The-Incredible-Machine-2_DOS_EN_RIP-Version/the incredible machine 2/build/phase-1",
+      "build_dir_exists": true,
+      "complete": true,
+      "phase": "phase-1",
+      "sentinel": "/home/glauber-m-rodrigues/arquivos/projetos/gmrodrigues.github.com/the-incredible-machine-resources/The-Incredible-Machine-2_DOS_EN_RIP-Version/the incredible machine 2/build/phase-1/.extract-complete"
+    },
+    {
+      "build_dir": "/home/glauber-m-rodrigues/arquivos/projetos/gmrodrigues.github.com/the-incredible-machine-resources/The-Incredible-Machine-2_DOS_EN_RIP-Version/the incredible machine 2/build/phase-2",
+      "build_dir_exists": true,
+      "complete": true,
+      "phase": "phase-2",
+      "sentinel": "/home/glauber-m-rodrigues/arquivos/projetos/gmrodrigues.github.com/the-incredible-machine-resources/The-Incredible-Machine-2_DOS_EN_RIP-Version/the incredible machine 2/build/phase-2/mz-header.json"
+    },
+    {
+      "build_dir": "/home/glauber-m-rodrigues/arquivos/projetos/gmrodrigues.github.com/the-incredible-machine-resources/The-Incredible-Machine-2_DOS_EN_RIP-Version/the incredible machine 2/build/phase-3",
+      "build_dir_exists": true,
+      "complete": true,
+      "phase": "phase-3",
+      "sentinel": "/home/glauber-m-rodrigues/arquivos/projetos/gmrodrigues.github.com/the-incredible-machine-resources/The-Incredible-Machine-2_DOS_EN_RIP-Version/the incredible machine 2/build/phase-3/.palettes-complete"
+    },
+    {
+      "build_dir": "/home/glauber-m-rodrigues/arquivos/projetos/gmrodrigues.github.com/the-incredible-machine-resources/The-Incredible-Machine-2_DOS_EN_RIP-Version/the incredible machine 2/build/phase-4",
+      "build_dir_exists": true,
+      "complete": true,
+      "phase": "phase-4",
+      "sentinel": "/home/glauber-m-rodrigues/arquivos/projetos/gmrodrigues.github.com/the-incredible-machine-resources/The-Incredible-Machine-2_DOS_EN_RIP-Version/the incredible machine 2/build/phase-4/.anm-parse-complete"
+    },
+    {
+      "build_dir": "/home/glauber-m-rodrigues/arquivos/projetos/gmrodrigues.github.com/the-incredible-machine-resources/The-Incredible-Machine-2_DOS_EN_RIP-Version/the incredible machine 2/build/phase-5",
+      "build_dir_exists": true,
+      "complete": true,
+      "phase": "phase-5",
+      "sentinel": "/home/glauber-m-rodrigues/arquivos/projetos/gmrodrigues.github.com/the-incredible-machine-resources/The-Incredible-Machine-2_DOS_EN_RIP-Version/the incredible machine 2/build/phase-5/.levels-parse-complete"
+    },
+    {
+      "build_dir": "/home/glauber-m-rodrigues/arquivos/projetos/gmrodrigues.github.com/the-incredible-machine-resources/The-Incredible-Machine-2_DOS_EN_RIP-Version/the incredible machine 2/build/phase-6",
+      "build_dir_exists": true,
+      "complete": true,
+      "phase": "phase-6",
+      "sentinel": "/home/glauber-m-rodrigues/arquivos/projetos/gmrodrigues.github.com/the-incredible-machine-resources/The-Incredible-Machine-2_DOS_EN_RIP-Version/the incredible machine 2/build/phase-6/sx-report.json"
+    },
+    {
+      "build_dir": "/home/glauber-m-rodrigues/arquivos/projetos/gmrodrigues.github.com/the-incredible-machine-resources/The-Incredible-Machine-2_DOS_EN_RIP-Version/the incredible machine 2/build/phase-7",
+      "build_dir_exists": true,
+      "complete": true,
+      "phase": "phase-7",
+      "sentinel": "/home/glauber-m-rodrigues/arquivos/projetos/gmrodrigues.github.com/the-incredible-machine-resources/The-Incredible-Machine-2_DOS_EN_RIP-Version/the incredible machine 2/build/phase-7/.engine-scaffold-complete"
+    },
+    {
+      "build_dir": "/home/glauber-m-rodrigues/arquivos/projetos/gmrodrigues.github.com/the-incredible-machine-resources/The-Incredible-Machine-2_DOS_EN_RIP-Version/the incredible machine 2/build/phase-8",
+      "build_dir_exists": true,
+      "complete": false,
+      "phase": "phase-8",
+      "sentinel": "/home/glauber-m-rodrigues/arquivos/projetos/gmrodrigues.github.com/the-incredible-machine-resources/The-Incredible-Machine-2_DOS_EN_RIP-Version/the incredible machine 2/build/phase-8/.validation-complete"
+    }
+  ],
+  "phases_completed": 8,
+  "phases_total": 9,
+  "project": "The Incredible Machine 2 \u2014 Reverse Engineering",
+  "project_root": "/home/glauber-m-rodrigues/arquivos/projetos/gmrodrigues.github.com/the-incredible-machine-resources/The-Incredible-Machine-2_DOS_EN_RIP-Version/the incredible machine 2"
+}

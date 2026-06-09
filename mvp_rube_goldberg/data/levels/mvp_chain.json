@@ -1,0 +1,217 @@
+{
+  "meta": {
+    "title": "MVP Chain",
+    "objective": "Guide the balloon into the thorns",
+    "description": "Full 7-pass physics chain: timer counts to 120, triggers gear which lifts gate via rope, ball falls and hits laser, laser powers fan which pushes balloon into thorns.",
+    "hints": [
+      "Wait for the timer to reach 120 ticks",
+      "The gear activates the rope which lifts the gate",
+      "The ball must hit the laser switch",
+      "The fan pushes the balloon toward the thorns"
+    ],
+    "music": null
+  },
+  "physics": {
+    "gravity_x": 0,
+    "gravity_y": 8192,
+    "air_pressure": 0
+  },
+  "chain_script": [
+    {"when": {"type": "tick"}, "mode": "repeat", "actions": [
+      {"type": "inc", "part": "Timer", "prop": "state_counter", "value": 1}
+    ]},
+    {"when": {"type": "prop_ge", "part": "Timer", "prop": "state_counter", "value": 120}, "mode": "once", "actions": [
+      {"type": "log", "msg": "T=%.1fs Timer fires! Gear activates."},
+      {"type": "set", "part": "Gear", "prop": "angular_velocity", "value": 8}
+    ]},
+    {"when": {"type": "prop_ge", "part": "Timer", "prop": "state_counter", "value": 120}, "mode": "repeat", "actions": [
+      {"type": "set", "part": "Gear", "prop": "angular_velocity", "value": 8},
+      {"type": "delta", "part": "Gate", "prop": "y", "value": 4}
+    ]},
+    {"when": {"type": "prop_gt_ref", "part": "Gate", "prop": "y", "ref_part": "Ball", "ref_prop": "pos_y", "offset": 10}, "mode": "once", "actions": [
+      {"type": "log", "msg": "T=%.1fs Gate opens! Ball released."},
+      {"type": "set_flag", "name": "ball_released", "value": true},
+      {"type": "set", "part": "Ball", "prop": "is_moving", "value": true}
+    ]},
+    {"when": {"type": "and", "conditions": [
+      {"type": "flag", "name": "ball_released", "value": true},
+      {"type": "overlap", "a": "Ball", "b": "Laser"}
+    ]}, "mode": "once", "actions": [
+      {"type": "log", "msg": "T=%.1fs Laser hit! Fan ON. Balloon released."},
+      {"type": "set", "part": "Laser", "prop": "state_counter", "value": 4},
+      {"type": "set", "part": "Laser", "prop": "is_powered", "value": true},
+      {"type": "set", "part": "Fan", "prop": "is_powered", "value": true},
+      {"type": "set", "part": "Balloon", "prop": "is_moving", "value": true}
+    ]},
+    {"when": {"type": "prop_eq", "part": "Fan", "prop": "is_powered", "value": true}, "mode": "repeat", "actions": [
+      {"type": "set", "part": "Fan", "prop": "state_counter", "value": 1}
+    ]},
+    {"when": {"type": "solution"}, "mode": "once", "actions": [
+      {"type": "log", "msg": "Balloon reached thorns!"},
+      {"type": "win"}
+    ]}
+  ],
+  "parts": [
+    {
+      "id": 0,
+      "part_type": 99,
+      "name": "Timer",
+      "pos_x": 100,
+      "pos_y": 10,
+      "width": 64,
+      "height": 32,
+      "state_limit_upper": 200,
+      "state_limit_reset": 0
+    },
+    {
+      "id": 1,
+      "part_type": 6,
+      "name": "Gear",
+      "pos_x": 180,
+      "pos_y": 40,
+      "width": 48,
+      "height": 48,
+      "collision_radius": 24,
+      "is_moving": true,
+      "state_limit_upper": 1,
+      "state_limit_reset": 0
+    },
+    {
+      "id": 2,
+      "part_type": 10,
+      "name": "Rope",
+      "pos_x": 228,
+      "pos_y": 64,
+      "width": 8,
+      "height": 80,
+      "rope_segment_length": 80,
+      "connected_1": -1
+    },
+    {
+      "id": 3,
+      "part_type": 1,
+      "name": "Gate",
+      "pos_x": 344,
+      "pos_y": 60,
+      "width": 16,
+      "height": 64
+    },
+    {
+      "id": 4,
+      "part_type": 0,
+      "name": "Ball",
+      "pos_x": 360,
+      "pos_y": 50,
+      "width": 32,
+      "height": 32,
+      "mass": 2832,
+      "damping": 0,
+      "cor_q8": 128,
+      "friction_q8": 0,
+      "collision_radius": 16,
+      "is_moving": false,
+      "gravity_category": 10,
+      "gravity_buoyancy": 0,
+      "state_limit_upper": 8,
+      "state_limit_reset": 0
+    },
+    {
+      "id": 5,
+      "part_type": 26,
+      "name": "Laser",
+      "pos_x": 340,
+      "pos_y": 400,
+      "width": 48,
+      "height": 48,
+      "state_limit_upper": 4,
+      "state_limit_reset": 0
+    },
+    {
+      "id": 6,
+      "part_type": 24,
+      "name": "Fan",
+      "pos_x": 260,
+      "pos_y": 48,
+      "width": 48,
+      "height": 48,
+      "state_limit_upper": 2,
+      "state_limit_reset": 0,
+      "facing": 1,
+      "pressure_max_vel": 10000
+    },
+    {
+      "id": 7,
+      "part_type": 4,
+      "name": "Balloon",
+      "pos_x": 290,
+      "pos_y": 150,
+      "width": 40,
+      "height": 51,
+      "mass": 9,
+      "damping": 64,
+      "cor_q8": 64,
+      "friction_q8": 0,
+      "collision_radius": 0,
+      "gravity_buoyancy": -2000,
+      "is_moving": false,
+      "state_limit_upper": 8,
+      "triggers": ["collision", "proximity"],
+      "destructible": true
+    },
+    {
+      "id": 8,
+      "part_type": 71,
+      "name": "Thorns",
+      "pos_x": 480,
+      "pos_y": 100,
+      "width": 48,
+      "height": 48
+    },
+    {
+      "id": 9,
+      "part_type": 1,
+      "name": "WallL",
+      "pos_x": 0,
+      "pos_y": 0,
+      "width": 8,
+      "height": 480
+    },
+    {
+      "id": 10,
+      "part_type": 1,
+      "name": "WallR",
+      "pos_x": 632,
+      "pos_y": 0,
+      "width": 8,
+      "height": 480
+    },
+    {
+      "id": 11,
+      "part_type": 1,
+      "name": "Floor",
+      "pos_x": 0,
+      "pos_y": 440,
+      "width": 640,
+      "height": 40
+    },
+    {
+      "id": 12,
+      "part_type": 1,
+      "name": "Ceiling",
+      "pos_x": 0,
+      "pos_y": 0,
+      "width": 640,
+      "height": 8
+    }
+  ],
+  "solution": {
+    "type": "AABB_overlap",
+    "target_part": "Balloon",
+    "zone": {
+      "x": 420,
+      "y": 0,
+      "width": 220,
+      "height": 80
+    }
+  }
+}

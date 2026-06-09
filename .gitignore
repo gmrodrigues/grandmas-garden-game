@@ -18,3 +18,10 @@ mono_crash.*.json
 
 # Godot binary
 Godot_v4.6.3-stable_linux.x86_64
+godot_v4.6.3
+godot
+
+# Large build artifacts (reference video, large PDFs)
+re_crd_gdd/build/phase-12/reference-video/
+/re_crd_gdd/docs/pesquisas/Forensic_Game_Reconstruction.pdf
+/re_crd_gdd/Incredible_Machine_Reconstruction.pdf

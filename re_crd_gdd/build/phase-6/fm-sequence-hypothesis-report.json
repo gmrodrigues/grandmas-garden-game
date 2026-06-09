@@ -1,0 +1,1771 @@
+{
+  "patches": [
+    {
+      "sid": 5,
+      "name": "5convey",
+      "seq_size": 62,
+      "parameter": 155,
+      "entropy": 5.672,
+      "h1_midi_like": {
+        "pct_9x": 4.8,
+        "pct_8x": 4.8,
+        "pct_Bx": 3.2,
+        "pct_Cx": 9.7,
+        "pct_Fx": 4.8,
+        "VERDICT": "UNLIKELY"
+      },
+      "h2_three_byte": {
+        "chunk_checks": {
+          "offset_0": {
+            "unique_chunks": 20,
+            "total_chunks": 20,
+            "uniqueness": 1.0,
+            "sample": "f42edc"
+          },
+          "offset_1": {
+            "unique_chunks": 20,
+            "total_chunks": 20,
+            "uniqueness": 1.0,
+            "sample": "2edcb7"
+          },
+          "offset_2": {
+            "unique_chunks": 20,
+            "total_chunks": 20,
+            "uniqueness": 1.0,
+            "sample": "dcb75a"
+          }
+        },
+        "min_uniqueness": 1.0,
+        "VERDICT": "UNLIKELY"
+      },
+      "h3_delta_time": {
+        "pct_small_diffs": 8.2,
+        "pct_large_diffs": 6.6,
+        "avg_diff": 131.9,
+        "VERDICT": "UNLIKELY"
+      },
+      "h4_checksum_pairs": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 31,
+            "xor_concentration": 0.032,
+            "xor_const": "0xda",
+            "add_concentration": 0.065,
+            "add_const": "0x6b"
+          },
+          "offset_1": {
+            "n_pairs": 30,
+            "xor_concentration": 0.067,
+            "xor_const": "0xc1",
+            "add_concentration": 0.067,
+            "add_const": "0xbf"
+          }
+        },
+        "best_xor_conc": 0.067,
+        "VERDICT": "UNLIKELY"
+      },
+      "h5_opl2_streaming": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 31,
+            "valid_pairs": 29,
+            "ratio": 0.935
+          },
+          "offset_1": {
+            "n_pairs": 30,
+            "valid_pairs": 30,
+            "ratio": 1.0
+          },
+          "offset_2": {
+            "n_pairs": 30,
+            "valid_pairs": 28,
+            "ratio": 0.933
+          },
+          "offset_3": {
+            "n_pairs": 29,
+            "valid_pairs": 29,
+            "ratio": 1.0
+          }
+        },
+        "best_ratio": 1.0,
+        "VERDICT": "POSSIBLE"
+      },
+      "h6_note_duration": {
+        "pct_note_range": 12.9,
+        "pct_high_bytes": 46.8,
+        "VERDICT": "UNLIKELY"
+      },
+      "h8_zero_absence": {
+        "zero_count": 0,
+        "zero_pct": 0.0,
+        "VERDICT": "NOTABLE"
+      },
+      "h9_0x80_marker": {
+        "count": 0,
+        "is_last_byte": false,
+        "positions": [],
+        "is_periodic": false,
+        "VERDICT": "ABSENT"
+      },
+      "h10_bitflag": {
+        "pct_power2": 3.2,
+        "pct_bitpatterns": 0.0,
+        "VERDICT": "NUMERIC_ENCODING"
+      }
+    },
+    {
+      "sid": 24,
+      "name": "24FAN",
+      "seq_size": 281,
+      "parameter": 951,
+      "entropy": 7.26,
+      "h1_midi_like": {
+        "pct_9x": 7.1,
+        "pct_8x": 7.1,
+        "pct_Bx": 7.1,
+        "pct_Cx": 4.6,
+        "pct_Fx": 7.1,
+        "VERDICT": "UNLIKELY"
+      },
+      "h2_three_byte": {
+        "chunk_checks": {
+          "offset_0": {
+            "unique_chunks": 93,
+            "total_chunks": 93,
+            "uniqueness": 1.0,
+            "sample": "210e5e"
+          },
+          "offset_1": {
+            "unique_chunks": 93,
+            "total_chunks": 93,
+            "uniqueness": 1.0,
+            "sample": "0e5e40"
+          },
+          "offset_2": {
+            "unique_chunks": 93,
+            "total_chunks": 93,
+            "uniqueness": 1.0,
+            "sample": "5e4043"
+          }
+        },
+        "min_uniqueness": 1.0,
+        "VERDICT": "UNLIKELY"
+      },
+      "h3_delta_time": {
+        "pct_small_diffs": 6.4,
+        "pct_large_diffs": 5.7,
+        "avg_diff": 122.1,
+        "VERDICT": "UNLIKELY"
+      },
+      "h4_checksum_pairs": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 140,
+            "xor_concentration": 0.021,
+            "xor_const": "0x43",
+            "add_concentration": 0.029,
+            "add_const": "0x87"
+          },
+          "offset_1": {
+            "n_pairs": 140,
+            "xor_concentration": 0.029,
+            "xor_const": "0xf7",
+            "add_concentration": 0.021,
+            "add_const": "0x18"
+          }
+        },
+        "best_xor_conc": 0.029,
+        "VERDICT": "UNLIKELY"
+      },
+      "h5_opl2_streaming": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 140,
+            "valid_pairs": 137,
+            "ratio": 0.979
+          },
+          "offset_1": {
+            "n_pairs": 140,
+            "valid_pairs": 130,
+            "ratio": 0.929
+          },
+          "offset_2": {
+            "n_pairs": 139,
+            "valid_pairs": 136,
+            "ratio": 0.978
+          },
+          "offset_3": {
+            "n_pairs": 139,
+            "valid_pairs": 129,
+            "ratio": 0.928
+          }
+        },
+        "best_ratio": 0.979,
+        "VERDICT": "POSSIBLE"
+      },
+      "h6_note_duration": {
+        "pct_note_range": 14.9,
+        "pct_high_bytes": 53.0,
+        "VERDICT": "UNLIKELY"
+      },
+      "h8_zero_absence": {
+        "zero_count": 0,
+        "zero_pct": 0.0,
+        "VERDICT": "NOTABLE"
+      },
+      "h9_0x80_marker": {
+        "count": 2,
+        "is_last_byte": false,
+        "positions": [
+          14,
+          202
+        ],
+        "is_periodic": false,
+        "VERDICT": "INTERNAL_CMD"
+      },
+      "h10_bitflag": {
+        "pct_power2": 3.6,
+        "pct_bitpatterns": 3.6,
+        "VERDICT": "NUMERIC_ENCODING"
+      }
+    },
+    {
+      "sid": 26,
+      "name": "26GENER",
+      "seq_size": 286,
+      "parameter": 805,
+      "entropy": 7.267,
+      "h1_midi_like": {
+        "pct_9x": 4.2,
+        "pct_8x": 5.9,
+        "pct_Bx": 6.6,
+        "pct_Cx": 5.2,
+        "pct_Fx": 8.0,
+        "VERDICT": "UNLIKELY"
+      },
+      "h2_three_byte": {
+        "chunk_checks": {
+          "offset_0": {
+            "unique_chunks": 95,
+            "total_chunks": 95,
+            "uniqueness": 1.0,
+            "sample": "84397b"
+          },
+          "offset_1": {
+            "unique_chunks": 95,
+            "total_chunks": 95,
+            "uniqueness": 1.0,
+            "sample": "397b10"
+          },
+          "offset_2": {
+            "unique_chunks": 94,
+            "total_chunks": 94,
+            "uniqueness": 1.0,
+            "sample": "7b103d"
+          }
+        },
+        "min_uniqueness": 1.0,
+        "VERDICT": "UNLIKELY"
+      },
+      "h3_delta_time": {
+        "pct_small_diffs": 6.7,
+        "pct_large_diffs": 8.4,
+        "avg_diff": 133.4,
+        "VERDICT": "UNLIKELY"
+      },
+      "h4_checksum_pairs": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 143,
+            "xor_concentration": 0.035,
+            "xor_const": "0x9d",
+            "add_concentration": 0.035,
+            "add_const": "0x98"
+          },
+          "offset_1": {
+            "n_pairs": 142,
+            "xor_concentration": 0.021,
+            "xor_const": "0x4c",
+            "add_concentration": 0.028,
+            "add_const": "0xb0"
+          }
+        },
+        "best_xor_conc": 0.035,
+        "VERDICT": "UNLIKELY"
+      },
+      "h5_opl2_streaming": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 143,
+            "valid_pairs": 131,
+            "ratio": 0.916
+          },
+          "offset_1": {
+            "n_pairs": 142,
+            "valid_pairs": 139,
+            "ratio": 0.979
+          },
+          "offset_2": {
+            "n_pairs": 142,
+            "valid_pairs": 130,
+            "ratio": 0.915
+          },
+          "offset_3": {
+            "n_pairs": 141,
+            "valid_pairs": 138,
+            "ratio": 0.979
+          }
+        },
+        "best_ratio": 0.979,
+        "VERDICT": "POSSIBLE"
+      },
+      "h6_note_duration": {
+        "pct_note_range": 17.1,
+        "pct_high_bytes": 51.4,
+        "VERDICT": "UNLIKELY"
+      },
+      "h8_zero_absence": {
+        "zero_count": 2,
+        "zero_pct": 0.7,
+        "VERDICT": "NORMAL"
+      },
+      "h9_0x80_marker": {
+        "count": 0,
+        "is_last_byte": false,
+        "positions": [],
+        "is_periodic": false,
+        "VERDICT": "ABSENT"
+      },
+      "h10_bitflag": {
+        "pct_power2": 1.7,
+        "pct_bitpatterns": 3.5,
+        "VERDICT": "NUMERIC_ENCODING"
+      }
+    },
+    {
+      "sid": 50,
+      "name": "50MOTOR",
+      "seq_size": 203,
+      "parameter": 707,
+      "entropy": 7.007,
+      "h1_midi_like": {
+        "pct_9x": 5.4,
+        "pct_8x": 4.4,
+        "pct_Bx": 3.0,
+        "pct_Cx": 5.4,
+        "pct_Fx": 7.9,
+        "VERDICT": "UNLIKELY"
+      },
+      "h2_three_byte": {
+        "chunk_checks": {
+          "offset_0": {
+            "unique_chunks": 67,
+            "total_chunks": 67,
+            "uniqueness": 1.0,
+            "sample": "62cc37"
+          },
+          "offset_1": {
+            "unique_chunks": 67,
+            "total_chunks": 67,
+            "uniqueness": 1.0,
+            "sample": "cc3778"
+          },
+          "offset_2": {
+            "unique_chunks": 67,
+            "total_chunks": 67,
+            "uniqueness": 1.0,
+            "sample": "37781d"
+          }
+        },
+        "min_uniqueness": 1.0,
+        "VERDICT": "UNLIKELY"
+      },
+      "h3_delta_time": {
+        "pct_small_diffs": 5.9,
+        "pct_large_diffs": 7.9,
+        "avg_diff": 133.9,
+        "VERDICT": "UNLIKELY"
+      },
+      "h4_checksum_pairs": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 101,
+            "xor_concentration": 0.03,
+            "xor_const": "0x1f",
+            "add_concentration": 0.03,
+            "add_const": "0xa9"
+          },
+          "offset_1": {
+            "n_pairs": 101,
+            "xor_concentration": 0.03,
+            "xor_const": "0x7",
+            "add_concentration": 0.03,
+            "add_const": "0x1c"
+          }
+        },
+        "best_xor_conc": 0.03,
+        "VERDICT": "UNLIKELY"
+      },
+      "h5_opl2_streaming": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 101,
+            "valid_pairs": 93,
+            "ratio": 0.921
+          },
+          "offset_1": {
+            "n_pairs": 101,
+            "valid_pairs": 95,
+            "ratio": 0.941
+          },
+          "offset_2": {
+            "n_pairs": 100,
+            "valid_pairs": 92,
+            "ratio": 0.92
+          },
+          "offset_3": {
+            "n_pairs": 100,
+            "valid_pairs": 94,
+            "ratio": 0.94
+          }
+        },
+        "best_ratio": 0.941,
+        "VERDICT": "POSSIBLE"
+      },
+      "h6_note_duration": {
+        "pct_note_range": 18.2,
+        "pct_high_bytes": 47.3,
+        "VERDICT": "UNLIKELY"
+      },
+      "h8_zero_absence": {
+        "zero_count": 2,
+        "zero_pct": 0.99,
+        "VERDICT": "NORMAL"
+      },
+      "h9_0x80_marker": {
+        "count": 0,
+        "is_last_byte": false,
+        "positions": [],
+        "is_periodic": false,
+        "VERDICT": "ABSENT"
+      },
+      "h10_bitflag": {
+        "pct_power2": 4.4,
+        "pct_bitpatterns": 4.4,
+        "VERDICT": "NUMERIC_ENCODING"
+      }
+    },
+    {
+      "sid": 51,
+      "name": "51VAC",
+      "seq_size": 320,
+      "parameter": 494,
+      "entropy": 7.11,
+      "h1_midi_like": {
+        "pct_9x": 4.1,
+        "pct_8x": 6.2,
+        "pct_Bx": 5.9,
+        "pct_Cx": 4.7,
+        "pct_Fx": 8.1,
+        "VERDICT": "UNLIKELY"
+      },
+      "h2_three_byte": {
+        "chunk_checks": {
+          "offset_0": {
+            "unique_chunks": 106,
+            "total_chunks": 106,
+            "uniqueness": 1.0,
+            "sample": "40f989"
+          },
+          "offset_1": {
+            "unique_chunks": 106,
+            "total_chunks": 106,
+            "uniqueness": 1.0,
+            "sample": "f98960"
+          },
+          "offset_2": {
+            "unique_chunks": 106,
+            "total_chunks": 106,
+            "uniqueness": 1.0,
+            "sample": "8960ae"
+          }
+        },
+        "min_uniqueness": 1.0,
+        "VERDICT": "UNLIKELY"
+      },
+      "h3_delta_time": {
+        "pct_small_diffs": 4.4,
+        "pct_large_diffs": 5.0,
+        "avg_diff": 133.2,
+        "VERDICT": "UNLIKELY"
+      },
+      "h4_checksum_pairs": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 160,
+            "xor_concentration": 0.025,
+            "xor_const": "0x77",
+            "add_concentration": 0.025,
+            "add_const": "0x7d"
+          },
+          "offset_1": {
+            "n_pairs": 159,
+            "xor_concentration": 0.025,
+            "xor_const": "0xc7",
+            "add_concentration": 0.019,
+            "add_const": "0xb7"
+          }
+        },
+        "best_xor_conc": 0.025,
+        "VERDICT": "UNLIKELY"
+      },
+      "h5_opl2_streaming": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 160,
+            "valid_pairs": 148,
+            "ratio": 0.925
+          },
+          "offset_1": {
+            "n_pairs": 159,
+            "valid_pairs": 143,
+            "ratio": 0.899
+          },
+          "offset_2": {
+            "n_pairs": 159,
+            "valid_pairs": 147,
+            "ratio": 0.925
+          },
+          "offset_3": {
+            "n_pairs": 158,
+            "valid_pairs": 143,
+            "ratio": 0.905
+          }
+        },
+        "best_ratio": 0.925,
+        "VERDICT": "POSSIBLE"
+      },
+      "h6_note_duration": {
+        "pct_note_range": 24.4,
+        "pct_high_bytes": 50.6,
+        "VERDICT": "UNLIKELY"
+      },
+      "h8_zero_absence": {
+        "zero_count": 9,
+        "zero_pct": 2.81,
+        "VERDICT": "NORMAL"
+      },
+      "h9_0x80_marker": {
+        "count": 7,
+        "is_last_byte": false,
+        "positions": [
+          19,
+          91,
+          131,
+          179,
+          191,
+          202,
+          205
+        ],
+        "is_periodic": false,
+        "VERDICT": "INTERNAL_CMD"
+      },
+      "h10_bitflag": {
+        "pct_power2": 6.6,
+        "pct_bitpatterns": 8.4,
+        "VERDICT": "NUMERIC_ENCODING"
+      }
+    },
+    {
+      "sid": 62,
+      "name": "62COFFEE",
+      "seq_size": 803,
+      "parameter": 1245,
+      "entropy": 7.764,
+      "h1_midi_like": {
+        "pct_9x": 6.5,
+        "pct_8x": 6.4,
+        "pct_Bx": 7.0,
+        "pct_Cx": 5.7,
+        "pct_Fx": 6.6,
+        "VERDICT": "UNLIKELY"
+      },
+      "h2_three_byte": {
+        "chunk_checks": {
+          "offset_0": {
+            "unique_chunks": 267,
+            "total_chunks": 267,
+            "uniqueness": 1.0,
+            "sample": "c02599"
+          },
+          "offset_1": {
+            "unique_chunks": 267,
+            "total_chunks": 267,
+            "uniqueness": 1.0,
+            "sample": "25996e"
+          },
+          "offset_2": {
+            "unique_chunks": 267,
+            "total_chunks": 267,
+            "uniqueness": 1.0,
+            "sample": "996e66"
+          }
+        },
+        "min_uniqueness": 1.0,
+        "VERDICT": "UNLIKELY"
+      },
+      "h3_delta_time": {
+        "pct_small_diffs": 6.9,
+        "pct_large_diffs": 4.5,
+        "avg_diff": 124.4,
+        "VERDICT": "UNLIKELY"
+      },
+      "h4_checksum_pairs": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 401,
+            "xor_concentration": 0.015,
+            "xor_const": "0x16",
+            "add_concentration": 0.015,
+            "add_const": "0x87"
+          },
+          "offset_1": {
+            "n_pairs": 401,
+            "xor_concentration": 0.017,
+            "xor_const": "0x5e",
+            "add_concentration": 0.015,
+            "add_const": "0xde"
+          }
+        },
+        "best_xor_conc": 0.017,
+        "VERDICT": "UNLIKELY"
+      },
+      "h5_opl2_streaming": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 401,
+            "valid_pairs": 381,
+            "ratio": 0.95
+          },
+          "offset_1": {
+            "n_pairs": 401,
+            "valid_pairs": 386,
+            "ratio": 0.963
+          },
+          "offset_2": {
+            "n_pairs": 400,
+            "valid_pairs": 380,
+            "ratio": 0.95
+          },
+          "offset_3": {
+            "n_pairs": 400,
+            "valid_pairs": 385,
+            "ratio": 0.963
+          }
+        },
+        "best_ratio": 0.963,
+        "VERDICT": "POSSIBLE"
+      },
+      "h6_note_duration": {
+        "pct_note_range": 20.0,
+        "pct_high_bytes": 46.8,
+        "VERDICT": "UNLIKELY"
+      },
+      "h8_zero_absence": {
+        "zero_count": 2,
+        "zero_pct": 0.25,
+        "VERDICT": "NORMAL"
+      },
+      "h9_0x80_marker": {
+        "count": 4,
+        "is_last_byte": true,
+        "positions": [
+          483,
+          490,
+          599,
+          802
+        ],
+        "is_periodic": false,
+        "VERDICT": "END_MARKER"
+      },
+      "h10_bitflag": {
+        "pct_power2": 3.7,
+        "pct_bitpatterns": 2.1,
+        "VERDICT": "NUMERIC_ENCODING"
+      }
+    },
+    {
+      "sid": 65,
+      "name": "65LEP",
+      "seq_size": 335,
+      "parameter": 727,
+      "entropy": 7.329,
+      "h1_midi_like": {
+        "pct_9x": 6.6,
+        "pct_8x": 6.0,
+        "pct_Bx": 5.7,
+        "pct_Cx": 5.4,
+        "pct_Fx": 8.4,
+        "VERDICT": "UNLIKELY"
+      },
+      "h2_three_byte": {
+        "chunk_checks": {
+          "offset_0": {
+            "unique_chunks": 111,
+            "total_chunks": 111,
+            "uniqueness": 1.0,
+            "sample": "8b40dd"
+          },
+          "offset_1": {
+            "unique_chunks": 111,
+            "total_chunks": 111,
+            "uniqueness": 1.0,
+            "sample": "40ddcd"
+          },
+          "offset_2": {
+            "unique_chunks": 111,
+            "total_chunks": 111,
+            "uniqueness": 1.0,
+            "sample": "ddcd40"
+          }
+        },
+        "min_uniqueness": 1.0,
+        "VERDICT": "UNLIKELY"
+      },
+      "h3_delta_time": {
+        "pct_small_diffs": 4.5,
+        "pct_large_diffs": 6.3,
+        "avg_diff": 126.7,
+        "VERDICT": "UNLIKELY"
+      },
+      "h4_checksum_pairs": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 167,
+            "xor_concentration": 0.018,
+            "xor_const": "0x10",
+            "add_concentration": 0.024,
+            "add_const": "0x19"
+          },
+          "offset_1": {
+            "n_pairs": 167,
+            "xor_concentration": 0.024,
+            "xor_const": "0x48",
+            "add_concentration": 0.024,
+            "add_const": "0xcd"
+          }
+        },
+        "best_xor_conc": 0.024,
+        "VERDICT": "UNLIKELY"
+      },
+      "h5_opl2_streaming": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 167,
+            "valid_pairs": 151,
+            "ratio": 0.904
+          },
+          "offset_1": {
+            "n_pairs": 167,
+            "valid_pairs": 156,
+            "ratio": 0.934
+          },
+          "offset_2": {
+            "n_pairs": 166,
+            "valid_pairs": 150,
+            "ratio": 0.904
+          },
+          "offset_3": {
+            "n_pairs": 166,
+            "valid_pairs": 155,
+            "ratio": 0.934
+          }
+        },
+        "best_ratio": 0.934,
+        "VERDICT": "POSSIBLE"
+      },
+      "h6_note_duration": {
+        "pct_note_range": 20.0,
+        "pct_high_bytes": 50.7,
+        "VERDICT": "UNLIKELY"
+      },
+      "h8_zero_absence": {
+        "zero_count": 4,
+        "zero_pct": 1.19,
+        "VERDICT": "NORMAL"
+      },
+      "h9_0x80_marker": {
+        "count": 1,
+        "is_last_byte": false,
+        "positions": [
+          250
+        ],
+        "is_periodic": false,
+        "VERDICT": "INTERNAL_CMD"
+      },
+      "h10_bitflag": {
+        "pct_power2": 4.8,
+        "pct_bitpatterns": 3.6,
+        "VERDICT": "NUMERIC_ENCODING"
+      }
+    },
+    {
+      "sid": 67,
+      "name": "67CAN",
+      "seq_size": 176,
+      "parameter": 1041,
+      "entropy": 6.882,
+      "h1_midi_like": {
+        "pct_9x": 6.2,
+        "pct_8x": 2.8,
+        "pct_Bx": 6.8,
+        "pct_Cx": 6.8,
+        "pct_Fx": 7.4,
+        "VERDICT": "UNLIKELY"
+      },
+      "h2_three_byte": {
+        "chunk_checks": {
+          "offset_0": {
+            "unique_chunks": 58,
+            "total_chunks": 58,
+            "uniqueness": 1.0,
+            "sample": "5ecc0f"
+          },
+          "offset_1": {
+            "unique_chunks": 58,
+            "total_chunks": 58,
+            "uniqueness": 1.0,
+            "sample": "cc0f98"
+          },
+          "offset_2": {
+            "unique_chunks": 58,
+            "total_chunks": 58,
+            "uniqueness": 1.0,
+            "sample": "0f98b1"
+          }
+        },
+        "min_uniqueness": 1.0,
+        "VERDICT": "UNLIKELY"
+      },
+      "h3_delta_time": {
+        "pct_small_diffs": 4.6,
+        "pct_large_diffs": 4.0,
+        "avg_diff": 130.6,
+        "VERDICT": "UNLIKELY"
+      },
+      "h4_checksum_pairs": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 88,
+            "xor_concentration": 0.034,
+            "xor_const": "0x6e",
+            "add_concentration": 0.023,
+            "add_const": "0x6e"
+          },
+          "offset_1": {
+            "n_pairs": 87,
+            "xor_concentration": 0.034,
+            "xor_const": "0x5a",
+            "add_concentration": 0.034,
+            "add_const": "0x72"
+          }
+        },
+        "best_xor_conc": 0.034,
+        "VERDICT": "UNLIKELY"
+      },
+      "h5_opl2_streaming": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 88,
+            "valid_pairs": 85,
+            "ratio": 0.966
+          },
+          "offset_1": {
+            "n_pairs": 87,
+            "valid_pairs": 81,
+            "ratio": 0.931
+          },
+          "offset_2": {
+            "n_pairs": 87,
+            "valid_pairs": 84,
+            "ratio": 0.966
+          },
+          "offset_3": {
+            "n_pairs": 86,
+            "valid_pairs": 80,
+            "ratio": 0.93
+          }
+        },
+        "best_ratio": 0.966,
+        "VERDICT": "POSSIBLE"
+      },
+      "h6_note_duration": {
+        "pct_note_range": 20.5,
+        "pct_high_bytes": 53.4,
+        "VERDICT": "UNLIKELY"
+      },
+      "h8_zero_absence": {
+        "zero_count": 0,
+        "zero_pct": 0.0,
+        "VERDICT": "NOTABLE"
+      },
+      "h9_0x80_marker": {
+        "count": 0,
+        "is_last_byte": false,
+        "positions": [],
+        "is_periodic": false,
+        "VERDICT": "ABSENT"
+      },
+      "h10_bitflag": {
+        "pct_power2": 2.3,
+        "pct_bitpatterns": 1.1,
+        "VERDICT": "NUMERIC_ENCODING"
+      }
+    },
+    {
+      "sid": 69,
+      "name": "69ANTGRV",
+      "seq_size": 22,
+      "parameter": 151,
+      "entropy": 4.369,
+      "h1_midi_like": {
+        "pct_9x": 9.1,
+        "pct_8x": 9.1,
+        "pct_Bx": 4.5,
+        "pct_Cx": 4.5,
+        "pct_Fx": 4.5,
+        "VERDICT": "UNLIKELY"
+      },
+      "h2_three_byte": {
+        "chunk_checks": {
+          "offset_0": {
+            "unique_chunks": 7,
+            "total_chunks": 7,
+            "uniqueness": 1.0,
+            "sample": "2dccac"
+          },
+          "offset_1": {
+            "unique_chunks": 7,
+            "total_chunks": 7,
+            "uniqueness": 1.0,
+            "sample": "ccac7b"
+          },
+          "offset_2": {
+            "unique_chunks": 6,
+            "total_chunks": 6,
+            "uniqueness": 1.0,
+            "sample": "ac7b7d"
+          }
+        },
+        "min_uniqueness": 1.0,
+        "VERDICT": "UNLIKELY"
+      },
+      "h3_delta_time": {
+        "pct_small_diffs": 4.8,
+        "pct_large_diffs": 14.3,
+        "avg_diff": 174.6,
+        "VERDICT": "UNLIKELY"
+      },
+      "h4_checksum_pairs": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 11,
+            "xor_concentration": 0.091,
+            "xor_const": "0xe1",
+            "add_concentration": 0.091,
+            "add_const": "0x9f"
+          },
+          "offset_1": {
+            "n_pairs": 10,
+            "xor_concentration": 0.1,
+            "xor_const": "0x60",
+            "add_concentration": 0.1,
+            "add_const": "0xe0"
+          }
+        },
+        "best_xor_conc": 0.1,
+        "VERDICT": "UNLIKELY"
+      },
+      "h5_opl2_streaming": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 11,
+            "valid_pairs": 11,
+            "ratio": 1.0
+          },
+          "offset_1": {
+            "n_pairs": 10,
+            "valid_pairs": 8,
+            "ratio": 0.8
+          },
+          "offset_2": {
+            "n_pairs": 10,
+            "valid_pairs": 10,
+            "ratio": 1.0
+          },
+          "offset_3": {
+            "n_pairs": 9,
+            "valid_pairs": 7,
+            "ratio": 0.778
+          }
+        },
+        "best_ratio": 1.0,
+        "VERDICT": "POSSIBLE"
+      },
+      "h6_note_duration": {
+        "pct_note_range": 31.8,
+        "pct_high_bytes": 40.9,
+        "VERDICT": "LIKELY"
+      },
+      "h8_zero_absence": {
+        "zero_count": 1,
+        "zero_pct": 4.55,
+        "VERDICT": "NORMAL"
+      },
+      "h9_0x80_marker": {
+        "count": 2,
+        "is_last_byte": true,
+        "positions": [
+          10,
+          21
+        ],
+        "is_periodic": false,
+        "VERDICT": "END_MARKER"
+      },
+      "h10_bitflag": {
+        "pct_power2": 18.2,
+        "pct_bitpatterns": 4.5,
+        "VERDICT": "BITFLAG_ENCODING"
+      }
+    },
+    {
+      "sid": 74,
+      "name": "74NITRO",
+      "seq_size": 620,
+      "parameter": 965,
+      "entropy": 7.659,
+      "h1_midi_like": {
+        "pct_9x": 4.8,
+        "pct_8x": 5.6,
+        "pct_Bx": 6.1,
+        "pct_Cx": 5.2,
+        "pct_Fx": 8.5,
+        "VERDICT": "UNLIKELY"
+      },
+      "h2_three_byte": {
+        "chunk_checks": {
+          "offset_0": {
+            "unique_chunks": 206,
+            "total_chunks": 206,
+            "uniqueness": 1.0,
+            "sample": "f85996"
+          },
+          "offset_1": {
+            "unique_chunks": 206,
+            "total_chunks": 206,
+            "uniqueness": 1.0,
+            "sample": "5996e6"
+          },
+          "offset_2": {
+            "unique_chunks": 206,
+            "total_chunks": 206,
+            "uniqueness": 1.0,
+            "sample": "96e650"
+          }
+        },
+        "min_uniqueness": 1.0,
+        "VERDICT": "UNLIKELY"
+      },
+      "h3_delta_time": {
+        "pct_small_diffs": 5.0,
+        "pct_large_diffs": 5.5,
+        "avg_diff": 131.2,
+        "VERDICT": "UNLIKELY"
+      },
+      "h4_checksum_pairs": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 310,
+            "xor_concentration": 0.019,
+            "xor_const": "0x8e",
+            "add_concentration": 0.016,
+            "add_const": "0xd9"
+          },
+          "offset_1": {
+            "n_pairs": 309,
+            "xor_concentration": 0.016,
+            "xor_const": "0xc4",
+            "add_concentration": 0.019,
+            "add_const": "0xe2"
+          }
+        },
+        "best_xor_conc": 0.019,
+        "VERDICT": "UNLIKELY"
+      },
+      "h5_opl2_streaming": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 310,
+            "valid_pairs": 294,
+            "ratio": 0.948
+          },
+          "offset_1": {
+            "n_pairs": 309,
+            "valid_pairs": 292,
+            "ratio": 0.945
+          },
+          "offset_2": {
+            "n_pairs": 309,
+            "valid_pairs": 294,
+            "ratio": 0.951
+          },
+          "offset_3": {
+            "n_pairs": 308,
+            "valid_pairs": 291,
+            "ratio": 0.945
+          }
+        },
+        "best_ratio": 0.951,
+        "VERDICT": "POSSIBLE"
+      },
+      "h6_note_duration": {
+        "pct_note_range": 19.8,
+        "pct_high_bytes": 47.9,
+        "VERDICT": "UNLIKELY"
+      },
+      "h8_zero_absence": {
+        "zero_count": 0,
+        "zero_pct": 0.0,
+        "VERDICT": "NOTABLE"
+      },
+      "h9_0x80_marker": {
+        "count": 4,
+        "is_last_byte": false,
+        "positions": [
+          173,
+          234,
+          345,
+          452
+        ],
+        "is_periodic": false,
+        "VERDICT": "INTERNAL_CMD"
+      },
+      "h10_bitflag": {
+        "pct_power2": 4.0,
+        "pct_bitpatterns": 1.9,
+        "VERDICT": "NUMERIC_ENCODING"
+      }
+    },
+    {
+      "sid": 91,
+      "name": "91LASER1",
+      "seq_size": 55,
+      "parameter": 439,
+      "entropy": 5.527,
+      "h1_midi_like": {
+        "pct_9x": 10.9,
+        "pct_8x": 5.5,
+        "pct_Bx": 7.3,
+        "pct_Cx": 3.6,
+        "pct_Fx": 1.8,
+        "VERDICT": "UNLIKELY"
+      },
+      "h2_three_byte": {
+        "chunk_checks": {
+          "offset_0": {
+            "unique_chunks": 18,
+            "total_chunks": 18,
+            "uniqueness": 1.0,
+            "sample": "2dcca8"
+          },
+          "offset_1": {
+            "unique_chunks": 18,
+            "total_chunks": 18,
+            "uniqueness": 1.0,
+            "sample": "cca877"
+          },
+          "offset_2": {
+            "unique_chunks": 17,
+            "total_chunks": 17,
+            "uniqueness": 1.0,
+            "sample": "a87791"
+          }
+        },
+        "min_uniqueness": 1.0,
+        "VERDICT": "UNLIKELY"
+      },
+      "h3_delta_time": {
+        "pct_small_diffs": 5.6,
+        "pct_large_diffs": 5.6,
+        "avg_diff": 134.3,
+        "VERDICT": "UNLIKELY"
+      },
+      "h4_checksum_pairs": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 27,
+            "xor_concentration": 0.074,
+            "xor_const": "0xe1",
+            "add_concentration": 0.074,
+            "add_const": "0xce"
+          },
+          "offset_1": {
+            "n_pairs": 27,
+            "xor_concentration": 0.074,
+            "xor_const": "0xdc",
+            "add_concentration": 0.074,
+            "add_const": "0x96"
+          }
+        },
+        "best_xor_conc": 0.074,
+        "VERDICT": "UNLIKELY"
+      },
+      "h5_opl2_streaming": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 27,
+            "valid_pairs": 26,
+            "ratio": 0.963
+          },
+          "offset_1": {
+            "n_pairs": 27,
+            "valid_pairs": 27,
+            "ratio": 1.0
+          },
+          "offset_2": {
+            "n_pairs": 26,
+            "valid_pairs": 25,
+            "ratio": 0.962
+          },
+          "offset_3": {
+            "n_pairs": 26,
+            "valid_pairs": 26,
+            "ratio": 1.0
+          }
+        },
+        "best_ratio": 1.0,
+        "VERDICT": "POSSIBLE"
+      },
+      "h6_note_duration": {
+        "pct_note_range": 21.8,
+        "pct_high_bytes": 41.8,
+        "VERDICT": "UNLIKELY"
+      },
+      "h8_zero_absence": {
+        "zero_count": 0,
+        "zero_pct": 0.0,
+        "VERDICT": "NOTABLE"
+      },
+      "h9_0x80_marker": {
+        "count": 2,
+        "is_last_byte": true,
+        "positions": [
+          48,
+          54
+        ],
+        "is_periodic": false,
+        "VERDICT": "END_MARKER"
+      },
+      "h10_bitflag": {
+        "pct_power2": 10.9,
+        "pct_bitpatterns": 1.8,
+        "VERDICT": "BITFLAG_ENCODING"
+      }
+    },
+    {
+      "sid": 107,
+      "name": "107MIXER",
+      "seq_size": 82,
+      "parameter": 497,
+      "entropy": 6.236,
+      "h1_midi_like": {
+        "pct_9x": 9.8,
+        "pct_8x": 4.9,
+        "pct_Bx": 12.2,
+        "pct_Cx": 8.5,
+        "pct_Fx": 6.1,
+        "VERDICT": "UNLIKELY"
+      },
+      "h2_three_byte": {
+        "chunk_checks": {
+          "offset_0": {
+            "unique_chunks": 27,
+            "total_chunks": 27,
+            "uniqueness": 1.0,
+            "sample": "382b9f"
+          },
+          "offset_1": {
+            "unique_chunks": 27,
+            "total_chunks": 27,
+            "uniqueness": 1.0,
+            "sample": "2b9fb5"
+          },
+          "offset_2": {
+            "unique_chunks": 26,
+            "total_chunks": 26,
+            "uniqueness": 1.0,
+            "sample": "9fb503"
+          }
+        },
+        "min_uniqueness": 1.0,
+        "VERDICT": "UNLIKELY"
+      },
+      "h3_delta_time": {
+        "pct_small_diffs": 3.7,
+        "pct_large_diffs": 7.4,
+        "avg_diff": 133.6,
+        "VERDICT": "UNLIKELY"
+      },
+      "h4_checksum_pairs": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 41,
+            "xor_concentration": 0.049,
+            "xor_const": "0x19",
+            "add_concentration": 0.049,
+            "add_const": "0x54"
+          },
+          "offset_1": {
+            "n_pairs": 40,
+            "xor_concentration": 0.025,
+            "xor_const": "0xb4",
+            "add_concentration": 0.05,
+            "add_const": "0x74"
+          }
+        },
+        "best_xor_conc": 0.049,
+        "VERDICT": "UNLIKELY"
+      },
+      "h5_opl2_streaming": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 41,
+            "valid_pairs": 41,
+            "ratio": 1.0
+          },
+          "offset_1": {
+            "n_pairs": 40,
+            "valid_pairs": 37,
+            "ratio": 0.925
+          },
+          "offset_2": {
+            "n_pairs": 40,
+            "valid_pairs": 40,
+            "ratio": 1.0
+          },
+          "offset_3": {
+            "n_pairs": 39,
+            "valid_pairs": 36,
+            "ratio": 0.923
+          }
+        },
+        "best_ratio": 1.0,
+        "VERDICT": "POSSIBLE"
+      },
+      "h6_note_duration": {
+        "pct_note_range": 17.1,
+        "pct_high_bytes": 51.2,
+        "VERDICT": "UNLIKELY"
+      },
+      "h8_zero_absence": {
+        "zero_count": 0,
+        "zero_pct": 0.0,
+        "VERDICT": "NOTABLE"
+      },
+      "h9_0x80_marker": {
+        "count": 1,
+        "is_last_byte": true,
+        "positions": [
+          81
+        ],
+        "is_periodic": false,
+        "VERDICT": "END_MARKER"
+      },
+      "h10_bitflag": {
+        "pct_power2": 4.9,
+        "pct_bitpatterns": 0.0,
+        "VERDICT": "NUMERIC_ENCODING"
+      }
+    },
+    {
+      "sid": 109,
+      "name": "109BLIMP",
+      "seq_size": 66,
+      "parameter": 851,
+      "entropy": 5.779,
+      "h1_midi_like": {
+        "pct_9x": 6.1,
+        "pct_8x": 9.1,
+        "pct_Bx": 9.1,
+        "pct_Cx": 3.0,
+        "pct_Fx": 1.5,
+        "VERDICT": "UNLIKELY"
+      },
+      "h2_three_byte": {
+        "chunk_checks": {
+          "offset_0": {
+            "unique_chunks": 22,
+            "total_chunks": 22,
+            "uniqueness": 1.0,
+            "sample": "e1665b"
+          },
+          "offset_1": {
+            "unique_chunks": 21,
+            "total_chunks": 21,
+            "uniqueness": 1.0,
+            "sample": "665b99"
+          },
+          "offset_2": {
+            "unique_chunks": 21,
+            "total_chunks": 21,
+            "uniqueness": 1.0,
+            "sample": "5b9931"
+          }
+        },
+        "min_uniqueness": 1.0,
+        "VERDICT": "UNLIKELY"
+      },
+      "h3_delta_time": {
+        "pct_small_diffs": 0.0,
+        "pct_large_diffs": 6.2,
+        "avg_diff": 140.3,
+        "VERDICT": "UNLIKELY"
+      },
+      "h4_checksum_pairs": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 33,
+            "xor_concentration": 0.061,
+            "xor_const": "0xc2",
+            "add_concentration": 0.091,
+            "add_const": "0xbc"
+          },
+          "offset_1": {
+            "n_pairs": 32,
+            "xor_concentration": 0.062,
+            "xor_const": "0xa8",
+            "add_concentration": 0.062,
+            "add_const": "0xf5"
+          }
+        },
+        "best_xor_conc": 0.062,
+        "VERDICT": "UNLIKELY"
+      },
+      "h5_opl2_streaming": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 33,
+            "valid_pairs": 33,
+            "ratio": 1.0
+          },
+          "offset_1": {
+            "n_pairs": 32,
+            "valid_pairs": 31,
+            "ratio": 0.969
+          },
+          "offset_2": {
+            "n_pairs": 32,
+            "valid_pairs": 32,
+            "ratio": 1.0
+          },
+          "offset_3": {
+            "n_pairs": 31,
+            "valid_pairs": 30,
+            "ratio": 0.968
+          }
+        },
+        "best_ratio": 1.0,
+        "VERDICT": "POSSIBLE"
+      },
+      "h6_note_duration": {
+        "pct_note_range": 22.7,
+        "pct_high_bytes": 45.5,
+        "VERDICT": "UNLIKELY"
+      },
+      "h8_zero_absence": {
+        "zero_count": 1,
+        "zero_pct": 1.52,
+        "VERDICT": "NORMAL"
+      },
+      "h9_0x80_marker": {
+        "count": 3,
+        "is_last_byte": true,
+        "positions": [
+          17,
+          25,
+          65
+        ],
+        "is_periodic": false,
+        "VERDICT": "END_MARKER"
+      },
+      "h10_bitflag": {
+        "pct_power2": 9.1,
+        "pct_bitpatterns": 1.5,
+        "VERDICT": "NUMERIC_ENCODING"
+      }
+    },
+    {
+      "sid": 205,
+      "name": "205CONV",
+      "seq_size": 272,
+      "parameter": 1555,
+      "entropy": 7.142,
+      "h1_midi_like": {
+        "pct_9x": 4.0,
+        "pct_8x": 7.7,
+        "pct_Bx": 5.9,
+        "pct_Cx": 7.7,
+        "pct_Fx": 7.7,
+        "VERDICT": "UNLIKELY"
+      },
+      "h2_three_byte": {
+        "chunk_checks": {
+          "offset_0": {
+            "unique_chunks": 90,
+            "total_chunks": 90,
+            "uniqueness": 1.0,
+            "sample": "626f6e"
+          },
+          "offset_1": {
+            "unique_chunks": 90,
+            "total_chunks": 90,
+            "uniqueness": 1.0,
+            "sample": "6f6ec3"
+          },
+          "offset_2": {
+            "unique_chunks": 90,
+            "total_chunks": 90,
+            "uniqueness": 1.0,
+            "sample": "6ec3db"
+          }
+        },
+        "min_uniqueness": 1.0,
+        "VERDICT": "UNLIKELY"
+      },
+      "h3_delta_time": {
+        "pct_small_diffs": 7.7,
+        "pct_large_diffs": 7.0,
+        "avg_diff": 130.8,
+        "VERDICT": "UNLIKELY"
+      },
+      "h4_checksum_pairs": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 136,
+            "xor_concentration": 0.022,
+            "xor_const": "0xb4",
+            "add_concentration": 0.029,
+            "add_const": "0x5"
+          },
+          "offset_1": {
+            "n_pairs": 135,
+            "xor_concentration": 0.022,
+            "xor_const": "0x18",
+            "add_concentration": 0.03,
+            "add_const": "0xe5"
+          }
+        },
+        "best_xor_conc": 0.022,
+        "VERDICT": "UNLIKELY"
+      },
+      "h5_opl2_streaming": {
+        "offset_results": {
+          "offset_0": {
+            "n_pairs": 136,
+            "valid_pairs": 125,
+            "ratio": 0.919
+          },
+          "offset_1": {
+            "n_pairs": 135,
+            "valid_pairs": 134,
+            "ratio": 0.993
+          },
+          "offset_2": {
+            "n_pairs": 135,
+            "valid_pairs": 124,
+            "ratio": 0.919
+          },
+          "offset_3": {
+            "n_pairs": 134,
+            "valid_pairs": 133,
+            "ratio": 0.993
+          }
+        },
+        "best_ratio": 0.993,
+        "VERDICT": "POSSIBLE"
+      },
+      "h6_note_duration": {
+        "pct_note_range": 16.9,
+        "pct_high_bytes": 49.6,
+        "VERDICT": "UNLIKELY"
+      },
+      "h8_zero_absence": {
+        "zero_count": 0,
+        "zero_pct": 0.0,
+        "VERDICT": "NOTABLE"
+      },
+      "h9_0x80_marker": {
+        "count": 3,
+        "is_last_byte": false,
+        "positions": [
+          114,
+          152,
+          235
+        ],
+        "is_periodic": false,
+        "VERDICT": "INTERNAL_CMD"
+      },
+      "h10_bitflag": {
+        "pct_power2": 4.0,
+        "pct_bitpatterns": 1.5,
+        "VERDICT": "NUMERIC_ENCODING"
+      }
+    }
+  ],
+  "summary": {
+    "checks": [
+      {
+        "name": "5convey",
+        "param": 155,
+        "xor_seq": 202,
+        "sum_seq": 50,
+        "xor_match": false,
+        "sum_match": false,
+        "xor_near": false,
+        "sum_near": false
+      },
+      {
+        "name": "24FAN",
+        "param": 951,
+        "xor_seq": 131,
+        "sum_seq": 191,
+        "xor_match": false,
+        "sum_match": false,
+        "xor_near": false,
+        "sum_near": false
+      },
+      {
+        "name": "26GENER",
+        "param": 805,
+        "xor_seq": 231,
+        "sum_seq": 37,
+        "xor_match": false,
+        "sum_match": true,
+        "xor_near": false,
+        "sum_near": true
+      },
+      {
+        "name": "50MOTOR",
+        "param": 707,
+        "xor_seq": 35,
+        "sum_seq": 99,
+        "xor_match": false,
+        "sum_match": false,
+        "xor_near": false,
+        "sum_near": false
+      },
+      {
+        "name": "51VAC",
+        "param": 494,
+        "xor_seq": 106,
+        "sum_seq": 174,
+        "xor_match": false,
+        "sum_match": false,
+        "xor_near": false,
+        "sum_near": false
+      },
+      {
+        "name": "62COFFEE",
+        "param": 1245,
+        "xor_seq": 23,
+        "sum_seq": 211,
+        "xor_match": false,
+        "sum_match": false,
+        "xor_near": false,
+        "sum_near": false
+      },
+      {
+        "name": "65LEP",
+        "param": 727,
+        "xor_seq": 83,
+        "sum_seq": 81,
+        "xor_match": false,
+        "sum_match": false,
+        "xor_near": false,
+        "sum_near": false
+      },
+      {
+        "name": "67CAN",
+        "param": 1041,
+        "xor_seq": 74,
+        "sum_seq": 210,
+        "xor_match": false,
+        "sum_match": false,
+        "xor_near": false,
+        "sum_near": false
+      },
+      {
+        "name": "69ANTGRV",
+        "param": 151,
+        "xor_seq": 180,
+        "sum_seq": 16,
+        "xor_match": false,
+        "sum_match": false,
+        "xor_near": false,
+        "sum_near": false
+      },
+      {
+        "name": "74NITRO",
+        "param": 965,
+        "xor_seq": 176,
+        "sum_seq": 20,
+        "xor_match": false,
+        "sum_match": false,
+        "xor_near": false,
+        "sum_near": false
+      },
+      {
+        "name": "91LASER1",
+        "param": 439,
+        "xor_seq": 255,
+        "sum_seq": 3,
+        "xor_match": false,
+        "sum_match": false,
+        "xor_near": false,
+        "sum_near": false
+      },
+      {
+        "name": "107MIXER",
+        "param": 497,
+        "xor_seq": 80,
+        "sum_seq": 46,
+        "xor_match": false,
+        "sum_match": false,
+        "xor_near": false,
+        "sum_near": false
+      },
+      {
+        "name": "109BLIMP",
+        "param": 851,
+        "xor_seq": 71,
+        "sum_seq": 139,
+        "xor_match": false,
+        "sum_match": false,
+        "xor_near": false,
+        "sum_near": false
+      },
+      {
+        "name": "205CONV",
+        "param": 1555,
+        "xor_seq": 192,
+        "sum_seq": 44,
+        "xor_match": false,
+        "sum_match": false,
+        "xor_near": false,
+        "sum_near": false
+      }
+    ],
+    "xor_matches": 0,
+    "sum_matches": 1
+  }
+}

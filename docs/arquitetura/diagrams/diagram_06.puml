@@ -1,0 +1,91 @@
+@startuml PartData_Object_Model
+
+title PartData Object Model (Editor - OOP)
+
+rectangle "PartData <<OOP Editor>>\n(RefCounted, 282 fields)" as PD #e0e0e0
+note right of PD
+  -- Identity --
+  part_type: int
+  name: String = "Unknown"
+
+  -- Geometry --
+  x, y: int
+  width_1/2, height_1/2: int
+  collision_w, collision_h: int
+  collision_radius: int
+
+  -- Velocity --
+  pos_x, pos_y: int
+  vel_x, vel_y: int
+  angular_velocity: int
+  rotation_angle: int
+  facing: int = 1
+
+  -- Flags --
+  flags_1/2/3: int
+  appearance: int
+  behavior: int
+end note
+
+note right of PD
+  -- Connections --
+  connected_1: int = -256
+  connected_2: int = -1
+  outlet_plugged_1/2: int
+  belt_connected_part_1/2: int
+  rope_1/2_anchor_x/y: int
+  rope_segment_length: int = 200
+  pulley_rope_1/2_connect_x/y: int
+
+  -- State Machine --
+  state_counter: int = 0
+  state_prev: int = 0
+  sub_counter: int = 0
+  state_limit_upper/lower/reset: int
+  state_limit_sub_a/b: int = 5
+  current_state: int = 0
+  _rng_state: int = 1
+  _countdown: int = -1
+
+  -- Animation --
+  anm_frame: int = 0
+  anm_frame_timer: int = 0
+  anm_name: String = ""
+end note
+
+note right of PD
+  -- Motor/Collision --
+  motor_connected: bool = false
+  collision_cat: String = "DYNAMIC"
+  density: int = 3000
+  elasticity: int = 128
+  friction_extra: int = 16
+
+  -- Physics --
+  mass: int = 2832
+  cor_q8: int = 128
+  friction_q8: int = 0
+  gravity_category: int = 7
+  max_gravity: int = 0x2600
+  wind_force: int = 0
+  gravity_buoyancy: int = 0
+
+  -- Explosive --
+  explosion_timer: float = 0
+  explosion_radius: int = 0
+
+  -- State --
+  is_moving: bool = false
+  is_solved: bool = false
+end note
+
+rectangle "CollShape Enum" as COLL #d0d0d0
+note right of COLL: CIRCLE=0\nAABB=1
+
+rectangle "PartData Flags" as FLAGS #d0d0d0
+note right of FLAGS: FLAG_MOVING=0x1000\nFLAG_FLIP=0x8000
+
+PD --> COLL : uses coll shape
+PD --> FLAGS : uses flags
+
+@enduml

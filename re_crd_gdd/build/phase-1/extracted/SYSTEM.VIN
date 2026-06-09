@@ -1,0 +1,17 @@
+system.res
+vm.ovl
+sx.ovl
+tim2.sx
+*.pal
+*.itf
+*.anm
+*.bmp
+*.fnt
+*.res
+?lev*.lev
+hh*.lev
+part*.par
+*.raw
+sierra.scr
+title.scr
+tour*.rec

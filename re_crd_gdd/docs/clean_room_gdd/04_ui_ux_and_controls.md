@@ -2,7 +2,7 @@
 
 A interface de usuário de um simulador puzzle-sandbox é o elemento que determina se o jogador se sentirá no controle de uma máquina complexa ou frustrado brigando com caixas.
 
-A implementação da UI em Godot tem o luxo de ser livre de amarras de motor antigo, desde que mantenha a coerência mecânica descrita no `docs/user-journey-specification.md`.
+A implementação da UI em Godot tem o luxo de ser livre de amarras de motor antigo, desde que mantenha a coerência mecânica descrita no `tim2_specs/user-journey-specification.md`.
 
 ## HUD do Modo Puzzle
 

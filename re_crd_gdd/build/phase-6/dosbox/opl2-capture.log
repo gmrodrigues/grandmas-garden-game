@@ -1,0 +1,95 @@
+Logging: opened logfile 'build/phase-6/dosbox/opl2-capture.log' successfully. All further logging will go to this file.
+DOSBox-X version 2026.05.02 Commit 5817c64 (Linux SDL1 64-bit)
+Prevent capture: 0
+Current X11 keyboard layout (token) is: 'us'
+Host keyboard layout is now us (US English)
+Mapper keyboard layout is now us (US English)
+SDL1 auto-detected desktop as 1920 x 1080
+The overlay output has been removed.
+The following output will be switched to: opengl
+Configured windowposition: -
+X11 main window is 640 x 400 maximized=0
+X11 extension XRANDR is available
+XRandR CRTC 0: pos=(0,0) size=(1920,1080) outputs=1
+Our window lies on this CRTC display (window pos=(810,506) size=(640,400) match=(1130,706)).
+  Goes to output 0: name='HDMI-1' size_mm=(1150 x 650)
+Screen report: Method 'XRandR' (1920.000 x 1080.000 pixels) at (0.000 x 0.000) (1150.000 x 650.000 mm) (45.276 x 25.591 in) (42.407 x 42.203 DPI)
+ISA BCLK: 8333333.333Hz (25000000/3)
+monopal: green, 
+Active save slot: 1 [Empty]
+USING AVI+ZMBV
+Pentium CMPXCHG8B emulation is enabled
+Max 1073741824 sz 16384
+Final 16384
+Final arrangement: Below 4GB = 16384KB, Above 4GB = 0KB
+ALSA seq enum: id=0 name="System" ports=2 type="kernel"
+ALSA seq enum: id=14 name="Midi Through" ports=1 type="kernel"
+ALSA seq enum: id=128 name="Client-128" ports=0 type="user"
+ALSA seq enum: id=144 name="PipeWire-System" ports=1 type="user"
+ALSA seq enum: id=145 name="PipeWire-RT-Event" ports=1 type="user"
+SDLNet_TCP_Open: Couldn't connect to remote host
+TiMidity: can't open control connection (host=127.0.0.1, port=7777)
+MIDI:fluidsynth: SoundFont not specified, and no system SoundFont found
+MIDI:synth: Specify .SF2 sound font file with midiconfig=
+MT32: failed to locate ROMs.
+MT32 emulation requires the PCM and CONTROL ROM files.
+To eliminate this error message, check the DOSBox-X wiki.
+The ROM files are: CM32L_CONTROL.ROM and CM32L_PCM.ROM or MT32_CONTROL.ROM and MT32_PCM.ROM
+MIDI:Opened device:none
+VOODOO LFB now at d0000000
+Serial1: BASE 3f8h
+Serial2: BASE 2f8h
+Parallel1: BASE 378h
+MPU-401 Registering I/O ports as if IBM PC MPU-401 at base 330h
+Memory I/O complexity optimization enabled aka option 'memory io optimization 1'. If the game or demo is unable to draw to the screen properly, set the option to false.
+The 'scanline render on demand' option is available and may provide a modest boost in video render performance if set to true.
+GetDesktopResolution reading X11 desktop resolution
+Root window (ID 850) is 1920 x 1080
+X11 main window is 640 x 400 maximized=0
+XRandR CRTC 0: pos=(0,0) size=(1920,1080) outputs=1
+Our window lies on this CRTC display (window pos=(810,506) size=(640,400) match=(1130,706)).
+  Goes to output 0: name='HDMI-1' size_mm=(1150 x 650)
+Allocated APM BIOS pm entry point at f000:ce40
+Writing code to fce40
+Writing code to fce60
+         0       SBLASTER:DSP:Reset
+X11 main window is 640 x 400 maximized=0
+XRandR CRTC 0: pos=(0,0) size=(1920,1080) outputs=1
+Our window lies on this CRTC display (window pos=(810,506) size=(640,400) match=(1130,706)).
+  Goes to output 0: name='HDMI-1' size_mm=(1150 x 650)
+ISA Plug & Play BIOS enabled
+VGA ROM BIOS init callback
+pixratio 1.000, dw false, dh false
+Aspect ratio: 640 x 480  xToY=1.333 yToX=0.750
+menuScale=1
+X11 main window is 960 x 720 maximized=0
+XRandR CRTC 0: pos=(0,0) size=(1920,1080) outputs=1
+Our window lies on this CRTC display (window pos=(810,298) size=(960,720) match=(1290,658)).
+  Goes to output 0: name='HDMI-1' size_mm=(1150 x 650)
+font texture id=2 will make 128 x 256
+X11 main window is 960 x 720 maximized=0
+XRandR CRTC 0: pos=(0,0) size=(1920,1080) outputs=1
+Our window lies on this CRTC display (window pos=(810,298) size=(960,720) match=(1290,658)).
+  Goes to output 0: name='HDMI-1' size_mm=(1150 x 650)
+WARNING: No translation support (to host) for code page 0
+pixratio 1.350, dw false, dh false
+Aspect ratio: 720 x 540  xToY=1.333 yToX=0.750
+menuScale=1
+X11 main window is 960 x 720 maximized=0
+XRandR CRTC 0: pos=(0,0) size=(1920,1080) outputs=1
+Our window lies on this CRTC display (window pos=(810,298) size=(960,720) match=(1290,658)).
+  Goes to output 0: name='HDMI-1' size_mm=(1150 x 650)
+font texture id=2 will make 128 x 256
+X11 main window is 960 x 720 maximized=0
+XRandR CRTC 0: pos=(0,0) size=(1920,1080) outputs=1
+Our window lies on this CRTC display (window pos=(810,298) size=(960,720) match=(1290,658)).
+  Goes to output 0: name='HDMI-1' size_mm=(1150 x 650)
+DOS keyboard layout loaded with main language code US for layout us
+XMS: 50 handles allocated for use by the DOS environment
+EMS page frame at 0xe000-0xefff
+COMMAND.COM env size:             720 bytes
+COMMAND.COM environment block:    0x0701 sz=0x002d
+COMMAND.COM main body (PSP):      0x072f sz=0x009a
+COMMAND.COM stack:                0x0749
+   8018652       SBLASTER:DSP:Reset
+--END OF LOG--

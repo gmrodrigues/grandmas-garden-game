@@ -1,0 +1,81 @@
+{
+  "version": 1001,
+  "width": 212,
+  "height": 145,
+  "section_sizes": {
+    "a": 0,
+    "b": 1,
+    "c": 1,
+    "d": 56
+  },
+  "section_a": [],
+  "section_b": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 212,
+      "height": 145,
+      "bytecode_offset": 0
+    }
+  ],
+  "section_c": [
+    {
+      "first_frame_id": 0,
+      "state_id": 2
+    }
+  ],
+  "section_d": [
+    {
+      "offset": 0,
+      "cmd": 3,
+      "name": "DRAW_RECT",
+      "x": 20,
+      "y": 17,
+      "width": 172,
+      "height": 111,
+      "color": 11,
+      "flags": 32779
+    },
+    {
+      "offset": 14,
+      "cmd": 3,
+      "name": "DRAW_RECT",
+      "x": 0,
+      "y": 0,
+      "width": 212,
+      "height": 145,
+      "color": 11,
+      "flags": 11
+    },
+    {
+      "offset": 28,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 0,
+      "x": 20,
+      "y": 17,
+      "flags": 0
+    },
+    {
+      "offset": 40,
+      "cmd": 2,
+      "name": "DRAW_BMP",
+      "resource_id": 1,
+      "sub_image": 0,
+      "x": 116,
+      "y": 49,
+      "flags": 0
+    },
+    {
+      "offset": 52,
+      "cmd": 0,
+      "name": "END_FRAME"
+    },
+    {
+      "offset": 54,
+      "cmd": 1,
+      "name": "END_ANM"
+    }
+  ]
+}

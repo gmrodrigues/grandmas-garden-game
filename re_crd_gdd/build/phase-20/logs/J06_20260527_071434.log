@@ -1,0 +1,54 @@
+J06 — Connections journey test
+Timestamp: 2026-05-27T07:14:34.825902
+Mode: HEADLESS
+
+=== 1. Asset Existence ===
+  ✅ ELEV1.yaml exists — /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-5/yaml/ELEV1.yaml
+  ✅ MAINPUZL PNGs — 3 PNGs
+
+=== 2. Level Loading ===
+  ✅ tim2_editor.engine import
+
+=== 3. Rope-Capable Parts ===
+  type=  0  Bowling Ball [Balls]
+  type=  3  Tipsy Trailer [Special Mechanics]
+  type= 10  Rope [Ropes / Belts / Pulleys]
+  type= 11  Laundry Basket [Containers]
+  type= 12  Curie Cat [Characters]
+  type= 15  Fish Tank [Containers]
+  type= 17  Bucket [Containers]
+  type= 18  Cannon [Explosives / Projectiles]
+  type= 28  Baseball [Balls]
+  type= 59  Super Ball [Balls]
+  type= 61  Alligator [Characters]
+  type= 65  Leprechaun [Characters]
+  type= 66  Mouse Hole [Special Mechanics]
+  type= 67  Can Opener [Electrical]
+  type= 78  Flint & Tinder [Light / Flame Sources]
+  type= 79  Hot Air Balloon [Balloons / Airships]
+  ✅ Rope-capable parts catalogued — 16 parts
+
+=== 4. Belt-Capable Parts ===
+  type=  5  Conveyor Belt [Rotating Power Sources]
+  type=  6  Mouse Motor [Rotating Power Sources]
+  type=  7  Pulley [Ropes / Belts / Pulleys]
+  type=  8  Belt [Ropes / Belts / Pulleys]
+  type= 13  Jack-in-the-box [Springs / Pneumatics]
+  type= 14  Gear [Rotating Power Sources]
+  type= 24  Electric Fan [Electrical]
+  type= 25  Flashlight [Light / Flame Sources]
+  type= 26  Generator [Electrical]
+  type= 27  Captain Z Super Phazer [Explosives / Projectiles]
+  type= 32  Boris the Bat [Characters]
+  ✅ Belt-capable parts catalogued — 11 parts
+
+=== 5. Connection Simulation ===
+  Simulating: click part_A(0:BowlingBall)→part_B(10:Rope)
+  Simulating: click part(6:MouseMotor)→part(5:ConveyorBelt)
+  Connection: Bowling Ball → Rope (0 ↔ 10)
+  Connection: Mouse Motor → Conveyor Belt (6 ↔ 5)
+  ✅ Connection simulation works
+
+==================================================
+RESULTS: 6 passed, 0 failed
+Full log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J06_20260527_071434.log

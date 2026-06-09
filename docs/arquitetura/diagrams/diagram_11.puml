@@ -1,0 +1,110 @@
+@startuml Editor_Tool_Sequence
+autonumber 1
+
+participant User
+participant EditorController as EC
+participant WorldState as WS
+participant PartData as PD
+participant BehaviorRegistry as BR
+participant AnmRenderer as AR
+participant LevelSerializer as LS
+
+User -> EC : Click part icon in catalog
+EC -> EC : selected_part_type = pt
+EC -> EC : _set_mode(MODE_PLACE)
+
+User -> EC : Click in viewport
+EC -> EC : lx = _to_level_x(mx), ly = _to_level_y(my)
+EC -> EC : _snap(lx), _snap(ly)
+
+alt MODE_PLACE
+  EC -> EC : _push_undo()
+  EC -> EC : _place_part(sx, sy)
+  EC -> PD : pd = PartData.new(selected_part_type, sx, sy)
+  activate PD
+  PD -> PD : is_moving = bool(flags_1 & FLAG_MOVING)
+  deactivate PD
+  EC -> WS : world.add_part(pd)
+  activate WS
+  WS -> BR : get_category(part_type)
+  WS -> BR : get_state_limits(part_type)
+  WS -> BR : get_physics_props(part_type)
+  WS -> BR : get_behavior(part_type)
+  WS -> WS : part.collision_cat = _col_cat_for_game_cat(cat)
+  WS -> WS : part.state_limit_* = limits.*
+  WS -> WS : part.mass, cor_q8, friction_q8 = props.*
+  deactivate WS
+  EC -> EC : _spawn_part_node(pd)
+  EC -> AR : render_frame(anm, state_id, counter, w, h)
+  activate AR
+  deactivate AR
+end
+
+alt MODE_SELECT
+  User -> EC : Click+drag in viewport
+  EC -> EC : idx = _hit_test(lx, ly)
+  EC -> EC : selected_part_idx = idx
+  alt dragging_handle
+    EC -> EC : _push_undo()
+    loop per mouse move
+      EC -> EC : resize via _get_handle_positions()\n8 handles (corners + midpoints)
+      EC -> WS : world.parts[idx].width_1/height_1 = new_size
+      EC -> EC : _update_part_node(idx)
+    end
+  else dragging
+    loop per mouse move
+      EC -> WS : world.parts[idx].x/y = snap(new_pos)
+      EC -> WS : world.parts[idx].sync_pos()
+      EC -> EC : _update_part_node(idx)
+    end
+  end
+end
+
+alt MODE_CONNECT
+  User -> EC : Click source part
+  EC -> EC : connect_source_idx = idx
+  User -> EC : Click target part
+  EC -> EC : _push_undo()
+  EC -> WS : world.parts[connect_source_idx].connected_1 = target_idx
+  EC -> EC : connect_source_idx = -1
+end
+
+alt MODE_DELETE
+  User -> EC : Click part
+  EC -> EC : _push_undo()
+  EC -> WS : world.remove_part(idx)
+  EC -> EC : _reindex()
+end
+
+note over EC: MODE_PREVIEW
+  EC -> EC : _start_preview()
+  loop while preview_running and not preview_solved
+    EC -> PhysicsSolver : solver.step()
+    EC -> EC : _sync_part_nodes()
+    EC -> EC : checker.check(world)
+    alt solved
+      EC -> EC : preview_solved = true
+      EC -> EC : status_label.text = "LEVEL SOLVED!"
+    end
+  end
+
+User -> EC : Ctrl+S (save)
+EC -> EC : _save_dialog()
+EC -> LS : save_yaml(path, level_data)
+activate LS
+LS -> LS : serialize parts (fixed/moving)
+LS -> LS : write level_info, environment, solution
+deactivate LS
+
+User -> EC : Ctrl+L (load)
+EC -> LS : load_yaml(path)
+activate LS
+LS -> LS : parse YAML into dictionary
+deactivate LS
+EC -> EC : _new_level()
+loop per part in loaded data
+  EC -> PD : pd = PartData.new(pt, px, py)
+  EC -> WS : world.add_part(pd)
+end
+
+@enduml

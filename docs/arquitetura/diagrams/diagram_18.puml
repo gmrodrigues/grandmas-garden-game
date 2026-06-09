@@ -1,0 +1,27 @@
+@startuml Part_Gizmos_Wireframe
+
+title Part Selection Handles (8-point resize)
+
+rectangle "Selected Part" as PART
+
+note right of PART
+  [Handles layout:]
+  [UL=0] [U] [UR=1]
+  [L=6] [Part] [R=7]
+  [BL=2] [B] [BR=3]
+end note
+
+note top of PART
+  UL(0): resize left+up    U(4): resize up only    UR(1): resize right+up
+  L(6): resize left only   R(7): resize right only
+  BL(2): resize left+down  B(5): resize down only  BR(3): resize right+down
+end note
+
+note bottom of PART
+  Yellow outline (Color 1 0.78 0 0.6)
+  Orange handles 6px scales with zoom
+  Min part size: 8px
+  Snap to 16px grid
+end note
+
+@enduml

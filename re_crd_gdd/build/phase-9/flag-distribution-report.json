@@ -1,0 +1,2545 @@
+{
+  "total_parts": 8492,
+  "levels_scanned": 203,
+  "part_categories": {
+    "Balls": [
+      0,
+      9,
+      28,
+      43,
+      44,
+      59,
+      63,
+      68,
+      87
+    ],
+    "Walls / Floors": [
+      1,
+      46,
+      47,
+      48,
+      56,
+      60,
+      82,
+      83,
+      84,
+      85,
+      103,
+      104,
+      105,
+      106,
+      125
+    ],
+    "Inclines": [
+      2,
+      99,
+      100,
+      101,
+      102,
+      126
+    ],
+    "Special Mechanics": [
+      3,
+      23,
+      52,
+      58,
+      62,
+      64,
+      66,
+      69,
+      72,
+      73,
+      89,
+      90,
+      136,
+      137,
+      139
+    ],
+    "Balloons / Airships": [
+      4,
+      79,
+      109
+    ],
+    "Rotating Power Sources": [
+      5,
+      6,
+      14,
+      31,
+      40,
+      50,
+      86
+    ],
+    "Ropes / Belts / Pulleys": [
+      7,
+      8,
+      10,
+      76
+    ],
+    "Containers": [
+      11,
+      15,
+      17,
+      71,
+      108
+    ],
+    "Characters": [
+      12,
+      32,
+      33,
+      34,
+      42,
+      54,
+      61,
+      65
+    ],
+    "Springs / Pneumatics": [
+      13,
+      16,
+      35,
+      39,
+      75,
+      116,
+      117
+    ],
+    "Explosives / Projectiles": [
+      18,
+      19,
+      20,
+      22,
+      27,
+      36,
+      55,
+      70,
+      74,
+      80
+    ],
+    "Electrical": [
+      21,
+      24,
+      26,
+      38,
+      51,
+      67,
+      81,
+      107,
+      120
+    ],
+    "Light / Flame Sources": [
+      25,
+      29,
+      45,
+      78,
+      138
+    ],
+    "Lasers / Optics": [
+      30,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      148
+    ],
+    "Cutting / Popping": [
+      37,
+      53,
+      77
+    ],
+    "Created / Phantom": [
+      41,
+      49
+    ],
+    "Pipe Systems": [
+      57,
+      88,
+      97,
+      98
+    ],
+    "Scenery": [
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      121,
+      122,
+      123,
+      124,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147
+    ],
+    "Pool Table": [
+      118,
+      119
+    ]
+  },
+  "per_bit_stats": {
+    "flags_1": {
+      "0x0020": {
+        "uses": 392,
+        "pct": 4.6,
+        "top_types": [
+          {
+            "type": 4,
+            "name": "Balloon",
+            "count": 111
+          },
+          {
+            "type": 17,
+            "name": "Bucket",
+            "count": 61
+          },
+          {
+            "type": 19,
+            "name": "Dynamite",
+            "count": 55
+          },
+          {
+            "type": 54,
+            "name": "Mel Schlemming",
+            "count": 45
+          },
+          {
+            "type": 79,
+            "name": "Hot Air Balloon",
+            "count": 33
+          },
+          {
+            "type": 138,
+            "name": "Candle",
+            "count": 30
+          },
+          {
+            "type": 62,
+            "name": "Coffee Pot",
+            "count": 18
+          },
+          {
+            "type": 108,
+            "name": "Leaky Bucket",
+            "count": 17
+          }
+        ],
+        "top_categories": [
+          [
+            "Balloons / Airships",
+            144
+          ],
+          [
+            "Containers",
+            91
+          ],
+          [
+            "Explosives / Projectiles",
+            55
+          ],
+          [
+            "Characters",
+            45
+          ],
+          [
+            "Light / Flame Sources",
+            39
+          ]
+        ]
+      },
+      "0x0040": {
+        "uses": 241,
+        "pct": 2.8,
+        "top_types": [
+          {
+            "type": 43,
+            "name": "Pinball",
+            "count": 22
+          },
+          {
+            "type": 63,
+            "name": "Pool Ball",
+            "count": 21
+          },
+          {
+            "type": 17,
+            "name": "Bucket",
+            "count": 19
+          },
+          {
+            "type": 4,
+            "name": "Balloon",
+            "count": 17
+          },
+          {
+            "type": 28,
+            "name": "Baseball",
+            "count": 16
+          },
+          {
+            "type": 54,
+            "name": "Mel Schlemming",
+            "count": 14
+          },
+          {
+            "type": 138,
+            "name": "Candle",
+            "count": 11
+          },
+          {
+            "type": 109,
+            "name": "Blimp",
+            "count": 11
+          }
+        ],
+        "top_categories": [
+          [
+            "Balls",
+            93
+          ],
+          [
+            "Balloons / Airships",
+            38
+          ],
+          [
+            "Characters",
+            34
+          ],
+          [
+            "Explosives / Projectiles",
+            24
+          ],
+          [
+            "Containers",
+            23
+          ]
+        ]
+      },
+      "0x0200": {
+        "uses": 2961,
+        "pct": 34.9,
+        "top_types": [
+          {
+            "type": 101,
+            "name": "Granite Incline",
+            "count": 283
+          },
+          {
+            "type": 102,
+            "name": "Brick Incline",
+            "count": 180
+          },
+          {
+            "type": 126,
+            "name": "Yellow Brick Incline",
+            "count": 173
+          },
+          {
+            "type": 2,
+            "name": "Wood incline",
+            "count": 154
+          },
+          {
+            "type": 23,
+            "name": "Boat Cleat",
+            "count": 138
+          },
+          {
+            "type": 57,
+            "name": "Large Curved Pipe",
+            "count": 122
+          },
+          {
+            "type": 178,
+            "name": "type_178",
+            "count": 98
+          },
+          {
+            "type": 94,
+            "name": "Angled Mirror",
+            "count": 92
+          }
+        ],
+        "top_categories": [
+          [
+            "Inclines",
+            885
+          ],
+          [
+            "Unknown",
+            743
+          ],
+          [
+            "Scenery",
+            428
+          ],
+          [
+            "Lasers / Optics",
+            217
+          ],
+          [
+            "Pipe Systems",
+            185
+          ]
+        ]
+      },
+      "0x0400": {
+        "uses": 3829,
+        "pct": 45.1,
+        "top_types": [
+          {
+            "type": 101,
+            "name": "Granite Incline",
+            "count": 283
+          },
+          {
+            "type": 102,
+            "name": "Brick Incline",
+            "count": 180
+          },
+          {
+            "type": 126,
+            "name": "Yellow Brick Incline",
+            "count": 173
+          },
+          {
+            "type": 2,
+            "name": "Wood incline",
+            "count": 154
+          },
+          {
+            "type": 57,
+            "name": "Large Curved Pipe",
+            "count": 122
+          },
+          {
+            "type": 178,
+            "name": "type_178",
+            "count": 98
+          },
+          {
+            "type": 94,
+            "name": "Angled Mirror",
+            "count": 92
+          },
+          {
+            "type": 109,
+            "name": "Blimp",
+            "count": 77
+          }
+        ],
+        "top_categories": [
+          [
+            "Inclines",
+            885
+          ],
+          [
+            "Unknown",
+            762
+          ],
+          [
+            "Scenery",
+            438
+          ],
+          [
+            "Lasers / Optics",
+            282
+          ],
+          [
+            "Springs / Pneumatics",
+            241
+          ]
+        ]
+      },
+      "0x1000": {
+        "uses": 1242,
+        "pct": 14.6,
+        "top_types": [
+          {
+            "type": 4,
+            "name": "Balloon",
+            "count": 111
+          },
+          {
+            "type": 43,
+            "name": "Pinball",
+            "count": 108
+          },
+          {
+            "type": 74,
+            "name": "Nitroglycerine",
+            "count": 90
+          },
+          {
+            "type": 109,
+            "name": "Blimp",
+            "count": 77
+          },
+          {
+            "type": 52,
+            "name": "Cheese",
+            "count": 72
+          },
+          {
+            "type": 28,
+            "name": "Baseball",
+            "count": 70
+          },
+          {
+            "type": 44,
+            "name": "Tennis Ball",
+            "count": 70
+          },
+          {
+            "type": 17,
+            "name": "Bucket",
+            "count": 61
+          }
+        ],
+        "top_categories": [
+          [
+            "Balls",
+            434
+          ],
+          [
+            "Explosives / Projectiles",
+            238
+          ],
+          [
+            "Balloons / Airships",
+            221
+          ],
+          [
+            "Characters",
+            129
+          ],
+          [
+            "Containers",
+            91
+          ]
+        ]
+      },
+      "0x2000": {
+        "uses": 7250,
+        "pct": 85.4,
+        "top_types": [
+          {
+            "type": 101,
+            "name": "Granite Incline",
+            "count": 283
+          },
+          {
+            "type": 56,
+            "name": "Caution Wall",
+            "count": 276
+          },
+          {
+            "type": 84,
+            "name": "Greco-Roman Wall",
+            "count": 272
+          },
+          {
+            "type": 7,
+            "name": "Pulley",
+            "count": 224
+          },
+          {
+            "type": 1,
+            "name": "Brick Wall",
+            "count": 219
+          },
+          {
+            "type": 48,
+            "name": "Wood Wall",
+            "count": 209
+          },
+          {
+            "type": 10,
+            "name": "Rope",
+            "count": 209
+          },
+          {
+            "type": 8,
+            "name": "Belt",
+            "count": 193
+          }
+        ],
+        "top_categories": [
+          [
+            "Walls / Floors",
+            1753
+          ],
+          [
+            "Inclines",
+            885
+          ],
+          [
+            "Unknown",
+            808
+          ],
+          [
+            "Ropes / Belts / Pulleys",
+            644
+          ],
+          [
+            "Special Mechanics",
+            575
+          ]
+        ]
+      },
+      "0x4000": {
+        "uses": 7250,
+        "pct": 85.4,
+        "top_types": [
+          {
+            "type": 101,
+            "name": "Granite Incline",
+            "count": 283
+          },
+          {
+            "type": 56,
+            "name": "Caution Wall",
+            "count": 276
+          },
+          {
+            "type": 84,
+            "name": "Greco-Roman Wall",
+            "count": 272
+          },
+          {
+            "type": 7,
+            "name": "Pulley",
+            "count": 224
+          },
+          {
+            "type": 1,
+            "name": "Brick Wall",
+            "count": 219
+          },
+          {
+            "type": 48,
+            "name": "Wood Wall",
+            "count": 209
+          },
+          {
+            "type": 10,
+            "name": "Rope",
+            "count": 209
+          },
+          {
+            "type": 8,
+            "name": "Belt",
+            "count": 193
+          }
+        ],
+        "top_categories": [
+          [
+            "Walls / Floors",
+            1753
+          ],
+          [
+            "Inclines",
+            885
+          ],
+          [
+            "Unknown",
+            808
+          ],
+          [
+            "Ropes / Belts / Pulleys",
+            644
+          ],
+          [
+            "Special Mechanics",
+            575
+          ]
+        ]
+      }
+    },
+    "flags_2": {
+      "0x0001": {
+        "uses": 459,
+        "pct": 5.4,
+        "top_types": [
+          {
+            "type": 14,
+            "name": "Gear",
+            "count": 111
+          },
+          {
+            "type": 5,
+            "name": "Conveyor Belt",
+            "count": 98
+          },
+          {
+            "type": 6,
+            "name": "Mouse Motor",
+            "count": 58
+          },
+          {
+            "type": 86,
+            "name": "Tiny Gear",
+            "count": 47
+          },
+          {
+            "type": 50,
+            "name": "Electric Motor",
+            "count": 36
+          },
+          {
+            "type": 13,
+            "name": "Jack-in-the-box",
+            "count": 31
+          },
+          {
+            "type": 40,
+            "name": "Pinwheel",
+            "count": 19
+          },
+          {
+            "type": 26,
+            "name": "Generator",
+            "count": 17
+          }
+        ],
+        "top_categories": [
+          [
+            "Rotating Power Sources",
+            379
+          ],
+          [
+            "Special Mechanics",
+            32
+          ],
+          [
+            "Springs / Pneumatics",
+            31
+          ],
+          [
+            "Electrical",
+            17
+          ]
+        ]
+      },
+      "0x0002": {
+        "uses": 387,
+        "pct": 4.6,
+        "top_types": [
+          {
+            "type": 14,
+            "name": "Gear",
+            "count": 86
+          },
+          {
+            "type": 5,
+            "name": "Conveyor Belt",
+            "count": 86
+          },
+          {
+            "type": 6,
+            "name": "Mouse Motor",
+            "count": 55
+          },
+          {
+            "type": 86,
+            "name": "Tiny Gear",
+            "count": 35
+          },
+          {
+            "type": 50,
+            "name": "Electric Motor",
+            "count": 30
+          },
+          {
+            "type": 13,
+            "name": "Jack-in-the-box",
+            "count": 23
+          },
+          {
+            "type": 26,
+            "name": "Generator",
+            "count": 17
+          },
+          {
+            "type": 40,
+            "name": "Pinwheel",
+            "count": 17
+          }
+        ],
+        "top_categories": [
+          [
+            "Rotating Power Sources",
+            319
+          ],
+          [
+            "Special Mechanics",
+            28
+          ],
+          [
+            "Springs / Pneumatics",
+            23
+          ],
+          [
+            "Electrical",
+            17
+          ]
+        ]
+      },
+      "0x0004": {
+        "uses": 930,
+        "pct": 11.0,
+        "top_types": [
+          {
+            "type": 7,
+            "name": "Pulley",
+            "count": 224
+          },
+          {
+            "type": 23,
+            "name": "Boat Cleat",
+            "count": 138
+          },
+          {
+            "type": 4,
+            "name": "Balloon",
+            "count": 111
+          },
+          {
+            "type": 22,
+            "name": "Remote Control",
+            "count": 72
+          },
+          {
+            "type": 139,
+            "name": "Teeter-Totter",
+            "count": 69
+          },
+          {
+            "type": 17,
+            "name": "Bucket",
+            "count": 61
+          },
+          {
+            "type": 75,
+            "name": "Match-on-a-Spring",
+            "count": 54
+          },
+          {
+            "type": 3,
+            "name": "Tipsy Trailer",
+            "count": 51
+          }
+        ],
+        "top_categories": [
+          [
+            "Special Mechanics",
+            290
+          ],
+          [
+            "Ropes / Belts / Pulleys",
+            224
+          ],
+          [
+            "Balloons / Airships",
+            144
+          ],
+          [
+            "Explosives / Projectiles",
+            97
+          ],
+          [
+            "Containers",
+            91
+          ]
+        ]
+      },
+      "0x0008": {
+        "uses": 120,
+        "pct": 1.4,
+        "top_types": [
+          {
+            "type": 139,
+            "name": "Teeter-Totter",
+            "count": 69
+          },
+          {
+            "type": 3,
+            "name": "Tipsy Trailer",
+            "count": 51
+          }
+        ],
+        "top_categories": [
+          [
+            "Special Mechanics",
+            120
+          ]
+        ]
+      },
+      "0x0010": {
+        "uses": 813,
+        "pct": 9.6,
+        "top_types": [
+          {
+            "type": 101,
+            "name": "Granite Incline",
+            "count": 132
+          },
+          {
+            "type": 126,
+            "name": "Yellow Brick Incline",
+            "count": 92
+          },
+          {
+            "type": 102,
+            "name": "Brick Incline",
+            "count": 87
+          },
+          {
+            "type": 2,
+            "name": "Wood incline",
+            "count": 77
+          },
+          {
+            "type": 109,
+            "name": "Blimp",
+            "count": 26
+          },
+          {
+            "type": 75,
+            "name": "Match-on-a-Spring",
+            "count": 25
+          },
+          {
+            "type": 100,
+            "name": "Log Incline",
+            "count": 23
+          },
+          {
+            "type": 42,
+            "name": "Newton Mouse",
+            "count": 19
+          }
+        ],
+        "top_categories": [
+          [
+            "Inclines",
+            424
+          ],
+          [
+            "Springs / Pneumatics",
+            56
+          ],
+          [
+            "Unknown",
+            53
+          ],
+          [
+            "Characters",
+            51
+          ],
+          [
+            "Scenery",
+            40
+          ]
+        ]
+      },
+      "0x0020": {
+        "uses": 64,
+        "pct": 0.8,
+        "top_types": [
+          {
+            "type": 88,
+            "name": "Accelerator Tube",
+            "count": 19
+          },
+          {
+            "type": 118,
+            "name": "Pool Table Wall",
+            "count": 19
+          },
+          {
+            "type": 23,
+            "name": "Boat Cleat",
+            "count": 11
+          },
+          {
+            "type": 143,
+            "name": "Small Cloud",
+            "count": 6
+          },
+          {
+            "type": 90,
+            "name": "Roto-Trans Converter",
+            "count": 6
+          },
+          {
+            "type": 237,
+            "name": "type_237",
+            "count": 2
+          },
+          {
+            "type": 239,
+            "name": "type_239",
+            "count": 1
+          }
+        ],
+        "top_categories": [
+          [
+            "Pipe Systems",
+            19
+          ],
+          [
+            "Pool Table",
+            19
+          ],
+          [
+            "Special Mechanics",
+            17
+          ],
+          [
+            "Scenery",
+            6
+          ],
+          [
+            "Unknown",
+            3
+          ]
+        ]
+      },
+      "0x0080": {
+        "uses": 2770,
+        "pct": 32.6,
+        "top_types": [
+          {
+            "type": 101,
+            "name": "Granite Incline",
+            "count": 283
+          },
+          {
+            "type": 56,
+            "name": "Caution Wall",
+            "count": 276
+          },
+          {
+            "type": 84,
+            "name": "Greco-Roman Wall",
+            "count": 272
+          },
+          {
+            "type": 1,
+            "name": "Brick Wall",
+            "count": 219
+          },
+          {
+            "type": 48,
+            "name": "Wood Wall",
+            "count": 209
+          },
+          {
+            "type": 102,
+            "name": "Brick Incline",
+            "count": 180
+          },
+          {
+            "type": 126,
+            "name": "Yellow Brick Incline",
+            "count": 173
+          },
+          {
+            "type": 125,
+            "name": "Yellow Brick Wall",
+            "count": 165
+          }
+        ],
+        "top_categories": [
+          [
+            "Walls / Floors",
+            1605
+          ],
+          [
+            "Inclines",
+            885
+          ],
+          [
+            "Rotating Power Sources",
+            98
+          ],
+          [
+            "Scenery",
+            75
+          ],
+          [
+            "Unknown",
+            46
+          ]
+        ]
+      },
+      "0x0100": {
+        "uses": 1787,
+        "pct": 21.0,
+        "top_types": [
+          {
+            "type": 56,
+            "name": "Caution Wall",
+            "count": 276
+          },
+          {
+            "type": 84,
+            "name": "Greco-Roman Wall",
+            "count": 272
+          },
+          {
+            "type": 1,
+            "name": "Brick Wall",
+            "count": 219
+          },
+          {
+            "type": 48,
+            "name": "Wood Wall",
+            "count": 209
+          },
+          {
+            "type": 125,
+            "name": "Yellow Brick Wall",
+            "count": 165
+          },
+          {
+            "type": 83,
+            "name": "Cinder Block Wall",
+            "count": 143
+          },
+          {
+            "type": 46,
+            "name": "Pipe Wall",
+            "count": 140
+          },
+          {
+            "type": 85,
+            "name": "Log Wall",
+            "count": 104
+          }
+        ],
+        "top_categories": [
+          [
+            "Walls / Floors",
+            1605
+          ],
+          [
+            "Scenery",
+            75
+          ],
+          [
+            "Unknown",
+            46
+          ],
+          [
+            "Pool Table",
+            37
+          ],
+          [
+            "Pipe Systems",
+            24
+          ]
+        ]
+      },
+      "0x0800": {
+        "uses": 138,
+        "pct": 1.6,
+        "top_types": [
+          {
+            "type": 6,
+            "name": "Mouse Motor",
+            "count": 58
+          },
+          {
+            "type": 50,
+            "name": "Electric Motor",
+            "count": 36
+          },
+          {
+            "type": 40,
+            "name": "Pinwheel",
+            "count": 19
+          },
+          {
+            "type": 89,
+            "name": "Trans-Roto-Matic",
+            "count": 15
+          },
+          {
+            "type": 31,
+            "name": "Mandrill Motor",
+            "count": 10
+          }
+        ],
+        "top_categories": [
+          [
+            "Rotating Power Sources",
+            123
+          ],
+          [
+            "Special Mechanics",
+            15
+          ]
+        ]
+      },
+      "0x8000": {
+        "uses": 129,
+        "pct": 1.5,
+        "top_types": [
+          {
+            "type": 42,
+            "name": "Newton Mouse",
+            "count": 57
+          },
+          {
+            "type": 54,
+            "name": "Mel Schlemming",
+            "count": 45
+          },
+          {
+            "type": 12,
+            "name": "Curie Cat",
+            "count": 27
+          }
+        ],
+        "top_categories": [
+          [
+            "Characters",
+            129
+          ]
+        ]
+      }
+    },
+    "flags_3": {
+      "0x0001": {
+        "uses": 217,
+        "pct": 2.6,
+        "top_types": [
+          {
+            "type": 93,
+            "name": "Blue Laser",
+            "count": 41
+          },
+          {
+            "type": 50,
+            "name": "Electric Motor",
+            "count": 36
+          },
+          {
+            "type": 91,
+            "name": "Red Laser",
+            "count": 35
+          },
+          {
+            "type": 92,
+            "name": "Green Laser",
+            "count": 30
+          },
+          {
+            "type": 24,
+            "name": "Electric Fan",
+            "count": 25
+          },
+          {
+            "type": 67,
+            "name": "Can Opener",
+            "count": 14
+          },
+          {
+            "type": 81,
+            "name": "Toaster",
+            "count": 14
+          },
+          {
+            "type": 107,
+            "name": "Electric Mixer",
+            "count": 12
+          }
+        ],
+        "top_categories": [
+          [
+            "Lasers / Optics",
+            106
+          ],
+          [
+            "Electrical",
+            75
+          ],
+          [
+            "Rotating Power Sources",
+            36
+          ]
+        ]
+      },
+      "0x0002": {
+        "uses": 185,
+        "pct": 2.2,
+        "top_types": [
+          {
+            "type": 21,
+            "name": "Electric Switch & Outlet",
+            "count": 69
+          },
+          {
+            "type": 120,
+            "name": "Electrical Outlet",
+            "count": 46
+          },
+          {
+            "type": 96,
+            "name": "Laser-Activated Plug",
+            "count": 36
+          },
+          {
+            "type": 26,
+            "name": "Generator",
+            "count": 17
+          },
+          {
+            "type": 38,
+            "name": "Solar Panel",
+            "count": 17
+          }
+        ],
+        "top_categories": [
+          [
+            "Electrical",
+            149
+          ],
+          [
+            "Lasers / Optics",
+            36
+          ]
+        ]
+      },
+      "0x0004": {
+        "uses": 247,
+        "pct": 2.9,
+        "top_types": [
+          {
+            "type": 19,
+            "name": "Dynamite",
+            "count": 55
+          },
+          {
+            "type": 80,
+            "name": "Fireworks",
+            "count": 38
+          },
+          {
+            "type": 79,
+            "name": "Hot Air Balloon",
+            "count": 33
+          },
+          {
+            "type": 138,
+            "name": "Candle",
+            "count": 30
+          },
+          {
+            "type": 36,
+            "name": "Rocket",
+            "count": 28
+          },
+          {
+            "type": 70,
+            "name": "Missile",
+            "count": 27
+          },
+          {
+            "type": 18,
+            "name": "Cannon",
+            "count": 27
+          },
+          {
+            "type": 45,
+            "name": "Aladdin's Lamp",
+            "count": 9
+          }
+        ],
+        "top_categories": [
+          [
+            "Explosives / Projectiles",
+            175
+          ],
+          [
+            "Light / Flame Sources",
+            39
+          ],
+          [
+            "Balloons / Airships",
+            33
+          ]
+        ]
+      },
+      "0x0008": {
+        "uses": 4252,
+        "pct": 50.1,
+        "top_types": [
+          {
+            "type": 7,
+            "name": "Pulley",
+            "count": 224
+          },
+          {
+            "type": 23,
+            "name": "Boat Cleat",
+            "count": 138
+          },
+          {
+            "type": 4,
+            "name": "Balloon",
+            "count": 111
+          },
+          {
+            "type": 43,
+            "name": "Pinball",
+            "count": 108
+          },
+          {
+            "type": 178,
+            "name": "type_178",
+            "count": 98
+          },
+          {
+            "type": 94,
+            "name": "Angled Mirror",
+            "count": 92
+          },
+          {
+            "type": 74,
+            "name": "Nitroglycerine",
+            "count": 90
+          },
+          {
+            "type": 109,
+            "name": "Blimp",
+            "count": 77
+          }
+        ],
+        "top_categories": [
+          [
+            "Unknown",
+            762
+          ],
+          [
+            "Scenery",
+            447
+          ],
+          [
+            "Explosives / Projectiles",
+            434
+          ],
+          [
+            "Balls",
+            434
+          ],
+          [
+            "Special Mechanics",
+            382
+          ]
+        ]
+      },
+      "0x0040": {
+        "uses": 5988,
+        "pct": 70.5,
+        "top_types": [
+          {
+            "type": 84,
+            "name": "Greco-Roman Wall",
+            "count": 263
+          },
+          {
+            "type": 56,
+            "name": "Caution Wall",
+            "count": 255
+          },
+          {
+            "type": 1,
+            "name": "Brick Wall",
+            "count": 218
+          },
+          {
+            "type": 101,
+            "name": "Granite Incline",
+            "count": 214
+          },
+          {
+            "type": 48,
+            "name": "Wood Wall",
+            "count": 200
+          },
+          {
+            "type": 102,
+            "name": "Brick Incline",
+            "count": 156
+          },
+          {
+            "type": 125,
+            "name": "Yellow Brick Wall",
+            "count": 147
+          },
+          {
+            "type": 7,
+            "name": "Pulley",
+            "count": 137
+          }
+        ],
+        "top_categories": [
+          [
+            "Walls / Floors",
+            1672
+          ],
+          [
+            "Unknown",
+            808
+          ],
+          [
+            "Inclines",
+            672
+          ],
+          [
+            "Scenery",
+            522
+          ],
+          [
+            "Balls",
+            350
+          ]
+        ]
+      },
+      "0x0080": {
+        "uses": 121,
+        "pct": 1.4,
+        "top_types": [
+          {
+            "type": 127,
+            "name": "Color Block",
+            "count": 54
+          },
+          {
+            "type": 280,
+            "name": "type_280",
+            "count": 26
+          },
+          {
+            "type": 123,
+            "name": "tile",
+            "count": 18
+          },
+          {
+            "type": 205,
+            "name": "type_205",
+            "count": 14
+          },
+          {
+            "type": 203,
+            "name": "type_203",
+            "count": 6
+          },
+          {
+            "type": 122,
+            "name": "tile",
+            "count": 3
+          }
+        ],
+        "top_categories": [
+          [
+            "Scenery",
+            75
+          ],
+          [
+            "Unknown",
+            46
+          ]
+        ]
+      },
+      "0x0100": {
+        "uses": 298,
+        "pct": 3.5,
+        "top_types": [
+          {
+            "type": 23,
+            "name": "Boat Cleat",
+            "count": 29
+          },
+          {
+            "type": 14,
+            "name": "Gear",
+            "count": 15
+          },
+          {
+            "type": 63,
+            "name": "Pool Ball",
+            "count": 11
+          },
+          {
+            "type": 86,
+            "name": "Tiny Gear",
+            "count": 11
+          },
+          {
+            "type": 53,
+            "name": "Thumb Tack",
+            "count": 10
+          },
+          {
+            "type": 30,
+            "name": "Magnifying Glass",
+            "count": 10
+          },
+          {
+            "type": 2,
+            "name": "Wood incline",
+            "count": 10
+          },
+          {
+            "type": 39,
+            "name": "Springboard",
+            "count": 9
+          }
+        ],
+        "top_categories": [
+          [
+            "Special Mechanics",
+            57
+          ],
+          [
+            "Springs / Pneumatics",
+            40
+          ],
+          [
+            "Rotating Power Sources",
+            32
+          ],
+          [
+            "Inclines",
+            28
+          ],
+          [
+            "Balls",
+            23
+          ]
+        ]
+      },
+      "0x0400": {
+        "uses": 565,
+        "pct": 6.7,
+        "top_types": [
+          {
+            "type": 4,
+            "name": "Balloon",
+            "count": 111
+          },
+          {
+            "type": 71,
+            "name": "Boxes",
+            "count": 62
+          },
+          {
+            "type": 63,
+            "name": "Pool Ball",
+            "count": 60
+          },
+          {
+            "type": 127,
+            "name": "Color Block",
+            "count": 54
+          },
+          {
+            "type": 137,
+            "name": "Egg Timer",
+            "count": 50
+          },
+          {
+            "type": 54,
+            "name": "Mel Schlemming",
+            "count": 45
+          },
+          {
+            "type": 80,
+            "name": "Fireworks",
+            "count": 38
+          },
+          {
+            "type": 96,
+            "name": "Laser-Activated Plug",
+            "count": 36
+          }
+        ],
+        "top_categories": [
+          [
+            "Balloons / Airships",
+            111
+          ],
+          [
+            "Special Mechanics",
+            88
+          ],
+          [
+            "Containers",
+            79
+          ],
+          [
+            "Balls",
+            75
+          ],
+          [
+            "Explosives / Projectiles",
+            63
+          ]
+        ]
+      },
+      "0x1000": {
+        "uses": 1330,
+        "pct": 15.7,
+        "top_types": [
+          {
+            "type": 178,
+            "name": "type_178",
+            "count": 98
+          },
+          {
+            "type": 179,
+            "name": "type_179",
+            "count": 72
+          },
+          {
+            "type": 143,
+            "name": "Small Cloud",
+            "count": 71
+          },
+          {
+            "type": 114,
+            "name": "Big Cloud",
+            "count": 59
+          },
+          {
+            "type": 127,
+            "name": "Color Block",
+            "count": 54
+          },
+          {
+            "type": 111,
+            "name": "Spruce Tree",
+            "count": 51
+          },
+          {
+            "type": 142,
+            "name": "Small Pine Tree",
+            "count": 41
+          },
+          {
+            "type": 145,
+            "name": "medium mountain",
+            "count": 30
+          }
+        ],
+        "top_categories": [
+          [
+            "Unknown",
+            808
+          ],
+          [
+            "Scenery",
+            522
+          ]
+        ]
+      },
+      "0x2000": {
+        "uses": 1642,
+        "pct": 19.3,
+        "top_types": [
+          {
+            "type": 56,
+            "name": "Caution Wall",
+            "count": 276
+          },
+          {
+            "type": 84,
+            "name": "Greco-Roman Wall",
+            "count": 272
+          },
+          {
+            "type": 1,
+            "name": "Brick Wall",
+            "count": 219
+          },
+          {
+            "type": 48,
+            "name": "Wood Wall",
+            "count": 209
+          },
+          {
+            "type": 125,
+            "name": "Yellow Brick Wall",
+            "count": 165
+          },
+          {
+            "type": 83,
+            "name": "Cinder Block Wall",
+            "count": 143
+          },
+          {
+            "type": 46,
+            "name": "Pipe Wall",
+            "count": 140
+          },
+          {
+            "type": 85,
+            "name": "Log Wall",
+            "count": 104
+          }
+        ],
+        "top_categories": [
+          [
+            "Walls / Floors",
+            1605
+          ],
+          [
+            "Pool Table",
+            37
+          ]
+        ]
+      },
+      "0x8000": {
+        "uses": 2490,
+        "pct": 29.3,
+        "top_types": [
+          {
+            "type": 69,
+            "name": "Anti-Gravity Pad",
+            "count": 126
+          },
+          {
+            "type": 4,
+            "name": "Balloon",
+            "count": 111
+          },
+          {
+            "type": 43,
+            "name": "Pinball",
+            "count": 108
+          },
+          {
+            "type": 74,
+            "name": "Nitroglycerine",
+            "count": 90
+          },
+          {
+            "type": 109,
+            "name": "Blimp",
+            "count": 77
+          },
+          {
+            "type": 55,
+            "name": "Remote Control Explosives",
+            "count": 72
+          },
+          {
+            "type": 22,
+            "name": "Remote Control",
+            "count": 72
+          },
+          {
+            "type": 52,
+            "name": "Cheese",
+            "count": 72
+          }
+        ],
+        "top_categories": [
+          [
+            "Explosives / Projectiles",
+            434
+          ],
+          [
+            "Balls",
+            434
+          ],
+          [
+            "Special Mechanics",
+            349
+          ],
+          [
+            "Balloons / Airships",
+            221
+          ],
+          [
+            "Springs / Pneumatics",
+            210
+          ]
+        ]
+      }
+    }
+  },
+  "co_occurrence": {
+    "flags_1": {
+      "0x2000+0x4000": {
+        "count": 7250,
+        "pct_of_b1": 100,
+        "pct_of_b2": 100
+      },
+      "0x0400+0x2000": {
+        "count": 3486,
+        "pct_of_b1": 91,
+        "pct_of_b2": 48
+      },
+      "0x0400+0x4000": {
+        "count": 3486,
+        "pct_of_b1": 91,
+        "pct_of_b2": 48
+      },
+      "0x0200+0x2000": {
+        "count": 2906,
+        "pct_of_b1": 98,
+        "pct_of_b2": 40
+      },
+      "0x0200+0x4000": {
+        "count": 2906,
+        "pct_of_b1": 98,
+        "pct_of_b2": 40
+      },
+      "0x0200+0x0400": {
+        "count": 2700,
+        "pct_of_b1": 91,
+        "pct_of_b2": 71
+      },
+      "0x0020+0x1000": {
+        "count": 392,
+        "pct_of_b1": 100,
+        "pct_of_b2": 32
+      },
+      "0x0400+0x1000": {
+        "count": 343,
+        "pct_of_b1": 9,
+        "pct_of_b2": 28
+      },
+      "0x0040+0x1000": {
+        "count": 241,
+        "pct_of_b1": 100,
+        "pct_of_b2": 19
+      },
+      "0x0020+0x0400": {
+        "count": 127,
+        "pct_of_b1": 32,
+        "pct_of_b2": 3
+      },
+      "0x0020+0x0040": {
+        "count": 88,
+        "pct_of_b1": 22,
+        "pct_of_b2": 37
+      },
+      "0x0040+0x0400": {
+        "count": 70,
+        "pct_of_b1": 29,
+        "pct_of_b2": 2
+      },
+      "0x0200+0x1000": {
+        "count": 55,
+        "pct_of_b1": 2,
+        "pct_of_b2": 4
+      },
+      "0x0040+0x0200": {
+        "count": 12,
+        "pct_of_b1": 5,
+        "pct_of_b2": 0
+      }
+    },
+    "flags_2": {
+      "0x0080+0x0100": {
+        "count": 1787,
+        "pct_of_b1": 65,
+        "pct_of_b2": 100
+      },
+      "0x0010+0x0080": {
+        "count": 424,
+        "pct_of_b1": 52,
+        "pct_of_b2": 15
+      },
+      "0x0001+0x0002": {
+        "count": 387,
+        "pct_of_b1": 84,
+        "pct_of_b2": 100
+      },
+      "0x0001+0x0800": {
+        "count": 138,
+        "pct_of_b1": 30,
+        "pct_of_b2": 100
+      },
+      "0x0002+0x0800": {
+        "count": 124,
+        "pct_of_b1": 32,
+        "pct_of_b2": 90
+      },
+      "0x0004+0x0008": {
+        "count": 120,
+        "pct_of_b1": 13,
+        "pct_of_b2": 100
+      },
+      "0x0001+0x0080": {
+        "count": 98,
+        "pct_of_b1": 21,
+        "pct_of_b2": 4
+      },
+      "0x0002+0x0080": {
+        "count": 86,
+        "pct_of_b1": 22,
+        "pct_of_b2": 3
+      },
+      "0x0010+0x8000": {
+        "count": 47,
+        "pct_of_b1": 6,
+        "pct_of_b2": 36
+      },
+      "0x0001+0x0010": {
+        "count": 44,
+        "pct_of_b1": 10,
+        "pct_of_b2": 5
+      },
+      "0x0002+0x0010": {
+        "count": 43,
+        "pct_of_b1": 11,
+        "pct_of_b2": 5
+      },
+      "0x0001+0x0004": {
+        "count": 42,
+        "pct_of_b1": 9,
+        "pct_of_b2": 5
+      },
+      "0x0004+0x0010": {
+        "count": 42,
+        "pct_of_b1": 5,
+        "pct_of_b2": 5
+      },
+      "0x0002+0x0004": {
+        "count": 38,
+        "pct_of_b1": 10,
+        "pct_of_b2": 4
+      },
+      "0x0010+0x0800": {
+        "count": 35,
+        "pct_of_b1": 4,
+        "pct_of_b2": 25
+      },
+      "0x0004+0x0800": {
+        "count": 25,
+        "pct_of_b1": 3,
+        "pct_of_b2": 18
+      },
+      "0x0020+0x0080": {
+        "count": 19,
+        "pct_of_b1": 30,
+        "pct_of_b2": 1
+      },
+      "0x0020+0x0100": {
+        "count": 19,
+        "pct_of_b1": 30,
+        "pct_of_b2": 1
+      },
+      "0x0004+0x0020": {
+        "count": 17,
+        "pct_of_b1": 2,
+        "pct_of_b2": 27
+      },
+      "0x0010+0x0020": {
+        "count": 9,
+        "pct_of_b1": 1,
+        "pct_of_b2": 14
+      }
+    },
+    "flags_3": {
+      "0x0008+0x0040": {
+        "count": 2850,
+        "pct_of_b1": 67,
+        "pct_of_b2": 48
+      },
+      "0x0008+0x8000": {
+        "count": 2187,
+        "pct_of_b1": 51,
+        "pct_of_b2": 88
+      },
+      "0x0040+0x2000": {
+        "count": 1561,
+        "pct_of_b1": 26,
+        "pct_of_b2": 95
+      },
+      "0x0040+0x8000": {
+        "count": 1373,
+        "pct_of_b1": 23,
+        "pct_of_b2": 55
+      },
+      "0x0040+0x1000": {
+        "count": 1330,
+        "pct_of_b1": 22,
+        "pct_of_b2": 100
+      },
+      "0x0008+0x1000": {
+        "count": 1209,
+        "pct_of_b1": 28,
+        "pct_of_b2": 91
+      },
+      "0x0008+0x0400": {
+        "count": 449,
+        "pct_of_b1": 11,
+        "pct_of_b2": 79
+      },
+      "0x0400+0x8000": {
+        "count": 413,
+        "pct_of_b1": 73,
+        "pct_of_b2": 17
+      },
+      "0x0040+0x0400": {
+        "count": 412,
+        "pct_of_b1": 7,
+        "pct_of_b2": 73
+      },
+      "0x0004+0x0008": {
+        "count": 247,
+        "pct_of_b1": 100,
+        "pct_of_b2": 6
+      },
+      "0x0004+0x8000": {
+        "count": 247,
+        "pct_of_b1": 100,
+        "pct_of_b2": 10
+      },
+      "0x0001+0x0008": {
+        "count": 217,
+        "pct_of_b1": 100,
+        "pct_of_b2": 5
+      },
+      "0x0001+0x8000": {
+        "count": 217,
+        "pct_of_b1": 100,
+        "pct_of_b2": 9
+      },
+      "0x0008+0x0100": {
+        "count": 203,
+        "pct_of_b1": 5,
+        "pct_of_b2": 68
+      },
+      "0x0004+0x0040": {
+        "count": 154,
+        "pct_of_b1": 62,
+        "pct_of_b2": 3
+      },
+      "0x0002+0x0040": {
+        "count": 138,
+        "pct_of_b1": 75,
+        "pct_of_b2": 2
+      },
+      "0x0100+0x8000": {
+        "count": 135,
+        "pct_of_b1": 45,
+        "pct_of_b2": 5
+      },
+      "0x0040+0x0080": {
+        "count": 121,
+        "pct_of_b1": 2,
+        "pct_of_b2": 100
+      },
+      "0x0080+0x1000": {
+        "count": 121,
+        "pct_of_b1": 100,
+        "pct_of_b2": 9
+      },
+      "0x0002+0x0008": {
+        "count": 116,
+        "pct_of_b1": 63,
+        "pct_of_b2": 3
+      }
+    }
+  },
+  "mutual_exclusion": {},
+  "unknown_flags": {
+    "flags_1_0x0020": {
+      "usage": 392,
+      "top_types": [
+        {
+          "type": 4,
+          "name": "Balloon",
+          "count": 111
+        },
+        {
+          "type": 17,
+          "name": "Bucket",
+          "count": 61
+        },
+        {
+          "type": 19,
+          "name": "Dynamite",
+          "count": 55
+        },
+        {
+          "type": 54,
+          "name": "Mel Schlemming",
+          "count": 45
+        },
+        {
+          "type": 79,
+          "name": "Hot Air Balloon",
+          "count": 33
+        },
+        {
+          "type": 138,
+          "name": "Candle",
+          "count": 30
+        },
+        {
+          "type": 62,
+          "name": "Coffee Pot",
+          "count": 18
+        },
+        {
+          "type": 108,
+          "name": "Leaky Bucket",
+          "count": 17
+        },
+        {
+          "type": 11,
+          "name": "Laundry Basket",
+          "count": 13
+        },
+        {
+          "type": 45,
+          "name": "Aladdin's Lamp",
+          "count": 9
+        }
+      ],
+      "co_occurring_bits": [
+        {
+          "bit": "0x1000",
+          "count": 392,
+          "pct_of_mask": 100
+        },
+        {
+          "bit": "0x0400",
+          "count": 127,
+          "pct_of_mask": 32
+        },
+        {
+          "bit": "0x0040",
+          "count": 88,
+          "pct_of_mask": 22
+        }
+      ],
+      "top_categories": [
+        [
+          "Balloons / Airships",
+          144
+        ],
+        [
+          "Containers",
+          91
+        ],
+        [
+          "Explosives / Projectiles",
+          55
+        ],
+        [
+          "Characters",
+          45
+        ],
+        [
+          "Light / Flame Sources",
+          39
+        ],
+        [
+          "Special Mechanics",
+          18
+        ]
+      ]
+    },
+    "flags_2_0x0040": {
+      "usage": "NOT USED",
+      "top_types": []
+    },
+    "flags_3_0x0008": {
+      "usage": 4252,
+      "top_types": [
+        {
+          "type": 7,
+          "name": "Pulley",
+          "count": 224
+        },
+        {
+          "type": 23,
+          "name": "Boat Cleat",
+          "count": 138
+        },
+        {
+          "type": 4,
+          "name": "Balloon",
+          "count": 111
+        },
+        {
+          "type": 43,
+          "name": "Pinball",
+          "count": 108
+        },
+        {
+          "type": 178,
+          "name": "type_178",
+          "count": 98
+        },
+        {
+          "type": 94,
+          "name": "Angled Mirror",
+          "count": 92
+        },
+        {
+          "type": 74,
+          "name": "Nitroglycerine",
+          "count": 90
+        },
+        {
+          "type": 109,
+          "name": "Blimp",
+          "count": 77
+        },
+        {
+          "type": 179,
+          "name": "type_179",
+          "count": 72
+        },
+        {
+          "type": 55,
+          "name": "Remote Control Explosives",
+          "count": 72
+        }
+      ],
+      "co_occurring_bits": [
+        {
+          "bit": "0x0040",
+          "count": 2850,
+          "pct_of_mask": 67
+        },
+        {
+          "bit": "0x8000",
+          "count": 2187,
+          "pct_of_mask": 51
+        },
+        {
+          "bit": "0x1000",
+          "count": 1209,
+          "pct_of_mask": 28
+        },
+        {
+          "bit": "0x0400",
+          "count": 449,
+          "pct_of_mask": 11
+        },
+        {
+          "bit": "0x0004",
+          "count": 247,
+          "pct_of_mask": 6
+        },
+        {
+          "bit": "0x0001",
+          "count": 217,
+          "pct_of_mask": 5
+        },
+        {
+          "bit": "0x0100",
+          "count": 203,
+          "pct_of_mask": 5
+        },
+        {
+          "bit": "0x0002",
+          "count": 116,
+          "pct_of_mask": 3
+        }
+      ],
+      "top_categories": [
+        [
+          "Unknown",
+          762
+        ],
+        [
+          "Scenery",
+          447
+        ],
+        [
+          "Explosives / Projectiles",
+          434
+        ],
+        [
+          "Balls",
+          434
+        ],
+        [
+          "Special Mechanics",
+          382
+        ],
+        [
+          "Lasers / Optics",
+          326
+        ],
+        [
+          "Springs / Pneumatics",
+          276
+        ],
+        [
+          "Ropes / Belts / Pulleys",
+          224
+        ],
+        [
+          "Balloons / Airships",
+          221
+        ],
+        [
+          "Light / Flame Sources",
+          174
+        ]
+      ]
+    },
+    "flags_3_0x0100": {
+      "usage": 298,
+      "top_types": [
+        {
+          "type": 23,
+          "name": "Boat Cleat",
+          "count": 29
+        },
+        {
+          "type": 14,
+          "name": "Gear",
+          "count": 15
+        },
+        {
+          "type": 63,
+          "name": "Pool Ball",
+          "count": 11
+        },
+        {
+          "type": 86,
+          "name": "Tiny Gear",
+          "count": 11
+        },
+        {
+          "type": 53,
+          "name": "Thumb Tack",
+          "count": 10
+        },
+        {
+          "type": 30,
+          "name": "Magnifying Glass",
+          "count": 10
+        },
+        {
+          "type": 2,
+          "name": "Wood incline",
+          "count": 10
+        },
+        {
+          "type": 39,
+          "name": "Springboard",
+          "count": 9
+        },
+        {
+          "type": 37,
+          "name": "Hedge Trimmers",
+          "count": 8
+        },
+        {
+          "type": 117,
+          "name": "Pool Cue",
+          "count": 7
+        }
+      ],
+      "co_occurring_bits": [
+        {
+          "bit": "0x0008",
+          "count": 203,
+          "pct_of_mask": 68
+        },
+        {
+          "bit": "0x8000",
+          "count": 135,
+          "pct_of_mask": 45
+        },
+        {
+          "bit": "0x0400",
+          "count": 23,
+          "pct_of_mask": 8
+        },
+        {
+          "bit": "0x0001",
+          "count": 13,
+          "pct_of_mask": 4
+        },
+        {
+          "bit": "0x0002",
+          "count": 11,
+          "pct_of_mask": 4
+        },
+        {
+          "bit": "0x0004",
+          "count": 11,
+          "pct_of_mask": 4
+        },
+        {
+          "bit": "0x2000",
+          "count": 3,
+          "pct_of_mask": 1
+        }
+      ],
+      "top_categories": [
+        [
+          "Special Mechanics",
+          57
+        ],
+        [
+          "Springs / Pneumatics",
+          40
+        ],
+        [
+          "Rotating Power Sources",
+          32
+        ],
+        [
+          "Inclines",
+          28
+        ],
+        [
+          "Balls",
+          23
+        ],
+        [
+          "Lasers / Optics",
+          22
+        ],
+        [
+          "Cutting / Popping",
+          19
+        ],
+        [
+          "Explosives / Projectiles",
+          18
+        ],
+        [
+          "Light / Flame Sources",
+          17
+        ],
+        [
+          "Electrical",
+          15
+        ]
+      ]
+    }
+  }
+}

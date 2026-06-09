@@ -1,0 +1,37 @@
+JOURNEY: J10 — Save & Load
+TIMESTAMP: 20260527_072017
+MODE: HEADLESS
+EXIT CODE: 1
+============================================================
+STDOUT:
+J10 — Save & Load journey test
+Timestamp: 2026-05-27T07:20:17.849496
+Mode: HEADLESS
+
+=== 1. Level Loading ===
+  ✅ ELEV1.yaml exists
+  yaml lib not available — using mock data
+  ✅ Level data loaded
+  Fixed parts: 1, Moving parts: 1
+  ✅ Parts list accessible — total=2
+
+=== 2. Part Modification Tracking ===
+  Before: part at (100, 50)
+  After:  part at (200, 150)
+  ✅ Position modified — delta=(100,100)
+
+=== 3. Serialization / Field Integrity ===
+  ✅ Required fields present — 13/13 fields, missing=[]
+
+=== 4. Temp YAML Save/Load Round-Trip ===
+  ❌ Round-trip test — yaml lib unavailable
+
+=== 5. Modified Indicator ===
+  ✅ Modified indicator works — Dirty flag: True
+
+==================================================
+RESULTS: 6 passed, 1 failed
+Full log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J10_20260527_072017.log
+
+============================================================
+STDERR:

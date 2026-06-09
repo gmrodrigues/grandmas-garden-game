@@ -1,0 +1,71 @@
+{
+  "milestone": "M18",
+  "pass_count": 26,
+  "fail_count": 0,
+  "timestamp": "1779874317.1770759",
+  "levels": {
+    "total": 206,
+    "loaded": 206,
+    "simulated": 206,
+    "errors": 0,
+    "total_parts": 8583,
+    "total_moving": 1248,
+    "unique_types": 253
+  },
+  "behaviors": {
+    "total": 147,
+    "in_registry": 147,
+    "with_solve": 64,
+    "interactive": 52,
+    "solve_transitions_ok": 239,
+    "solve_transitions_fail": 0
+  },
+  "anm": {
+    "found": 147,
+    "missing": 0
+  },
+  "consistency": {
+    "frame_mismatches": 0,
+    "state_mismatches": 0,
+    "props_in_behaviors": 147,
+    "catalog_in_behaviors": 147
+  },
+  "sprites": {
+    "total_unique": 146,
+    "png_resolved": 1273,
+    "png_files_on_disk": 3056
+  },
+  "sounds": {
+    "unique": 61,
+    "total_refs": 69
+  },
+  "physics": {
+    "parts_with_mass": 114,
+    "parts_with_cor": 93,
+    "mass_range": [
+      9,
+      21428
+    ]
+  },
+  "categories": {
+    "Balls": 9,
+    "Walls / Floors": 15,
+    "Inclines": 6,
+    "Special Mechanics": 15,
+    "Balloons / Airships": 3,
+    "Rotating Power Sources": 7,
+    "Ropes / Belts / Pulleys": 4,
+    "Containers": 5,
+    "Characters": 8,
+    "Springs / Pneumatics": 7,
+    "Explosives / Projectiles": 10,
+    "Electrical": 9,
+    "Light / Flame Sources": 5,
+    "Lasers / Optics": 8,
+    "Cutting / Popping": 3,
+    "Created / Phantom": 1,
+    "Pipe Systems": 4,
+    "Scenery": 26,
+    "Pool Table": 2
+  }
+}

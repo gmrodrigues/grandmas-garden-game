@@ -1,0 +1,34 @@
+J13 — Hints & Info journey test
+Timestamp: 2026-05-27T07:16:26.662062
+Mode: HEADLESS
+
+=== 1. Asset Existence ===
+  ✅ INFO ANM files — 119 INFO JSONs
+
+=== 2. Part Info Dialog (Type 0 — Bowling Ball) ===
+  Part Name: Bowling Ball
+  Part Type: 0
+  Category:  Balls
+  Solve Name: Bowling Ball
+  Description: This bowling ball is very heavy and doesn't bounce much.
+  ANM: PART0 (8 frames, 1 states)
+  ANM States: [1]
+  ✅ Part info dialog data complete
+
+  --- Sample part info lookups ---
+  [  1] Brick Wall (This brick wall or floor can be stretched vertically or horizontally t...)
+  [  4] Balloon (This balloon can be programmed to have four different appearances, whi...)
+  [ 23] Boat Cleat (Any object that can be tied with a rope may be hitched to this boat cl...)
+  [ 54] Mel Schlemming (Meet Mel Schlemming. Mel walks mindlessly forward until he bumps into ...)
+  ✅ Multiple part lookups work
+
+=== 3. Hints from ELEV1.yaml ===
+  Active hints: 0
+  Total entries: 0
+  ❌ Hints parsed from ELEV1 — 0 hints, 0 active
+
+=== 4. Hint Position Markers ===
+
+==================================================
+RESULTS: 3 passed, 2 failed
+Full log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J13_20260527_071626.log

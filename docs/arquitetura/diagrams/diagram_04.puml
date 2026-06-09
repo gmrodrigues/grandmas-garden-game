@@ -1,0 +1,41 @@
+@startuml C4_Editor_Component
+!include ../.plantuml/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+
+title C4 Component — Level Editor
+
+Container_Boundary(editor, "EditorController") {
+  Container(editor_ctrl, "EditorController", "Control", "6 tool modes, canvas, catalog, undo/redo, dialogs")
+  Container(tool_machine, "ToolMode Enum", "Enum", "MODE_SELECT, MODE_PLACE, MODE_DELETE, MODE_CONNECT, MODE_PREVIEW, MODE_LEVEL_INFO")
+  Container(viewport, "Viewport", "Node2D", "Canvas com zoom/pan, grid, selection handles, gizmos")
+  Container(catalog, "Catalog", "VBoxContainer", "Lista de peças por categoria com ícones ANM")
+  Container(undo_sys, "UndoSystem", "Array[Dictionary]", "50 níveis de undo/redo")
+}
+
+Container_Boundary(world, "World State") {
+  Container(world_state, "WorldState", "RefCounted", "Array[PartData], gravity, pressure, viewport, callbacks")
+  Container(part_data, "PartData", "RefCounted xMAX", "282 campos, state machine, collision box, animation")
+  Container(solver, "PhysicsSolver", "RefCounted", "7-pass physics preview, deterministic 60Hz")
+  Container(checker, "SolutionChecker", "RefCounted", "Verifica condições de solução")
+}
+
+Container_Boundary(backend, "Backend Catalogs") {
+  Container(behavior_reg, "BehaviorRegistry", "Autoload", "solve_data, category_rules, physics_props, state limits")
+  Container(anm_renderer, "AnmRenderer", "Autoload", "Renderiza frames ANM para Texture")
+  Container(anm_db, "AnmDatabase", "Autoload", "Cache de ANM, part→anm mapping")
+  Container(part_db, "PartDatabase", "Autoload", "278 tipos de peça")
+  Container(level_serializer, "LevelSerializer", "RefCounted", "YAML load/save")
+}
+
+Rel(editor_ctrl, world_state, "add_part(), remove_part(), reset()")
+Rel(editor_ctrl, solver, "step() preview_running")
+Rel(editor_ctrl, checker, "check(world_state)")
+Rel(editor_ctrl, level_serializer, "save_yaml(), load_yaml()")
+Rel(editor_ctrl, behavior_reg, "get_state_limits(), get_behavior(), get_category()")
+Rel(world_state, part_data, "Array[PartData]")
+Rel(behavior_reg, part_data, "Inicializa state_limit_*, mass, cor_q8, triggers")
+Rel(anm_renderer, part_data, "Renderiza sprite via AnmDatabase")
+Rel(part_data, solver, "state_counter, pos_x/y, vel_x/y")
+
+@enduml

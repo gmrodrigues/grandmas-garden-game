@@ -1,0 +1,41 @@
+@startuml C4_Container
+!include ../.plantuml/C4_Container.puml
+
+LAYOUT_WITH_LEGEND()
+
+title C4 Container — Dual-Mode Architecture
+
+System_Boundary(godot_app, "Godot 4.6 Application") {
+  Container(editor_ctrl, "EditorController", "Control (Node)", "Máquina de estados de ferramentas, viewport, catalog, undo/redo")
+  Container(world_state, "WorldState", "RefCounted", "Container de parts[], gravity, pressure, viewport")
+  Container(part_data, "PartData", "RefCounted (282 campos)", "Representação OOP de peça no editor — gizmos, handles, state machine")
+  Container(behavior_reg, "BehaviorRegistry", "Node (Autoload)", "Catálogo de comportamentos, state limits, triggers, física por tipo")
+  Container(simulation_runner, "SimulationRunner", "Node2D", "Pacemaker externo, avalia chain_script, orchestra physics")
+  Container(board, "Board", "Node2D", "Container de parts[], sprites, level_data, solution")
+  Container(part, "Part", "RefCounted", "Estrutura data+physics para simulação — state machine, 7-pass physics")
+  Container(physics_eng, "PhysicsEngine", "RefCounted", "13-pass loop de física por tick (gravity, collisions, constraints)")
+  Container(chain_mgr, "ChainManager", "RefCounted", "Avaliador de regras chain_script — condições e ações")
+  Container(anm_renderer, "AnmRenderer", "Autoload", "Renderiza frames ANM para ImageTexture")
+  Container(anm_db, "AnmDatabase", "Autoload", "Cache de ANM files, part→anm mapping")
+  Container(part_db, "PartDatabase", "Autoload", "Catálogo de 278 tipos de peça")
+  Container(level_serializer, "LevelSerializer", "RefCounted", "Save/load YAML/JSON de níveis")
+}
+
+Rel(editor_ctrl, world_state, "Adiciona/remove/edit parts")
+Rel(editor_ctrl, behavior_reg, "Consulta state limits, behaviors")
+Rel(editor_ctrl, anm_renderer, "Renderiza preview de sprites")
+Rel(editor_ctrl, level_serializer, "Save/load níveis")
+Rel(world_state, part_data, "Contém Array[PartData]")
+Rel(behavior_reg, part_data, "Inicializa physics props, state limits")
+Rel(part_data, part, "Serializa setup data → JSON")
+Rel(level_serializer, part_data, "Serialize/deserialize")
+Rel(simulation_runner, board, "Orquestra simulação")
+Rel(simulation_runner, chain_mgr, "Evalua chain_script")
+Rel(simulation_runner, physics_eng, "Executa 13-pass physics")
+Rel(board, part, "Contém Array[Part]")
+Rel(board, anm_renderer, "Renderiza sprites via AnmDatabase")
+Rel(chain_mgr, part, "Modifica propriedades via regras")
+Rel(physics_eng, part, "Aplica física (gravity, collisions, constraints)")
+Rel(anm_db, anm_renderer, "提供 frames ANM")
+
+@enduml

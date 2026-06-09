@@ -61,10 +61,34 @@ func load_bmp(bmp_name: String, sub_image: int = -1) -> Image:
 			var img = ResourceLoader.load(path) as Texture2D
 			if img:
 				var image = img.get_image()
-				bmp_cache[cache_key] = image
-				return image
+				if image:
+					if image.get_format() != Image.FORMAT_RGBA8:
+						image.convert(Image.FORMAT_RGBA8)
+					bmp_cache[cache_key] = image
+					return image
 	push_warning("AnmRenderer: missing sprite: " + bmp_name)
 	return null
+
+func get_frame_meta(anm_name: String, state_id: int, state_counter: int = 0,
+					part_width: int = 0, part_height: int = 0) -> Dictionary:
+	var anm_data = AnmDatabase.load_anm(anm_name)
+	if anm_data.is_empty():
+		return {}
+	var first_a_idx = AnmDatabase.get_first_frame_for_state(anm_data, state_id)
+	var section_a = anm_data.get("section_a", [])
+	var section_b_idx: int
+	if not section_a.is_empty():
+		section_b_idx = section_a[(first_a_idx + state_counter) % section_a.size()]
+	else:
+		section_b_idx = first_a_idx
+	if part_width > 0 or part_height > 0:
+		var section_b = anm_data.get("section_b", [])
+		for i in range(section_b.size()):
+			var f = section_b[i]
+			if f.get("width", 0) == part_width and f.get("height", 0) == part_height:
+				section_b_idx = i
+				break
+	return AnmDatabase.get_frame_meta(anm_data, section_b_idx)
 
 func render_frame(anm_name: String, state_id: int, state_counter: int = 0,
 				  part_width: int = 0, part_height: int = 0) -> Image:
@@ -143,6 +167,8 @@ func render_wall(anm_name: String, width: int, height: int) -> Image:
 
 		var sprite = load_bmp(anm_name, sub_idx)
 		if sprite:
+			if sprite.get_format() != surface.get_format():
+				sprite.convert(surface.get_format())
 			var pos_x = i * tile_size if is_horizontal else 0
 			var pos_y = 0 if is_horizontal else i * tile_size
 			surface.blit_rect(sprite, Rect2(0, 0, sprite.get_width(), sprite.get_height()), Vector2(pos_x, pos_y))
@@ -169,7 +195,7 @@ func _render_section_b_frame(anm_data: Dictionary, section_b_idx: int, anm_name:
 	return surface
 
 func _execute_bytecode(image: Image, entry: Dictionary, anm_name: String):
-	var cmd = entry.get("cmd", -1)
+	var cmd = int(entry.get("cmd", -1))
 	match cmd:
 		2: _draw_bmp(image, entry, anm_name)
 		3: _draw_rect(image, entry)
@@ -179,17 +205,19 @@ func _execute_bytecode(image: Image, entry: Dictionary, anm_name: String):
 			AudioManager.play_sfx(sound_id)
 
 func _draw_bmp(image: Image, entry: Dictionary, anm_name: String):
-	var resource_id = entry.get("resource_id", 1)
-	var sub_image = entry.get("sub_image", 0)
-	var bx = entry.get("x", 0)
-	var by = entry.get("y", 0)
-	var flags = entry.get("flags", 0)
+	var resource_id = int(entry.get("resource_id", 1))
+	var sub_image = int(entry.get("sub_image", 0))
+	var bx = int(entry.get("x", 0))
+	var by = int(entry.get("y", 0))
+	var flags = int(entry.get("flags", 0))
 
 	var bmp_name = _resolve_resource_name(anm_name, resource_id)
 	var sprite = load_bmp(bmp_name, sub_image)
 	if sprite == null:
 		return
 
+	if sprite.get_format() != image.get_format():
+		sprite.convert(image.get_format())
 	if flags & 1:
 		sprite.flip_x()
 	if flags & 2:
@@ -203,11 +231,11 @@ func _resolve_resource_name(anm_name: String, resource_id: int) -> String:
 	return anm_name + "_" + str(resource_id)
 
 func _draw_rect(image: Image, entry: Dictionary):
-	var rx = entry.get("x", 0)
-	var ry = entry.get("y", 0)
-	var rw = entry.get("width", 0)
-	var rh = entry.get("height", 0)
-	var color_val = entry.get("color", 0)
+	var rx = int(entry.get("x", 0))
+	var ry = int(entry.get("y", 0))
+	var rw = int(entry.get("width", 0))
+	var rh = int(entry.get("height", 0))
+	var color_val = int(entry.get("color", 0))
 	var color = decode_color(color_val)
 
 	for y in range(ry, min(ry + rh, image.get_height())):
@@ -215,11 +243,11 @@ func _draw_rect(image: Image, entry: Dictionary):
 			image.set_pixel(x, y, color)
 
 func _draw_line(image: Image, entry: Dictionary):
-	var x1 = entry.get("x1", 0)
-	var y1 = entry.get("y1", 0)
-	var x2 = entry.get("x2", 0)
-	var y2 = entry.get("y2", 0)
-	var color_val = entry.get("color", entry.get("flags", 0) & 0xFF)
+	var x1 = int(entry.get("x1", 0))
+	var y1 = int(entry.get("y1", 0))
+	var x2 = int(entry.get("x2", 0))
+	var y2 = int(entry.get("y2", 0))
+	var color_val = int(entry.get("color", int(entry.get("flags", 0)) & 0xFF))
 	var color = decode_color(color_val)
 
 	var dx = abs(x2 - x1)

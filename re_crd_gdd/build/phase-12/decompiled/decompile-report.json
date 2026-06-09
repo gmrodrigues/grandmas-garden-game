@@ -1,0 +1,14 @@
+{
+  "total": 1479,
+  "decompiled": 1477,
+  "skipped": 37,
+  "failed": 2,
+  "by_subsystem": {
+    "utility": 349,
+    "level": 115,
+    "misc": 746,
+    "physics": 97,
+    "gfx": 28,
+    "sound": 142
+  }
+}

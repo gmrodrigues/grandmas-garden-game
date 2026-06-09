@@ -1,0 +1,31 @@
+@startuml C4_Context
+!include ../.plantuml/C4_Context.puml
+
+LAYOUT_WITH_LEGEND()
+
+title Diagrama de Contexto — Grandma's Garden
+
+Person(player, "Player", "Jogador que cria e resolve puzzles")
+Person(creator, "Creator", "Criador de fases no editor")
+
+System_Boundary(game, "Grandma's Garden") {
+  System(level_editor, "Level Editor", "Aplicação OOP para criar/editrar fases com gizmos, handles, dialogs")
+  System(puzzle_editor, "Puzzle Editor", "Editor de resolução de puzzles — inventário de peças")
+  System(simulation, "Simulação", "Playback determinístico isolado em SubViewport")
+}
+
+System_Ext(gdd, "GDD (compiled.html)", "Game Design Document — especificação de mecânicas e regras")
+System_Ext(part_catalog, "Part Database", "Catálogo de 278 tipos de peça com sprites ANM")
+System_Ext(anm_files, "ANM Files", "Arquivos de animação bytecode para cada peça")
+
+Rel(creator, level_editor, "Cria fases")
+Rel(player, puzzle_editor, "Resolve puzzles")
+Rel(level_editor, gdd, "Consulta regras")
+Rel(level_editor, part_catalog, "Lista peças")
+Rel(level_editor, anm_files, "Renderiza sprites")
+Rel(puzzle_editor, simulation, "Inicia simulação")
+Rel(simulation, part_catalog, "Renderiza durante play")
+Rel(simulation, anm_files, "Renderiza durante play")
+Rel(simulation, puzzle_editor, "Resultado (sinais)")
+
+@enduml

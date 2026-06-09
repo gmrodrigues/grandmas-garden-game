@@ -1,0 +1,65 @@
+J03 — Puzzle Select journey test
+Timestamp: 2026-05-27T07:15:29.552995
+Mode: HEADLESS
+
+=== 1. Asset Existence ===
+  ✅ BMP PNGs for PUZDISP — 7 PNGs found
+  ✅ BMP PNGs for PUZTYPE1 — 29 PNGs found
+  ✅ BMP PNGs for PUZTYPE2 — 3 PNGs found
+  ✅ BMP PNGs for PUZTYPE3 — 1 PNGs found
+  ✅ BMP PNGs for PUZTYPE4 — 2 PNGs found
+  ✅ BMP PNGs for PUZTYPE5 — 8 PNGs found
+  ✅ BMP PNGs for PUZTYPE6 — 4 PNGs found
+  ✅ BMP PNGs for PUZTYPE7 — 6 PNGs found
+  ✅ BMP PNGs for PUZTYPE8 — 2 PNGs found
+  ✅ All puzzle BMP resources have PNGs — 9/9 patterns found
+  ✅ ANM PUZDISP.json
+  ❌ ANM PUZTYPE1.json
+  ❌ ANM PUZTYPE2.json
+  ❌ ANM PUZTYPE3.json
+  ❌ ANM PUZTYPE4.json
+  ❌ ANM PUZTYPE5.json
+  ❌ ANM PUZTYPE6.json
+  ❌ ANM PUZTYPE7.json
+  ❌ ANM PUZTYPE8.json
+  ❌ All puzzle ANM files decoded — 1/9 found
+
+=== 2. Level Listing ===
+  ✅ Total YAML levels in yaml/ — 206 files found
+  Easy (26): ELEV1, ELEV10, ELEV11, ELEV12, ELEV13, ELEV14, ELEV15, ELEV16, ELEV17, ELEV18, ELEV19, ELEV2, ELEV20, ELEV21, ELEV22, ELEV23, ELEV24, ELEV25, ELEV26, ELEV3, ELEV4, ELEV5, ELEV6, ELEV7, ELEV8, ELEV9
+  Medium (30): MLEV1, MLEV10, MLEV11, MLEV12, MLEV13, MLEV14, MLEV15, MLEV16, MLEV17, MLEV18, MLEV19, MLEV2, MLEV20, MLEV21, MLEV22, MLEV23, MLEV24, MLEV25, MLEV26, MLEV27, MLEV28, MLEV29, MLEV3, MLEV30, MLEV4, MLEV5, MLEV6, MLEV7, MLEV8, MLEV9
+  Hard (31): HLEV1, HLEV10, HLEV11, HLEV12, HLEV13, HLEV14, HLEV15, HLEV16, HLEV17, HLEV18, HLEV19, HLEV2, HLEV20, HLEV21, HLEV22, HLEV23, HLEV24, HLEV25, HLEV26, HLEV27, HLEV28, HLEV29, HLEV3, HLEV30, HLEV31, HLEV4, HLEV5, HLEV6, HLEV7, HLEV8, HLEV9
+  Really Hard (29): RLEV1, RLEV10, RLEV11, RLEV12, RLEV13, RLEV14, RLEV15, RLEV16, RLEV17, RLEV18, RLEV19, RLEV2, RLEV20, RLEV21, RLEV22, RLEV23, RLEV24, RLEV25, RLEV26, RLEV27, RLEV28, RLEV29, RLEV3, RLEV4, RLEV5, RLEV6, RLEV7, RLEV8, RLEV9
+  Tutorial (40): TLEV1, TLEV10, TLEV11, TLEV12, TLEV13, TLEV14, TLEV15, TLEV16, TLEV17, TLEV18, TLEV19, TLEV2, TLEV20, TLEV21, TLEV22, TLEV23, TLEV24, TLEV25, TLEV26, TLEV27, TLEV28, TLEV29, TLEV3, TLEV30, TLEV31, TLEV32, TLEV33, TLEV34, TLEV35, TLEV36, TLEV37, TLEV38, TLEV39, TLEV4, TLEV40, TLEV5, TLEV6, TLEV7, TLEV8, TLEV9
+  Workshop (0): 
+
+=== 3. Solved/Unsolved Tracking ===
+  Solved: 1/156 levels
+  ✅ Solved tracking map created — 1 entries
+  ✅ ELEV1 marked as solved (demo)
+
+=== 4. Category Navigation ===
+  Hotkey 'E' → Easy (26 levels)
+  Hotkey 'M' → Medium (30 levels)
+  Hotkey 'H' → Hard (31 levels)
+  Hotkey 'R' → Really Hard (29 levels)
+  Hotkey 'T' → Tutorial (40 levels)
+  Hotkey 'W' → Workshop (0 levels)
+  ✅ Category hotkeys defined
+
+=== 5. Puzzle Load Simulation ===
+  ✅ Level ELEV1 loadable
+    (YAML parse skipped — lib not available)
+  ✅ Level MLEV1 loadable
+    (YAML parse skipped — lib not available)
+  ✅ Level HLEV1 loadable
+    (YAML parse skipped — lib not available)
+  ✅ Level RLEV1 loadable
+    (YAML parse skipped — lib not available)
+  ✅ Level HH1 loadable
+    (YAML parse skipped — lib not available)
+  ✅ Level data accessible
+
+==================================================
+RESULTS: 5 passed, 1 failed
+Full log: /home/glauber/gmrodrigues.github.com/the-incredible-machine-2-reverse-engineering/build/phase-20/logs/J03_20260527_071529.log

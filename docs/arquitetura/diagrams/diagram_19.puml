@@ -1,0 +1,61 @@
+@startuml Data_Flow_Bridge
+skinparam linetype ortho
+
+title Fluxo de Dados — Editor ↔ Simulação (Unidirecional)
+
+package "Editor (OOP)" as EDITOR {
+  rectangle "PartData[]\n(282 campos por instância)" as PD_ARRAY #d0d0d0
+  rectangle "chain_script[]\n(JSON rules array)" as CS_EDITOR #d0d0d0
+  rectangle "solution_conditions[]\n(SolutionCondition[])" as SC_EDITOR #d0d0d0
+}
+
+package "Serialization" as SERIAL {
+  rectangle "level_data: Dictionary\n(JSON/YAML format)" as LD #e8e8e8
+}
+
+package "Simulation (Data-Driven)" as SIM {
+  rectangle "Part[]\n(setup data only)" as PART_ARRAY #e0e0e0
+  rectangle "chain_script[]\n(same rules array)" as CS_SIM #e0e0e0
+  rectangle "SolutionCondition\n(same object)" as SC_SIM #e0e0e0
+}
+
+package "Feedback (Signals Only)" as FEEDBACK {
+  rectangle "state_changed(state)\nSimulationRunner.State" as SIG_STATE #d0d0d0
+  rectangle "tick_updated(tick, max)\nint × 2" as SIG_TICK #d0d0d0
+  rectangle "objective_updated(primary, secondary)\nbool × 2" as SIG_OBJ #d0d0d0
+  rectangle "simulation_finished(success, tick, events)\nbool + int + Array" as SIG_FINISH #d0d0d0
+}
+
+PD_ARRAY -down-> LD : _snapshot_world()\nserializa setup data only
+CS_EDITOR -down-> LD : incluído em level_data
+SC_EDITOR -down-> LD : incluído em level_data
+
+LD -right-> PART_ARRAY : SimulationRunner.init(data)\nPartFactory.create_part()\nboard.add_part()
+LD -right-> CS_SIM : chain.load_from_level(data)
+LD -right-> SC_SIM : board.solution = SolutionCondition.new(data, parts)
+
+SIM -down-> SIG_STATE : _set_state(state)
+SIM -down-> SIG_TICK : tick_updated.emit(tick, max)
+SIM -down-> SIG_OBJ : objective_updated.emit(primary, secondary)
+SIM -down-> SIG_FINISH : simulation_finished.emit(success, tick, events)
+
+note top of LD
+  O que NÃO é serializado (editor-only):
+  - undo_stack / redo_stack
+  - gizmo positions, handle_drag_idx
+  - world.on_collision / on_state_change callbacks
+  - part_nodes Dictionary (Sprite2D refs)
+  - dialog_active, is_dirty, level_title
+  - AnmRenderer instance, rect_tool
+  - solver, checker instances
+end note
+
+note bottom of PART_ARRAY
+  O que NÃO vem da serialização (runtime-only):
+  - pos_x/y, vel_x/y (physics integration)
+  - _rng_state, _countdown (deterministic RNG)
+  - is_powered, destroyed, spawns
+  - rope_pull_x/y, angular_velocity
+end note
+
+@enduml
